@@ -1,20 +1,20 @@
-name: Déploiement GitHub Pages
+name: Deploy to GitHub Pages
 
-# Déploiement automatique du site statique Astro sur GitHub Pages,
-# à chaque push sur la branche principale (et déclenchable à la main).
+# Automatic deployment of the static Astro site to GitHub Pages,
+# on every push to the main branch (and manually triggerable).
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-# Permissions requises par le déploiement Pages
+# Permissions required by the Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Une seule exécution de déploiement à la fois
+# Only one deployment run at a time
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -26,28 +26,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configurer GitHub Pages
+      - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Installer Node
+      - name: Install Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - name: Installer les dépendances
+      - name: Install dependencies
         run: npm ci
 
-      - name: Construire le site
+      - name: Build the site
         run: npm run build
         env:
-          # `configure-pages` fournit l'URL + le base path corrects
-          # (domaine perso via CNAME, ou /<repo> pour un dépôt projet).
+          # `configure-pages` provides the correct URL + base path
+          # (custom domain via CNAME, or /<repo> for a project repo).
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
-      - name: Téléverser l'artefact
+      - name: Upload the artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
@@ -59,6 +59,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Déployer sur GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
