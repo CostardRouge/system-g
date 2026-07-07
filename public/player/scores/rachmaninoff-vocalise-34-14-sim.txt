@@ -1,0 +1,462 @@
+N = 1100
+$ violin
+# SI MINEUR
+reh1,dc
+dohd,dc
+reh1,np
+si,dc
+dohd,dc
+reh1,c
+dohd,dc
+si,dc
+dohd,c
+la,dc
+si,dc
+dohd,b+c
+si,dc
+la1,dc
+si,c
+sol1,dc
+la1,dc
+si,b+c
+la,dc
+sol1,dc
+fad,cp
+mi,dc
+fad,cp
+sol1,dc
+fad,n+dc
+sol1,dc
+si,dc
+N = 1300
+reh1,dc
+N = 1100
+mih,cp
+N = 1350
+fahd,dc
+N = 1100
+reh1,np
+doh1,c
+si,n
+lad3,tc
+si,tc
+lad3,qc
+si,qc
+lad3,qc
+si,qc
+lad3,dc
+sold,tc
+lad3,tc
+si,b
+0,c
+# FA# MINEUR
+N = 1000
+si,n
+la1,c
+sold,b+c
+sold,c
+la1,c
+si,c
+N = 1250
+si,c
+N = 1000
+la1,dc
+si,dc
+dohd,np
+fad,dc
+sold,dc
+la1,c
+si,dc
+dohd,dc
+# DO# MINEUR
+rehd,b+c
+sid3,c
+dohd,c
+rehd,c
+N = 1250
+rehd,c
+N = 1000
+dohd,dc
+rehd,dc
+mih1,np
+rehd,c
+dohd,c
+si,c
+# SI MINEUR
+dohd,np
+si,dc
+lad3,dc
+si,np
+fad,dc
+sold,dc
+lad3,c
+si,dc
+dohd,dc
+# LA MAJEUR
+reh1,np
+dohd,c
+si,c
+la,c
+N = 1250
+la,c
+N = 1000
+sold3,dc
+la,dc
+si,np
+la,dc
+sold3,dc
+la,c
+mi,dc
+fad,dc
+sold3,c
+la,dc
+si,dc
+# MI MINEUR
+doh1,np
+si,c
+la,c
+sol1,c
+fad,b
+# FA# MINEUR
+mid3,np
+# SI MINEUR
+si,c
+N = 1350
+dohd,cp
+si,dc
+# FA# MINEUR
+la1,dc
+si,dc
+sold,c
+N = 1100
+fad,r
+0,np
+
+# SI MINEUR
+$ string_1
+reh1,dc
+dohd,dc
+reh1,np
+si,dc
+dohd,dc
+reh1,c
+dohd,dc
+si,dc
+dohd,c
+la,dc
+si,dc
+dohd,b+c
+si,dc
+la1,dc
+si,c
+sol1,dc
+la1,dc
+si,b+c
+la,dc
+sol1,dc
+fad,cp
+mi,dc
+fad,cp
+sol1,dc
+fad,n+dc
+sol1,dc
+si,dc
+N = 1300
+reh1,dc
+N = 1100
+mih,cp
+N = 1350
+fahd,dc
+N = 1100
+reh1,np
+doh1,c
+si,n
+lad3,tc
+si,tc
+lad3,qc
+si,qc
+lad3,qc
+si,qc
+lad3,dc
+sold,tc
+lad3,tc
+si,b
+0,c
+# FA# MINEUR
+N = 1000
+si,n
+la1,c
+sold,b+c
+sold,c
+la1,c
+si,c
+N = 1250
+si,c
+N = 1000
+la1,dc
+si,dc
+dohd,np
+fad,dc
+sold,dc
+la1,c
+si,dc
+dohd,dc
+# DO# MINEUR
+rehd,b+c
+sid3,c
+dohd,c
+rehd,c
+N = 1250
+rehd,c
+N = 1000
+dohd,dc
+rehd,dc
+mih1,np
+rehd,c
+dohd,c
+si,c
+# SI MINEUR
+dohd,np
+si,dc
+lad3,dc
+si,np
+fad,dc
+sold,dc
+lad3,c
+si,dc
+dohd,dc
+# LA MAJEUR
+reh1,np
+dohd,c
+si,c
+la,c
+N = 1250
+la,c
+N = 1000
+sold3,dc
+la,dc
+si,np
+la,dc
+sold3,dc
+la,c
+mi,dc
+fad,dc
+sold3,c
+la,dc
+si,dc
+# MI MINEUR
+doh1,np
+si,c
+la,c
+sol1,c
+fad,b
+# FA# MINEUR
+mid3,np
+# SI MINEUR
+si,c
+N = 1350
+dohd,cp
+si,dc
+# FA# MINEUR
+la1,dc
+si,dc
+sold,c
+N = 1000
+# SI MINEUR
+fad,b
+0,c
+$ violin
+dohd,n
+si,c
+
+lad3,n
+dohd,np
+dohd,n
+si,c
+lad3,n
+dohd,np
+reh1,c
+dohd,c
+si,c
+la,c
+si,c
+N = 1200
+dohd,c
+la,c
+fad,n+dc
+N = 1300
+sold,dc
+lad3,dc
+mih,dc
+reh1,b
+0,c
+# FA# MINEUR
+N = 1100
+reh1,n
+dohd,c
+si,n
+reh1,np
+reh1,c
+dohd,c
+si,dc
+la1,dc
+si,n
+# SI MINEUR
+reh1,np
+mih,c
+reh1,c
+dohd,c
+si,c
+dohd,c
+reh1,c
+si,c
+sol1,n+dc
+la1,dc
+si,dc
+reh1,dc
+mih,b
+fad,np
+mih,c
+fahd,bp
+mih,n
+# MI MINEUR
+rehd3,c
+dohd,dc
+rehd3,dc
+mih,np
+# SI MINEUR
+reh1,c
+dohd,c
+si,c
+lad3,c
+la1,dc
+lad3,dc
+si,np
+la1,n
+sol1,c
+fad,cp
+mi,dc
+re1,dc
+mi,dc
+dod,c
+sig,b
+0,c
+$ string_1
+dohd,n
+si,c
+
+N = 1000
+lad3,n
+dohd,np
+dohd,n
+si,c
+lad3,n
+dohd,np
+reh1,c
+dohd,c
+si,c
+la,c
+si,c
+N = 1200
+dohd,c
+la,c
+fad,n+dc
+N = 1300
+sold,dc
+lad3,dc
+mih,dc
+reh1,b
+0,c
+# FA# MINEUR
+N = 1100
+reh1,n
+dohd,c
+si,n
+reh1,np
+reh1,c
+dohd,c
+si,dc
+la1,dc
+si,n
+# SI MINEUR
+reh1,np
+mih,c
+reh1,c
+dohd,c
+si,c
+dohd,c
+reh1,c
+si,c
+sol1,n+dc
+la1,dc
+si,dc
+reh1,dc
+mih,b
+fad,np
+mih,c
+fahd,bp
+mih,n
+# MI MINEUR
+rehd3,c
+dohd,dc
+rehd3,dc
+mih,np
+# SI MINEUR
+reh1,c
+dohd,c
+si,c
+lad3,c
+la1,dc
+lad3,dc
+si,np
+la1,n
+sol1,c
+fad,cp
+mi,dc
+re1,dc
+mi,dc
+dod,c
+sig,b
+0,n
+
+$ violin
+re1,c
+mi,c
+fad,c
+mi,dc
+fad,dc
+sol1,c
+fad,dc
+sol1,dc
+la,np
+sol1,dc
+la,dc
+si,n
+dohd,n
+reh1,np
+mih,c
+N = 1150
+fahd,b+c
+N = 1250
+solh1,c
+N = 1350
+lah,c
+sih,c
+solh1,c
+fahd,c
+mih,c
+reh1,dc
+mih,dc
+N = 1100
+fahd,np
+mih,c
+reh1,n
+N = 1300
+dohd,tc
+reh1,tc
+dohd,qc
+reh1,qc
+dohd,qc
+reh1,qc
+dohd,c
+si,r

@@ -1,0 +1,172 @@
+@occidental
+N = 650
+LA = 440
+# SI MINEUR
+$ string_2
+# automne au ciel brumeux aux horizons navrants
+fad,c
+si,np+n
+reh1,c
+dohd,n
+reh1,c
+si,n
+la1,c
+si,n
+la1,c
+sol1,n
+la1,c
+fad,rp
+# aux rapides couchants aux aurores palies
+0,np
+fad,n
+fad,c
+si,np
+dohd,n
+reh1,c
+dohd,np
+si,n
+dohd,c
+la,np
+sol1,n
+la1,c
+fad,bp
+fad,np
+0,bp
+# je regarde couler comme l'eau du torrent
+# FA# MINEUR
+sold,n
+sold,c
+dohd,np
+la1,n
+la1,c
+sold,np
+sold,n
+sold,c
+la1,np
+# SI MINEUR
+sol1,n
+fad,c
+si,b
+0,c
+# tes jours faits de melancolie
+la,c
+la,np
+fad,np
+re1,n
+re1,c
+mi,n
+mi,c
+fad,bp
+fad,bp
+0,np
+# sur l'aile des regrets mes esprits emportés
+fad,np
+mi,n
+fad,c
+sol1,n
+la,c
+si,np
+# MI MINEUR
+doh1,n
+si,c
+si,np
+la,n
+fad,c
+red3,np
+# comme s'il se pouvait que notre age renaisse
+red3,n
+red3,c
+mi,np
+fad,n
+sol1,c
+la,np
+si,n
+doh1,c
+reh1,b
+doh1,c
+si,c
+la,np
+sol1,c
+0,c
+# parcourent en revant les coteaux enchantes
+la,c
+si,n
+sol1,c
+re1,n
+mi,c
+fad,np
+sol1,n
+la,c
+reh1,n
+si,c
+fad,n
+sol1,c
+la,np
+# ou jadis sourit ma jeunesse
+si,n
+si,c
+mih,np+n
+reh1,c
+doh1,np
+si,n
+la,c
+la,np
+sol1,rp
+0,bp+n
+# je sens au clair soleil du souvenir vainqueur
+# SI MINEUR
+fad,c
+si,np+n
+si,c
+dohd,n
+reh1,c
+dohd,n
+si,c
+dohd,n
+la,c
+sol1,n
+la1,c
+fad,rp
+0,np
+# refleurir en bouquet les roses déliées
+fad,n
+fad,c
+si,np
+dohd,n
+reh1,c
+dohd,np+n
+si,c
+dohd,n
+la,c
+sol1,n
+la1,c
+fad,bp
+fad,np
+0,bp
+# et monter a mes yeux des larmes qu'en mon coeur
+# FA# MINEUR
+sold,n
+sold,c
+dohd,np
+la1,n
+la1,c
+sold,np
+sold,np
+la1,n
+la1,c
+# SI MINEUR
+sol1,n
+fad,c
+si,np
+# mes vingt ans avaient oubliees
+dohd,n
+dohd,c
+reh1,np+n
+reh1,c
+# MI MINEUR
+mih,np
+reh1,n
+doh1,c
+fahd,bp
+lad3,bp
+si,rp

@@ -1,0 +1,34 @@
+@occidental
+N = 700
+# BASSES
+$ string_1
+# RE MAJEUR
+re,bp
+lag,bp
+lag,bp
+re,bp
+re,bp
+lag,bp
+lag,bp
+red3,bp
+mi,bp
+lag,bp
+la,bp
+red3,bp
+mi,np
+solg1,np
+lag,bp
+lag,bp
+re,bp
+lag,bp
+re,bp
+lag,bp
+re,bp
+re,bp
+re,bp
+re,bp
+re,bp
+re,bp
+re,bp
+re,bp
+re,r

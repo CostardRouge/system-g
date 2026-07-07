@@ -1,0 +1,423 @@
+@occidental
+N = 500
+$ guitar_1
+# LA MINEUR
+# je vivais à l'écart de la place publique
+mi,c
+doh1,c
+si,c
+la,c
+sold3,c
+la,np
+doh1,c
+si,c
+la,c
+sol,c
+fad3,c
+sol,n
+mi,dcp
+0,tc
+# serein contemplatif ténébreux bucolique
+# RE MINEUR
+sib1,c
+la,c
+sol,c
+fa1,c
+mi,c
+fa1,np
+# LA MINEUR
+la,c
+sol,c
+la,c
+si,c
+sol,c
+mi,n
+do1,dcp
+0,tc
+# refusant d'acquitter la rançon de la gloire
+mi,c
+fa1,c
+mi,c
+re,c
+do1,c
+re,np
+fa1,c
+mi,c
+re,c
+do1,c
+sig,c
+do1,np
+# sur mon brin de laurier je dormais comme un loir
+lag,c
+re,c
+re,c
+mi,c
+fa1,c
+mi,n
+la,c
+si,c
+la,n
+si,c
+doh1,c
+si,n+dc
+0,c
+$ piano_3
+# les gens de bon conseil ont su me fair' comprendre
+mi,c
+doh1,c
+si,c
+la,c
+sold3,c
+la,np
+doh1,c
+si,c
+la,c
+sol,c
+fad3,c
+sol,n
+mi,dcp
+0,tc
+# qu'à l'homme de la rue j'avais des compt' à rendre
+# RE MINEUR
+sib1,c
+la,c
+sol,c
+fa1,c
+mi,c
+fa1,np
+# LA MINEUR
+la,c
+sol,c
+la,c
+si,c
+sol,c
+mi,n
+do1,dcp
+0,tc
+# et que sous pein' de choir dans un oubli complet
+mi,c
+fa1,c
+mi,c
+re,c
+do1,c
+re,np
+fa1,c
+mi,c
+re,c
+do1,c
+sig,c
+do1,np
+# je vais mettre au grand jour tous mes petits secrets
+mi,c
+la,c
+la,c
+si,c
+doh1,c
+si,n
+si,c
+la,c
+sold3,n
+doh1,c
+si,c
+la,n+dc
+$ brass_2
+# trompettes de la renommée vous êtes bien mal embouchées
+0,c
+doh1,c
+sol,b
+mi,np
+mi,c
+sold3,n
+si,c
+sold3,c
+mi,n
+0,c
+mi,c
+mi,n
+la,c
+doh1,c
+si,n
+sol,c
+si,c
+la,b
+0,np
+$ string_1
+# manquant à la pudeur la plus élémentaire
+mi,c
+doh1,c
+si,c
+la,c
+sold3,c
+la,np
+doh1,c
+si,c
+la,c
+sol,c
+fad3,c
+sol,n
+mi,dcp
+0,tc
+# dois-je pour les besoins d' la caus' publicitaire
+# RE MINEUR
+sib1,c
+la,c
+sol,c
+fa1,c
+mi,c
+fa1,np
+# LA MINEUR
+la,c
+sol,c
+la,c
+si,c
+sol,c
+mi,n
+do1,dcp
+0,tc
+# divulguer avec qui et dans quell' position
+mi,c
+fa1,c
+mi,c
+re,c
+do1,c
+re,np
+fa1,c
+mi,c
+re,c
+do1,c
+sig,c
+do1,np
+# je plonge dans le stupre et la fornication
+lag,c
+re,c
+re,c
+mi,c
+fa1,c
+mi,n
+la,c
+si,c
+la,n
+si,c
+doh1,c
+si,n+dc
+0,c
+$ flute
+# si je publie des noms combien de pénélopes
+mi,c
+doh1,c
+si,c
+la,c
+sold3,c
+la,np
+doh1,c
+si,c
+la,c
+sol,c
+fad3,c
+sol,n
+mi,dcp
+0,tc
+# passeront illico pour des fieffé's salopes
+# RE MINEUR
+sib1,c
+la,c
+sol,c
+fa1,c
+mi,c
+fa1,np
+# LA MINEUR
+la,c
+sol,c
+la,c
+si,c
+sol,c
+mi,n
+do1,dcp
+0,tc
+# combien de bons amis me r'gard'ront de travers
+mi,c
+fa1,c
+mi,c
+re,c
+do1,c
+re,np
+fa1,c
+mi,c
+re,c
+do1,c
+sig,c
+do1,np
+# combien je recevrai de coups de revolver
+mi,c
+la,c
+la,c
+si,c
+doh1,c
+si,n
+si,c
+la,c
+sold3,n
+doh1,c
+si,c
+la,n+dc
+$ brass_2
+# trompettes de la renommée vous êtes bien mal embouchées
+0,c
+doh1,c
+sol,b
+mi,np
+mi,c
+sold3,n
+si,c
+sold3,c
+mi,n
+0,c
+mi,c
+mi,n
+la,c
+doh1,c
+si,n
+sol,c
+si,c
+la,b
+0,np
+$ organ
+# LA MINEUR
+# une femme du monde et qui souvent me laisse
+mi,c
+doh1,c
+si,c
+la,c
+sold3,c
+la,np
+doh1,c
+si,c
+la,c
+sol,c
+fad3,c
+sol,n
+mi,dcp
+0,tc
+# fair' mes quat' voluptés dans ses quartiers d' noblesse
+# RE MINEUR
+sib1,c
+la,c
+sol,c
+fa1,c
+mi,c
+fa1,np
+# LA MINEUR
+la,c
+sol,c
+la,c
+si,c
+sol,c
+mi,n
+do1,dcp
+0,tc
+# m'a sournois'ment passé sur son divan de soie
+mi,c
+fa1,c
+mi,c
+re,c
+do1,c
+re,np
+fa1,c
+mi,c
+re,c
+do1,c
+sig,c
+do1,np
+# des parasit's du plus bas étage qui soit
+lag,c
+re,c
+re,c
+mi,c
+fa1,c
+mi,n
+la,c
+si,c
+la,n
+si,c
+doh1,c
+si,n+dc
+0,c
+$ string_2
+# sous prétexte de bruit, sous couleur de réclame
+mi,c
+doh1,c
+si,c
+la,c
+sold3,c
+la,np
+doh1,c
+si,c
+la,c
+sol,c
+fad3,c
+sol,n
+mi,dcp
+0,tc
+# ai j' le droit de ternir l'honneur de cette dame
+# RE MINEUR
+sib1,c
+la,c
+sol,c
+fa1,c
+mi,c
+fa1,np
+# LA MINEUR
+la,c
+sol,c
+la,c
+si,c
+sol,c
+mi,n
+do1,dcp
+0,tc
+# en criant sur les toits et sur l'air des lampions
+mi,c
+fa1,c
+mi,c
+re,c
+do1,c
+re,np
+fa1,c
+mi,c
+re,c
+do1,c
+sig,c
+do1,np
+# madame la marquis' m'a foutu des morpions
+mi,c
+la,c
+la,c
+si,c
+doh1,c
+si,n
+si,c
+la,c
+sold3,n
+doh1,c
+si,c
+la,n+dc
+$ brass_2
+# trompettes de la renommée vous êtes bien mal embouchées
+0,c
+doh1,c
+sol,b
+mi,np
+mi,c
+sold3,n
+si,c
+sold3,c
+mi,n
+0,c
+mi,c
+mi,n
+la,c
+doh1,c
+si,n
+sol,c
+si,c
+la,b

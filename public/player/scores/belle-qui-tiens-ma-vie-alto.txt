@@ -1,0 +1,72 @@
+@occidental
+# ALTO
+# SOL MINEUR
+N = 550
+$ cello
+# belle qui tiens ma vie captive dans tes yeux
+re,b
+re,n
+re,n
+# RE MINEUR
+re,n
+fa1,n
+fa1,b
+fa1,n
+fa1,n
+mi,n
+# SOL MINEUR
+fa1,n
+sol,n
+fa1,n
+fa1,b-dc
+0,dc
+# qui m'as l'âme ravie d'un souris grâcieux
+re,b
+re,n
+re,n
+# RE MINEUR
+re,n
+fa1,n
+fa1,b
+fa1,n
+fa1,n
+mi,n
+# SOL MINEUR
+fa1,n
+sol,n
+fa1,n
+fa1,b-dc
+0,dc
+# viens tôt me secouri ou me faudra mourir
+fa1,b
+fa1,n
+fa1,n
+re,n
+mib1,n
+re,b
+# RE MINEUR
+fa1,b
+do1,n
+re,n
+# SOL MAJEUR
+re,n
+re,n
+sig,b-dc
+0,dc
+# viens tôt me secouri ou me faudra mourir
+# SOL MINEUR
+sigb1,b
+fa1,n
+fa1,n
+re,n
+mib1,n
+re,b
+# RE MINEUR
+fa1,b
+mi,n
+re,n
+# SOL MINEUR
+re,n
+re,n
+re,b-dc
+0,dc

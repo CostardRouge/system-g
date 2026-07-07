@@ -1,0 +1,34 @@
+@occidental
+N = 700
+# SOPRANI
+$ string_2
+# RE MAJEUR
+la,bp
+la,bp
+la,bp
+la,bp
+la,bp
+la,bp
+la,bp
+fad,bp
+mi,bp
+fad,bp
+sol1,bp
+fad,bp
+mi,bp
+fad,bp
+mi,np
+la,np
+la,bp
+la,bp
+la,bp
+la,bp
+la,bp
+la,bp
+la,bp
+fad,bp
+fad,bp
+re,bp
+re,bp
+re,bp
+re,r

@@ -1,0 +1,138 @@
+@occidental
+N = 350
+$ guitar_1
+# FA MAJEUR
+# la mer qu'on voit danser le long des golfes clairs
+do,n
+fa,rp
+mi3,trb
+fa,trb
+sol,trb
+la,bp
+fa,n
+sol,b
+mi3,trb
+re,trb
+do,trb
+la,rp
+# a des reflets d'argent
+sol,trb
+la,trb
+sib1,trb
+doh,np
+fa,c
+fa,np
+# la mer des reflets changeants sous la pluie
+reh,c
+reh,r+n
+reh,n
+doh,trb
+la,trb
+sol,trb
+fa,b
+re,n
+fa,n
+sol,r
+do,b
+0,n
+# la mer au ciel d'été confond ses blancs moutons
+$ string_2
+do,n
+fa,rp
+mi3,trb
+fa,trb
+sol,trb
+la,bp
+fa,n
+sol,b
+mi3,trb
+re,trb
+do,trb
+la,rp
+# avec les anges si purs
+sol,trb
+la,trb
+sib1,trb
+doh,np
+fa,c
+fa,np
+# la mer bergère d'azur infinie
+reh,c
+reh,r+n
+reh,n
+doh,trb
+la,trb
+sol,trb
+fa,b
+re,n
+fa,n
+sol,r
+fa,b
+0,n
+# voyez près des étangs ces grands roseaux mouillés
+# LA MAJEUR
+$ brass_2
+mi,n
+la,rp
+sold3,trb
+la,trb
+si,trb
+dohd,bp
+la,n
+si,b
+sold3,trb
+fad,trb
+mi,trb
+mi,rp
+0,n
+# voyez ces oiseaux blancs et ces maisons rouillées
+# DO MAJEUR
+$ string_2
+sol,n
+doh,rp
+si3,trb
+doh,trb
+reh,trb
+mih,bp
+doh,n
+reh,b
+si3,trb
+la,trb
+sol,trb
+doh,r+n
+0,b
+# la mer les a bercés le long des golfes clairs
+# FA MAJEUR
+$ guitar_1
+do,n
+fa,rp
+mi3,trb
+fa,trb
+sol,trb
+la,bp
+fa,n
+sol,b
+mi3,trb
+re,trb
+do,trb
+la,rp
+# et d'un' chanson d'amour
+$ brass_2
+sol,trb
+la,trb
+sib1,trb
+doh,np
+fa,c
+fa,np
+# la mer a bercé mon coeur pour la vie
+reh,c
+reh,r+n
+fa,n
+doh,trb
+la,trb
+sol,trb
+fa,b
+re,n
+fa,n
+sol,r
+fa,r

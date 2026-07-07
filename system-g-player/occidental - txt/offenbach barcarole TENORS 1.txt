@@ -1,0 +1,35 @@
+@occidental
+N = 700
+# TENORS 1
+$ string_1
+# RE MAJEUR
+reh,bp
+dohd3,bp
+dohd3,bp
+reh,bp
+reh,bp
+dohd3,bp
+dohd3,bp
+doh1,bp
+si,bp
+reh,bp
+dohd,bp
+doh1,bp
+si,bp
+reh,bp
+la,bp
+la,bp
+dohd3,bp
+reh,bp
+dohd3,bp
+reh,bp
+reh,bp
+reh,bp
+reh,bp
+reh,bp
+la,np
+si,np
+la,np
+sol1,np
+la,bp
+la,r

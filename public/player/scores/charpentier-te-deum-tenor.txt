@@ -1,0 +1,258 @@
+@occidental
+N = 550
+# TENOR
+$ brass_1
+# SIb MAJEUR
+# te deum laudamus
+sigb,n
+re,n
+re,cp
+mib1,dc
+fa,n
+re,n
+do,n
+fa,n
+fa,npp
+# te dominum confitemur
+fa,dc
+sol,n
+sol,n
+fa,cp
+mib1,dc
+re,cp
+sol,dc
+fa,npp
+fa,dc
+fa,n
+# te deum laudamus
+sib,n
+reh,n
+reh,cp
+mihb1,dc
+fah,n
+reh,n
+doh,n
+fah,n
+fah,cp
+mihb1,dc
+# te deum confitemur
+reh,cp
+doh,dc
+sib,n
+sib,cp
+sib,dc
+la3,n
+sib,cp
+doh,dc
+reh,bp
+# te deum laudamus
+sigb,n
+re,n
+re,cp
+mib1,dc
+fa,n
+re,n
+do,n
+fa,n
+fa,npp
+# te dominum confitemur
+fa,dc
+sol,n
+sol,n
+fa,cp
+mib1,dc
+re,cp
+sol,dc
+fa,npp
+fa,dc
+fa,n
+# te deum laudamus
+sib,n
+reh,n
+reh,cp
+mihb1,dc
+fah,n
+reh,n
+doh,n
+fah,n
+fah,cp
+mihb1,dc
+# te deum confitemur
+reh,cp
+doh,dc
+sib,n
+sib,cp
+sib,dc
+la3,n
+sib,cp
+doh,dc
+reh,bp
+$ string_1
+# et pleni sunt coeli
+doh,n
+sib,n
+reh,n
+mihb1,n
+solh,n
+fah,b
+doh,n
+# SOL MINEUR
+# et terra majestatis
+sib1,n
+la,n
+sol,n
+sol,npp
+fad3,dc
+sol,npp
+la,dc
+sib1,n
+# SIb MAJEUR
+# et terra majestatis
+doh,n
+la3,n
+la3,cp
+sib,dc
+doh,n
+la3,n
+sib,npp
+doh,dc
+# gloriae tuae
+reh,n
+sib,n
+doh,n
+reh,n
+# FA MAJEUR
+doh,b
+doh,b
+0,n
+# SIb MAJEUR
+$ brass_1
+# te deum laudamus
+sigb,n
+re,n
+re,cp
+mib1,dc
+fa,n
+re,n
+do,n
+fa,n
+fa,npp
+# te dominum confitemur
+fa,dc
+sol,n
+sol,n
+fa,cp
+mib1,dc
+re,cp
+sol,dc
+fa,npp
+fa,dc
+fa,n
+# te deum laudamus
+sib,n
+reh,n
+reh,cp
+mihb1,dc
+fah,n
+reh,n
+doh,n
+fah,n
+fah,cp
+mihb1,dc
+# te deum confitemur
+reh,cp
+doh,dc
+sib,n
+sib,cp
+sib,dc
+la3,n
+sib,cp
+doh,dc
+reh,b
+0,n
+$ string_1
+# in te domine speravi
+sib,n
+sol,n
+sol,cp
+sol,dc
+fa,npp
+fa,dc
+sol,n
+mib1,n
+# SOL MINEUR
+do,n
+# non confundar in aeternum
+sol,cp
+sol,dc
+sol,n
+fa,n
+mib1,n
+sol,n
+la,n
+la,cp
+sol,dc
+fad3,n
+# non confundar (3) in aeternum
+fad3,cp
+fad3,dc
+# DO MAJEUR
+sol,n
+sol,n
+sol,n
+sol,n
+sol,npp
+fa1,dc
+mi,n
+# SIb MAJEUR
+fa,cp
+sol,dc
+doh,n
+doh,n
+reh,n
+sib,n
+doh,b
+sib,n
+$ brass_1
+# te deum laudamus
+sigb,n
+re,n
+re,cp
+mib1,dc
+fa,n
+re,n
+do,n
+fa,n
+fa,npp
+# te dominum confitemur
+fa,dc
+sol,n
+sol,n
+fa,cp
+mib1,dc
+re,cp
+sol,dc
+fa,npp
+fa,dc
+fa,n
+# te deum laudamus
+sib,n
+reh,n
+reh,cp
+mihb1,dc
+fah,n
+reh,n
+doh,n
+fah,n
+fah,cp
+mihb1,dc
+# te deum confitemur
+reh,cp
+doh,dc
+sib,n
+sib,cp
+sib,dc
+la3,n
+sib,cp
+doh,dc
+reh,bp

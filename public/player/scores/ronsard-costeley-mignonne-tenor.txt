@@ -1,0 +1,317 @@
+@occidental
+# TENOR
+N = 500
+$ string_1
+# SOL MINEUR
+# mignonne allons voir si la rose
+sol,n
+reh,np
+reh,c
+sib1,n
+sib1,n
+doh,n
+mihb1,n
+reh,n
+reh,c
+# mignonne allons voir si la rose
+reh,c
+solh,n
+reh,n
+0,n
+sol,n
+doh,c
+doh,c
+mihb1,c
+mihb1,c
+reh,b
+sol,b
+0,n
+# qui ce matin avait déclose
+sol,n
+# RE MINEUR
+reh,n
+reh,n
+fah1,np
+mih,dc
+reh,dc
+doh,n
+reh,n
+la,b
+reh,b
+0,n
+# sa robe de pourpre au soleil
+reh,n
+reh,n
+reh,n
+fah1,n
+fah1,n
+# SOL MINEUR
+solh,c
+fah1,c
+mihb1,n
+reh,b
+sol,dc
+0,dc
+# a point perdu
+sol,c
+doh,c
+doh,c
+sib1,np
+la,c
+sol,b
+0,n
+# a point perdu cette vêprée
+sol,n
+reh,np
+reh,c
+sib1,n
+sib1,n
+doh,n
+mihb1,n
+reh,n
+reh,c
+# a point perdu cette vêprée
+reh,c
+solh,c
+solh,c
+reh,n
+0,n
+sol,n
+doh,n
+mihb1,n
+reh,b
+sol,b
+0,n
+# les plis de sa robe pourprée
+sol,n
+# RE MINEUR
+reh,n
+reh,n
+fah1,np
+mih,dc
+reh,dc
+doh,n
+reh,n
+la,b
+reh,b
+0,n
+# et son teint au vôtre pareil
+reh,n
+reh,n
+reh,n
+fah1,n
+fah1,n
+# SOL MINEUR
+solh,c
+fah1,c
+mihb1,n
+reh,b
+sol,n
+N = 600
+0,n
+# las las voyez comme en peu d'espace
+N = 550
+reh,n
+0,n
+N = 500
+reh,n
+reh,c
+reh,c
+reh,n
+reh,n
+sib1,n
+doh,n
+la,n
+la,n
+0,n
+# mignonne elle a dessus la place
+reh,n
+reh,np
+reh,c
+reh,n
+reh,n
+sib1,n
+doh,n
+la,n
+la,n
+N = 600
+0,n
+# las las las ses beautés laissé choir
+N = 550
+reh,n
+0,n
+reh,n
+mihb1,n
+N = 500
+reh,n
+doh1,n
+sib1,n
+doh1,n
+doh1,n
+reh,n
+N = 600
+0,n
+# ô ô vraiment marâtre nature
+N = 550
+reh,n
+0,n
+N = 500
+reh,n
+reh,c
+reh,c
+reh,n
+reh,n
+sib1,n
+doh,n
+la,n
+la,n
+0,n
+# puisqu'une telle fleur ne dure
+reh,n
+reh,np
+reh,c
+reh,n
+reh,n
+sib1,n
+doh,n
+la,n
+la,dc
+N = 550
+0,dc
+# que du matin jusques au soir
+N = 500
+sib1,c
+la,n
+reh,n
+doh1,n
+si,n
+doh,n
+la,n
+sol,r
+0,bp
+# donques si me croyez mignonne
+sol,n
+reh,np
+reh,c
+sib1,n
+sib1,n
+doh,n
+mihb1,n
+reh,n
+reh,c
+# mignonne si me croyez mignonne
+reh,c
+solh,n
+reh,n
+0,n
+sol,n
+doh,c
+doh,c
+mihb1,c
+mihb1,c
+reh,b
+sol,b
+0,n
+# tandis que votre âge fleuronne
+sol,n
+# RE MINEUR
+reh,n
+reh,n
+fah1,np
+mih,dc
+reh,dc
+doh,n
+reh,n
+la,b
+reh,b
+0,n
+# en sa plus verte nouveauté
+reh,n
+reh,n
+reh,n
+fah1,n
+fah1,n
+# SOL MINEUR
+solh,c
+fah1,c
+mihb1,n
+reh,b
+sol,n
+N = 550
+0,n
+# cueillez cueillez votre jeunesse
+N = 400
+reh,n
+reh,c
+reh,c
+mihb1,n
+reh,n
+doh1,n
+sib1,n
+la,n
+sol,c
+N = 450
+0,c
+# comme à cette fleur la vieillesse
+N = 400
+reh,n
+reh,c
+reh1,c
+mihb1,n
+reh,n
+doh1,n
+sib1,n
+N = 450
+la,n
+la,dc
+0,dc
+# fera ternir votre beauté
+N = 400
+sib1,c
+la,n
+reh,n
+doh1,n
+si,n
+N = 450
+doh,n
+la,n
+sol,np
+0,c
+# cueillez cueillez votre jeunesse
+N = 400
+reh,n
+reh,c
+reh,c
+mihb1,n
+reh,n
+doh1,n
+sib1,n
+la,n
+sol,c
+N = 450
+0,c
+# comme à cette fleur la vieillesse
+N = 400
+reh,n
+reh,c
+reh,c
+mihb1,n
+reh,n
+N = 450
+doh1,n
+sib1,n
+N = 500
+la,n
+la,dc
+0,dc
+# fera ternir votre beauté
+sib1,c
+la,n
+reh,n
+doh1,n
+N = 550
+si,n
+doh,n
+N = 570
+la,n
+sol,r

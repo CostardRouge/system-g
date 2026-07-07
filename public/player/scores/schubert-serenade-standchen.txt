@@ -1,0 +1,198 @@
+@occidental
+N = 800
+$ brass_2
+# DO MINEUR
+# Leise flehen meine Lieder durch die Nacht zu dir
+sol,trn
+lab1,trn
+sol,trn
+doh,np
+sol,c
+fa,trn
+sol,trn
+fa,trn
+doh,n
+fa,c
+0,c
+sol,np
+fa,c
+fa,trn
+mib1,trn
+re,trn
+mib1,b
+0,n
+$ piano_3
+solh,np
+fah,c
+fah,trn
+mihb1,trn
+reh,trn
+mihb1,bp
+
+$ brass_2
+# in denstillen Hain hernieder Liebchen komm zu mir
+sol,trn
+lab1,trn
+sol,trn
+mihb1,np
+sol,c
+fa,trn
+sol,trn
+fa,trn
+reh,np
+doh,c
+sib,np
+lab1,c
+lab1,trn
+sol,trn
+fa,trn
+sol,b
+0,n
+$ piano_3
+sib,np
+lab1,c
+lab1,trn
+sol,trn
+fa,trn
+sol,bp
+
+$ brass_2
+# Flüsternd schlanka Wipfel rauschen in des Mondes Licht
+sol,cp
+si3,dc
+mihb1,np
+reh,c
+doh,cp
+sol,dc
+mib1,np
+do,dc
+lab1,qc
+sib,qc
+lab1,trn-tc
+sol,trn
+lab1,trn
+doh,np
+lab1,c
+sol,b+c
+0,c
+fa,qc
+sol,qc
+fa,trn-tc
+mi3,trn
+fa,trn
+lab1,np
+fa,c
+mib1,b+c
+0,c
+
+# des Verräthers feindlich Lauschen fürchte Holde nicht
+sol,cp
+si3,dc
+mihb1,np
+reh,c
+# DO MAJEUR
+doh,cp
+sol,dc
+mi,np
+do,dc
+la,qc
+si3,qc
+la,trn-tc
+sold3,trn
+la,trn
+doh,np
+la,c
+sol,b+c
+0,c
+reh,trn
+dohd3,trn
+reh,trn
+fah1,np
+si3,c
+doh,b+c
+0,c
+
+# Lass auch dir die Brust bewegen Liebchen höre mich
+sol,cp
+sol,dc
+si3,cp
+si3,dc
+reh,cp
+reh,dc
+doh,n
+si3,n
+0,n
+sol,np
+si3,c
+reh,cp
+doh,dc
+si3,b
+0,n
+
+# bebend harr'ich dir entgegen komm beglücke mich komm beglücke mich
+mih,np
+reh,c
+reh,trn
+doh,trn
+si3,trn
+la,cp
+si3,dc
+doh,n
+la,c
+0,c
+$ piano_3
+la,cp
+si3,dc
+doh,n
+la,c
+0,c
+la,cp
+si3,dc
+doh,n
+la,c
+0,c
+$ brass_2
+la,qc
+si3,qc
+la,trn-tc
+sold3,trn
+la,trn
+doh,np
+la,c
+sol,b+c
+0,c
+reh,trn
+dohd3,trn
+reh,trn
+fah1,np
+si3,c
+doh,bp
+doh,n
+0,n
+
+# DO MINEUR
+# be glücke mich
+doh,n
+lab1,bp
+sol,bp
+# DO MAJEUR
+mi,b+c
+0,c
+
+$ piano_3
+# DO MINEUR
+lab1,b
+doh,cp
+lab1,dc
+# DO MAJEUR
+sol,np
+mi,c
+mi,c
+mi,c
+fa1,np
+sig3,c
+re,c
+fa1,c
+mi,bp
+mi,bp
+mi,bp

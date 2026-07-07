@@ -1,0 +1,52 @@
+@occidental
+N = 205
+$ string_2
+# MIb MINEUR
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+sigb,r
+# REb MAJEUR
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+lagb,r
+reb,b
+# SOLb MAJEUR
+dob1,b
+# MIb MINEUR
+sigb,r
+sigb,r
+sigb,r
+mib,b
+# LAb MAJEUR
+reb1,b
+# FA MINEUR
+do,r
+do,r
+do,r
+fa,r
+# DO MINEUR
+sigb1,b
+sig3,b
+do,r
+lagb1,r
+# MIb MAJEUR
+sigb,r
+sigb,r

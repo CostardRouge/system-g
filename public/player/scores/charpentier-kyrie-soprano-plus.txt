@@ -1,0 +1,184 @@
+N = 450
+$ string_2
+# RE MINEUR
+# kyrie eleison
+la,n
+reh,n
+dohd3,n
+la,n
+reh,n
+mih,n
+fah1,b
+solh,n
+fah1,n
+mih,n
+reh,n
+mih,n
+dohd3,n
+reh,b
+0,bp
+mih,n
+reh,n
+sol,n
+la,b
+# LA MINEUR
+si,np
+reh,c
+sold3,n
+doh1,n
+si,n
+# LA MAJEUR
+dohd,c
+reh1,c
+dohd,b
+0,n
+# RE MINEUR
+mih,c
+mih,c
+fah1,n
+fah1,c
+mih,c
+reh,n
+reh,c
+reh,c
+solh,n
+fah1,n
+mih,n
+mih,n
+0,bp
+mih,c
+fah1,c
+solh,n
+# FA MAJEUR
+sol,c
+sol,c
+doh,n
+doh,n
+doh,r
+doh,b
+0,n
+# RE MINEUR
+fah1,c
+fah1,c
+mih,n
+lah,n
+fah1,n
+mih,n
+reh,n
+reh,n
+mih,n
+fah1,n
+solh,n
+lah,n
+solh,n
+mih,n
+fah1,b
+la,n
+reh,n
+dohd3,n
+la,n
+reh,n
+mih,n
+fah1,b
+solh,n
+fah1,n
+mih,n
+reh,n
+mih,n
+dohd3,n
+reh,r
+
+# christe eleison
+0,6*r
+0,6*r
+0,6*r
+0,5*r
+
+# kyrie eleison
+0,4*r
+# RE MINEUR
+0,bp
+la,c
+la,c
+reh,n
+mih,n
+fah1,n
+fah,c
+solh,c
+mih,b
+reh,n
+dohd3,n
+reh,b
+mih,b
+# LA MINEUR
+la,b
+0,r+n
+# RE MINEUR
+la,c
+la,c
+reh,n
+reh,n
+dohd3,n
+dohd3,n
+reh,n
+dohd3,n
+reh,c
+dohd3,c
+reh,c
+mih,c
+dohd3,n
+dohd3,c
+dohd3,c
+reh,n
+mih,n
+la,n
+reh,b
+dohd3,n
+reh,b
+0,2*r+c
+# FA MAJEUR
+doh,c
+reh,c
+mih3,c
+fah,np
+mih3,c
+fah,n
+solh,c
+mih3,c
+fah,n
+doh,c
+doh,c
+fah,n
+solh,n
+lah,n
+mih3,n
+fah,n
+doh,n
+# RE MINEUR
+doh,b
+doh,n
+0,3*r
+mih,c
+mih,c
+fah1,n
+fah1,c
+mih,c
+reh,n
+reh,n
+mih,b
+dohd3,n
+dohd3,c
+dohd3,c
+reh,n
+N = 500
+mih,n
+N = 600
+mih,dc
+fah1,dc
+mih,tc
+fah1,tc
+mih,tc
+fah1,tc
+N = 800
+mih,n
+reh,2*r

@@ -1,0 +1,192 @@
+@occidental
+N = 800
+$ string_1
+# ruht wohl
+# DO MINEUR
+do,n
+sig3,b
+sig3,n
+do,b-tc
+0,tc
+re,n
+mib1,c
+do,c
+fa,n
+fad3,n
+sol,n
+solg,n
+sig3,n
+do,c
+sol,c
+doh,c
+sib,c
+lab1,c
+sol,c
+fa,np
+sol,c
+lab1,np
+sib1,c
+lab1,c
+sol,c
+lab1,c
+fa1,c
+sol,b
+
+# FA MINEUR
+mib,n
+lab1,n
+sol,n
+fa,n
+mi3,b-tc
+0,tc
+
+# und bringt
+do,n
+
+# DO MINEUR
+fa,b
+mib1,n
+re,n
+sib,c
+sigb,c
+mib1,n
+lab1,n
+fa,n
+mib1,n
+sigb1,b-tc
+0,tc
+
+# ruht wohl
+sigb1,n
+sig3,b
+sig3,n
+do,b
+
+
+# SOL MINEUR
+doh,n
+fad3,b-tc
+0,tc
+
+# und bringt
+sol,n
+do,n
+re,n
+mib1,n
+do,n
+re,b
+
+# SOL MAJEUR
+solg,b-tc
+0,tc
+
+# DO MINEUR
+do,n
+sig3,b
+sig3,n
+do,b-tc
+0,tc
+
+# FA MINEUR
+sigb,n
+lagb1,c
+sigb,c
+do,n
+do,n
+fa,n
+fag,n
+
+# DO MINEUR
+fa,b
+mib1,c
+re,c
+mib1,c
+do,c
+lab1,c
+sol,c
+fa,n
+lab1,n
+sol,b
+sol,n
+0,np
+
+# ruht wohl
+sol,c
+re,c
+sig3,c
+solg,bp
+solg,np
+doh,c
+sol,c
+mib1,c
+do,c
+sig3,c
+do,c
+re,c
+mib1,c
+fa,c
+sol,b
+do,n
+
+# FA MINEUR
+fag,b-tc
+0,tc
+
+# und bringt
+# DO MINEUR
+fa,n
+sol,b
+sol,n
+lab1,c
+fa,c
+sol,b
+do,b
+0,bp
+
+# das Grab
+# SIb MAJEUR
+doh,n
+mib1,b
+mib1,n
+do,b
+do,n
+lag3,b
+lag3,n
+sigb,b-tc
+0,tc
+
+# DO MINEUR
+sib,n
+fa,b
+fa,n
+re,b
+re,n
+sig3,b
+sig3,n
+do,c
+sig3,c
+do,c
+re,c
+mib1,c
+fa,c
+
+# FA MINEUR
+sol,c
+lab1,c
+sib,c
+doh,c
+rehb1,c
+sib,c
+doh,n
+0,c
+
+# SIb MINEUR
+do,c
+reb1,np
+
+# LAb MAJEUR
+sigb,c
+mib,n
+mib,n
+lagb,b
+0,bp

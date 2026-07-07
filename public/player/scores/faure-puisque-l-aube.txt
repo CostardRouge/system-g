@@ -1,0 +1,214 @@
+@occidental
+N = 520
+# Puisque laube grandit
+$ guitar_1
+# FA# MAJEUR
+dohd,np
+si1,c
+lad,n
+# RE# MINEUR
+sold,c
+fad1,c
+mid,n
+# LA# MINEUR
+lad,trn
+sold,trn
+lad,trn
+sid,c
+sold,c
+lad,np
+sid,c
+dohd1,c
+rehd,c
+mihd,n
+mid,n
+0,n
+# Puisquaprès mavoir fui
+# FA# MAJEUR
+rehd,c
+rehd,c
+dohd,trb
+si1,trb
+dohd,trb
+lad,np
+fad,c
+sold,b+c
+0,c
+# Lespoir veut bien
+# RE# MAJEUR
+lad,n
+lad,np
+fadd,c
+lad,n
+# RE# MINEUR
+si1,c
+sold,c
+lad,n
+fad1,c
+lad,c
+# DO# MINEUR
+sid3,n
+dohd,c
+lad,c
+sid3,n
+dohd,c
+dohd,c
+mih1,b
+rehd,bp
+0,n
+# Puisque tout ce bonheur
+# RE# MINEUR
+rehd,np
+lad,c
+si1,trb
+sold,trb
+si1,trb
+lad,np
+0,c
+sold,np
+mid,c
+fad1,b
+sold,np
+sold,c
+lad,b+c
+0,c
+# Je veux guidé par vous
+# MI# MAJEUR
+sid,n
+sid,b+c
+soldd,c
+sid,c
+dohdd,c
+rehdd3,n
+sid,n
+soldd,c
+# DO## MAJEUR
+midd,c
+fadd1,c
+soldd,c
+# MI# MAJEUR
+sid,b
+sid,n
+0,c
+# Par toi conduit ô main
+# SI# MINEUR
+sid,c
+rehd1,np
+dohdd,c
+sid,b+c
+0,c
+# MI# MAJEUR
+lad1,n
+soldd,np
+fadd,c
+# MI# MINEUR
+mid,trb
+fadd,trb
+sold1,trb
+dohd1,np
+lad,c
+sid,b+c
+0,c
+# Marcher droit
+# MI# MAJEUR
+sid,cp
+soldd,dc
+dohdd,b
+0,n
+# DO## MINEUR
+dodd,c
+redd,c
+soldd,n
+soldd,n
+dodd,c
+dodd,c
+redd,c
+fadd,c
+soldd,b
+fadd,bp
+0,n
+
+# Ou que rocs et cailloux
+# DO## MAJEUR
+soldd,np
+soldd,c
+sidd3,n
+soldd,c
+sidd3,c
+ladd,n+dc
+0,dc
+# RE## MINEUR
+ladd,c
+sid1,np
+fadd1,c
+redd,n
+sigd1,n
+lagdd,r+n
+0,b
+# Et comme pour bercer
+dohdd,n
+# RE# MINEUR
+dohd,b
+lad,n
+sold,c
+fad1,c
+mid,n
+lad,c
+sold,c
+lad,n
+sid,c
+sold,c
+lad,n
+mid,n
+0,c
+# Je chanterai
+# LA# MINEUR
+lad,c
+sid,c
+dohd1,c
+rehd,np
+red,c
+red,n
+# MI# MAJEUR
+mid,c
+soldd,c
+fadd,r
+0,b
+# Je me dis quelle mécoutera
+# SOL## MAJEUR
+soldd,np
+soldd,c
+ladd,b
+ladd,trb
+soldd,trb
+ladd,trb
+sidd,np
+soldd,c
+# FA# MAJEUR
+sold,bp
+sold,n
+lad,n
+fad,n
+dohd,bp
+0,c
+lad,c
+sold,b
+# RE# MAJEUR
+fadd,bp
+0,n
+# Et vraiment je ne veux pas
+# SOL# MINEUR
+lad,np
+lad,c
+si1,b
+si1,n
+dohd,c
+rehd,c
+mih1,b+c
+0,c
+# FA# MAJEUR
+si1,r
+lad,n
+sold,np
+fad,c
+fad,rp

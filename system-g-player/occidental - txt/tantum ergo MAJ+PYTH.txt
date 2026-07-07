@@ -1,0 +1,138 @@
+@occidental
+N = 500
+$ organ
+LA = 440*27/32
+# tantum ergo sacramentum
+sol,n
+sol,n
+lab1,n
+sol,n
+fa,n
+sib,n
+sib,n
+doh,n
+mihb,n
+mihb,b
+# veneremur cernui
+mihb,n
+fah,n
+mihb,n
+mihb,n
+reh,n
+doh,n
+mihb,n
+reh,n
+doh,n
+sib,b
+0,n
+# et antiquum documentum
+sib,n
+doh,n
+mihb,n
+reh,n
+doh,n
+sib,n
+doh,n
+sib,b
+# novo cedat ritui
+doh,n
+reh,n
+sib,n
+sib,n
+sol,n
+doh,n
+doh,b
+fa,b
+0,n
+# praestet fides supplementum
+sol,n
+sib,n
+sib,n
+sol,n
+sib,n
+doh,n
+doh,n
+sib,b
+# sensuum defectui
+doh,n
+reh,n
+sib,n
+doh,n
+sib,n
+lab1,n
+sol,n
+fa,n
+sol,r
+sol,b+c
+0,c
+# genitori genitoque
+sol,n
+sol,n
+lab1,n
+sol,n
+fa,n
+sib,n
+sib,n
+doh,n
+mihb,n
+mihb,b
+# laus et jubilatio
+mihb,n
+fah,n
+mihb,n
+mihb,n
+reh,n
+doh,n
+mihb,n
+reh,n
+doh,n
+sib,b
+0,n
+# salus honor virtus quoque
+sib,n
+doh,n
+mihb,n
+reh,n
+doh,n
+sib,n
+doh,n
+sib,b
+# sit et benedictio
+doh,n
+reh,n
+sib,n
+sib,n
+sol,n
+doh,n
+doh,b
+fa,b
+0,n
+# procedenti ab utroque
+sol,n
+sib,n
+sib,n
+sol,n
+sib,n
+doh,n
+doh,n
+sib,b
+# comparsit laudatio
+doh,n
+reh,n
+sib,n
+doh,n
+sib,n
+lab1,n
+sol,n
+fa,n
+sol,r+c
+0, c
+# amen
+doh,np
+sib,c
+lab1,c
+sol,c
+N = 700
+fa,np
+re,c
+sol,rp

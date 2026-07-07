@@ -1,0 +1,38 @@
+@occidental
+N = 700
+$ string_2
+# DO MINEUR
+# dans ce monde bruyant
+0,c
+sol,dc
+sol,dc
+doh,n
+doh,cp
+doh,dc
+doh,n
+# et sans cesse agité
+0,cp
+doh,dc
+si3,c
+doh,c
+0,c
+mihb1,dc
+reh,dc
+reh,n
+0,n
+# rien n'ébranle ton calme
+solh,n
+fah,c
+mihb1,cp
+sib,dc
+doh,c
+doh,n+2*trn
+# et ta sérénité
+reh,trn+c
+mihb1,c
+doh,trn
+doh,trn
+doh,trn
+doh,np
+0,c
+mib1,np

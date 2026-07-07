@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BioContent from '../components/BioContent.astro';
+import { useTranslations, defaultLang } from '../i18n/utils';
+
+const t = useTranslations(defaultLang);
+---
+
+<BaseLayout title={t('bio.title')} description={t('bio.subtitle')}>
+  <BioContent />
+</BaseLayout>

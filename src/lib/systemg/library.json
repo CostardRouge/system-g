@@ -1,0 +1,1364 @@
+[
+  {
+    "file": "4-gammes-majeures.txt",
+    "title": "4 gammes majeures",
+    "composer": "—",
+    "category": "repertoire"
+  },
+  {
+    "file": "4-gammes-mineures.txt",
+    "title": "4 gammes mineures",
+    "composer": "—",
+    "category": "repertoire"
+  },
+  {
+    "file": "allegri-miserere-alto.txt",
+    "title": "Miserere ALTO",
+    "composer": "Allegri",
+    "category": "repertoire"
+  },
+  {
+    "file": "allegri-miserere-basse.txt",
+    "title": "Miserere BASSE",
+    "composer": "Allegri",
+    "category": "repertoire"
+  },
+  {
+    "file": "allegri-miserere-soprano-1.txt",
+    "title": "Miserere SOPRANO 1",
+    "composer": "Allegri",
+    "category": "repertoire"
+  },
+  {
+    "file": "allegri-miserere-soprano-2.txt",
+    "title": "Miserere SOPRANO 2",
+    "composer": "Allegri",
+    "category": "repertoire"
+  },
+  {
+    "file": "allegri-miserere-tenor.txt",
+    "title": "Miserere TENOR",
+    "composer": "Allegri",
+    "category": "repertoire"
+  },
+  {
+    "file": "le-chant-des-partisans.txt",
+    "title": "Le chant des partisans",
+    "composer": "Anna Marly",
+    "category": "repertoire"
+  },
+  {
+    "file": "qu-est-devenu-alto.txt",
+    "title": "Qu'est devenu ALTO",
+    "composer": "Anonyme",
+    "category": "repertoire"
+  },
+  {
+    "file": "qu-est-devenu-baryton.txt",
+    "title": "Qu'est devenu BARYTON",
+    "composer": "Anonyme",
+    "category": "repertoire"
+  },
+  {
+    "file": "qu-est-devenu-soprano.txt",
+    "title": "Qu'est devenu SOPRANO",
+    "composer": "Anonyme",
+    "category": "repertoire"
+  },
+  {
+    "file": "belle-qui-tiens-ma-vie-alto.txt",
+    "title": "Belle qui tiens ma vie ALTO",
+    "composer": "Arbeau (Orchésographie)",
+    "category": "repertoire"
+  },
+  {
+    "file": "belle-qui-tiens-ma-vie-basse.txt",
+    "title": "Belle qui tiens ma vie BASSE",
+    "composer": "Arbeau (Orchésographie)",
+    "category": "repertoire"
+  },
+  {
+    "file": "belle-qui-tiens-ma-vie-soprano.txt",
+    "title": "Belle qui tiens ma vie SOPRANO",
+    "composer": "Arbeau (Orchésographie)",
+    "category": "repertoire"
+  },
+  {
+    "file": "belle-qui-tiens-ma-vie-tenor.txt",
+    "title": "Belle qui tiens ma vie TENOR",
+    "composer": "Arbeau (Orchésographie)",
+    "category": "repertoire"
+  },
+  {
+    "file": "ave-maria-gounod.txt",
+    "title": "Ave Maria",
+    "composer": "Bach / Gounod",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-alto.txt",
+    "title": "Cantate 142 ALTO",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-basse.txt",
+    "title": "Cantate 142 BASSE",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-piano-1.txt",
+    "title": "Cantate 142 PIANO 1",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-piano-2.txt",
+    "title": "Cantate 142 PIANO 2",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-piano-3.txt",
+    "title": "Cantate 142 PIANO 3",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-piano-4.txt",
+    "title": "Cantate 142 PIANO 4",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-soprano.txt",
+    "title": "Cantate 142 SOPRANO",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-cantate-142-tenor.txt",
+    "title": "Cantate 142 TENOR",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-drauf-schliess-alto.txt",
+    "title": "Drauf schliess ALTO",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-drauf-schliess-basse.txt",
+    "title": "Drauf schliess BASSE",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-drauf-schliess-soprano.txt",
+    "title": "Drauf schliess SOPRANO",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-drauf-schliess-tenor.txt",
+    "title": "Drauf schliess TENOR",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-messe-en-sib-agnus-dei.txt",
+    "title": "Messe en sib agnus dei",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-partita-i-double-piano.txt",
+    "title": "Partita I double piano",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-prelude-22-sib-mineur.txt",
+    "title": "Prelude 22 SIb mineur",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-quia-fecit-mihi-magna.txt",
+    "title": "Quia fecit mihi magna",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-ruht-wohl-alto.txt",
+    "title": "Ruht wohl ALTO",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-ruht-wohl-basse.txt",
+    "title": "Ruht wohl BASSE",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-ruht-wohl-soprano.txt",
+    "title": "Ruht wohl SOPRANO",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-ruht-wohl-tenor.txt",
+    "title": "Ruht wohl TENOR",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-toccata-re-min.txt",
+    "title": "Toccata re min",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "bach-violon-1042.txt",
+    "title": "Violon 1042",
+    "composer": "Bach",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-6e-symphonie.txt",
+    "title": "6e symphonie",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-allegretto-1.txt",
+    "title": "7e symphonie allegretto 1",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-allegretto-2.txt",
+    "title": "7e symphonie allegretto 2",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-allegretto-3.txt",
+    "title": "7e symphonie allegretto 3",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-allegretto-4.txt",
+    "title": "7e symphonie allegretto 4",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-compl-1.txt",
+    "title": "7e symphonie compl 1",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-compl-2.txt",
+    "title": "7e symphonie compl 2",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-compl-3.txt",
+    "title": "7e symphonie compl 3",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-compl-4.txt",
+    "title": "7e symphonie compl 4",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-7e-symphonie-compl-5.txt",
+    "title": "7e symphonie compl 5",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-lettre-a-elise.txt",
+    "title": "Lettre a elise",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-pathetique-i.txt",
+    "title": "Pathetique I",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-pathetique-ii.txt",
+    "title": "Pathetique II",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-pathetique-iii.txt",
+    "title": "Pathetique III",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-pathetique-iv.txt",
+    "title": "Pathetique IV",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-piano-empereur.txt",
+    "title": "Piano empereur",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-quatuor-la-m-menuet-v-i.txt",
+    "title": "Quatuor LA M menuet V I",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "beeth-violon-concerto.txt",
+    "title": "Violon concerto",
+    "composer": "Beethoven",
+    "category": "repertoire"
+  },
+  {
+    "file": "varietes-beeth-violon-concerto.txt",
+    "title": "Violon concerto",
+    "composer": "Beethoven",
+    "category": "varietes"
+  },
+  {
+    "file": "bellini-la-norma-casta-diva.txt",
+    "title": "La norma casta diva",
+    "composer": "Bellini",
+    "category": "repertoire"
+  },
+  {
+    "file": "bizet-carmen-habanera.txt",
+    "title": "Carmen habanera",
+    "composer": "Bizet",
+    "category": "repertoire"
+  },
+  {
+    "file": "bizet-carmen-seguidilla.txt",
+    "title": "Carmen seguidilla",
+    "composer": "Bizet",
+    "category": "repertoire"
+  },
+  {
+    "file": "bizet-carmen-toreador.txt",
+    "title": "Carmen toreador",
+    "composer": "Bizet",
+    "category": "repertoire"
+  },
+  {
+    "file": "bizet-la-jolie-fille-air-de-ralph.txt",
+    "title": "La jolie fille air de ralph",
+    "composer": "Bizet",
+    "category": "repertoire"
+  },
+  {
+    "file": "bizet-les-pecheurs-je-crois-entendre.txt",
+    "title": "Les pecheurs je crois entendre",
+    "composer": "Bizet",
+    "category": "repertoire"
+  },
+  {
+    "file": "brahms-canon-113-13-alto-i.txt",
+    "title": "Canon 113-13 - ALTO I",
+    "composer": "Brahms",
+    "category": "repertoire"
+  },
+  {
+    "file": "brahms-canon-113-13-alto-ii.txt",
+    "title": "Canon 113-13 - ALTO II",
+    "composer": "Brahms",
+    "category": "repertoire"
+  },
+  {
+    "file": "brahms-canon-113-13-soprano-i.txt",
+    "title": "Canon 113-13 - SOPRANO I",
+    "composer": "Brahms",
+    "category": "repertoire"
+  },
+  {
+    "file": "brahms-canon-113-13-soprano-ii.txt",
+    "title": "Canon 113-13 - SOPRANO II",
+    "composer": "Brahms",
+    "category": "repertoire"
+  },
+  {
+    "file": "brahms-canon-113-13-soprano-iii.txt",
+    "title": "Canon 113-13 - SOPRANO III",
+    "composer": "Brahms",
+    "category": "repertoire"
+  },
+  {
+    "file": "brahms-canon-113-13-soprano-iv.txt",
+    "title": "Canon 113-13 - SOPRANO IV",
+    "composer": "Brahms",
+    "category": "repertoire"
+  },
+  {
+    "file": "brassens-la-complainte-des-filles-de-joie.txt",
+    "title": "La complainte des filles de joie",
+    "composer": "Brassens",
+    "category": "varietes"
+  },
+  {
+    "file": "brassens-les-copains-d-abord.txt",
+    "title": "Les copains d'abord",
+    "composer": "Brassens",
+    "category": "varietes"
+  },
+  {
+    "file": "brassens-trompettes-de-la-renommee.txt",
+    "title": "Trompettes de la renommee",
+    "composer": "Brassens",
+    "category": "varietes"
+  },
+  {
+    "file": "ave-maria-caccini.txt",
+    "title": "Ave Maria",
+    "composer": "Caccini",
+    "category": "repertoire"
+  },
+  {
+    "file": "canon-de-la-paix-alto.txt",
+    "title": "Canon de la paix ALTO",
+    "composer": "Canon (trad.)",
+    "category": "repertoire"
+  },
+  {
+    "file": "canon-de-la-paix-basse.txt",
+    "title": "Canon de la paix BASSE",
+    "composer": "Canon (trad.)",
+    "category": "repertoire"
+  },
+  {
+    "file": "canon-de-la-paix-soprano.txt",
+    "title": "Canon de la paix SOPRANO",
+    "composer": "Canon (trad.)",
+    "category": "repertoire"
+  },
+  {
+    "file": "canon-de-la-paix-soprano-ii.txt",
+    "title": "Canon de la paix SOPRANO II",
+    "composer": "Canon (trad.)",
+    "category": "repertoire"
+  },
+  {
+    "file": "carl-orff-carmina-burana.txt",
+    "title": "Carmina burana",
+    "composer": "Carl Orff",
+    "category": "repertoire"
+  },
+  {
+    "file": "carl-orff-carmina-burana-pyth.txt",
+    "title": "Carmina burana PYTH",
+    "composer": "Carl Orff",
+    "category": "repertoire"
+  },
+  {
+    "file": "catalani-la-wally-ebben-ne-andro-lontana.txt",
+    "title": "La wally ebben ne andro lontana",
+    "composer": "Catalani",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-kyrie-alto-plus.txt",
+    "title": "Kyrie ALTO+",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-kyrie-basse-plus.txt",
+    "title": "Kyrie BASSE+",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-kyrie-soprano-plus.txt",
+    "title": "Kyrie SOPRANO+",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-kyrie-tenor-plus.txt",
+    "title": "Kyrie TENOR+",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-te-deum-alto.txt",
+    "title": "Te deum ALTO",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-te-deum-basse.txt",
+    "title": "Te deum BASSE",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-te-deum-soprano.txt",
+    "title": "Te deum SOPRANO",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "charpentier-te-deum-tenor.txt",
+    "title": "Te deum TENOR",
+    "composer": "Charpentier",
+    "category": "repertoire"
+  },
+  {
+    "file": "cl-francois-comme-d-habitude.txt",
+    "title": "Comme d'habitude",
+    "composer": "Claude François",
+    "category": "varietes"
+  },
+  {
+    "file": "ronsard-costeley-mignonne-alto.txt",
+    "title": "Mignonne ALTO",
+    "composer": "Costeley / Ronsard",
+    "category": "repertoire"
+  },
+  {
+    "file": "ronsard-costeley-mignonne-basse.txt",
+    "title": "Mignonne BASSE",
+    "composer": "Costeley / Ronsard",
+    "category": "repertoire"
+  },
+  {
+    "file": "ronsard-costeley-mignonne-soprano.txt",
+    "title": "Mignonne SOPRANO",
+    "composer": "Costeley / Ronsard",
+    "category": "repertoire"
+  },
+  {
+    "file": "ronsard-costeley-mignonne-tenor.txt",
+    "title": "Mignonne TENOR",
+    "composer": "Costeley / Ronsard",
+    "category": "repertoire"
+  },
+  {
+    "file": "l-internationale.txt",
+    "title": "L'internationale",
+    "composer": "Degeyter",
+    "category": "repertoire"
+  },
+  {
+    "file": "delibes-lakme-duo-des-fleurs-lakme.txt",
+    "title": "Lakme duo des fleurs - Lakme",
+    "composer": "Delibes",
+    "category": "repertoire"
+  },
+  {
+    "file": "delibes-lakme-duo-des-fleurs-mallika.txt",
+    "title": "Lakme duo des fleurs - Mallika",
+    "composer": "Delibes",
+    "category": "repertoire"
+  },
+  {
+    "file": "duparc-chanson-triste.txt",
+    "title": "Chanson triste",
+    "composer": "Duparc",
+    "category": "repertoire"
+  },
+  {
+    "file": "duparc-invitation-au-voyage.txt",
+    "title": "Invitation au voyage",
+    "composer": "Duparc",
+    "category": "repertoire"
+  },
+  {
+    "file": "dvorak-rusalka-moon-song.txt",
+    "title": "Rusalka (moon song)",
+    "composer": "Dvořák",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-apres-un-reve.txt",
+    "title": "Apres un reve",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-au-bord-de-l-eau.txt",
+    "title": "Au bord de l'eau",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-automne.txt",
+    "title": "Automne",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-clair-de-lune.txt",
+    "title": "Clair de lune",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-la-lune-blanche.txt",
+    "title": "La lune blanche",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-les-berceaux.txt",
+    "title": "Les berceaux",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-puisque-l-aube.txt",
+    "title": "Puisque l'aube",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-venise.txt",
+    "title": "Venise",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "faure-vocalise-re-mineur.txt",
+    "title": "Vocalise RE mineur",
+    "composer": "Fauré",
+    "category": "repertoire"
+  },
+  {
+    "file": "gluck-orphee-j-ai-perdu.txt",
+    "title": "Orphee j'ai perdu",
+    "composer": "Gluck",
+    "category": "repertoire"
+  },
+  {
+    "file": "gounod-juliette-je-veux-vivre.txt",
+    "title": "Juliette je veux vivre",
+    "composer": "Gounod",
+    "category": "repertoire"
+  },
+  {
+    "file": "handel-alcina-air-de-morgana.txt",
+    "title": "Alcina air de morgana",
+    "composer": "Haendel",
+    "category": "repertoire"
+  },
+  {
+    "file": "handel-furibondo.txt",
+    "title": "Furibondo",
+    "composer": "Haendel",
+    "category": "repertoire"
+  },
+  {
+    "file": "idir-a-vava-inouva-kabyle.txt",
+    "title": "A vava inouva (kabyle)",
+    "composer": "Idir",
+    "category": "varietes"
+  },
+  {
+    "file": "kosma-les-feuilles-mortes.txt",
+    "title": "Les feuilles mortes",
+    "composer": "Kosma (Prévert)",
+    "category": "varietes"
+  },
+  {
+    "file": "b-streisand-the-summer-knows.txt",
+    "title": "The summer knows",
+    "composer": "M. Legrand (B. Streisand)",
+    "category": "varietes"
+  },
+  {
+    "file": "monnot-piaf-milord.txt",
+    "title": "Milord",
+    "composer": "M. Monnot (Piaf)",
+    "category": "varietes"
+  },
+  {
+    "file": "massenet-air-d-herode.txt",
+    "title": "Air d'herode",
+    "composer": "Massenet",
+    "category": "repertoire"
+  },
+  {
+    "file": "massenet-elegie.txt",
+    "title": "Elegie",
+    "composer": "Massenet",
+    "category": "repertoire"
+  },
+  {
+    "file": "leforestier-education-sentimentale.txt",
+    "title": "Education sentimentale",
+    "composer": "Maxime Le Forestier",
+    "category": "varietes"
+  },
+  {
+    "file": "mozart-gasparini-adoramus-te-alto.txt",
+    "title": "Adoramus te ALTO",
+    "composer": "Mozart / Gasparini",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-gasparini-adoramus-te-basse.txt",
+    "title": "Adoramus te BASSE",
+    "composer": "Mozart / Gasparini",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-gasparini-adoramus-te-soprano.txt",
+    "title": "Adoramus te SOPRANO",
+    "composer": "Mozart / Gasparini",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-gasparini-adoramus-te-tenor.txt",
+    "title": "Adoramus te TENOR",
+    "composer": "Mozart / Gasparini",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-alleluia.txt",
+    "title": "Alleluia",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-ave-verum-alto.txt",
+    "title": "Ave verum ALTO",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-ave-verum-basse.txt",
+    "title": "Ave verum BASSE",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-ave-verum-soprano.txt",
+    "title": "Ave verum SOPRANO",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-ave-verum-tenor.txt",
+    "title": "Ave verum TENOR",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-exultate-jubilate.txt",
+    "title": "Exultate jubilate",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-flute-k285-adagio.txt",
+    "title": "Flute K285 adagio",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-la-ci-darem.txt",
+    "title": "La ci darem",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-marche-turque.txt",
+    "title": "Marche turque",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-quatuor-menuet-v-i.txt",
+    "title": "Quatuor menuet V I",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-reine-de-la-nuit.txt",
+    "title": "Reine de la nuit",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-requiem-kyrie.txt",
+    "title": "Requiem kyrie",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-symphonie-40-1.txt",
+    "title": "Symphonie 40 - 1",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "mozart-voi-che-sapete.txt",
+    "title": "Voi che sapete",
+    "composer": "Mozart",
+    "category": "repertoire"
+  },
+  {
+    "file": "calme-et-serenite-alto-melodie.txt",
+    "title": "Calme et serenite ALTO melodie",
+    "composer": "Nabih Gédéon",
+    "category": "varietes"
+  },
+  {
+    "file": "calme-et-serenite-basse.txt",
+    "title": "Calme et serenite BASSE",
+    "composer": "Nabih Gédéon",
+    "category": "varietes"
+  },
+  {
+    "file": "calme-et-serenite-soprano.txt",
+    "title": "Calme et serenite SOPRANO",
+    "composer": "Nabih Gédéon",
+    "category": "varietes"
+  },
+  {
+    "file": "calme-et-serenite-tenor.txt",
+    "title": "Calme et serenite TENOR",
+    "composer": "Nabih Gédéon",
+    "category": "varietes"
+  },
+  {
+    "file": "gedeon-noel-noel.txt",
+    "title": "Noel noel",
+    "composer": "Nabih Gédéon",
+    "category": "repertoire"
+  },
+  {
+    "file": "varietes-gedeon-noel-noel.txt",
+    "title": "Noel noel",
+    "composer": "Nabih Gédéon",
+    "category": "varietes"
+  },
+  {
+    "file": "noel-noel.txt",
+    "title": "Noel noel",
+    "composer": "Nabih Gédéon",
+    "category": "varietes"
+  },
+  {
+    "file": "offenbach-barcarole-basses.txt",
+    "title": "Barcarole BASSES",
+    "composer": "Offenbach",
+    "category": "repertoire"
+  },
+  {
+    "file": "offenbach-barcarole-giulietta.txt",
+    "title": "Barcarole GIULIETTA",
+    "composer": "Offenbach",
+    "category": "repertoire"
+  },
+  {
+    "file": "offenbach-barcarole-nicklausse.txt",
+    "title": "Barcarole NICKLAUSSE",
+    "composer": "Offenbach",
+    "category": "repertoire"
+  },
+  {
+    "file": "offenbach-barcarole-soprani.txt",
+    "title": "Barcarole SOPRANI",
+    "composer": "Offenbach",
+    "category": "repertoire"
+  },
+  {
+    "file": "offenbach-barcarole-tenors-1.txt",
+    "title": "Barcarole TENORS 1",
+    "composer": "Offenbach",
+    "category": "repertoire"
+  },
+  {
+    "file": "offenbach-barcarole-tenors-2.txt",
+    "title": "Barcarole TENORS 2",
+    "composer": "Offenbach",
+    "category": "repertoire"
+  },
+  {
+    "file": "offenbach-les-oiseaux.txt",
+    "title": "Les oiseaux",
+    "composer": "Offenbach",
+    "category": "repertoire"
+  },
+  {
+    "file": "piaf-la-vie-en-rose.txt",
+    "title": "La vie en rose",
+    "composer": "Piaf",
+    "category": "varietes"
+  },
+  {
+    "file": "ponchielli-la-gioconda-suicidio.txt",
+    "title": "La gioconda suicidio",
+    "composer": "Ponchielli",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-le-sommeil.txt",
+    "title": "Le sommeil",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-priez-pour-paix.txt",
+    "title": "Priez pour paix",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-salve-regina-alto.txt",
+    "title": "Salve regina ALTO",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-salve-regina-basse.txt",
+    "title": "Salve regina BASSE",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-salve-regina-soprano.txt",
+    "title": "Salve regina SOPRANO",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-salve-regina-tenor.txt",
+    "title": "Salve regina TENOR",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-timor-et-tremor-alto-i.txt",
+    "title": "Timor et tremor ALTO I",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-timor-et-tremor-alto-ii.txt",
+    "title": "Timor et tremor ALTO II",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-timor-et-tremor-basse-i.txt",
+    "title": "Timor et tremor BASSE I",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-timor-et-tremor-basse-ii.txt",
+    "title": "Timor et tremor BASSE II",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-timor-et-tremor-soprano-i.txt",
+    "title": "Timor et tremor SOPRANO I",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-timor-et-tremor-soprano-ii.txt",
+    "title": "Timor et tremor SOPRANO II",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-timor-et-tremor-tenor.txt",
+    "title": "Timor et tremor TENOR",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-vinea-mea-alto-i.txt",
+    "title": "Vinea mea ALTO I",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-vinea-mea-alto-ii.txt",
+    "title": "Vinea mea ALTO II",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-vinea-mea-soprano-i.txt",
+    "title": "Vinea mea SOPRANO I",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-vinea-mea-soprano-ii.txt",
+    "title": "Vinea mea SOPRANO II",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "poulenc-vinea-mea-tenor.txt",
+    "title": "Vinea mea TENOR",
+    "composer": "Poulenc",
+    "category": "repertoire"
+  },
+  {
+    "file": "puccini-manon-sola-perduta.txt",
+    "title": "Manon sola perduta",
+    "composer": "Puccini",
+    "category": "repertoire"
+  },
+  {
+    "file": "puccini-o-mio-babbino-caro.txt",
+    "title": "O mio babbino caro",
+    "composer": "Puccini",
+    "category": "repertoire"
+  },
+  {
+    "file": "rachmaninoff-vocalise-34-14-sim.txt",
+    "title": "Vocalise 34-14 SIm",
+    "composer": "Rachmaninov",
+    "category": "repertoire"
+  },
+  {
+    "file": "ravel-bolero.txt",
+    "title": "Bolero",
+    "composer": "Ravel",
+    "category": "repertoire"
+  },
+  {
+    "file": "hahn-a-chloris.txt",
+    "title": "A chloris",
+    "composer": "Reynaldo Hahn",
+    "category": "repertoire"
+  },
+  {
+    "file": "reynaldo-hahn-paysage.txt",
+    "title": "Paysage",
+    "composer": "Reynaldo Hahn",
+    "category": "repertoire"
+  },
+  {
+    "file": "korsakov-vol-du-bourdon.txt",
+    "title": "Vol du bourdon",
+    "composer": "Rimski-Korsakov",
+    "category": "repertoire"
+  },
+  {
+    "file": "robilliard-suscipe-alto.txt",
+    "title": "Suscipe ALTO",
+    "composer": "Robilliard",
+    "category": "repertoire"
+  },
+  {
+    "file": "robilliard-suscipe-basse.txt",
+    "title": "Suscipe BASSE",
+    "composer": "Robilliard",
+    "category": "repertoire"
+  },
+  {
+    "file": "robilliard-suscipe-soprano.txt",
+    "title": "Suscipe SOPRANO",
+    "composer": "Robilliard",
+    "category": "repertoire"
+  },
+  {
+    "file": "robilliard-suscipe-tenor.txt",
+    "title": "Suscipe TENOR",
+    "composer": "Robilliard",
+    "category": "repertoire"
+  },
+  {
+    "file": "roland-de-lassus-nos-qui-sumus-alto.txt",
+    "title": "Nos qui sumus ALTO",
+    "composer": "Roland de Lassus",
+    "category": "repertoire"
+  },
+  {
+    "file": "roland-de-lassus-nos-qui-sumus-basse.txt",
+    "title": "Nos qui sumus BASSE",
+    "composer": "Roland de Lassus",
+    "category": "repertoire"
+  },
+  {
+    "file": "roland-de-lassus-nos-qui-sumus-soprano.txt",
+    "title": "Nos qui sumus SOPRANO",
+    "composer": "Roland de Lassus",
+    "category": "repertoire"
+  },
+  {
+    "file": "roland-de-lassus-nos-qui-sumus-tenor.txt",
+    "title": "Nos qui sumus TENOR",
+    "composer": "Roland de Lassus",
+    "category": "repertoire"
+  },
+  {
+    "file": "rossini-giusto-ciel.txt",
+    "title": "Giusto ciel",
+    "composer": "Rossini",
+    "category": "repertoire"
+  },
+  {
+    "file": "la-marseillaise.txt",
+    "title": "La marseillaise",
+    "composer": "Rouget de Lisle",
+    "category": "repertoire"
+  },
+  {
+    "file": "ave-maria-schubert.txt",
+    "title": "Ave Maria",
+    "composer": "Schubert",
+    "category": "repertoire"
+  },
+  {
+    "file": "schubert-der-wanderer.txt",
+    "title": "Der wanderer",
+    "composer": "Schubert",
+    "category": "repertoire"
+  },
+  {
+    "file": "schubert-serenade-standchen.txt",
+    "title": "Serenade-ständchen",
+    "composer": "Schubert",
+    "category": "repertoire"
+  },
+  {
+    "file": "joyeux-anniversaire.txt",
+    "title": "Joyeux anniversaire",
+    "composer": "Traditionnel",
+    "category": "repertoire"
+  },
+  {
+    "file": "tantum-ergo-maj-pluspyth.txt",
+    "title": "Tantum ergo MAJ+PYTH",
+    "composer": "Traditionnel",
+    "category": "repertoire"
+  },
+  {
+    "file": "trenet-la-mer.txt",
+    "title": "La mer",
+    "composer": "Trenet",
+    "category": "varietes"
+  },
+  {
+    "file": "vaccai-1.txt",
+    "title": "1",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-10.txt",
+    "title": "10",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-11.txt",
+    "title": "11",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-12.txt",
+    "title": "12",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-13.txt",
+    "title": "13",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-14.txt",
+    "title": "14",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-15.txt",
+    "title": "15",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-16.txt",
+    "title": "16",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-17.txt",
+    "title": "17",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-18.txt",
+    "title": "18",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-19.txt",
+    "title": "19",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-2.txt",
+    "title": "2",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-20.txt",
+    "title": "20",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-21.txt",
+    "title": "21",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-22.txt",
+    "title": "22",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-3.txt",
+    "title": "3",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-4.txt",
+    "title": "4",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-5.txt",
+    "title": "5",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-6.txt",
+    "title": "6",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-8.txt",
+    "title": "8",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "vaccai-9.txt",
+    "title": "9",
+    "composer": "Vaccai",
+    "category": "vaccai"
+  },
+  {
+    "file": "verdi-aida-ritorna-vincitor.txt",
+    "title": "Aida ritorna vincitor",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "verdi-ave-maria-alto.txt",
+    "title": "Ave maria ALTO",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "verdi-ave-maria-basse.txt",
+    "title": "Ave maria BASSE",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "verdi-ave-maria-soprano.txt",
+    "title": "Ave maria SOPRANO",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "verdi-ave-maria-tenor.txt",
+    "title": "Ave maria TENOR",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "verdi-il-trovatore-d-amor-sull-ali-rosee.txt",
+    "title": "Il trovatore d'amor sull'ali rosee",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "verdi-nabucco-va-pensiero.txt",
+    "title": "Nabucco va pensiero",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "verdi-traviata-sempre-libera.txt",
+    "title": "Traviata sempre libera",
+    "composer": "Verdi",
+    "category": "repertoire"
+  },
+  {
+    "file": "vittoria-o-vos-omnes-alto.txt",
+    "title": "O vos omnes ALTO",
+    "composer": "Victoria",
+    "category": "repertoire"
+  },
+  {
+    "file": "vittoria-o-vos-omnes-basse.txt",
+    "title": "O vos omnes BASSE",
+    "composer": "Victoria",
+    "category": "repertoire"
+  },
+  {
+    "file": "vittoria-o-vos-omnes-soprano.txt",
+    "title": "O vos omnes SOPRANO",
+    "composer": "Victoria",
+    "category": "repertoire"
+  },
+  {
+    "file": "vittoria-o-vos-omnes-tenor.txt",
+    "title": "O vos omnes TENOR",
+    "composer": "Victoria",
+    "category": "repertoire"
+  }
+]

@@ -1,0 +1,106 @@
+@occidental
+N = 1100
+$ string_2
+# LA b MAJEUR
+# o mio babbino caro mi piace è bello bello
+lab,c
+lab,c
+lab,c
+doh,n
+sol3,c
+fa,np
+mib,n+dc
+0,dc
+lab,c
+sib,c
+doh,c
+lab,n
+lahb,c
+mihb,np
+mihb,cp
+0,dc
+# vo'andare in porta rossa a comperar l'anello
+doh,c
+mihb,n
+sib,c
+rehb,n
+doh,c
+lab,np
+lab,n+dc
+0,dc
+lab,c
+sib,c
+doh,c
+lab,n
+sol3,c
+sib,np
+sib,cp
+0,dc
+# si si ci voglio andare e se l'amassi indarno
+mib,c
+lab,np
+doh,c
+lab,c
+sol3,c
+fa,np
+mib,n+dc
+0,dc
+lab,c
+sib,c
+doh,c
+lab,n
+lahb,c
+mihb,np
+mihb,cp
+0,dc
+# andrei sul ponte vecchio ma per butar mi in arno
+fah,c
+lahb,n
+fah,c
+mihb,n
+rehb,c
+mihb,np
+doh,n+dc
+0,dc
+lab,c
+sib,c
+doh,c
+lab,n
+fa,c
+lab,np
+lab,c
+0,c
+# mi struggo e mi tormento o dio vorrei morir
+fah,c
+lahb,n
+fah,c
+mihb,n
+rehb,c
+lahb,n
+mihb,c
+rehb,cp
+0,dc
+doh,c
+fah,np
+fah,np
+fah,n
+rehb,c
+doh,n
+sib,c
+lab,n
+0,b
+# babbo pieta pieta (2)
+lab,c
+sib,c
+doh,c
+lab,n
+lahb,c
+mihb,np
+mihb,np
+0,c
+lab,c
+sib,c
+doh,c
+lab,n
+fa,c
+lab,n

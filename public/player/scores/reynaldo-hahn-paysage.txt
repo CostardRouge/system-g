@@ -1,0 +1,239 @@
+@occidental
+N = 750
+$ piano_3
+# DO MAJEUR
+dog,c
+solg,c
+mi,c
+solg,c
+dog,c
+solg,c
+mi,c
+solg,c
+dog,c
+solg,c
+mi,c
+solg,c
+dog,c
+solg,c
+mi,c
+solg,c
+dog,c
+solg,c
+
+# à deux pas de la mer qu'on entend bourdonner
+# je sais un coin perdu de la terre bretonne
+$ string_2
+mi,c
+fa1,c
+sol,n
+la,c
+doh,c
+si3,n
+la,c
+sol,c
+la,n
+mi,c
+mi,c
+sol,r
+0,c
+re,c
+re,np
+do,c
+re,c
+mi,c
+re,n
+re,c
+re,c
+do,n
+re,c
+mi,c
+sol,b
+sol,n
+0,np
+
+# où j'aurais tant aimé pendant les jours d'automne
+# chère à vous emmener
+mih,c
+reh,c
+doh,c
+si3,c
+sol,c
+la,np
+doh,c
+si3,c
+la,c
+sol,c
+mi,c
+sol,n
+sol,c
+0,c
+la,b
+sol,n
+0,n
+mi,n
+re,n
+re,c
+mi,c
+do,bp
+
+$ piano_3
+la,c
+doh,c
+si3,n
+la,c
+sol,c
+la,n
+mi,n
+sol,c
+
+# des chaînes faisant cercle autour d'une fontaine
+# quelques hêtres épars un vieux moulin désert
+$ string_2
+# MI MAJEUR
+si,c
+si,np
+si,c
+si,c
+si,c
+si,np
+si,c
+si,n
+si,trn
+si,trn
+si,trn
+si,b
+si,c
+0,c
+si,c
+si,c
+
+# RE MINEUR
+sib1,n
+sib1,c
+sib1,c
+sib1,b
+0,c
+
+# SOL MINEUR
+la,c
+la,c
+la,c
+la,np
+la,c
+
+# REb MAJEUR
+lab,r+n
+
+$ piano_3
+sib,c
+lab,c
+sib,n
+
+# une source dont l'eau claire a le reflet vert
+# de vos yeux de sirène
+# FA MAJEUR
+$ string_2
+fa,c
+fa,c
+doh,b
+doh,c
+0,c
+doh,c
+doh,c
+doh,b
+doh,c
+doh,c
+doh,c
+doh,c
+fa,n
+fa,c
+fa,c
+fa,n
+fa,c
+fa,c
+la,r
+la,n
+0,r
+
+# la mésange au matin sous la feuille jaunie
+# viendrait chanter pour nous
+$ string_2
+mi,c
+fa1,c
+sol,n
+la,c
+doh,c
+si3,n
+la,c
+sol,c
+la,n
+mi,c
+mi,c
+sol,bpp
+0,n
+sol,c
+sol,c
+sib1,c
+sib1,np
+la,c
+doh,r+n
+
+$ piano_3
+reh,c
+doh,c
+reh,n
+la,n
+doh,n
+
+# et la mer nuit et jour viendrait accompagber
+# nos caresses d'amour de sa basse infinie
+$ string_2
+mi,c
+mi,c
+la,b
+0,n
+mi,c
+mi,c
+sol,b
+0,c
+mi,c
+doh,np
+si3,c
+la,c
+si3,c
+sol,n
+do,c
+re,c
+mi,n
+sol,c
+la,c
+mih,b
+mih,b
+0,n
+do,c
+re,c
+mi,n
+sol,c
+la,c
+reh,b
+reh,b
+doh,n
+
+$ piano_3
+mi,c
+fa,c
+sol,n
+la,c
+doh,c
+si3,n
+la,c
+sol,c
+la,n
+mi,n
+sol,b
+lah,n
+mih,n
+solh,r
+0,n
+dohh,bp

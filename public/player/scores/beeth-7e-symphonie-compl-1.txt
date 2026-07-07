@@ -1,0 +1,47 @@
+# compl 1
+N = 680
+$  string_2
+la,n+trn
+si,trn
+dohd3,trn
+dohd3,c
+reh,c
+reh,n
+reh,n+trn
+mih,trn
+fah1,trn
+fah1,c
+mih,c
+mih,n
+la,trn
+la,trn
+la,trn
+la,trn
+si,trn
+dohd3,trn
+dohd3,trn
+reh,trn
+reh,trc
+0,trc
+reh,n
+reh,trn
+reh,trn
+reh,trn
+reh,trn
+mih,trn
+fah1,trn
+fah1,trn
+mih,trn
+mih,trc
+0,trc
+0,n
+mih,trn
+fah1,trn
+fah1,trc
+0,trc
+0,n
+fah1,trn
+mih,trn
+mih,trc
+0,trc
+0,n

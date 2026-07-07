@@ -1,0 +1,178 @@
+@occidental
+N = 600
+$ string_2
+do,c
+fa,c
+sol,dc
+fa,dc
+sol,dc
+fa,dc
+mi3,dc
+fa,dc
+la,n
+la,n
+sol,c
+la,dc
+sol,dc
+la,dc
+sol,dc
+fad3,dc
+sol,dc
+sib1,n
+0,n
+la,c
+reh,dc
+doh,dc
+reh,dc
+doh,dc
+reh,dc
+doh,dc
+fa,n
+la,n
+sol,c
+la,dc
+sol,dc
+la,dc
+sol,dc
+fad3,dc
+sol,dc
+do,n
+0,c
+do,c
+la,c
+sib1,dc
+la,dc
+sib1,dc
+la,dc
+sold3,dc
+la,dc
+doh,n
+fa,c
+fa,c
+fa,c
+sol,dc
+fa,dc
+sol,dc
+fa,dc
+sol,dc
+fa,dc
+reh,n
+0,n
+reh,c
+doh,c
+fa,cp
+sol,dc
+la,cp
+sib1,dc
+sol,cp
+la,dc
+fa,n
+0,b+c
+fa,c
+fa,c
+sol,dc
+ fa,dc
+ sol,dc
+ fa,dc
+ sol,dc
+ fa,dc
+ mihb1,n
+ fa,n
+ fa,c
+ sol,dc
+ fa,dc
+ sol,dc
+ fa,dc
+ sol,dc
+ fa,dc
+ reh,n
+ 0,n
+ re,c
+ mib1,dc
+ re,dc
+ mib1,dc
+ re,dc
+ mib1,dc
+ re,dc
+ doh,n
+ re,n
+ re,c
+ mib1,dc
+ re,dc
+ mib1,dc
+ re,dc
+ mib1,dc
+ re,dc
+ sib1,n
+ 0,c
+ sib1,c
+ doh,dc
+ sib1,dc
+ doh,dc
+ sib1,dc
+ la,dc
+ sol,dc
+ la,dc
+ sol,dc
+ fa,dc
+ mi3,dc
+ fa,dc
+ mi3,dc
+ re,dc
+ do,dc
+ re,dc
+ do,dc
+ do,n
+ doh,n
+ mih,c
+ reh,c
+ sib1,c
+ sol,c
+ sol,c
+ fa,c
+ mi3,c
+ fa,c
+ la,c
+ sol,c
+ fa,c
+ sol,c
+ la,b
+ 0,np
+ la,c
+ la,c
+ sib1,dc
+ la,dc
+ sib1,dc
+ la,dc
+ sib1,dc
+ la,dc
+ sib1,dc
+ la,dc
+ sib1,dc
+ la,dc
+ sib1,dc
+ la,dc
+ sib1,dc
+ la,dc
+ la,n
+ reh,c
+ 0,c
+ reh,n
+ mih3,c
+ fah,c
+ doh,c
+ reh,dc
+ doh,dc
+ reh,dc
+ doh,dc
+ reh,dc
+ doh,dc
+ reh,dc
+ doh,dc
+ reh,dc
+ doh,dc
+ reh,dc
+ doh,dc
+ si3,dc
+ doh,dc
+ fa,n

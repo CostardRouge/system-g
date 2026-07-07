@@ -1,0 +1,171 @@
+@occidental
+N = 700
+$ cello
+# GIULIETTA
+# RE MAJEUR
+# le temps fuit
+la,n
+si,c
+si,n
+dohd3,c
+dohd3,n
+reh,c
+reh,n
+dohd3,c
+dohd3,n
+si,c
+si,dc
+dohd3,dc
+si,c
+la,c
+la,np
+la,n
+0,c
+# loin de cet heureux séjour
+la,n
+si,c
+si,n
+dohd3,c
+dohd3,n
+reh,c
+reh,n
+dohd3,c
+dohd3,n
+si,c
+si,dc
+dohd3,dc
+si,c
+la,c
+la,np+n
+# SOL MAJEUR
+# zéphirs embrasés
+la,c
+la,n
+si,c
+si,n
+doh1,c
+reh,bp+c
+# versez-nous vos caresses
+la,c
+si,c
+doh1,c
+si,c
+la,c
+si,np+c
+0,c
+# zéphirs embbrasés
+# LA MAJEUR
+si,c
+si,n
+dohd,c
+dohd,n
+reh1,c
+mih,bp+c
+si,c
+dohd,c
+reh1,c
+dohd,c
+si,c
+la,n
+0,c+np
+# vos baisers
+la,np+c
+dohd,c
+si,c
+la,n
+0,c+np
+la,np+c
+dohd,c
+si,c
+la,n
+0,c
+# RE MAJEUR
+la,np+bp-qc
+0,qc
+# belle nuit
+fad,n
+sol1,c
+sol1,n
+fad,c
+fad,c
+mi,c
+sol1,c
+sol1,n
+fad,c
+fad,c
+mi,c
+sol1,c
+sol1,n
+fad,c
+fad,np
+fad,n
+0,c
+# nuit plus douce
+fad,n
+sol1,c
+sol1,n
+fad,c
+fad,c
+mi,c
+sol1,c
+sol1,n
+fad,c
+fad,c
+mi,c
+sol1,c
+sol1,n
+fad,c
+# MI MINEUR
+la,bp
+0,bp+np
+la,np
+0,c
+# SI MINEUR
+# souris à nos ivresses
+la,c
+si,c
+dohd,c
+reh1,c
+mih,c
+# MI MINEUR
+fahd,bp+c
+# RE MAJEUR
+mih,c
+reh,c
+dohd3,c
+reh,c
+si,c
+la,np+n
+# ô nuit d'amour
+si,c
+dohd3,np+n
+dohd3,c
+reh,n
+0,c
+# ah ah ah
+la,c
+reh,n
+la,c
+mih,n+np
+reh,c
+fahd,n-qc
+0,qc
+la,c
+reh,n
+la,c
+mih,n+np
+reh,c
+fahd,n+np
+reh,c
+fahd,n+np
+la,c
+reh,n+np
+fad,c
+la,n+np
+la,np
+fad,np
+re,bp
+re,bp
+re,bp
+re,r
+0,np

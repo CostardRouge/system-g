@@ -1,0 +1,327 @@
+@occidental
+N = 780
+$ string_2
+# MI MINEUR
+# oh je voudrais tant que tu te souviennes
+mi,trn
+fad,trn
+sol1,trn
+mi,trn
+fad,trn
+sol1,trn
+mi,trn
+sol1,trn
+mi,trn
+fad,n
+0,dc
+# des jours heureux où nous étions amis
+fad,trn
+sol1,trn
+la,trn
+fad,trn
+sol1,trn
+la,trn
+fad,trn
+la,trn
+sol1,trn
+si,n
+0,dc
+# en ce temps-là la vie était plus belle
+si,trn
+doh1,trn
+reh,trn
+si,trn
+doh1,trn
+reh,trn
+si,trn
+reh,trn
+doh1,trn
+la,n
+0,dc
+# et le soleil plus brûlant qu'aujourd'hui
+fad,trn
+la,trn
+sol1,trn
+fad,trn
+la,trn
+sol1,trn
+fad,trn
+sol1,trn
+mi,trn
+fad,n
+0,c
+$ brass_2
+# les feuilles mortes se ramassent à la pelle
+mi,trn
+fad,trn
+sol1,trn
+mi,trn
+fad,trn
+sol1,trn
+mi,trn
+sol1,trn
+mi,trn
+fad,n
+# tu vois je n'ai pas oublié
+fad,trn
+fad,trn
+sol1,trn
+la,trn
+fad,trn
+sol1,trn
+la,trn
+si,b
+0,dc
+# les feuilles mortes se ramassent à la pelle
+si,trn
+reh,trn
+doh1,trn
+si,trn
+reh,trn
+doh1,trn
+si,trn
+reh,trn
+doh1,trn
+la,n
+0,dc
+# les souvenirs et les regrets aussi
+fad,trn
+la,trn
+sol1,trn
+fad,trn
+la,trn
+sol1,trn
+fad,trn
+sol1,trn
+mi,trn
+fad,2*trn
+0,trn
+$ flute
+# et le vent du nord les emporte
+fad,trn
+mi,trn
+fad,trn
+sol1,trn
+si,trn
+sol1,trn
+fad,trn
+mi,n
+fad,n
+# dans la nuit froide de l'oubli
+mi,trn
+fad,trn
+sol1,trn
+mih,2*trn
+reh,trn
+doh1,trn
+si,2*trn
+0,trn
+# tu vois je n'ai pas oublié
+si,trn
+doh1,trn
+la,trn
+sol1,trn
+fad,trn
+sol1,trn
+la,trn
+si,n+qc
+# la chanson que tu me chantais
+si,cp
+si,dc
+lad3,n+qc
+sol1,trn
+sol1,trn
+fad,trn
+mi,trn
+fad,np
+0,c
+N = 615
+$ string_2
+# c'est une chanson qui nous ressemble
+mi,c+tc
+fad,c+qc
+sol1,c+qc
+doh1,b+c
+0,dc
+re,c
+mi,c
+fad,c
+si,n
+si,np
+0,dc
+# toi tu m'aimais et je t'aimais
+do1,c
+re,c
+mi,c
+la,b+c
+0,dc
+sig,c
+dod,c
+red3,c
+sol1,b
+0,c
+# et nous vivions tous deux ensemble
+mi,c
+fad,c
+sol1,c
+doh1,b+c
+0,dc
+re,c
+mi,c
+fad,c
+si,n
+si,np
+0,dc
+# toi qui m'aimais moi qui t'aimais
+do1,c
+re,c
+mi,c
+la,b+c
+0,dc
+fad,c
+la,c
+sol1,c
+mi,b
+0,n
+$ guitar_1
+# mais la vie sépare ceux qui s'aiment
+red3,c
+mi,c
+fad,c
+sig,c
+fad,b
+mi,c
+fad,c
+sol1,n
+sol1,np
+# tout doucement sans faire de bruit
+sol1,c
+fad,c
+sol1,c
+la,b+c
+re,cp
+reh,b
+doh1,n
+si,b+c
+0,c
+$ string_2
+# et la mer efface sur le sable
+lad3,c
+si,c
+doh1,c
+doh1,c
+la,c
+la,c
+fad,n
+doh1,n
+si,tc
+doh1,tc
+si,cp
+si,b
+0,dc
+# les pas des amants désunis
+mi,n
+la,n
+la,c
+sol1,c
+fad,n
+sol1,c
+sig,c
+mi,b
+0,c
+$ brass_2
+# c'est une chanson qui nous ressemble
+mi,c
+fad,c
+sol1,c
+doh1,b+c
+0,dc
+re,c
+mi,c
+fad,c
+si,n
+si,np
+0,dc
+# toi tu m'aimais et je t'aimais
+do1,c
+re,c
+mi,c
+la,b+c
+0,dc
+sig,c
+dod,c
+red3,c
+sol1,b
+0,c
+$ string_2
+# et nous vivions tous deux ensemble
+mi,c
+fad,c
+sol1,c
+doh1,b+c
+0,dc
+re,c
+mi,c
+fad,c
+si,n
+si,np
+0,dc
+# toi qui m'aimais moi qui t'aimais
+do1,c
+re,c
+mi,c
+la,b+c
+0,dc
+fad,c
+la,c
+sol1,c
+mi,b
+0,n
+$ guitar_1
+# mais la vie sépare ceux qui s'aiment
+red3,c
+mi,c
+fad,c
+sig,c
+fad,b
+mi,c
+fad,c
+sol1,n
+sol1,np
+# tout doucement sans faire de bruit
+sol1,c
+fad,c
+sol1,c
+la,b+c
+re,cp
+reh,b
+doh1,n
+si,b+c
+0,c
+$ string_2
+# et la mer efface sur le sable
+lad3,c
+si,c
+doh1,c
+doh1,c
+la,c
+la,c
+fad,n
+doh1,n
+si,tc
+doh1,tc
+si,cp
+si,b
+0,dc
+$ organ
+N = 700
+# les pas des amants désunis
+mi,n
+la,n
+la,c
+sol1,c
+N = 850
+fad,n
+sol1,c
+sig,c
+mi,bp

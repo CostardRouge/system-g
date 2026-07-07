@@ -1,0 +1,476 @@
+@ occidental
+N = 1000
+$ string_2
+# FA MINEUR
+# vanne lascia mi
+sol,c
+fa,dc
+0,dc
+sib,cp
+lab1,dc
+lab1,n
+0,n
+# ne timor di me ti prenda
+doh,cp
+doh,dc
+doh,cp
+doh,dc
+doh,cp
+sib,dc
+sib,c
+lab1,c
+# salvarlo io potro forse
+0,c
+lab1,c
+lab1,c
+lab1,c
+lab1,c
+sol,c
+sol,c
+fa,c
+0,b
+$ piano_2
+sib,trn
+doh,trn
+rehb1,trn
+doh,trn
+sib,trn
+lab1,trn
+sol,trn
+lab1,trn
+sib,trn
+lab1,n
+sol,n
+fa,n
+$ string_2
+# timor di me sicura presta e la mia difensa
+0,n+cp
+doh,dc
+doh,cp
+doh,dc
+rehb1,n
+0,cp
+rehb1,dc
+rehb1,n
+lab1,n
+fah,n
+rehb1,cp
+rehb1,dc
+lab1,n
+fa,n
+# REb MAJEUR
+reb,cp
+fa,tc
+mib,tc
+reb,n
+$ piano_2
+# REb MINEUR
+sibb1,npp
+lab,dc
+solb,dc
+rehb,npp
+doh3,dc
+dohb,dc
+solb1,npp
+lab,dc
+solb,dc
+rehb,n
+$ string_2
+# REb MAJEUR
+# in quest'oscura notte ravvolta
+0,c
+rehb,c
+rehb,c
+rehb,c
+rehb,c
+rehb,c
+rehb,c
+doh3,c
+0,cp
+doh3,dc
+doh3,dc
+doh3,dc
+# presso a te son io et tu nol sai
+doh3,dc
+doh3,dc
+doh3,cp
+sib,dc
+sib,n
+la3,c
+0,dc
+solb1,dc
+fa,np
+mib,c
+mib,c
+reb,c
+# gemente aura che intorno spiri
+0,npp
+doh3,dc
+mihb,cp
+rehb,dc
+doh3,c
+sib,c
+0,npp
+doh3,dc
+mihb,cp
+rehb,dc
+doh3,c
+sib,c
+# FA MINEUR
+# deh pietosa (2) gli arreca i miei so spiri
+0,np
+fah,c
+fah,c
+fah,c
+fah,c
+mih3,c
+0,np
+si3,dc
+doh,dc
+reh,dc
+mih3,dc
+fah,dc
+solh,dc
+sihb,dc
+lahb1,dc
+solh,dc
+lahb1,dc
+mih3,dc
+fah,dc
+si3,dc
+doh,dc
+mihb,dc
+rehb1,dc
+doh,dc
+rehb1,dc
+la3,dc
+sib,dc
+doh,dc
+rehb1,dc
+doh,b+c
+rehb1,tc
+doh,tc
+si3,tc
+doh,tc
+rehb1,cp
+doh,dc
+doh,b+c
+0,c
+$ piano_3
+sib,n
+lab1,c
+0,b+c
+sol,n
+N = 1200
+fa,trn
+do,trn
+lagb1,trn
+fa,trn
+do,trn
+lagb1,trn
+fag,trn
+do,trn
+lagb1,trn
+fa,trn
+do,trn
+lagb1,trn
+$ string_2
+# d'amor sull'ali rosee
+fa,n
+lab1,cp
+do,dc
+fa,n
+lab1,cp
+do,dc
+fa,n
+lab1,qc
+sib,qc
+lab1,qc
+sib,qc
+lab1,qc
+sib,qc
+lab1,qc
+sib,qc
+lab1,dc
+sol,tc
+lab1,tc
+doh,n
+0,n
+# vanne sospir dolente
+sib,n
+rehb1,cp
+fa,dc
+sib,n
+rehb1,cp
+fa,dc
+sib,n
+rehb1,qc
+mihb,qc
+rehb1,qc
+mihb,qc
+rehb1,qc
+mihb,qc
+rehb1,qc
+mihb,qc
+rehb1,dc
+doh,tc
+rehb1,tc
+fah,n
+0,n
+# del prigioniero misero
+sib,n+trn
+doh,trn
+sol,trn
+lab1,n
+doh,n
+mihb,n+trn
+fah,trn
+rehb1,trn
+doh,n
+# conforta l'egra mente
+lahb1,n
+solh,qc
+fah,qc
+mihb,qc
+rehb1,qc
+doh,qc
+sib,qc
+lab1,qc
+sol,qc
+fa,2*trn
+fa,trn
+fa,trn
+mi3,trn
+fa,trn
+sol,2*trn
+lab1,trn
+sib,n
+si3,n
+# com'aura di speranza
+0,cp
+si3,dc
+doh,n
+doh,n
+mihb1,n
+fah,trn
+mihb1,trn
+doh,trn
+lab1,n
+sib,qc
+doh,qc
+sib,qc
+doh,qc
+sib,qc
+doh,qc
+sib,qc
+doh,qc
+sib,dc
+la3,tc
+sib,tc
+mib,n
+# a leggia in quella stanza
+0,cpp
+mib,tc
+doh,n
+doh,n
+mihb1,n
+fah,trn
+mihb1,trn
+doh,trn
+lab1,n
+sib,qc
+doh,qc
+sib,qc
+doh,qc
+sib,qc
+doh,qc
+sib,qc
+doh,qc
+sib,dc
+la3,tc
+sib,tc
+doh,n
+# lo desta alle memorie
+0,cpp
+doh,tc
+fah,n
+mihb,cp
+fah,tc
+mihb,tc
+rehb1,n
+doh,cp
+rehb1,tc
+doh,tc
+sib,n
+lab1,cp
+sib,qc
+lab1,qc
+sol,qc
+lab1,qc
+doh,trn
+sib,trn
+sol,n
+# ai sogni ai sogni dell'amor
+0,cpp
+sol,tc
+fah,n
+mihb,trn
+solh,trn
+fah,trn
+rehb1,n
+doh,trn
+fah,trn
+mihb,trn
+sib,n
+sib,trdc
+lab1,trdc
+sol,trdc
+lab1,trdc
+doh,trdc
+sib,trdc
+sol,npp
+mib,dc
+# ma deh non dirgli improvvido
+N = 1400
+doh,n
+fah,trn
+mihb1,trn
+doh,trn
+# SIb MINEUR
+la3,n
+solhb1,trn
+fah,trn
+mihb,trn
+mihb,trn
+reh3,trn
+lah3,trn
+sihb,2*trn
+# le pene (3) del mio cor
+# FA MINEUR
+rehb1,trn
+rehb1,trn
+doh,trn
+solh,trn
+lahb1,2*trn
+doh,trn
+doh,trc
+sib,trc
+solh,trn+trc
+fah,trc
+mihb,trc
+rehb1,trc
+fa,trn
+sol,trn
+lab1,n
+$ piano_2
+fahh,trn
+mihhb1,trn
+dohh,trn
+# SIb MINEUR
+lah3,n
+$ string_2
+# deh non dirgli improvvido
+solhb1,trn
+fah,trn
+mihb,trn
+mihb,trn
+reh3,trn
+lah3,trn
+dohh,trn
+sihb,trn
+# FA MINEUR
+rehb1,trn
+rehb1,trn
+doh,trn
+solh,trn
+sihb,trn
+lahb1,trn
+# le pene del mio cor
+doh,trn
+doh,trc
+sib,trc
+rehhb1,trc
+dohh,trdc
+0,trdc
+sihb,trc
+lahb1,trdc
+0,trdc
+solh,trdc
+lahb1,trdc
+fah,trdc
+solh,trdc
+mihb,trdc
+fah,trdc
+rehb1,trdc
+mihb,trdc
+doh,trdc
+mihb,trdc
+sib,trdc
+mihb,trdc
+lab1,n
+# LAb MAJEUR
+# le pene le pene del cor
+0, cp
+mihb,dc
+mihb,tc
+fah,tc
+mihb,tc
+fah,tc
+mihb,qc
+fah,qc
+mihb,qc
+fah,qc
+mihb,qc
+fah,qc
+mihb,qc
+fah,qc
+mihb,c
+reh3,dc
+mihb,dc
+doh,n
+0,cp
+mib,dc
+mib,c+tc
+re3,tc
+mib,tc
+sol3,tc
+sib,tc
+rehb1,tc
+mihb,tc
+solh3,tc
+sihb,c+tc
+lahb,tc
+solh3,tc
+sihb,tc
+reh3,tc
+fah,tc
+mihb,tc
+solh3,tc
+doh,tc
+mihb,tc
+# SIb MINEUR
+rehb1,tc
+fah,tc
+la3,tc
+doh,tc
+sib,tc
+rehb1,tc
+# LAb MAJEUR
+sib,tc
+sol3,tc
+mib,tc
+re3,tc
+mib,tc
+fa,tc
+sol3,tc
+lab,tc
+sib,tc
+doh,tc
+rehb1,tc
+reh3,tc
+mihb,tc
+mih3,tc
+fah,c
+0,c
+mihb,b
+lab,np

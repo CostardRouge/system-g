@@ -1,0 +1,515 @@
+@occidental
+N = 950
+$ guitar_1
+la,c
+la,dc
+si,dc
+dohd,c
+la,c
+fad,c
+si,np-tc
+0,tc
+sold3,c
+sold3,dc
+sold3,dc
+la,c
+si,c
+mi,c
+
+$ piano_2
+reh1,c
+dohd,c
+si,c
+
+$ guitar_1
+la,c
+la,dc
+si,dc
+dohd,c
+la,c
+fad,c
+si,n-qc
+0,qc
+la,c
+la,dc
+sold3,dc
+fad,dc
+mi,dc
+mi,dc
+mi,dc
+fad,dc
+sold3,dc
+la,c
+
+$ piano_2
+mih,c
+reh1,c
+si,dc
+
+# Vorrei et non vorrei
+$ string_2
+mi,dc
+la,cp
+si,dc
+dohd,c
+la,c
+fad,c
+si,n
+la,c
+sold3,cp
+sold3,dc
+la,c
+si,dc
+si,dc
+si,dcp
+mi,tc
+
+$ piano_2
+reh1,c
+dohd,c
+si,dc
+
+$ string_2
+mi,dc
+la,cp
+si,dc
+dohd,c
+la,c
+fad,c
+si,n-tc
+0,tc
+la,c
+la,dc
+sold3,dc
+fad,dc
+mi,dc
+mi,c
+fad,dc
+sold3,dc
+la,dc
+dohd,dc
+mih,n
+si,c
+reh1,dc
+dohd,dc
+si,dc
+la,dc
+la,c
+dohd,dc
+si,dc
+la,c
+
+$ piano_2
+dohd,c
+la,c
+0,c
+
+# Vieni mio bel
+$ guitar_1
+si,c
+sold,dc
+mi,dc
+dohd,c
+mih,dc
+dohd,dc
+si,cp
+sold,dc
+si,c-tc
+0,tc
+
+$string_2
+si,c
+lad3,dc
+si,dc
+dohd,dc
+si,dc
+lad3,dc
+si,dc
+la1,dc
+fad,dc
+sold,c
+
+$ piano_2
+sold,tc
+la1,tc
+si,tc
+la1,tc
+sold,c
+0,c
+
+$ guitar_1
+si,dc
+si,dc
+sold,dc
+mi,dc
+dohd,c
+mih,dc
+dohd,dc
+si,cp
+sold,dc
+si,c-qc
+0,qc
+
+$ string_2
+si,n
+si,dc
+si,dc
+lad3,dc
+si,dc
+la1,dc
+si,dc
+sold,dc
+si,dc
+si,dc-qc
+0,qc
+si,dc
+lad3,dc
+si,dc
+la1,dc
+si,dc
+sold,dc
+si,dc
+si,dc-qc
+0,qc
+si,dc
+lad3,dc
+si,dc
+la1,dc
+si,dc
+sold,c
+mi,c-qc
+0,qc
+
+# Vieni vieni
+$ guitar_1
+si,c
+sold,c
+reh1,n
+si,n
+
+la,c
+la,dc
+si,dc
+dohd,c
+la,c
+fad,c
+si,n-qc
+0,qc
+
+$ string_2
+la,c
+sold3,cp
+sold3,dc
+la,c
+si,c
+si,dcp
+mi,tc
+
+$ piano_2
+reh1,c
+dohd,c
+si,c
+
+$ guitar_1
+la,c
+la,dc
+si,dc
+dohd,c
+la,c
+reh1,n
+0,c
+
+$ string_2
+reh1,c
+reh1,dc
+sold3,c
+sold3,dc
+sold3,c
+la,dc
+si,dc
+la,dc-qc
+0,qc
+# Partiam ben mio da qui
+
+$ guitar_1
+la,dc
+la,dc
+si,dc
+dohd,dc
+dohd,dc
+la,c
+reh1,c
+
+$ string_2
+fahd,np+dc
+sold3,dc
+sold3,dc
+sold3,dc
+sold3,tc
+la,tc
+si,tc
+dohd,tc
+reh1,dc
+si,tc
+si,tc
+
+# Vieni mio bel diletto
+$ guitar_1
+dohd,c
+la,dc
+mi,dc
+reh1,c
+
+$ string_2
+mih,c
+rehd3,dc
+mih,dc
+fahd,dc
+mih,dc
+rehd3,dc
+mih,dc
+reh1,dc
+si,dc
+# Io cangero tua sorte
+
+$ guitar_1
+dohd,dc
+dohd,dc
+la,dc
+mi,dc
+reh1,c
+
+$ string_2
+mih,n
+mih,dc
+mih,dc
+rehd3,dc
+mih,dc
+reh1,dc
+mih,dc
+mih,dc
+dohd,dc
+dohd,dc
+dohd,dc
+sid3,dc
+dohd,dc
+si,dc
+dohd,dc
+dohd,dc
+la,dc
+la,dc-qc
+0,qc
+la,dc
+sold3,dc
+la,dc
+sol1,dc
+la,dc
+la,dc
+fad,dc
+fad,c
+0,c
+# Andiam
+
+$ guitar_1
+reh1,c
+reh1,c
+sold3,c
+0,c
+mih,c
+mih,c
+la,c
+0,c
+
+$ string_2
+fahd,c
+mih,n
+reh1,n
+0,c
+si,c*5/9
+dohd,n*5/9
+si,c*5/9
+dohd,n*5/9
+reh1,c*5/9
+si,c*5/9
+mih,b*5/9-qc
+0,qc 
+si,c*5/9
+dohd,n*5/9
+si,c*5/9
+dohd,n*5/9
+reh1,c*5/9
+si,c*5/9
+mih,b*5/9-qc
+0,qc 
+si,c*5/9
+dohd,np*5/9
+reh1,c*5/9
+fahd,c*5/9
+reh1,c*5/9
+dohd,np*5/9
+si,n*5/9
+si,c*5/9
+la,c*5/9
+
+$ piano_2
+lah,n*5/9
+solh,c*5/9
+mih,c*5/9
+solh1,c*5/9
+fahd,c*5/9
+reh1,c*5/9
+fah1,c*5/9
+mih,c*5/9
+si,c*5/9
+
+$ guitar_1
+sold3,c*5/9
+la,n*5/9
+sold3,c*5/9
+la,n*5/9
+si,c*5/9
+sold3,c*5/9
+mi,b*5/9-qc
+0,qc
+sold3,c*5/9
+la,n*5/9
+sold3,c*5/9
+la,n*5/9
+si,c*5/9
+sold3,c*5/9
+mi,b*5/9-qc
+0,qc
+sold3,c*5/9
+la,np*5/9
+si,c*5/9
+reh1,c*5/9
+si,c*5/9
+la,np*5/9
+sold3,n*5/9
+sold3,c*5/9
+la,n*5/9
+
+$ piano_2
+dohhd,c*5/9
+dohhd,cp*5/9
+sih,dc*5/9
+dohhd,c*5/9
+rehh1,cp*5/9
+mihh,dc*5/9
+rehh1,c*5/9
+
+# Andiam
+$ guitar_1
+la,np*5/9
+reh1,n*5/9+dc*5/9
+
+$ piano_2
+rehh1,trdc*5/9
+dohhd,trdc*5/9
+sih,trdc*5/9
+lah,np*5/9+cp*5/9
+sih,dc*5/9
+lah,c*5/9
+
+$ string_2
+mih,np*5/9
+dohd,c*5/9
+
+$ piano_2
+dohhd,c*5/9
+dohhd,cp*5/9
+sih,dc*5/9
+dohhd,c*5/9
+rehh1,cp*5/9
+mihh,dc*5/9
+rehh1,c*5/9
+
+$ string_2
+la,np*5/9
+fahd,c*5/9
+0,cp*5/9
+
+$ piano_2
+rehh1,trdc*5/9
+dohhd,trdc*5/9
+sih,trdc*5/9
+lah,np*5/9+cp*5/9
+sih,dc*5/9
+lah,c*5/9
+
+$ guitar_1
+mi,np*5/9
+la,c*5/9
+0,cp*5/9
+
+$ piano_2
+rehh1,trdc*5/9
+dohhd,trdc*5/9
+sih,trdc*5/9
+lah,n*5/9
+
+$ string_2
+mih,c*5/9
+dohd,n*5/9
+dohd,c*5/9
+si,n*5/9
+si,c*5/9
+dohd,n*5/9
+0,dc*5/9
+
+$ piano_2
+rehh1,trdc*5/9
+dohhd,trdc*5/9
+sih,trdc*5/9
+lah,n*5/9
+
+$ string_2
+mih,c*5/9
+dohd,n*5/9
+dohd,c*5/9
+si,n*5/9
+si,c*5/9
+dohd,n*5/9+dc*5/9
+
+$ piano_2
+rehh1,trdc*5/9
+dohhd,trdc*5/9
+sih,trdc*5/9
+
+$ string_2
+mih,np*5/9
+dohd,cp*5/9
+reh1,dc*5/9
+dohd,c*5/9
+si,dc*5/9
+dohd,dc*5/9
+si,dc*5/9
+la,dc*5/9
+si,dc*5/9
+si,dc*5/9
+la,n*5/9-qc
+0,qc
+
+$ piano_2
+sih,cp*5/9
+lah,dc*5/9
+sih,c*5/9
+dohhd,cp*5/9
+rehh1,dc*5/9
+dohhd,c*5/9
+sih,cp*5/9
+lah,dc*5/9
+sih,c*5/9
+lah,n*5/9
+0,c*5/9
+sih,cp*5/9
+lah,dc*5/9
+sih,c*5/9
+dohhd,cp*5/9
+rehh1,dc*5/9
+dohhd,c*5/9
+sih,cp*5/9
+lah,dc*5/9
+sih,c*5/9
+lah,n*5/9
+0,c*5/9

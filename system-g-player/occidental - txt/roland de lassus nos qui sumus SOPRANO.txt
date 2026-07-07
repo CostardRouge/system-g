@@ -1,0 +1,256 @@
+@occidental
+# SOPRANO
+N = 550
+$ string_2
+# nos qui sumus in hoc mundo
+# FA# MINEUR
+fahd,bp
+mih,n
+reh1,b
+dohd,cp
+0,dc
+reh1,c
+dohd,c
+reh1,c
+dohd,c
+dohd,b
+si,n
+dohd,n
+fad,n
+0,r+n
+# in hoc mundo (2)
+la1,c
+sold,c
+la1,c
+sold,c
+dohd,b
+si1,n
+la1,n
+fad,n
+0,n
+si1,np
+la1,c
+si,c
+dohd,c
+reh1,c
+dohd,c
+dohd,np
+si1,dc
+la1,dc
+si1,n
+dohd,n
+la1,b
+sold,n
+0,b
+# in hoc mundo
+la1,c
+sold,c
+la1,c
+sold,c
+la1,n
+la1,n
+la1,n
+sold,n
+0,n
+# nos qui sumus in hoc mundo
+si,n
+la1,n
+sold,n
+fad,n
+la1,np
+sold,c
+la1,c
+sold,c
+fad,c
+sold,c
+mi,b
+# SI MINEUR
+si,n
+dohd,b
+# SI MAJEUR
+fad,b
+0,n
+# vitiorum (2) in profundo
+# FA# MINEUR
+N = 530
+fahd,b
+dohd,n
+reh1,n
+dohd,c
+si,c
+la1,np
+sold,c
+fad,c
+sold,c
+la1,c
+si,c
+dohd,np
+si,dc
+la1,dc
+sold,c
+fad,c
+sold,n
+fad,cp
+0,dc
+# SI MINEUR
+reh1,b
+la1,n
+si,n
+# FA# MINEUR
+la1,c
+sold,c
+fad,np
+sold,c
+la1,n
+si,n
+N = 600
+fad,bp
+mi,b
+# RE MAJEUR
+re,b
+N = 700
+dod3,n
+# SOL MAJEUR
+N = 850
+re,b-dc
+0,dc
+# RE MAJEUR
+# jam passi naufragia (2)
+N = 550
+0,n
+reh,b
+solh1,b
+# FA# MINEUR
+fahd,n
+mih,c
+reh1,c
+dohd,c
+reh1,c
+# SI MINEUR
+mih,c
+reh1,c
+dohd,c
+si,c
+lad3,n
+si,np
+lad3,dc
+sold,dc
+lad3,c
+lad3,c
+si,cp
+0,dc
+si,n
+# FA# MINEUR
+dohd,bp
+reh1,n
+dohd,b
+si,b
+# SI MINEUR
+N = 700
+si,bp
+si,n
+# FA# MAJEUR
+N = 850
+lad,r-dc
+0,dc
+# gloriose nicolae (2)
+# RE MAJEUR
+N = 300
+fahd,b
+mih,n
+reh,b
+# LA MAJEUR
+dohd,n
+# RE MAJEUR
+fahd,b
+mih,n
+reh,b
+# LA MAJEUR
+dohd,n
+# SI MINEUR
+reh1,b
+dohd,n
+# LA MAJEUR
+si,b
+dohd,n
+# SI MINEUR
+reh1,b
+dohd,n
+# LA MAJEUR
+si,b
+dohd,n
+# ad salutis portum trahe (2)
+# SI MINEUR
+si,b
+lad3,n
+si,b
+lad3,n
+si,b
+lad3,n
+si,b
+lad3,n
+# MI MINEUR
+si,b
+fahd,n
+mih,b
+rehd3,n
+mih,b
+si,n
+N = 500
+sol1,b
+# SI MAJEUR
+fad,cp
+0,dc
+# ubi pax (2) et gloria
+# SI MINEUR
+N = 650
+lad3,b
+si,b
+reh1,b
+0,n
+reh1,b
+dohd,n
+si,cp
+0,dc
+# MI MINEUR
+si,n
+# SI MINEUR
+si,c
+dohd,c
+reh1,c
+mih,c
+fahd,np
+mih,c
+reh1,c
+dohd,c
+si,b
+lad3,n
+si,r-dc
+0,dc
+# ubi pax (2) et gloria
+lad3,b
+si,b
+N = 750
+reh1,b
+0,n
+reh1,b
+dohd,n
+si,cp
+0,dc
+# MI MINEUR
+si,n
+# SI MINEUR
+si,c
+dohd,c
+reh1,c
+mih,c
+fahd,np
+mih,c
+reh1,c
+dohd,c
+N = 850
+si,b
+N = 900
+lad3,n
+# SI MAJEUR
+si,r

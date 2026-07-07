@@ -1,0 +1,193 @@
+# ALTO I
+N = 909
+$ string_2
+0,6*n
+# timor et tremor
+# LA MINEUR
+la,n
+fa1,np
+la,c
+si,c
+doh1,c
+si,b
+# venerunt super me (2) super me
+la,n
+fa1,n
+la,n
+mi,n
+sol,n
+mi,np
+0,c
+la,n
+fa1,n
+la,n
+mi,n
+sol,n
+mi,np
+0,c
+la,n
+sol1,n
+si,np
+0,c
+# et caligo cecidit cecidit super me
+mi,b
+mi,c
+re,c
+mi,n
+do1,c
+re,c
+mi,np
+0,c
+do1,c
+re,c
+# MI MINEUR
+mi,n
+re1,n
+mi,c
+re,c
+# SI MAJEUR
+fad,np
+0,c
+# miserere mei domine miserere mei
+# MI MINEUR
+0,n
+doh1,n
+si,n
+fad,n
+sol1,n
+fad,n
+sol1,b
+mi,n
+fad,n
+sol1,b-dc
+0,dc
+# LA MINEUR
+la,b
+lag,n
+la,n
+mi,n
+re,c
+do1,c
+# MI MAJEUR
+mi,b-dc
+0,dc
+# quoniam in te confidit (2) anima mea
+# FA# MINEUR VARIANTE
+mi,np
+mi,c
+dod,n
+mi,n
+dod,n
+mi,c
+mi,c
+dod,b-dc
+0,dc
+mi,np
+mi,c
+dod,n
+mi,n
+dod,n
+mi,c
+mi,c
+dod,b-dc
+0,dc
+mi,n
+dod,n
+dod,n
+fad,n
+# SOL# MAJEUR
+sold,np
+0,c
+# exaudi deus deprecationem meam
+# DO# MINEUR
+dohd,b
+dohd,n
+si1,n
+fad,n
+sold,b-dc
+0,dc
+sold,n
+si1,n
+mi1,n
+sold,n
+mi1,n
+mi1,n
+red,n
+mi1,np
+0,c
+# quia refugium meum es tu (2)
+# FA# MINEUR
+mid3,n
+mid3,n
+fad,n
+sold,c
+dod,c
+la1,n
+# SI MINEUR
+lad3,n
+si,n
+dohd,n
+fad,n-dc
+0,dc
+# DO# MINEUR
+fad,n
+fad,n
+sold,n
+fad,c
+sold,c
+sold,n
+# FA# MINEUR
+si,n
+dohd,n
+si,n
+la1,np
+0,c
+# et adjutor fortis domine invocavi te
+# MI MINEUR
+fad,b
+fad,n
+fad,n
+fad,n
+fad,n
+fad,np
+0,c
+# LA MINEUR
+si,b
+si,n
+la,b
+la,n
+# MI MINEUR
+la,n
+la,n
+fad,n
+# MI MAJEUR
+sold,np
+0,c
+# non confundar (2) domine invocavi
+# MI MINEUR
+fad,n
+fad,n
+mi,n
+sol1,n
+fad,n
+fad,n
+mi,n
+sol1,n
+mi,n
+sol1,n
+fad,n
+# LA MINEUR
+si,n
+la,n
+# RE MINEUR
+fa1,n
+mi,b-dc
+0,dc
+# confundar
+# LA MINEUR
+mi,b
+fa1,n
+# LA MAJEUR
+N = 1200
+dod,b+c
+0,c

@@ -1,0 +1,34 @@
+# compl 1
+N = 820
+$  string_1
+lag,n
+lag,c
+lag,c
+lag,n
+0,n
+lag,n
+lag,c
+lag,c
+lag,n
+0,n
+lag,c
+lag,c
+lag,c
+0,c
+lag,c
+lag,c
+lag,c
+0,c
+lag,c
+lag,c
+lag,c
+0,c
+0,n
+lag,c
+lag,c
+0,n
+lag,c
+lag,c
+0,n
+lag,c
+lag,c

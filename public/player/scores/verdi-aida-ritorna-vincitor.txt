@@ -1,0 +1,548 @@
+@occidental
+N = 700
+$ string_2
+# RE MINEUR
+# ritorna vincitor
+la,c
+si,c
+dohd3,dcp
+reh,trn
+mih,trn
+fah1,b
+0,b
+# e dal mio labbro usci l'empia parola
+# LA MINEUR
+N = 600
+fa1,n
+fa1,c
+fa1,c
+fa1,np
+fa1,c
+fa1,b
+fa1,n
+fa1,cp
+fa1,dc
+fa1,c
+mi,c
+0,bp
+# vincitor del padre mio
+mi,cp
+mi,dc
+mi,np
+mi,c
+mi,np
+mi,c
+# MI MAJEUR
+mih,n
+dohd,n
+# di lui che impugna l'armi per me
+0,cp
+mih,dc
+mih,cp
+mih,dc
+mih,n
+rehd3,n
+fahd,n
+mih,cp
+rehd3,dc
+dohd,c
+0,c
+# per ridonarmi una patria una reggia
+dohd,trn
+dohd,trn
+dohd,trn
+dohd,n
+si,cp
+la1,dc
+sold,c
+fad,c
+0,c
+fad,dc
+fad,dc
+fad,c
+mi,dc
+0,dc
+# e il nome illustre che qui celar m'e forza
+mi,trn
+fad,trn
+sold,trn
+sold,n
+# SI MAJEUR
+lad3,cp
+si,dc
+dohd,cp
+dohd,dc
+si,cp
+lad3,dc
+dohd,c
+si,c
+0,bp
+# vincitor de'miei fratelli
+# MI MAJEUR
+N = 550
+sold,cp
+sold,dc
+sold,np
+sold,c
+sold,np
+sold,c
+si,b
+sold,n
+0,b+c
+# ond'io lo vegga
+si,c
+si,np
+si,c
+# MI MINEUR
+doh1,b
+la,n
+0,n
+# tinto del sangue amato
+doh1,n
+doh1,cp
+doh1,dc
+doh1,npp
+doh1,dc
+# DO# MINEUR
+dohd,b
+lad,n
+0,b
+# trionfar nel plauso del l'egizie coorti
+N = 520
+dohd,cp
+dohd,dc
+dohd,npp
+dohd,dc
+# FA# MINEUR + FA MAJEUR
+fahd,r+c
+# SI MAJEUR
+fad,c
+fad,c
+fad,c
+fad,n
+fad,c
+mi1,c
+mi1,c
+red,c
+# e dietro il carro un remio padre
+N = 480
+0,np
+red,c
+red,c
+red,c
+mi1,c
+mi1,c
+# SI MINEUR
+0,c
+mi1,c
+sol1,n
+0,c
+sol1,c
+lad3,c
+lad3,c
+# di catene avvinto
+0,c
+lad3,dc
+lad3,dc
+dohd,np
+dohd,c
+mih,n
+# MI MINEUR
+solh1,n
+0,b
+N = 370
+# l'insana parola o numi sperdete
+0,bp
+mi,n
+fad,n
+sol1,n
+la,n
+si,n
+doh1,n
+rehd3,n
+mih,n
+fahd,n
+solh1,n
+mih,n
+doh1,n
+la,n
+si,np
+doh1,c
+si,c
+0,c
+# al seno d'un padre la figlia rendete
+mi,n
+fad,n
+sol1,n
+la,n
+si,n
+doh1,n
+mih,n
+reh,n
+doh1,n
+si,n
+sib1,n
+la,np
+si,c
+la,qc
+sol1,n-qc
+sol1,n
+# struggete (3) le squadre dei nostri oppressor
+0,np
+sol1,c
+solh1,r
+sol1,n
+0,b+c
+sol1,c
+solh1,r
+sol1,n
+0,b
+rehd3,n
+mih,n
+fahd,n
+solh1,n
+mih,n
+doh1,n
+la,n
+fad,n
+la,n
+sol1,np
+la,c
+si,n
+si,n
+# RE MINEUR
+dohd,b
+0,b
+# ah sventurata che dissi
+sihb1,r+bp
+# FA MINEUR
+N = 800
+sib1,c
+sib1,c
+sib1,b
+lab1,np
+sol,c
+fa,c
+mi3,c
+0,n
+# RE MINEUR
+0,b
+N = 1000
+0,npp
+# e l'amor mio
+la,dc
+sib1,n
+# DO MAJEUR
+si3,n
+reh,n
+doh,c
+0,c+b
+# FA MAJEUR
+# dunque scordar poss'io questo fervido amore
+doh,np
+la,c
+sib1,c
+mi3,c
+mih3,cp
+reh,dc
+doh,n
+la,c
+doh,dc
+doh,dc
+# RE MINEUR
+dohd3,n
+reh,cp
+reh,dc
+mih,n
+reh,c
+# che oppressa e schiava
+0,dc
+la,dc
+sib1,n
+# DO MAJEUR
+si3,n
+reh,n
+doh,c
+# come raggio di sol qui mi beava
+# FA MAJEUR
+lah,c
+solh,c
+fah,c
+reh,c
+doh,c
+sib1,np
+la,c
+sib1,c
+reh,c
+fah,cp
+mih3,dc
+reh,n
+doh,n
+# imprechero la morte a radames
+# FA MINEUR
+N = 800
+0,c
+rehb1,c
+rehb1,c
+rehb1,c
+doh,n
+0,cp
+doh,dc
+rehb1,c
+rehb1,c
+rehb1,c
+rehb1,c
+mihb1,np
+N = 1000
+# a lui ch'amo purtanto
+mih3,c
+solh,c
+fah,c
+mihb,c
+rehb1,c
+rehb1,c
+doh,c
+0,bp
+# Ah non fu in terra
+# MIb MAJEUR
+lahb1,b+trn
+N = 1200
+reh3,trn
+mihb,trn
+# DOb MINEUR
+fahb1,trn
+mihb,trn
+dohb,trn
+# mai da piu crudeli an goscie un core affranto
+sib3,2*trn
+lab,trn
+solb,2*trn
+fab1,trn
+mib,2*trn
+reb,trn
+mib,trn
+solb,trn
+fab1,trn
+N = 1400
+mib,np
+mib,c
+mib,np
+mib,c
+fab1,c
+mib,c
+0,bp
+N = 500
+# i sacri nomi di padre d'amante
+# LAb MINEUR
+0,npp
+mihb,dc
+mihb,n
+rehb,n
+dohb1,n
+rehb,cp
+rehb,dc
+mihb,n
+fahb1,cp
+fahb1,dc
+fahb1,c
+mihb,c
+# ne profferir poss'io ne ricordar
+0,c
+mihb,c
+mihb,c
+mihb,c
+mihb,cp
+rehb,dc
+dohb1,c
+dohb1,c
+0,cp
+rehb,dc
+dohb1,npp
+sib,dc
+lab,n
+# per l'un per l'altro confusa tremante
+0,cp
+mihb,dc
+mihb,n
+0,cp
+rehb,dc
+rehb,c
+dohb1,c
+0,cp
+rehb,dc
+mihb,n
+fahb1,cp
+fahb1,dc
+fahb1,c
+mihb,c
+# io piangere vorrei vorrei pregar
+0,c
+mihb,c
+mihb,c
+mihb,c
+mihb,cp
+rehb,dc
+dohb1,c
+0,c
+rehb,n
+dohb1,npp
+sib,dc
+lab,n
+0,n
+# ma la mia prece in bestemmia si muta
+fahb1,n
+mihb,cp
+mihb,dc
+reh3,n
+mihb,cp
+fahb1,dc
+solhb,n
+fahb1,cp
+fahb1,dc
+mihb,c
+mihb,c
+# delitto e il pianto a me colpa il sospir
+0,c
+mihb,c
+rehb,c
+rehb,c
+dohb1,c
+dohb1,c
+sib,n
+sibb1,n
+lab,np
+fab1,c
+mib,n
+# in notte cupa la mente et perduta
+0,cp
+mib,dc
+fab1,n
+sol3,n
+sib,n
+rehb,cp
+rehb,dc
+mihb,n+trn
+rehb,trn
+dohb1,trn
+sib,c
+mib,c
+# e nell'ansia crudel vorrei morir
+0,c
+mib,dc
+mib,dc
+fab1,n
+sol3,cp
+sol3,dc
+sib,n
+rehb,n
+mihb,n+trn
+rehb,trn
+dohb1,trn
+sib,r
+# numi pieta del mio soffrir
+# LAb MAJEUR
+N = 600
+mihb,b
+doh,np
+fah,c
+mihb,r
+mihb,b
+doh,np
+fah,c
+mihb,r
+# spe me non v'ha pel mio dolor
+lab,b
+sib,qc
+lab,trb-qc
+sol3,trb
+lab,trb
+doh,r
+doh,b
+doh,np
+sib,c
+lab,b
+0,b
+# amor fatal tremendo amor
+mihb,b
+doh,np
+fah,c
+mihb,r
+mihb,b
+doh,trb
+lahb,trb
+fah,trb
+mihb,r
+# spezzami il cor fammi morir
+doh,b
+doh,trb
+rehb1,trb
+mihb,trb
+mihb,b
+rehb1,2*trb
+doh,trb
+doh,b
+doh,np
+sib,c
+lab,b
+0,b
+# numi pieta del mio soffrir ah pieta
+lab,b
+sib,trb
+doh,trb
+rehb1,trb
+doh,r
+doh,b
+rehb1,trb
+mihb,trb
+# LAb MINEUR
+fahb1,trb
+mihb,r
+# LAb MAJEUR
+lahb,b
+solh3,np
+fah,c
+mihb,b
+# numi pieta del mio soffrir (2)
+fah,qc
+mihb,trb
+reh3,trb
+mihb,trb
+fah,trb
+mihb,trb
+rehb1,trb
+doh,trb
+si3,trb
+doh,trb
+rehb1,trb
+doh,trb
+sib,trb
+lab,trb
+sol3,trb
+fa,trb
+N = 900
+mib,2*trb
+re3,trb
+reb1,trb
+mib,dc
+reb1,dc
+do,dc
+reb1,dc
+doh,np
+sib,c
+lab,b
+N = 1200
+0,n
+# numi pieta del mio soffrir
+mihb1,n
+lab,n
+0,b
+# LAb MINEUR
+sib,n
+dohb1,n
+0,b
+mihb,n
+lab,n
+0,b
+sib,n
+doh,b
+doh,b

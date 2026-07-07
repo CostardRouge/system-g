@@ -1,0 +1,182 @@
+# BASSE I
+N = 909
+$ string_1
+0,6*n
+# timor et tremor
+# LA MINEUR
+la,n
+fa1,np
+la,c
+si,c
+doh1,c
+si,b
+# venerunt super me (2) super me
+la,n
+re,n
+la,n
+fa1,n
+mi,n
+la,np
+0,c
+la,n
+re,n
+la,n
+fa1,n
+mi,n
+la,np
+0,c
+sol,n
+fa1,n
+mi,np
+0,c
+# et caligo cecidit cecidit super me
+lag,b
+lag,c
+solg,c
+lag,n
+fag1,c
+solg,c
+lag,np
+0,c
+fag1,c
+solg,c
+# MI MINEUR
+lag,n
+solg1,n
+lag,n
+# SI MAJEUR
+sig,np
+0,c
+0,8*n
+# domine miserere mei
+# MI MINEUR
+la,n
+sol1,c
+la,c
+mi,b-dc
+0,dc
+# LA MINEUR
+fa1,b
+fa1,n
+mi,n
+re,n
+fa1,n
+# MI MAJEUR
+mi,b-dc
+0,dc
+# quoniam in te confidit (2) anima mea
+# FA# MINEUR VARIANTE
+mi,np
+mi,c
+red3,n
+mi,n
+sold3,n
+mi,c
+la,c
+red3,b-dc
+0,dc
+mi,np
+mi,c
+red3,n
+mi,n
+sold3,n
+la,c
+mih,c
+la,b-dc
+0,dc
+mi,n
+fad,c
+sold3,c
+la,n
+si,c
+dohd,c
+# SOL# MAJEUR
+rehd,np
+0,c
+0,7*n
+# deprecationem meam
+# DO# MINEUR
+dohd,n
+sold,n
+la1,n
+mih1,n
+dohd,n
+dohd,n
+la1,n
+dohd,np
+0,c
+# refugium meum es tu
+# FA# MINEUR
+sold,b
+fad,n
+mid3,n
+la1,n
+# SI MINEUR
+dohd,n
+si,n
+reh1,c
+lad3,c
+fahd,c
+0,c
+# refugium meum meum es tu
+# DO# MINEUR
+la1,n
+sold,c
+fad,c
+mi1,n
+red,n
+dod,n
+# FA# MINEUR
+reh1,c
+si,c
+la1,n
+sold,n
+fad,np
+0,c
+# et adjutor fortis domine invocavi te
+# MI MINEUR
+fad,b
+fad,n
+fad,n
+fad,n
+fad,n
+fad,np
+0,c
+# LA MINEUR
+fa1,b
+fa1,n
+fa1,b
+fa1,n
+# MI MINEUR
+la,n
+la,n
+doh1,n
+# MI MAJEUR
+mih,np
+0,c
+# non confundar (2) domine confundar (2)
+# MI MINEUR
+fad,n
+la1,n
+mi,n
+sol1,n
+fad,n
+la1,n
+mi,n
+sol1,n
+la1,b
+re1,n
+# LA MINEUR
+sold3,n
+la,n
+# RE MINEUR
+fa1,n
+dod3,b-dc
+0,dc
+# LA MINEUR
+re,b
+re,n
+# LA MAJEUR
+N = 1200
+mi,b+c
+0,c

@@ -1,0 +1,361 @@
+@occidental
+# bizet la jolie fille de perth
+N = 900
+$ guitar_1
+# la la la la la
+# MI MINEUR
+fad,c
+si,n
+dohd,c+tc
+si,tc
+dohd,tc
+rehd3,cp
+dohd,c
+si,c
+fad,c
+si,c
+doh1,bpp
+0,b+c
+
+# tra la la la
+N = 600
+fad,n
+N = 650
+dohd,c-qc
+dohd,cp
+rehd3,dc
+dohd,c
+si,c
+fad,c
+si,b
+
+N = 800
+0,c
+si,trc
+doh1,trc
+reh,dc
+sol1,bpp
+0,n
+sol1,c
+fad,dc
+sol1,dc
+la,dc
+si,dc
+mi,bpp
+0,n
+mi,tc
+re,tc
+N = 1000
+do1,np+dc
+sig,bp
+sig,b+c
+N = 800
+0,b
+
+# quand la flamme
+mi,n
+mi,c
+sol1,cp
+fad,dc
+mi,c
+fad,n
+sol1,c
+fad,n+dc
+0,dc
+mi,n
+re,c
+do1,cp
+re,dc
+mi,c
+sig,n
+sig,c
+sig,n
+0,c
+
+# pour l'éteindre
+fad,n
+la,c
+sol1,cp
+fad,dc
+mi,c
+si,n
+si,c
+doh1,b+dc
+0,dc
+si,n
+la,c
+sol1,cp
+fad,dc
+mi,c
+re,n
+do1,c
+sig,np
+0,n+dc
+
+# je ris je chante
+la,dc
+fad,np
+0,n+dc
+doh1,dc
+doh1,n
+fad,c
+0,n
+mih,c
+reh,cp
+0,dc
+si,c
+sol1,n
+N = 1000
+la,c
+sol1,tc
+la,tc
+sol1,n+dc
+N = 1500
+fad,dc
+mi,n
+N = 800
+0,c
+
+# tra la la la la
+mih,n
+mih,c
+reh,cp
+doh1,dc
+si,c
+la,n
+reh,c
+doh1,cp
+si,dc
+la,c
+sol1,cp
+0,dc
+doh1,c
+si,cp
+
+# LA MINEUR
+la,dc
+sol,c
+fa1,n
+si,c
+
+# MI MINEUR
+la,cp
+sol1,dc
+fad,c
+mi,b
+0,dc
+sol1,dc
+fad,c
+mi,b+dc
+sol1,dc
+fad,c
+do1,np
+sig,b
+0,c
+N = 1200
+sig,n
+sig,dc
+N = 800
+fad,b+dcp
+
+$ string_2
+sig,c
+do1,n
+fad,c
+fad,n
+sig,c
+do1,n
+fad,c
+fad,n
+
+# s'il est une triste folie
+$ guitar_1
+sig,c
+sig,c
+red3,c
+fad,c
+la,c
+si,c
+doh1,c
+doh1,n
+red3,c
+0,c
+red3,c
+si,n
+la,c
+sol1,c
+sol1,c
+fad,c
+mi,c
+sol1,n
+fad,c
+0,c
+
+# qu'un regard de femme
+sig,c
+sig,c
+re,c
+fad,c
+si,c
+
+# RE MAJEUR
+dohd3,cp
+reh,dc
+reh,c
+reh,dc
+0,dc
+
+# FA# MINEUR
+mid3,c
+mid3,n
+
+# RE MAJEUR
+dohd3,c
+si,n
+la,c
+
+# LA MAJEUR
+la,c
+sold3,cp
+fad,dc
+la,cp
+0,dc
+
+# qu'un regard de femme
+sold3,c
+
+# RE MAJEUR
+reh,n
+dohd3,c
+
+# SI MINEUR
+si,n
+lad3,c
+
+# RE MAJEUR
+dohd3,n
+si,c
+la,c
+la,dc
+0,dc
+
+# LA MINEUR
+sold3,c
+si,n
+la,c
+
+# MI MINEUR
+sol1,n
+fad,c
+la,n
+sol1,c
+fad,cp
+0,dc
+
+# hélas quand on aime
+mi,c
+sol1,bp
+fad,b+dc
+0,dc
+mi,n
+mi,c
+sol1,cp
+fad,dc
+mi,c
+fad,n
+sol1,c
+fad,n+dc
+0,dc
+mi,n
+re,c
+do1,cp
+re,dc
+mi,c
+sig,n
+sig,c
+sig,n
+0,np
+
+# eh l'hôtesse
+fad,dcp
+fad,tc
+si,c
+fad,c
+0,dcp
+fad,tc
+rehd3,n
+si,c
+0,c
+
+# mon flacon
+N = 1000
+dohd,cp
+fad,dc
+N = 800
+si,n
+0,c
+mih,n
+reh,c
+sol1,n
+la,c
+sol1,tc
+la,tc
+N = 1200
+si,np
+si,c
+N = 800
+mi,n
+0,c
+
+# tra la la la la
+mih,n
+mih,c
+reh,cp
+doh1,dc
+si,c
+la,n
+reh,c
+doh1,cp
+si,dc
+la,c
+sol1,cp
+0,dc
+doh1,c
+si,cp
+
+# LA MINEUR
+la,dc
+sol,c
+fa1,n
+si,c
+
+# MI MINEUR
+la,cp
+sol1,dc
+fad,c
+mi,b
+0,dc
+sol1,dc
+fad,c
+mi,b+dc
+sol1,dc
+fad,c
+do1,np
+sig,b
+0,c
+N = 1200
+sig,n
+sig,dc
+N = 800
+fad,b+dcp
+0,n
+
+N = 600
+sol1,c
+fad,cp
+sol1,dc
+la,c
+si,cp
+dohd,dc
+rehd3,c
+mih,r

@@ -1,0 +1,219 @@
+@occidental
+# BASSE
+N = 550
+0,12*n
+$ string_1
+# nos qui sumus (2) in hoc mundo
+# FA# MINEUR
+fad,bp
+mi,n
+re1,b
+dod,b
+0,n
+la1,b
+sold,n
+fad,b
+mi1,b
+0,n
+si,c
+la1,c
+si,c
+la1,c
+la1,b
+sold,n
+la1,n
+fad,n
+0,rp
+# nos qui sumus in hoc mundo
+fad,bp
+mi,n
+re1,b
+dod,b
+0,bp
+fad,c
+mi,c
+fad,c
+mi,c
+mi,b
+# SI MINEUR
+re1,n
+dod,b
+N = 545
+# SI MAJEUR
+sig,r
+N = 530
+0,b
+# FA# MINEUR
+# vitiorum
+fad,bp
+dod,n
+re1,n
+dod,c
+sig,c
+lag1,c
+sig,c
+dod,c
+re1,c
+mi,b
+# SI MINEUR
+sig,cp
+0,dc
+# vitiorum in profundo
+si,b
+fad,n
+sol1,n
+# FA# MINEUR
+fad,c
+mi1,c
+re1,b
+re1,n
+sig,n
+N = 600
+sig,c
+dod,c
+re1,c
+mi,c
+fad,n
+dod,n
+# RE MAJEUR
+re,b
+N = 650
+lag,b
+# SOL MAJEUR
+N = 850
+solg,b-dc
+0,dc
+# RE MAJEUR
+# jam passi jam passi naufragia
+N = 550
+re,b
+sol1,np
+fad,c
+# SI MINEUR
+mi,n
+# FA# MINEUR
+re1,n
+la1,np
+si,c
+# SI MINEUR
+dohd,c
+si,c
+la,c
+sol1,c
+fad,b
+fad,np
+fad,c
+mi,n
+mi,n
+# FA# MINEUR
+la1,np
+sol,c
+fad,c
+mi1,c
+re1,c
+mi1,c
+fad,c
+sol,c
+la1,b
+si,n
+# SI MINEUR
+N = 700
+si,c
+la,c
+sol1,c
+fad,c
+sol1,n
+sol1,n
+# FA# MAJEUR
+N = 850
+fad,r-dc
+0,dc
+# gloriose nicolae (2)
+# RE MAJEUR
+N = 300
+re,b
+la,n
+reh,b
+# LA MAJEUR
+la,n
+# RE MAJEUR
+re,b
+la,n
+reh,b
+# LA MAJEUR
+la,n
+# SI MINEUR
+sol1,b
+la,n
+# LA MAJEUR
+mi,b
+la,n
+# SI MINEUR
+sol1,b
+la,n
+# LA MAJEUR
+mi,b
+la,n
+# ad salutis portum trahe (2)
+# SI MINEUR
+si,b
+fad,n
+sol1,b
+fad,n
+si,b
+fad,n
+sol1,b
+fad,n
+# MI MINEUR
+mi,b
+red3,n
+mi,b
+sig,n
+mi,b
+red3,n
+N = 500
+mi,b
+# SI MAJEUR
+sig,cp
+0,dc
+# ubi pax (2) et gloria
+# SI MINEUR
+N = 650
+fad,b
+mi,b
+re1,b
+sol1,b
+la1,b
+si,b
+0,bp
+sig,n
+sig,c
+dod,c
+re1,c
+mi,c
+fad,n
+fad,n
+# SI MAJEUR
+sig,r-dc
+0,dc
+# ubi pax (2) et gloria
+# SI MINEUR
+fad,b
+mi,b
+N = 750
+re1,b
+sol1,b
+la1,b
+si,b
+0,bp
+sig,n
+sig,c
+dod,c
+N = 850
+re1,c
+mi,c
+fad,n
+N = 900
+fad,n
+# SI MAJEUR
+sig,r

@@ -1,0 +1,221 @@
+# SOPRANO I
+N = 966
+$ string_2
+# DO# MAJEUR
+# vinea mea electa (2)
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+# ego te plantavi (2)
+dohd,n
+sid,np
+lad,c
+sold,c
+dohd,c
+sold,cp
+0,dc
+dohd,n
+sid,np
+lad,c
+sold,c
+dohd,c
+rehd,cp
+0,dc
+# quomodo conversa es in amaritudinem
+# DO# MINEUR
+solhd,n
+solhd,n
+fahd,n
+mih1,n
+dohd,n
+rehd,n
+mih1,cp
+0,dc
+rehd,b
+dohd,n
+si,n
+la1,n
+sold,n
+fad,n
+sold,b-dc
+0,dc
+# ut me crucifigeres et barrabam dimitteres
+mih1,b
+rehd,n
+dohd,n
+si1,n
+mih1,n
+sold,n
+fad1,cp
+0,dc
+solhd,b
+fahd,n
+dohd,n
+rehd,cp
+0,dc
+dohd,n
+sold,n
+dohd,n
+# DO# MAJEUR
+dohd,bp-dc
+0,dc+r
+# sepivite et lapides elegi elegi ex te
+sold,n
+# DO# MINEUR
+dohd,np
+sold,c
+mih1,c
+0,c
+# SOL# MINEUR
+rehd,n
+dohd,n
+si1,n
+lad,n
+sold,n
+si1,n
+lad,b-dc
+0,dc
+sold,n
+lad,n
+si1,n
+dohd,n
+# RE# MAJEUR
+rehd,b-dc
+0,dc
+# DO# MINEUR
+# et oedificavi turrim
+sid3,b
+dohd,n
+rehd,n
+mih1,n
+mihd3,n
+fahd,n
+dohd,n
+# SOL# MAJEUR
+rehd,b
+0,n+dc
+0,7*n
+# DO# MINEUR
+# in amaritudinem
+rehd,b
+dohd,n
+si,n
+la1,n
+sold,n
+fad,n
+# SOL# MAJEUR
+sold,b-dc
+0,dc
+# ut me crucifigeres et barrabam dimitteres
+# DO# MINEUR
+mih1,b
+rehd,n
+dohd,n
+si1,n
+mih1,n
+sold,n
+fad1,cp
+0,dc
+solhd,b
+fahd,n
+dohd,n
+sid3,cp
+0,dc
+dohd,n
+sold,n
+dohd,n
+# SOL# MAJEUR
+rehd,b
+0,n+dc
+# vinea mea electa (2)
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+# ego te plantavi (2)
+dohd,n
+sid,np
+lad,c
+sold,c
+dohd,c
+sold,cp
+0,dc
+dohd,n
+sid,np
+lad,c
+sold,c
+dohd,c
+rehd,cp
+0,dc
+# quomodo conversa es in amaritudinem
+# DO# MINEUR
+solhd,n
+solhd,n
+fahd,n
+mih1,n
+dohd,n
+rehd,n
+mih1,cp
+0,dc
+rehd,b
+dohd,n
+si,n
+la1,n
+sold,n
+fad,n
+sold,b-dc
+0,dc
+# ut me crucifigeres et barrabam
+la1,b
+la1,n
+si,n
+la1,n
+la1,c
+rehd,c
+la1,b-dc
+0,dc
+solhd,b
+fahd,n
+dohd,n
+rehd,b-dc
+0,dc
+# et barrabam dimitteres
+solhd,b
+fahd,n
+dohd,n
+rehd,cp
+0,dc
+la1,n
+fad,n
+sid3,n
+# DO# MAJEUR
+mihd,r+n

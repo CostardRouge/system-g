@@ -1,0 +1,153 @@
+@occidental
+# Rossini : L'assedio di Corinto : "Giusto Ciel"
+# FA# mineur
+N = 1100
+# musique
+$ organ
+la1,n
+si,n
+sold,n
+la1,n
+sol1,n
+fad,n
+dod,b
+sig,n
+lag1,trn
+fad,trn
+dod,trn
+lag1,trn
+fad,trn
+dod,trn
+lag1,trn
+fad,trn
+dod,trn
+
+# giusto ciel
+$ string_2
+dohd,b
+mih,cpp
+reh1,tc
+dohd,n
+0,n
+dohd,n
+mid3,b
+fad,dc
+sold,tc
+fad,tc
+mid3,dc
+fad,dc
+sold,cp
+mid3,dc
+dod,c
+0,c
+
+# piu corsiglio
+dohd,cp
+si,dc
+si,dc
+la1,cp
+sold,c
+0,c
+dohd,cp
+si,dc
+si,dc
+la1,cp
+sold,c
+0,c
+mih,cp
+reh1,dc
+reh1,dc
+dohd,cp
+si,c
+0,c
+mih,cp
+reh1,dc
+reh1,dc
+dohd,cp
+si,c
+0,c
+
+# che gemendo
+dohd,cp
+si,dc
+si,cp
+lad3,dc
+sol1,n
+fad,cp
+fad,dc
+fad,trn
+sold,trn/2
+lad3,trn/2
+si,trn/2
+dohd,trn/2
+reh1,trn/2
+dohd,trn/2
+reh1,trn/2
+dohd,trn/2
+reh1,trn/2
+dohd,trn/2
+mih,trn/2
+reh1,trn/2
+dohd,trn/2
+si,trn/2
+la1,trn/2
+sold,trn/2
+rehd,b
+mihd3,cpp
+mihd3,tc
+mihd3,n
+fahd,n
+fahd,trn/4
+mih,trn/4
+reh1,trn/2
+reh1,trn/4
+dohd,trn/4
+si,trn/2
+si,trn/4
+la1,trn/4
+sold,trn/2
+la1,cp
+sold,dc
+fad,c
+0,dc
+la1,dc
+sold,cpp
+rehd,tc
+rehd,b-tc
+0,tc
+
+# implorar
+mihd3,cpp
+mihd3,tc
+mihd3,n
+fahd,n
+fahd,trn/4
+mih,trn/4
+reh1,trn/2
+reh1,trn/4
+dohd,trn/4
+si,trn/2
+si,trn/4
+la1,trn/4
+sold,trn/2
+fad,cp
+sold,dc
+la1,n
+
+N = 2000
+sold,c
+reh1,dcp
+dohd,tc
+fad,n
+
+# musique
+$ organ
+N = 1100
+si,n
+sold,n
+la1,n
+sol1,n
+fad,n
+dod,b
+sig,n
+lag1,b

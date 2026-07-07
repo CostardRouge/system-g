@@ -1,0 +1,171 @@
+@ occidental
+# tenor
+N = 700
+$ string_1
+# MI MINEUR
+# suscipe ...
+si,b
+doh1,n
+la,n
+si,n
+la,n
+sol1,n
+la,n
+sol1,bp
+sol1,n
+la1,n
+la1,r
+sol1,n
+la1,n
+0,b
+# recevez toute ma memoire
+reh,c
+reh,c
+reh,b
+reh,c
+reh,c
+mih,c
+reh,c
+doh1,n
+doh1,n
+# mon intelligence toute me volonte
+la,c
+la,c
+la,c
+la,c
+doh1,c
+doh1,c
+doh1,c
+doh1,c
+reh,n
+doh1,c
+reh,c
+si,b
+# suscipe (4)
+si,n
+la,n
+sol1,n
+la,n
+sol1,b
+sol1,b
+la,n
+si,n
+la,b
+la,n
+sol1,n
+fad,c
+sol1,c
+la,n
+la,n
+sol1,c
+fad,c
+mi,n
+fad,n
+sol1,b
+reh1,np
+doh1,c
+si,b
+si,n
+la,c
+0,b
+# seigneur prenez ma liberte tout entiere
+si,c
+si,n
+0,c
+si,c
+reh1,c
+reh1,c
+mih,c
+mih,c
+si,n
+la,c
+la,c
+si,n
+si,c
+0,c+rp+b+c
+# je livre tout desormais a votre volonte
+reh,c
+reh,c
+reh,c
+reh,n
+doh1,c
+reh,c
+si,np
+si,c
+la,c
+la,c
+sol1,c
+sol1,c
+la,n
+0,n+r
+# donnez-moi seuelement votre amour
+mih,n
+mih,n
+mih,n
+doh1,c
+doh1,c
+si,n
+la,c
+la,c
+si,n
+# avec votre grace (2)
+reh,n
+mih,b
+mih,n
+fahd,n
+fahd,b
+mih,c
+0,c
+mih,n
+mih,n
+reh1,n
+doh1,n
+reh1,n
+reh1,b
+reh1,c
+0,c
+# seigneur prez ma liberte tout entiere (2)
+si,n
+si,n
+0,c
+si,c
+reh1,c
+reh1,c
+mih,c
+mih,c
+si,n
+la,c
+la,c
+sol1,b
+sol1,np
+sol1,c
+la1,n
+la1,n
+la1,c
+la1,c
+la1,c
+la1,c
+la1,n
+sol1,c
+sol1,c
+la1,n
+la1,c
+0,c
+# suscipe
+si,b
+la,b
+sol1,r
+la,b
+la,c
+0,c
+# donnez-moi seulement votre amour
+la,c
+la,c
+reh1,c
+doh1,c
+si,c
+la1,c
+reh,b
+mih,n
+reh,n
+si,r+n

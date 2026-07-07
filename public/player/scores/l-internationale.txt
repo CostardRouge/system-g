@@ -1,0 +1,159 @@
+@occidental
+N = 550
+$ organ
+# debout les soldats
+# DO MAJEUR
+sol,c
+doh,np
+si3,c
+reh,c
+si3,c
+sol,c
+mi,c
+la,b
+fa1,n
+0,c
+la,c
+reh,np
+doh,c
+si3,c
+la,c
+sol,cp
+fa1,dc
+mi,b+c
+0,n
+
+# la raison tonne
+sol,c
+doh,np
+si3,c
+reh,c
+si3,c
+sol,c
+mi,c
+la,b
+fa1,c
+0,c
+reh,cp
+doh,dc
+si3,n
+reh,n
+fah1,n
+si3,n
+doh,b+c
+0,c
+
+$ string_2
+# du passé faisons
+mih,cp
+reh,dc
+si3,b
+la,c
+si3,c
+doh,c
+la,c
+si3,b
+sol,c
+0,c
+# SOL MAJEUR
+fad3,c
+sol,c
+la,np
+la,c
+reh,np
+doh1,c
+si,b+c
+0,n
+
+# le monde va changer
+reh,c
+reh,np
+si,c
+sol,c
+sol,c
+fad3,c
+sol,c
+mih,b
+doh1,dcp
+0,tc
+la,c
+si,c
+doh1,c
+si,n
+reh,n
+doh1,n
+la,n
+sol,b+c
+0,c
+
+$ organ
+# c'est la lutte
+# DO MAJEUR
+mih,cp
+reh,dc
+doh,b
+sol,np
+fa1,c
+la,b
+fa1,c
+0,c
+reh,cp
+doh,dc
+si3,b
+la,n
+sol,n
+sol,b+c
+0,c
+
+# l'internationale
+sol,n
+mih,b
+reh,np
+sol,c
+# SOL MAJEUR
+doh1,b
+si,n
+0,c
+si,c
+la,np
+sold3,c
+la,n
+reh,n
+reh,b+c
+0,c
+
+# c'est la lutte
+# DO MAJEUR
+mih,cp
+reh,dc
+doh,b
+sol,np
+fa1,c
+la,b
+fa1,c
+0,c
+reh,cp
+doh,dc
+si3,b
+la,n
+sol,n
+mih,b+c
+0,c
+
+# l'internationale
+mih,n
+solh,b
+fah1,n
+mih,n
+reh,cp
+dod3,dc
+reh,c
+mih,c
+fah1,n
+0,c
+fah1,c
+mih,np
+doh,c
+reh,np
+si3,c
+doh,b+c

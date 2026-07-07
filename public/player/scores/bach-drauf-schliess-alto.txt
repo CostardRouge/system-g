@@ -1,0 +1,118 @@
+@occidental
+# ALTO
+N = 800
+$ string_2
+# SOL MINEUR
+# Drauf schließ
+sol,n
+sol,n
+fa1,n
+fa1,n
+mi,n
+fad3,c
+sol,c
+la,n
+sol,c
+fad3,c
+sol,c
+la,c
+fad3,b
+re,cp
+0,dc
+
+# Und sage Welt
+sol,n
+sib1,n
+sib1,n
+fa,b
+# SIb MAJEUR
+la3,n
+sib,c
+sol,c
+la3,np
+sib,c
+sib,b+c
+0,c
+
+# Eil gleich
+# SOL MINEUR
+fa,n
+fa,n
+# FA MAJEUR
+sol,n
+sol,n
+fa,n
+mi3,c
+re,c
+do,np
+mi3,c
+fa,n
+fa,n
+mi3,n
+do,cp
+0,dc
+
+# Ist doch der
+# RE MINEUR
+re,n
+sib1,n
+la,n
+sol,np
+mi,c
+fa1,c
+sol,c
+la,c
+sib1,c
+la,n
+la,n
+la,b+c
+0,c
+
+# Er soll bei seinem
+# SOL MINEUR
+la,n
+# DO MINEUR
+fa,n
+fa,n
+sol,b
+do,n
+lab1,c
+sol,dc
+fa,dc
+doh,n
+lab1,n
+sol,np
+fa,c
+mib1,cp
+0,dc
+
+# Weil Jesus
+# SOL MINEUR
+sol,n
+sol,c
+sib1,c
+la,c
+sol,c
+la,n
+re,b
+sol,b+c
+0,c
+la,n
+sib1,c
+la,c
+sol,c
+fad3,c
+sol,b
+la,c
+si3,c
+doh,c
+sib1,c
+la,c
+sol,c
+fad3,n
+sol,n
+sol,n
+fad3,n
+# SOL MAJEUR
+re,bp
+

@@ -1,0 +1,147 @@
+@occidental
+# SOPRANO
+N = 800
+$ string_2
+# SOL MINEUR
+# Drauf schließ
+reh,n
+mihb1,n
+reh,c
+doh1,c
+reh,n
+sol,n
+doh,b
+sib1,c
+la,c
+sib1,c
+doh,c
+sib1,trn
+la,trn
+sib1,trn
+la,tc
+sib1,tc
+la,qc
+sib1,qc
+la,qc
+sib1,qc
+la,c
+sol,cp
+0,dc
+
+# Und sage Welt
+reh,n
+mihb1,c
+fah1,c
+solh,n
+# SIb MAJEUR
+la3,n
+sol,c
+fa,c
+fah,n
+fah,c
+solh,c
+mihb1,np
+reh,c
+reh,b+c
+0,c
+
+# Eilt gleich
+
+# SOL MINEUR
+reh,n
+mihb1,c
+reh,c
+
+# FA MAJEUR
+doh,c
+sib1,c
+doh,n
+fa,n
+sib1,b
+la,c
+reh,c
+doh,c
+sib1,c
+la,n
+sol,n
+fa,cp
+0,dc
+
+# Ist doch der
+
+# RE MINEUR
+fah1,n
+mih,n
+reh,n
+solh,n
+la,n
+fah1,np
+mih,c
+dohd3,np
+reh,c
+reh,b+c
+0,c
+
+# Er soll bei seinem
+
+# SOL MINEUR
+fah,n
+
+# DO MINEUR
+reh,n
+doh,n
+si3,b
+doh,n
+fah,c
+solh,dc
+lahb1,dc
+solh,n
+fah,n
+mihb1,n
+reh,n
+doh,cp
+0,dc
+
+# Weil Jesus
+mihb1,n
+
+# SOL MINEUR
+fah,c
+mihb1,c
+reh,c
+doh,c
+fahd3,n
+solh,n
+sol,n
+doh,bp+c
+mihb1,c
+reh,c
+doh,c
+sib1,c
+la,c
+sib1,c
+sol,c
+la,c
+sib1,c
+doh,c
+reh,c
+mihb1,c
+doh,c
+fahd3,c
+solh,dc
+lah,dc
+reh,np
+mihb1,c
+sib1,trn
+la,trn
+sib1,trn
+la,qc
+sib1,qc
+la,qc
+sib1,qc
+la,dc
+sol,c
+
+# SOL MAJEUR
+sol,bp
+

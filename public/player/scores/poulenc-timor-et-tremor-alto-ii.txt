@@ -1,0 +1,65 @@
+# ALTO II
+N = 909
+$ string_2
+# LA MINEUR
+# et caligo cecidit cecidit super me
+do1,b
+do1,c
+sig,c
+do1,n
+lag,c
+sig,c
+do1,np
+0,c
+lag,c
+sig,c
+# MI MINEUR
+do1,n
+sig,n
+do1,c
+re,c
+# SI MAJEUR
+red,np
+0,c
+0,r
+# exaudi deus
+# DO# MINEUR
+sold,b
+sold,n
+sold,n
+red,c
+mi1,c
+si1,b-dc
+0,dc
+0,r
+# et adjutor fortis domine invocavi te
+# MI MINEUR
+red3,b
+red3,n
+red3,n
+red3,n
+red3,n
+red3,np
+0,c
+# LA MINEUR
+mi,b
+re,n
+mi,b
+mi,n
+# MI MINEUR
+fad,n
+sol1,n
+sig,n
+# MI MAJEUR
+mi,np
+0,c
+# non confundar (2)
+# MI MINEUR
+red3,n
+re1,n
+dod,n
+red3,n
+red3,n
+re1,n
+dod,n
+red3,n

@@ -1,0 +1,146 @@
+@occidental
+N = 900
+$ string_2
+# SI MAJEUR
+# sous le dome epaus ou le blanc jasmin
+# 6/8
+0,c
+si,dc
+lad3,dc
+si,dc
+lad3,dc
+sold,c
+lad3,dc
+si,dc
+dohd,c
+0,c
+si,dc
+lad3,dc
+si,dc
+lad3,dc
+sold,c
+lad3,dc
+si,dc
+dohd,c
+# a la rose s'assemble
+0,c
+si,dc
+dohd,dc
+si,dc
+dohd,dc
+rehd,dc
+mih1,dc
+rehd,dc
+dohd1,dc
+si,dc
+lad3,dc
+sold,dc
+lad3,dc
+sold,dc
+lad3,dc
+sold,dc
+lad3,dc
+fad,np
+# sur la rive en fleurs riant au matin
+0,c
+si,dc
+lad3,dc
+si,dc
+lad3,dc
+sold,c
+lad3,dc
+si,dc
+dohd,c
+0,c
+si,dc
+lad3,dc
+si,dc
+lad3,dc
+sold,c
+lad3,dc
+si,dc
+dohd,c
+# viens descendons ensemble
+0,c
+si,dc
+dohd,dc
+si,dc
+dohd,dc
+rehd,dc
+mih1,dc
+rehd,dc
+dohd1,dc
+si,dc
+lad3,dc
+sold,dc
+lad3,dc
+sold,dc
+lad3,dc
+sold,dc
+lad3,dc
+si,np
+# doucement glissons de son flot charmant
+# FA MAJEUR
+0,c
+lad,dc
+sold,dc
+fad,dc
+sold,dc
+lad,c
+lad,dc
+fad,dc
+fad,dc
+lad,dc
+0,c
+lad,dc
+sold,dc
+fad,dc
+sold,dc
+lad,c
+lad,dc
+fad,dc
+fad,dc
+lad,dc
+# le courant fuyant
+0,c
+lad,dc
+sold,dc
+fad,dc
+sold,dc
+lad,c
+lad,dc
+fad,dc
+fad,dc
+lad,dc
+0,c
+lad,dc
+fad,dc
+fad,dc
+lad,dc
+# dans l'onde frémissante
+# MI MAJEUR
+0,c
+fahd,n
+mih,np+dc
+si,dc
+sold,dc
+mi,dc
+sold,dc
+si,dc
+mih,c
+solhd,n
+mih,n
+sold,dc
+0,dc
+# MI MINEUR
+# d'une main nonchalante
+sol1,np+dc
+sol1,dc
+mi,dc
+sig,dc
+mi,dc
+sol1,dc
+dohd,c
+mih,n
+dohd,n
+sol1,c

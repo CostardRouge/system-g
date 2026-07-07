@@ -1,0 +1,118 @@
+@occidental
+N = 900
+$ string_2
+# SI MAJEUR
+# Dome épais le jasmin
+# 6/8
+0,c
+rehd,np
+dohd,dc
+rehd,dc
+mih1,c
+0,c
+rehd,np
+dohd,dc
+rehd,dc
+mih1,c
+# a la rose s'assemble
+0,c
+rehd,dc
+mih1,dc
+rehd,dc
+mih1,dc
+fahd,dc
+solhd,dc
+fahd,dc
+mih1,dc
+rehd,dc
+dohd,dc
+si,dc
+dohd,dc
+si,dc
+dohd,dc
+si,dc
+dohd,dc
+lad3,np
+# rive en fleurs frais matin
+0,c
+rehd,np
+dohd,dc
+rehd,dc
+mih1,c
+0,c
+rehd,np
+dohd,dc
+rehd,dc
+mih1,c
+# nous appellebnt ensemble
+0,c
+rehd,dc
+mih1,dc
+rehd,dc
+mih1,dc
+fahd,dc
+solhd,dc
+fahd,dc
+mih1,dc
+rehd,dc
+dohd,dc
+si,dc
+dohd,dc
+si,dc
+dohd,dc
+si,dc
+dohd,dc
+rehd,np
+# ah glissons en suivant
+# FA# MAJEUR
+0,c
+dohd,np
+dohd,dc
+fahd,dc
+fahd,dc
+dohd,dc
+0,c
+rehd,np
+rehd,dc
+lad,dc
+lad,dc
+rehd,dc
+# le courant fuyant
+0,c
+dohd,np
+dohd,dc
+fahd,dc
+fahd,dc
+dohd,dc
+0,c
+dohd,dc
+fahd,dc
+fahd,dc
+dohd,dc
+# dans l'onde frémissante
+# MI MAJEUR
+0,c
+fahd,n
+solhd,np+dc
+mih,dc
+si,dc
+sold,dc
+si,dc
+mih,dc
+solhd,c
+sih,n
+solhd,n
+mih,dc
+0,dc
+# MI MINEUR
+# d'une main nonchalante
+mih,np+dc
+si,dc
+sol1,dc
+mi,dc
+sol1,dc
+si,dc
+mih,c
+solh1,n
+mih,n
+si,c

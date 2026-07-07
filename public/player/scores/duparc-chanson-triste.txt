@@ -1,0 +1,225 @@
+@occidental
+N = 550
+$ brass_2
+# dans ton coeur dort un clair de lune
+# DO MAJEUR
+sol,n
+re,c
+re,np
+re,n
+re,c
+mi,n
+fa1,c
+sol,np
+sol,n
+0,c
+
+# un doux claire de lune d'été
+# FA MAJEUR
+doh,np
+la,np
+sol,n
+sol,c
+
+# DO MAJEUR
+sol,bp
+sol,n
+sol,c
+sol,bpp
+0,n
+
+# et pour fuir la vie importune
+sol,n
+sol,c
+
+# LA MINEUR
+la,np+n
+la,c
+si,np
+si,n
+si,c
+reh,np
+reh,n
+0,c
+
+# je me noierai dans ta clarté
+# DO MAJEUR
+mih,np
+doh,n
+sol,c
+re,np+n
+0,c
+re,np
+mi,n
+fa1,c
+sol,np+n
+0,c
+
+# j'oublierai les douleurs passées
+# LA MINEUR
+si,n
+mi,c
+mi,np
+doh1,n
+doh1,c
+
+# MI MINEUR
+si,n
+la,c
+
+# DO MAJEUR
+sol,np
+sol,n
+0,c
+
+# mon amour, quand tu berceras
+# mon triste coeur et mes pensées
+# FA MAJEUR
+fah1,n
+doh,c
+la,n
+0,c
+
+# DO MAJEUR
+sol,n
+sol,c
+sol,n
+sol,c
+sol,n
+re,c
+mi,n
+fa1,c
+sol,n
+sol,c
+
+# MIb MAJEUR
+sol,n
+sol,c
+lab1,np
+lab1,n
+0,c
+
+# dans le calme aimant de tes bras
+mihb,np
+mihb,np
+sib,n
+sib,c
+sib,bp
+sol,n
+mib,c
+sigb,bp+c
+0,n
+
+# tu prendras ma tête malade
+# DO MAJEUR
+reh,n
+sol,c
+sol,n
+sol,c
+
+# MIb MAJEUR
+lab1,np
+sib,n
+doh,c
+sib,np
+sib,n
+0,c
+
+# oh quelquefois sur tes genoux
+# SOLb MAJEUR (enharmonie début)
+solhb,np
+rehb,n
+sib,c
+lab,np
+lab,c
+sib,c
+dohb1,c
+sib,np+n
+0,c
+
+# et lui diras une ballade
+dohb1,np
+rehb,n
+dohb1,c
+sib,np
+lab,c
+solb,c
+fa3,c
+lab,np
+lab,n
+0,b
+
+# (fin de l'enharmonie)
+# une ballade qui semblera parler de nous
+# MIb MINEUR
+lab,np
+lab,n
+lab,c
+
+# DO MAJEUR
+sol,np
+sol,n
+0,np
+sol,c
+la,n
+la,c
+re,np
+re,c
+mi,c
+fa1,c
+sol,np+n
+0,c
+
+# et dans tes yeux pleins de tristesse
+# RE MINEUR
+la,np
+sol,n
+sol,c
+sol,bp
+la,np
+sol,n
+sol,c
+
+# DO MAJEUR
+sol,np
+sol,n
+0,c
+
+# dans tes yeux alors je boirai
+doh,n
+doh,c
+doh,n
+mi,c
+mi,np
+
+# DO MINEUR
+lab1,n
+lab1,c
+
+# DO MAJEUR
+sol,n+dc
+0,dc
+
+# tant de baisers et de tendresses
+fah1,bp
+doh,n
+la,c
+sol,n
+sol,c
+la,n
+la,c
+reh,np
+reh,n
+0,c
+
+# que peut-être je guérirai
+mih,n
+doh,c
+sol,n
+sol,c
+re,np
+mi,n
+fa1,c
+sol,np+n
+
+

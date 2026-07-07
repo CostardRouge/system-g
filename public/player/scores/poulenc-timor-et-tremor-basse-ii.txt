@@ -1,0 +1,93 @@
+# BASSE II
+N = 909
+$ string_1
+# quoniam in te confidit (2) anima mea
+# FA# MINEUR VARIANTE
+lag,np
+lag,c
+la,n
+lag,n
+lag,n
+lag,c
+mi,c
+red3,b-dc
+0,dc
+lag,np
+lag,c
+lag,n
+lag,n
+la,n
+mi,c
+la,c
+red3,b-dc
+0,dc
+lag,n
+lag,n
+red3,n
+lag,n
+# SOL# MAJEUR
+solgd,np
+0,c
+0,4*n
+# refugium meum es tu
+# FA# MINEUR
+re1,n
+dod,c
+sig,c
+lag1,n
+solgd,n
+fagd,n
+# SI MINEUR
+sol1,c
+mi,c
+re1,n
+dod,n
+sig,n
+0,4*n
+# et adjutor fortis domine invocavi te
+# MI MINEUR
+lag,b
+sig,n
+do1,n
+sig,n
+lag,n
+lag,np
+0,c
+# LA MINEUR
+solgd3,b
+solgd3,n
+lag,b
+lag,n
+# MI MINEUR
+red3,n
+red3,n
+red3,n
+# MI MAJEUR
+mi,np
+0,c
+# non confundar (2) domine confundar (2)
+# MI MINEUR
+sig,n
+re1,n
+lag1,n
+do1,n
+sig,n
+re1,n
+lag1,n
+do1,n
+la1,b
+re1,n
+# LA MINEUR
+sold3,n
+la,n
+# RE MINEUR
+fa1,n
+dod3,b-dc
+0,dc
+# LA MINEUR
+re,b
+re,n
+# LA MAJEUR
+N = 1200
+lag,b+c
+0,c

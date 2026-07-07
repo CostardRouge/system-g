@@ -1,0 +1,66 @@
+@occidental
+N = 590
+$ string_2
+# noel noel c'est la fete des enfants
+lag,c
+re,c
+0,n
+mi,dc
+fa1,dc
+re,c
+0,n
+fa1,dc
+sol,dc
+mi,c
+mi,c
+fa1,dc
+sol,c
+lab1,c
+0,dc+n
+# papa maman je sais que vous m'amez tant
+sold3,c
+la,c
+0,n
+fa1,c
+la,c
+0,n
+sol,dc
+fa1,dc
+mi,c
+re,c
+dod3,c
+re,c
+mi,c
+0,n
+# et moi (2) je vous aime tout autant
+fad3,c
+sol,c
+0,n
+sib1,c
+la,dc
+sol,dc
+fa1,n
+fa1,dc
+sol,dc
+la,c
+sol,c
+fa1,c
+mi,c
+la,c
+0,n
+# je vous aime tout autant (2)
+fa1,dc
+sol,dc
+la,c
+sol,c
+fa1,c
+mi,c
+re,c
+0,n
+fa1,dc
+sol,dc
+la,c
+la,c
+si,c
+dohd3,c
+reh,c

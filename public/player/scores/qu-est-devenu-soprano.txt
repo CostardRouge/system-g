@@ -1,0 +1,74 @@
+@occidental
+# SOPRANO
+N = 450
+$ string_2
+LA,B
+SIB1,N
+SI,N
+REH,B
+SI,N
+SIB1,N
+LA,NP
+P,C
+REH,N
+REH,N
+DOHD3,B
+REH,N
+LA,N
+MIH,B
+LA,N
+DOH1,N
+SI,B
+DOH1,NP
+P,C
+# Dans qui lamour
+SI,B
+DOH1,N
+SOL,N
+SIB1,B
+LA,N
+REH,N
+DOHD3,B
+FAH1,B
+MIH,N
+FAH1,N
+REH,B
+REH,N
+DOHD3,N
+REH,NP
+P,C
+# Quest la bouche or devenue
+MIH,N
+FAH1,N
+FAH1,N
+REH,N
+LA,B
+DOH1,N
+SI,N
+SIB1,B
+SOL,N
+DOH,N
+LA,B
+FAD,N
+FA1,N
+MI,B
+SOL,N
+LAB1,N
+SOL,B
+LAB1,NP
+P,C
+# Dont ma maîtresse
+LA,B
+DOH,N
+DOHD3,N
+REH,B
+REH,N
+FAH1,N
+MIH,B
+FAH1,B
+REH,N
+LA,N
+SIB1,B
+REH,N
+DOHD3,N
+LA,R

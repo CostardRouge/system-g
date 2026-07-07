@@ -1,0 +1,144 @@
+
+N = 750
+$ string_2
+# SI MINEUR
+# o vos omnes
+fad,r
+lad3,b
+si,bp
+la,n
+sol1,r
+fad,r
+# qui transitis per viam
+0,n
+fad,b
+fad,n
+la,b
+si,bp
+si,n
+dohd,b
+dohd,b
+fad,r
+0,r+n
+# attendite et videte
+fad,n
+si,bp
+si,n
+si,b
+si,b
+lad3,b
+si,r
+lad,b
+0,r+r
+# si est dolor similis
+si,r
+la,b
+sol1,r
+fad,b
+0,n
+fad,b
+mi,c
+re1,c
+mi,n
+mi,n
+fad,r
+# sicut dolor meus (3)
+0,n
+fad,b
+fad,n
+fad,n
+fad,n
+sol1,n
+fad,b
+mi,n
+fad,n
+lad3,b
+lad3,n
+lad3,n
+lad3,n
+si,r
+la,r
+0,n
+fad,b
+fad,n
+fad,n
+fad,n
+sol1,r
+fad,r
+0,b
+# attendite universi populi
+si,b
+reh1,bp
+dohd,n
+dohd,r
+0,n
+dohd,b
+dohd,n
+dohd,n
+dohd,n
+si,bp
+si,n
+lad,b
+0,b
+# et videte
+reh1,b
+reh1,b
+dohd,b
+si,np
+dohd,c
+reh1,b
+mih,b
+la1,r
+0,rp
+# dolorem meum (3)
+dohd,b
+dohd,b
+reh1,b
+dohd,n
+dohd,b
+si,n
+dohd,n
+la1,b
+reh1,b
+si,b
+dohd,np
+si,c
+si,b
+lad3,n
+si,b
+0,r+r
+# si est dolor similis
+si,r
+la,b
+sol1,r
+fad,b
+0,n
+fad,b
+mi,c
+re1,c
+mi,n
+mi,n
+fad,r
+# sicut dolor meus (3)
+0,n
+fad,b
+fad,n
+fad,n
+fad,n
+sol1,n
+fad,b
+mi,n
+fad,n
+lad3,b
+lad3,n
+lad3,n
+lad3,n
+si,r
+la,r
+0,n
+fad,b
+fad,n
+fad,n
+fad,n
+sol1,r
+fad,rp

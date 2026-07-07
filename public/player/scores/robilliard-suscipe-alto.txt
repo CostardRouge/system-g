@@ -1,0 +1,169 @@
+@ occidental
+# alto
+N = 700
+$ string_2
+# MI MINEUR
+# suscipe ...
+sol1,n
+fad,n
+mi,n
+fad,n
+sol1,n
+fad,n
+mi,n
+fad,n
+mi,b
+fad,n
+mi,n
+fad,n
+fad,n
+sol1,n
+la,n
+fad,n
+re1,n
+fad,n
+sol1,n
+la,np
+0,c+bp+r
+fad,n
+sol1,n
+la,c
+sol1,c
+fad,n
+la,n
+fad,n
+mi,c
+fad,c
+sol1,n
+fad,n
+mi,n
+fad,n
+mi,b
+fad,b
+0,c
+# tout ce que je possede
+mi,c
+mi,c
+mi,c
+fad,n
+fad,n
+sol1,n
+sol1,n
+0,n
+# est l'effet de votre largesse
+mi,c
+mi,c
+sol1,n
+sol1,n
+sol1,c
+sol1,c
+la,n
+si,n
+si,c
+# je vous redonne tout (2)
+sol1,c
+sol1,c
+sol1,c
+la1,c
+la1,c
+si,n
+0,c
+mi,c
+mi,c
+mi,c
+fad,c
+fad,c
+sol1,bp
+0,n+2*r+c
+# je livre tout desormais à votre volonte
+si,c
+si,c
+si,c
+si,n
+la,c
+si,c
+sol1,np
+sol1,c
+la,c
+si,c
+la,c
+sol1,c
+la,n
+si,n
+la,b
+sol1,b
+0,r
+# donnez-moi seulement votre amour
+sol1,n
+sol1,n
+sol1,n
+la,c
+la,c
+si,n
+la,n
+sol1,c
+fad,c
+mi,n
+sol1,n
+0,b
+# avec votre grace (2)
+la,n
+sol1,n
+fad,n
+mi,n
+la,n
+la,b
+sol1,c
+0,c
+sol1,n
+sol1,n
+fad,n
+mi1,n
+fad,n
+fad,b
+fad,n
+0,r
+# ma liberte entiere seigneur
+sol1,c
+fad,c
+mi,n
+fad,n
+mi,n
+mi,n
+fad,n
+mi,c
+mi,c
+fad,n
+# prenez ma liberte tout entiere
+fad,n
+sol1,c
+sol1,c
+la,c
+la,c
+fad,n
+re1,c
+re1,c
+fad,n
+fad,c
+0,c
+# suscipe
+fad,n
+mi,n
+fad,b
+mi,b
+fad,n
+mi,n
+mi,n
+fad,n
+mi,c
+0,c
+# donnez-moi seulement votre amour
+sol1,c
+sol1,c
+sol1,n
+sol1,c
+sol1,c
+la,b
+la,n
+la,n
+sol1,r+1

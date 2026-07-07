@@ -1,0 +1,141 @@
+@ occidental
+N = 1000
+$ guitar_2
+# FA MINEUR
+# o doux printemps d'autrefois
+fa,n
+fah,n
+mihb1,n
+reh,n
+rehb1,n
+doh,cp
+fa,dc
+lab1,npp
+0,dc
+# vertes saisons vous avez fui pour toujours
+doh,n
+sib,cp
+fa,dc
+sol,npp
+0,dc
+doh,n
+sib,cp
+do,dc
+sol,n
+lab1,cp
+do,dc
+fa,cp
+0,dc
+# je ne vois plus le ciel bleu
+fah,n
+mihb1,n
+reh,n
+rehb1,n
+doh,cp
+fa,dc
+lab1,npp
+0,dc
+# je n'entens plus les chants joyeux des oiseaux
+doh,n
+sib,cp
+fa,dc
+sol,npp
+0,dc
+doh,n
+sib,cp
+do,dc
+sol,n
+lab1,cp
+do,dc
+fa,n+dc
+0,cp
+# DO MINEUR
+# en emportant mon boheur
+doh,n
+reh,cp
+reh,dc
+mihb1,n
+lab1,cp
+sib,dc
+# FA MINEUR
+doh,b+c
+0,c
+#o bien aimee tu t'en es allee
+mib1,b
+sib1,cp
+rehb1,dc
+doh,n
+sib1,cp
+rehb1,dc
+doh,n
+sib1,cp
+rehb1,dc
+doh,c
+0,c
+# et c'est en vain que revient le printemps
+doh,b
+N = 1200
+sib1,cp
+doh,dc
+lab1,n
+lab1,cp
+doh,dc
+sol,n
+N = 1500
+sol,cp
+N = 1700
+doh,dc
+N = 1000
+fa,c
+0,c
+# oui sans retour avec toi
+fah,n
+mihb1,n
+reh,n
+rehb1,n
+doh,cp
+fa,dc
+lab1,npp
+0,dc
+# le gai soleil les jours radieux sont partis
+doh,n
+sib,cp
+fa,dc
+sol,npp
+0,dc
+doh,n
+sib,cp
+do,dc
+sol,n
+lab1,cp
+do,dc
+fa,c
+0,c
+# SI MINEUR
+# comme en mon coeur tout est sombre et glace
+fah,b
+solhb1,cp
+doh,dc
+fah,n
+solhb1,cp
+doh,dc
+fah,n
+rehb1,cp
+doh,dc
+sib,cp
+0,dc
+# FA MINEUR
+# tout est fletri pour toujours
+sib,b
+N = 1700
+lab1,cp
+sol,dc
+N = 1000
+fa,bp
+0,n
+lab1,b
+N = 1700
+doh,np
+fah,c
+N = 1000
+fah,6*n

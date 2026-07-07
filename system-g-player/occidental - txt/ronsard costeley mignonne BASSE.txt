@@ -1,0 +1,160 @@
+@occidental
+# BASSE
+$ string_1
+# SOL MINEUR
+# las las voyez comme en peu d'espace
+N = 550
+sol,n
+0,n
+N = 500
+re,n
+re,c
+re,c
+sol,n
+re,n
+mib1,n
+do,n
+re,n
+re,n
+0,n
+# mignonne elle a dessus la place
+re,n
+re,np
+re,c
+sol,n
+re,n
+mib1,n
+do,n
+re,n
+re,n
+N = 600
+0,n
+# las las las ses beautés laissé choir
+N = 550
+sigb1,n
+0,n
+sigb1,n
+mib1,n
+N = 500
+sigb1,n
+fa1,n
+sol,n
+fa1,n
+fa1,n
+sigb1,n
+N = 600
+0,n
+# ô ô vraiment marâtre nature
+N = 550
+sol,n
+0,n
+N = 500
+re,n
+re,c
+re,c
+sol,n
+re,n
+mib1,n
+do,n
+re,n
+re,n
+0,n
+# puisqu'une telle fleur ne dure
+re,n
+re,np
+re,c
+sol,n
+re,n
+mib1,n
+do,n
+re,n
+re,dc
+N = 550
+0,dc
+# que du matin jusques au soir
+N = 500
+sigb1,c
+fa1,n
+sigb1,n
+fa1,n
+sol,n
+do,n
+re,n
+sol,r
+0,r
+# cueillez cueillez votre jeunesse
+N = 400
+sol,n
+re,c
+sol,c
+do,n
+re,n
+fa1,n
+sol,n
+re,n
+solg,c
+N = 450
+0,c
+# comme à cette fleur la vieillesse
+N = 400
+sol,n
+re,c
+sol,c
+do,n
+re,n
+fa1,n
+sol,n
+N = 450
+re,n
+re,dc
+0,dc
+# fera ternir votre beauté
+N = 400
+sigb1,c
+fa1,n
+sigb1,n
+fa1,n
+sol,n
+N = 450
+do,n
+re,n
+sol,np
+0,c
+# cueillez cueillez votre jeunesse
+N = 400
+sol,n
+re,c
+sol,c
+do,n
+re,n
+fa1,n
+sol,n
+re,n
+solg,c
+N = 450
+0,c
+# comme à cette fleur la vieillesse
+N = 400
+sol,n
+re,c
+sol,c
+do,n
+re,n
+N = 450
+fa1,n
+sol,n
+N = 500
+re,n
+re,dc
+0,dc
+# fera ternir votre beauté
+sigb1,c
+fa1,n
+sigb1,n
+fa1,n
+N = 550
+sol,n
+do,n
+N = 570
+re,n
+sol,r

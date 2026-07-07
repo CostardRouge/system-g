@@ -1,0 +1,91 @@
+LA = 441
+N = 300
+$ string_2
+# SOL MINEUR
+# miserere mei deus
+sol,bp
+sol,n
+sol,b
+sol,b
+fa1,r
+fa1,b
+fa1,r
+mib1,n
+sol,n
+do1,b
+re,b
+fa1,r+r
+fa1,r
+0,r
+# secundum magnam
+fa1,b
+fa1,n
+fa1,n
+fa1,r
+fa1,b
+# misericordiam (2) tuam
+fa1,bp
+sol,n
+mib1,n
+re,n
+mib1,bp
+fa,n
+sol,rp
+sol,b
+sol,r
+fa1,r
+mib1,b
+mib1,b
+re,b
+re,b
+re,r+r
+re,r+r
+0,r
+# amplius lava me
+sol,bp
+sol,n
+sol,b
+sol,n
+sol,n
+sol,b
+0,b
+# ab iniquitate mea
+sol,n
+sol,n
+sol,n
+sol,n
+fa1,r
+fa1,r
+sigb1,bp
+lag,n
+solg,b
+sol,b
+sol,r+r
+sol,rp
+fad3,cp
+sol,dc
+mi,n
+# RE MAJEUR
+fad,r+r
+0,r
+# SOL MINEUR
+# et a peccato meo munda me
+sol,b
+sol,n
+sol,n
+sol,b
+sol,b
+sol,r
+re,b
+0,b
+# DO MINEUR
+mib1,r+r
+do,r+r
+do,r+r
+mib1,b
+re,n
+do,n
+mib1,b
+re,n
+do,n
+re,r+r

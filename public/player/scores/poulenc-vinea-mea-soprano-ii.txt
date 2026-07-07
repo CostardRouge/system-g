@@ -1,0 +1,56 @@
+@occidental
+# SOPRANO II
+N = 966
+$ string_2
+# DO# MINEUR
+# et barrabam dimitteres
+dohd,b
+dohd,n
+sold,n
+fad,cp
+0,dc
+red,n
+red,n
+fad,n
+# DO# MAJEUR
+sold,bp-dc
+0,dc+r
+# et barrabam dimitteres
+# DO# MINEUR
+dohd,b
+dohd,n
+fad,n
+la1,cp
+0,dc
+sold,n
+red,n
+fad,n
+# SOL# MAJEUR
+red,b
+0,r
+# ut me crucifigeres et barrabam
+# DO# MINEUR
+fad,b
+fad,n
+fad,n
+fad,n
+fad,c
+la1,c
+fad,b-dc
+0,dc
+dohd,b
+dohd,n
+fad,n
+red,b-dc
+0,dc
+# et barrabam dimitteres
+dohd,b
+dohd,n
+fad,n
+red,cp
+0,dc
+la1,n
+fad,n
+sid3,n
+# DO# MAJEUr
+sold,r+n

@@ -1,0 +1,180 @@
+@ occidental
+N = 500
+$ string_2
+# LA MINEUR
+# je crois entendre encore cache sous les palmiers
+mih,c
+mih,r
+reh,c
+doh1,n
+reh,c
+mih,r
+fah1,c
+solh,n
+lah,c
+fah1,r
+mih,c
+reh,n
+fah1,c
+mih,r
+0,np
+# sa voix tendre et sonore comme un chant de ramiers
+mih,c
+reh,r
+doh1,c
+la,n
+doh,c
+reh,r
+doh1,c
+la,n
+doh1,c
+# Mi mineur
+si,r
+la,c
+sol1,n
+fad,c
+mi,r
+0,np
+# LA MINEUR
+# o nuit enchanteresse divins ravissements
+mih,c
+mih,r
+reh,c
+doh1,n
+reh,c
+mih,r
+fah1,c
+solh,n
+lah,c
+fah1,r
+mih,c
+reh,n
+fah,tc
+mih,c-tc
+reh,bp+c
+0,c
+# o souvenir charmant folle ivresse doux reve
+reh,c
+mih,n
+fah1,c
+solh,r
+fah1,c
+mih,n
+reh,c
+doh1,n
+0,c
+reh,n
+mih,c
+N = 600
+solh,n
+fah1,c
+sih,bp+c
+0,c
+lah,c
+N = 500
+doh1,r
+si,c
+la,n
+sold3,c
+la,r
+0,b
+# aux clartes des etoiles je crois encor la voir
+mih,np+n
+mih,c
+mih,n
+reh,c
+doh1,n
+reh,c
+mih,bp
+mih,c
+0,c
+fah1,c
+solh,n
+lah,c
+fah1,r
+mih,c
+reh,n
+fah1,c
+mih,r
+0,b
+# entr'ouvrir ses longs voiles aux vents tiedes du soir
+reh,n
+reh,c
+reh,np+n
+doh1,c
+la,n
+doh1,c
+reh,r
+doh1,c
+la,n
+doh1,c
+# MI MINEUR
+si,r
+la,c
+sol1,n
+fad,c
+# LA MINEUR
+mi,r
+0,np
+# o nuit enchanteresse divins ravissements
+mih,c
+mih,r
+reh,c
+doh1,n
+reh,c
+mih,r
+fah1,c
+solh,n
+lah,c
+fah1,r
+mih,c
+reh,n
+fah,tc
+mih,c-tc
+reh,bp+c
+0,c
+# o souvenir charmant folle ivresse doux reve
+reh,c
+mih,n
+fah1,c
+solh,r
+fah1,c
+mih,n
+reh,c
+doh1,n
+0,c
+reh,n
+mih,c
+N = 600
+solh,n
+fah1,c
+sih,bp+c
+0,c
+lah,c
+N = 500
+doh1,r
+si,c
+la,n
+sold3,c
+la,bp+c
+0,n
+# charmant souvenir (2)
+mih,np
+lah,bp+n
+0,c
+N = 650
+solh,c
+reh,c
+fah1,c
+N = 500
+mih,bp+c
+0,n
+mih,np
+dohh,bp+n
+0,c
+N = 700
+sih,c
+fahd,c
+solhd3,c
+N = 500
+lah,r

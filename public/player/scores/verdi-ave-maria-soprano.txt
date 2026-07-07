@@ -1,0 +1,272 @@
+@ occidental
+N = 720
+$ string_2
+# FA MINEUR
+# ave maria gratia plena
+doh,bp
+sib,b
+lab1,n
+# SIb MINEUR
+rehb1,b
+# DO# MINEUR
+dohd,bp
+# SI MINEUR
+si,cpp
+0,tc
+lad3,b
+# SI MAJEUR
+si,n
+# FA# MAJEUR
+rehd,n
+rehd,b
+dohd,b-dc
+0,dc
+# dominus tecum
+dohd,b
+# D0# MINEUR
+rehd,n
+mih1,n
+mih1,n
+rehd,cpp
+0,tc
+# benedicta tu in mulieribus
+fahd,b
+# MI MINEUR
+fahd,n
+mih,n
+doh1,n
+si,n
+la,cpp
+0,tc
+la,cpp
+0,tc
+# SI MINEUR
+lad3,cpp
+0,tc
+lad3,cpp
+0,tc
+si,np
+# SI MAJEUR
+si,c
+si,b-dc
+0,dc
+# SOL# MINEUR
+# et benedictum fructus ventris tui jesus
+dohd,b
+dohd,n
+dohd,n
+# DO# MINEUR
+dohd,b
+sid,b
+# FA MINEUR
+doh,b
+doh,cpp
+0,tc
+doh,cpp
+0,tc
+doh,cpp
+0,tc
+doh,cpp
+0,tc
+doh,bp
+doh,cpp
+0,tc
+# DO MAJEUR
+si3,b
+doh,b
+doh,b
+0,n
+#  FA MINEUR (P)
+0,b
+0,b
+0,bp
+# sancta maria mater dei
+rehb,b
+rehb,b
+rehb,n
+# SI MINEUR
+dohd,n
+si,n
+# MI MAJEUR
+si,cpp
+0,tc
+si,cpp
+0,tc
+si,n
+# DO# MINEUR
+sid3,n
+# FA# MAJEUR
+dohd,b-dc
+0,dc
+# RE# MINEUR
+# ora pro nobis
+dohdd3,n
+# FA# MAJEUR
+rehd,n
+# SI MAJEUR
+mih1,n
+mih1,n
+mih1,n
+rehd,n
+si,b
+0,b
+# DO MAJEUR
+# pro nobis peccatoribus
+mih,b
+mih,b
+# SOL MAJEUR
+reh,b
+reh,b
+# RE MAJEUR (P)
+dohd,b
+# FA# MAJEUR
+dohd,bp
+dohd,n
+# DO# MAJEUR
+sid3,n
+dohd,n
+fahd1,n
+rehd,n
+dohd,cpp
+0,tc
+# nunc et in ora mortis nostrae
+lad,n
+lad,n
+sold,n
+# FA MINEUR
+sol,bp
+doh,n
+fa,b
+fa,b
+fa,b
+# DO MAJEUR
+mi,b
+0,n
+0,b
+0,b
+0,b
+0,b
+0,n
+# ave maria gratia plena
+mih,n
+doh,n
+la,n
+# MI MINEUR (P)
+fad,bp
+si,n
+# FA# MINEUR (P)
+si,n
+la,c
+sold,c
+dohd,n
+dohd,cpp
+0,tc
+# SOL# MINEUR (P)
+# dominus tecum
+dohd,n
+si,c
+lad,c
+rehd,n
+rehd,n
+0,n
+# LA MAJEUR
+# benedicta tu in mulieribus
+mih,b
+# LA MINEUR (P)
+mih,n
+mih,n
+mihb1,n
+reh,bp
+# DO MINEUR
+doh,c
+sib,c
+sib,n
+reh,n
+# DO MAJEUR
+reh,n
+doh,n
+doh,cp
+0,dc
+# et benedictum fructus ventris tui jesus
+doh,cp
+0,dc
+# RE# MINEUR (P)
+sid,n
+si,n
+si,cp
+0,dc
+fad,cp
+0,dc
+# DO# MAJEUR (P)
+sold,n
+sold,n
+sold,n
+dohd,n
+dohd,b
+dohd,b
+# SOL MINEUR (P)
+doh,r
+# SIb MINEUR
+sib,r
+# FA MAJEUR
+la,r
+0,n
+# ave maria
+fa,r
+# SI MINEUR (P)
+fad,r
+# MI MINEUR
+la,r
+si,r
+# SI MINEUR
+dohd,b
+dohd,b
+# DO# MINEUR
+rehd,b
+rehd,b
+# DO# MINEUR (P)
+mih,b
+mih,b
+# RE MINEUR (P)
+fah,b
+fah,npp
+0,dc
+# DO MAJEUR (P)
+# ave maria
+fah,b
+fah,b
+# FA MAJEUR
+mih,b
+mih,b
+# SIb MINEUR
+mihb,b
+mihb,b
+# SIb MINEUR (P)
+rehb,b
+rehb,b
+# FA MINEUR
+sib,r
+# FA MAJEUR (P)
+la,r
+# SIb MINEUR
+N = 900
+solb,r
+# SIb MAJEUR
+fa,r
+N = 720
+0,b
+0,b
+# REb MAJEUR
+# amen amen
+fa,r
+mib,r
+# LAb MINEUR
+reb,r
+# DO MAJEUR
+do,bpp
+0,c
+N = 900
+re,bp
+mi,c
+fa1,c
+mi,r+n

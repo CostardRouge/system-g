@@ -1,0 +1,236 @@
+@occidental
+N = 550
+# BASSE
+$ brass_1
+# SIb MAJEUR
+# te deum laudamus
+sigb,n
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te dominum confitemur
+sigb,dc
+migb1,n
+migb1,n
+sigb,cp
+do,dc
+re,cp
+mib1,dc
+fa,npp
+fa,dc
+fa,cp
+mib1,dc
+# te deum laudamus
+re,cp
+do,dc
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te deum confitemur
+sigb,dc
+mib1,n
+sigb,cp
+sigb,dc
+fa,n
+fag,n
+sigb,bp
+# te deum laudamus
+sigb,n
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te dominum confitemur
+sigb,dc
+migb1,n
+migb1,n
+sigb,cp
+do,dc
+re,cp
+mib1,dc
+fa,npp
+fa,dc
+fa,cp
+mib1,dc
+# te deum laudamus
+re,cp
+do,dc
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te deum confitemur
+sigb,dc
+mib1,n
+sigb,cp
+sigb,dc
+fa,n
+fag,n
+sigb,bp
+$ string_1
+# et pleni sunt coeli
+lag3,n
+sigb,n
+sib,cp
+la3,dc
+sol,n
+mib1,n
+fa,b
+fa,n
+# SOL MINEUR
+# et terra majestatis
+sigb1,n
+do,n
+do,n
+re,n
+re,n
+solg,b
+sol,n
+# SIb MAJEUR
+# et terra majestatis
+mib1,n
+fa,n
+fa,cp
+sol,dc
+la3,n
+fa,n
+sigb,n
+sigb,n
+# gloriae tuae
+sigb,n
+sigb,n
+lag3,n
+sigb,n
+# FA MAJEUR
+do,b
+fag,b
+0,n
+# SIb MAJEUR
+$ brass_1
+# te deum laudamus
+sigb,n
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te dominum confitemur
+sigb,dc
+migb1,n
+migb1,n
+sigb,cp
+do,dc
+re,cp
+mib1,dc
+fa,npp
+fa,dc
+fa,cp
+mib1,dc
+# te deum laudamus
+re,cp
+do,dc
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te deum confitemur
+sigb,dc
+mib1,n
+sigb,cp
+sigb,dc
+fa,n
+fag,n
+sigb,b
+0,n
+$ string_1
+# in te domine speravi
+fa,n
+sol,n
+mib1,cp
+mib1,dc
+fa,n
+mib1,cp
+re,dc
+do,b
+# SOL MINEUR
+do,n
+# non confundar in aeternum
+do,cp
+do,dc
+sol,n
+re,n
+mib1,n
+mib1,n
+re,b
+re,n
+# non confundar (3) in aeternum
+re,cp
+re,dc
+# DO MAJEUR
+sol,n
+sig3,cp
+do,dc
+re,n
+solg,n
+do,b
+do,n
+# SIb MAJEUR
+sigb,cp
+sigb,dc
+lag3,n
+lag3,n
+solg,n
+solg,n
+fag,b
+fa,n
+$ brass_1
+# te deum laudamus
+sigb,n
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te dominum confitemur
+sigb,dc
+migb1,n
+migb1,n
+sigb,cp
+do,dc
+re,cp
+mib1,dc
+fa,npp
+fa,dc
+fa,cp
+mib1,dc
+# te deum laudamus
+re,cp
+do,dc
+sigb,b
+sigb,n
+sigb,n
+lag3,n
+fag,n
+sigb,npp
+# te deum confitemur
+sigb,dc
+mib1,n
+sigb,cp
+sigb,dc
+fa,n
+fag,n
+sigb,bp

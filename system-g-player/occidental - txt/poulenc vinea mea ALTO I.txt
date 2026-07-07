@@ -1,0 +1,243 @@
+@occidental
+# ALTO II
+N = 966
+$ string_2
+# DO# MAJEUR
+# vinea mea electa (2)
+sold,np
+sold,c
+mid,c
+lad,c
+sold,n
+lad,c
+sold,c
+lad,cp
+0,dc
+sold,np
+sold,c
+mid,c
+lad,c
+sold,n
+lad,c
+sold,c
+lad,cp
+0,dc
+# ego te plantavi (2)
+sold,n
+sold,np
+fad,c
+red,c
+mid,c
+red,cp
+0,dc
+sold,n
+sold,np
+fad,c
+red,c
+mid,c
+sold,cp
+0,dc
+# quomodo conversa es in amaritudinem
+# DO# MINEUR
+0,n
+dohd,c
+si,c
+la1,n
+sold,n
+la1,n
+si,c
+la1,c
+sold,cp
+0,dc
+sold,b
+mi1,n
+sold,n
+mi1,n
+mi1,n
+mi1,n
+red,b-dc
+0,dc
+# ut me crucifigeres et barrabam dimitteres
+sold,n
+la1,c
+fad,c
+sold,n
+fad,n
+mi1,n
+sig1,n
+mi1,n
+red,cp
+0,dc
+fad,b
+sold,n
+dod,n
+red,cp
+0,dc
+red,n
+dod,n
+fad,n
+# DO# MAJEUR
+mid,bp-dc
+0,dc
+# sepivite (2) et lapides elegi elegi ex te
+dod,n
+sold,np
+mid,c
+dohd,c
+0,c
+sold,n
+# DO# MINEUR
+sold,np
+sold,c
+sold,c
+0,c
+# SOL# MINEUR
+sold,n
+fadd3,n
+red,n
+fadd3,n
+red,n
+mid,n
+fadd3,b-dc
+0,dc
+red,n
+fadd3,n
+red,n
+sold,n
+# RE# MAJEUR
+fadd,b-dc
+0,dc
+# et oedificavi turrim
+# DO# MINEUR
+fad,b
+sold,n
+sold,n
+sold,n
+dohd,c
+si,c
+la1,n
+fad,n
+# SOL# MAJEUR
+red,b
+0,n+dc
+# DO# MINEUR
+# quomodo conversa es in amaritudinem
+sold,n
+sold,n
+fad,n
+mi1,n
+dod,n
+red,n
+mi1,cp
+0,dc
+sold,b
+mi1,n
+sold,n
+mi1,n
+mi1,n
+mi1,n
+# SOL# MAJEUR
+red,b-dc
+0,dc
+# ut me crucifigeres et barrabam dimitteres
+# DO# MINEUR
+sold,n
+la1,c
+fad,c
+sold,n
+fad,n
+mi1,n
+sig1,n
+mi1,n
+red,cp
+0,dc
+fad,b
+sold,n
+dod,n
+mi1,cp
+0,dc
+red,n
+dod,n
+fad,n
+# SOL# MAJEUR
+sold,b
+0,n+dc
+# DO# MAJEUR
+# vinea mea electa (2)
+sold,np
+sold,c
+mid,c
+lad,c
+sold,n
+lad,c
+sold,c
+lad,cp
+0,dc
+sold,np
+sold,c
+mid,c
+lad,c
+sold,n
+lad,c
+sold,c
+lad,cp
+0,dc
+# ego te plantavi (2)
+sold,n
+sold,np
+fad,c
+red,c
+mid,c
+red,cp
+0,dc
+sold,n
+sold,np
+fad,c
+red,c
+mid,c
+sold,cp
+0,dc
+# quomodo conversa es in amaritudinem
+# DO# MINEUR
+0,n
+dohd,c
+si,c
+la1,n
+sold,n
+la1,n
+si,c
+la1,c
+sold,cp
+0,dc
+sold,b
+mi1,n
+sold,n
+mi1,n
+mi1,n
+mi1,n
+red,b-dc
+0,dc
+# ut me crucifigeres et barrabam
+sigd3,b
+mi1,n
+red,n
+sigd3,n
+sigd3,c
+mid3,c
+red,b-dc
+0,dc
+fad,b
+sold,n
+fad,n
+sold,b-dc
+0,dc
+# et barrabam dimitteres
+fad,b
+sold,n
+fad,n
+sold,cp
+0,dc
+red,n
+re1,n
+la1,n
+dohd,r+n

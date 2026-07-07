@@ -1,0 +1,73 @@
+@occidental
+N = 600
+$ string_2
+bppp = bpp+dc
+# écoutez le temps viendra
+la,bppp
+fa1,dc
+la,bppp
+mi,dc
+la,bppp
+re,dc
+la,b+cp
+0,dc
+# les homm' un jour sauront la vérité
+la,n
+sib1,cp
+la,dc
+sol,cp
+la,dc
+sib1,n
+reh,n
+la,n
+fa1,n
+re,b
+# le lion s'étendra près de l'agneau
+sol,cp
+fa1,dc
+mib1,cp
+fa1,dc
+sol,n
+sol,b
+doh,cp
+sib1,dc
+la,npp
+# et nous fondrons les piques pour des faux
+sol,dc
+fa1,cp
+sol,dc
+fa1,cp
+mi,dc
+fa1,n
+re,n
+mi,n
+mi,cp
+fa1,dc
+sol,b
+# et les sabres pour des herses
+fa1,cp
+sol,dc
+fa1,cp
+mi,dc
+fa1,n
+re,n
+mi,b
+mi,npp
+0,dc
+# la paix sera notre combat
+sol,n
+mi,cp
+fa1,dc
+sol,n
+sib1,n
+reh,n
+la,n
+fa1,b
+# faites que ce temps vienne
+sol,n
+sol,cp
+la,dc
+sib1,n
+doh,n
+dohd3,b
+reh,b

@@ -1,0 +1,328 @@
+@occidental
+N = 550
+$ brass_2
+# FA MINEUR 4/4
+# the summer smiles the summer knows
+do,c
+sol,c
+lab1,c
+fa,b+c
+do,c
+sol,c
+lab1,c
+sib,b
+0,c
+# and unashamed she sheds her clothes
+do,c
+sol,c
+lab1,c
+fa,b+c
+do,c
+sol,c
+lab1,c
+doh,b
+0,c
+# the summer smoothes the restless sky
+fa,c
+doh,c
+rehb1,c
+sib,b+c
+fa,c
+doh,c
+rehb1,c
+mihb,b
+0,c
+# and lovingly she warms the sand on which you lie
+fa,c
+doh,trn
+rehb1,trn
+sib,trn+c
+fa,c
+doh,trn
+rehb1,trn
+sib,trn+c
+fa,c
+lab1,trn
+sib,trn
+sol,trn+b
+# FA MAJEUR
+# the summer knows the summer's wise
+0,c
+do,c
+sol,c
+la,c
+fa,b+c
+do,c
+# SI b MINEUR
+sol,c
+la3,c
+sib,b
+# FA MAJEUR
+# she sees the doubt within your eyes
+0,c
+do,c
+sol,c
+la,c
+fa,b+c
+do,c
+# DO MINEUR
+sol,c
+la,c
+doh,b
+# FA MAJEUR
+# and so she takes her summer time
+0,c
+fa,c
+doh,c
+reh,c
+# SI b MAJEUR
+sib,b+c
+fa,c
+# DO MAJEUR
+doh,c
+reh,c
+fah1,b
+# RE MINEUR
+# tell the moon to wait and the sun to linger
+mih,c
+reh,c
+# LA MAJEUR variante
+dohd3,n
+mi,n
+# RE MINEUR
+fa1,n
+mih,c
+reh,c
+# LA MAJEUR variante
+dohd3,n
+mi,n
+# LA b MAJEUR
+mihb,n
+rehb1,n
+# twists the world 'round her summer finger
+doh,n
+mib,n
+# LA b MINEUR
+fab1,n
+# LA b MAJEUR
+mihb,c
+rehb1,c
+doh,n
+mib,n
+# RE MAJEUR variante
+reh,n
+# DO MAJEUR
+doh,n
+# less lets you see the wonder of it all
+doh,n
+si3,n
+la,n
+sol,n
+# SI b MAJEUR
+doh,c
+sib,c
+la3,c
+sol,c
+reb1,b
+# FA MAJEUR
+# and if you've learned your lesson well
+0,c
+do,c
+sol,c
+la,c
+fa,b+c
+do,c
+# SI b MINEUR
+sol,c
+la3,c
+sib,b
+# FA MAJEUR
+# there's little more for her to tell
+0,c
+fa,c
+sib1,c
+doh,c
+la,b+c
+fa,c
+# SI b MINEUR
+sib,c
+doh,c
+rehb1,b
+# FA MINEUR
+# one last caress it's time to dress for fall
+0,c
+do,c
+sol,c
+lab1,c
+fa,b+c
+do,c
+sol,c
+lab1,c
+fa,b
+fa,n
+fa,r
+fa,bp
+0,c
+
+$ piano_3
+# FA MINEUR
+# the summer smiles the summer knows
+do,c
+sol,c
+lab1,c
+fa,b+c
+do,c
+sol,c
+lab1,c
+sib,b
+0,c
+# and unashamed she sheds her clothes
+do,c
+sol,c
+lab1,c
+fa,b+c
+do,c
+sol,c
+lab1,c
+doh,b
+0,c
+# the summer smoothes the restless sky
+fa,c
+doh,c
+rehb1,c
+sib,b+c
+fa,c
+doh,c
+rehb1,c
+mihb,b
+0,c
+# and lovingly she warms the sand on which you lie
+fa,c
+doh,trn
+rehb1,trn
+sib,trn+c
+fa,c
+doh,trn
+rehb1,trn
+sib,trn+c
+fa,c
+lab1,trn
+sib,trn
+sol,trn+b
+# FA MAJEUR
+# the summer knows the summer's wise
+0,c
+do,c
+sol,c
+la,c
+fa,b+c
+do,c
+# SI b MINEUR
+sol,c
+la3,c
+sib,b
+# FA MAJEUR
+# she sees the doubt within your eyes
+0,c
+do,c
+sol,c
+la,c
+fa,b+c
+do,c
+# DO MINEUR
+sol,c
+la,c
+doh,b
+# FA MAJEUR
+# and so she takes her summer time
+0,c
+fa,c
+doh,c
+reh,c
+# SI b MAJEUR
+sib,b+c
+fa,c
+# DO MAJEUR
+doh,c
+reh,c
+fah1,b
+# RE MINEUR
+# tell the moon to wait and the sun to linger
+mih,c
+reh,c
+# LA MAJEUR variante
+dohd3,n
+mi,n
+# RE MINEUR
+fa1,n
+mih,c
+reh,c
+# LA MAJEUR variante
+dohd3,n
+mi,n
+# LA b MAJEUR
+mihb,n
+rehb1,n
+# twists the world 'round her summer finger
+doh,n
+mib,n
+# LA b MINEUR
+fab1,n
+# LA b MAJEUR
+mihb,c
+rehb1,c
+doh,n
+mib,n
+# RE MAJEUR variante
+reh,n
+# DO MAJEUR
+doh,n
+# less lets you see the wonder of it all
+doh,n
+si3,n
+la,n
+sol,n
+# SI b MAJEUR
+doh,c
+sib,c
+la3,c
+sol,c
+reb1,b
+# FA MAJEUR
+# and if you've learned your lesson well
+0,c
+do,c
+sol,c
+la,c
+fa,b+c
+do,c
+# SI b MINEUR
+sol,c
+la3,c
+sib,b
+# FA MAJEUR
+# there's little more for her to tell
+0,c
+fa,c
+sib1,c
+doh,c
+la,b+c
+fa,c
+# SI b MINEUR
+sib,c
+doh,c
+rehb1,b
+# FA MINEUR
+# one last caress it's time to dress for fall
+0,c
+do,c
+sol,c
+lab1,c
+fa,b+c
+do,c
+sol,c
+lab1,c
+fa,b
+fa,n
+fa,r
+fa,bp

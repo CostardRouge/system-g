@@ -1,0 +1,209 @@
+@occidental
+N = 1250
+$ string_2
+# le sommeil est en voyage
+# SOL MAJEUR
+sol,c
+sol,c
+la,c
+la,c
+reh,c
+reh,c
+sol,c
+sol,dc
+0,dc
+# mon dieu où est-il parti
+sol,c
+sol,c
+la,c
+la,c
+reh,c
+reh,c
+sol,c
+0,c
+# j'ai beau bercer mon petit
+# LA MINEUR
+mih,c
+mih,c
+si,c
+si,c
+doh1,c
+mi,c
+la,c
+0,c
+# il pleure dans son lit-cage
+# DO MAJEUR
+0,c
+mi,c
+fa1,c
+fa1,dc
+fa1,dc
+sol,c
+sol,c
+# DO MINEUR
+lab1,c
+lab1,c
+# il pleure depuis midi
+0,c
+lab1,c
+si3,c
+si3,dc
+si3,dc
+lab1,c
+si3,c
+mihb1,c
+0,c
+# où le sommeil a-t-il mis
+# SOL MAJEUR
+sol,c
+sol,c
+la,c
+la,c
+reh,c
+reh,c
+sol,c
+0,c
+# son sable et ses rêves sages
+# SIb MINEUR
+sib,c
+sib,c
+doh,c
+doh,c
+fah,c
+fah,c
+sib,c
+sib,dc
+0,dc
+# j'ai beau bercer mon petit
+# DO MINEUR
+solh,c
+solh,c
+reh,c
+reh,c
+mihb1,c
+sol,c
+doh,c
+0,c
+# il se tourne tout en nage
+# RE MINEUR
+sib1,c
+sib1,c
+sol,c
+sol,c
+sib1,c
+sib1,c
+sol,c
+sol,dc
+0,dc
+# Il sanglote dans son lit
+# SOL MINEUR
+sib1,c
+sib1,c
+sol,c
+sol,c
+fad3,c
+la,c
+reh,c
+0,c
+# ah reviens reviens sommeil
+# SOL MAJEUR
+si,c
+si,c
+# SOL MINEUR
+sib1,c
+sib1,c
+reh,c
+la,c
+la,n
+# sur ton beau cheval de course
+# SOL MAJEUR
+si,c
+si,c
+# SOL MINEUR
+sib1,c
+sib1,c
+reh,c
+la,c
+la,c
+la,dc
+0,dc
+#~dans le ciel noir la grande ourse
+# LA MINEUR
+la,c
+la,c
+sold3,c
+sold3,c
+# SOL MINEUR
+sol,c
+sib1,c
+doh,c
+doh,c
+# a enterré le soleil
+# RE MINEUR
+dohd3,c
+dohd3,c
+reh,c
+reh,c
+# SOL MINEUR
+sib1,c
+sib1,c
+sol,c
+0,c
+# et rallumé ses abeilles
+fad3,c
+fad3,c
+sib1,c
+sib1,c
+fad3,c
+sib1,c
+reh,c
+reh,dc
+0,dc
+# si l'enfant ne dort pas bien
+# RE MINEUR
+re,c
+re,c
+mi,c
+mi,c
+la,c
+la,c
+re,c
+0,c
+# il ne dira pas bonjour
+# SOL MINEUR
+sol,c
+sol,c
+sib1,c
+sol,c
+sol,c
+la,c
+fad3,c
+0,c
+# il ne dira rien demain
+sol,c
+sol,c
+sib1,c
+sol,c
+sol,c
+la,c
+fad3,c
+0,c
+# à ses doigts au lait au pain
+sol,c
+sib1,c
+la,n
+0,c
+sib1,c
+la,n
+0,c
+sib1,c
+la,n
+# qui l'accueillent dans le jour
+sol,c
+sol,c
+la,c
+la,c
+sol,c
+la,c
+# SOL MAJEUR
+si,b+c

@@ -1,0 +1,114 @@
+@ occidental
+N = 550
+$ piano_2
+# FA MINEUR
+# dans venise la rouge
+lab1,n
+lab1,c
+lab1,c
+sol,c
+fa,c
+doh,n
+doh,c
+rehb1,np
+rehb1,c
+0,c
+#  pas un bateau qui bouge
+lab1,c
+lab1,n
+lab1,c
+lab1,n
+rehb1,c
+doh,np
+doh,c
+0,c
+# pas un pecheur sur l'eau pas un fallot
+doh,c
+doh,n
+# MIb MAJEUR
+doh,c
+reh3,c
+doh,c
+sib,c
+mihb,np
+mib,c
+mib,c
+mib,c
+mib,bpp
+0,n+np
+# FA MINEUR
+# la lune qui s'efface
+lab1,np
+fa,n
+fa,c
+doh,n
+lab1,c
+fa,n
+fa,c
+# couvre son front qui passe
+lab1,np
+fa,n
+fa,c
+doh,n
+lab1,c
+fa,n
+sol,c
+# d'un nuage etoile (2)
+lab1,n
+sib,c
+si3,np
+si3,n
+si3,c
+doh,np
+doh,n
+doh,c
+doh,np
+doh,n
+doh,c
+mih3,np
+# demi voile
+mih3,dc
+fah,tc
+mih3,tc
+reh,c
+mih3,c
+fah,np+n
+si3,c
+doh,bp+bp+n
+0,b
+# tout se tait fors les gardes
+doh,np+n
+rehb1,c
+doh,n
+0,c
+doh,n
+rehb1,c
+doh,np+n
+rehb1,c
+doh,n
+0,c
+# au longues hallebardes
+doh,np
+doh,n
+rehb1,c
+# MIb MAJEUR
+mihb,n
+fah,c
+mihb,n
+reh3,c
+sib,n
+# qui veillent aux creneaux
+doh,c
+# FA MINEUR
+rehb1,n
+rehb1,c
+rehb1,n
+rehb1,c
+rehb1,bp+n
+0,c
+# des arsenaux
+sib,bp
+sib,n
+sib,c
+# FA MAJEUR
+la,bp+bp+b

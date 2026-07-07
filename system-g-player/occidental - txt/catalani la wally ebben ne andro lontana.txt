@@ -1,0 +1,205 @@
+@occidental
+N = 1000
+$ string_2
+# MI MAJEUR
+# ebben ne andro lontana come va l'eco della pia campana
+si,c
+si,np
+si,c
+si,c
+si,c
+si,n
+si,c
+si,c
+si,c
+si,c
+la1,n
+la1,c
+sold,dc
+fad,dc
+sold,c
+fad,c
+fad,tc
+sold,tc
+fad,dc
+mi,c
+mi,np
+0,c
+# la fra la neve bianca la fra le nubi d'or
+mih,np
+mih,dc
+mih,dc
+rehd3,dc
+dohd,dc
+si,dc
+rehd3,dc
+mih,n
+mih,n
+si,n
+si,n
+0,c
+si,dc
+si,dc
+si,c
+si,c
+si,np
+0,c
+# laddove la speranza la speranza
+# MI MINEUR
+0,c
+mih,c
+fahd,np
+fahd,c
+fahd,cp
+fahd,dc
+# SI MINEUR
+solh1,np
+solh1,c
+solh1,cp
+mih,dc
+si,n
+si,c
+0,c
+# e rimpianto (2) e dolor
+# MI MINEUR
+la,c
+doh1,c
+si,c
+reh,c
+reh,np
+0,c
+sol1,c
+mi,c
+mi,c
+fad,dc
+sol1,dc
+fad,npp
+mi,dc
+mi,np
+0,np
+0,n
+# o della madre mia casa gioconda
+# DO MAJEUR
+doh,b
+reh,cp
+mih,dc
+mih,b
+doh,n
+reh,np
+mih,c
+reh,c
+mih,c
+reh,n
+sol,n
+# la wally ne andra da te da te lontana assai
+0,c
+sol,c
+fah1,b
+fah1,c
+fah1,c
+mih,cp
+si3,dc
+si3,n
+0,c
+reh,c
+doh,np
+reh,c
+doh,c
+reh,c
+reh,n
+sol,n
+# e forse a te (2) non fara mai piu ritorno
+0,c
+sol,c
+solh,b
+doh,n
+doh,np
+0,n
+doh,c
+lah,b
+reh,n
+reh,np
+0,c
+si3,cp
+sol,dc
+solh,np
+mih,c
+reh,c
+doh,c
+# FA MAJEUR
+fah,n
+fah,c
+# ne piu la revedrai ma piu ma piu
+la,c
+doh,c
+fah,c
+# DO MAJEUR
+mih,dc
+reh,dc
+doh,dc
+mih,dc
+reh,npp
+doh,dc
+doh,np
+0,n
+mih,c
+solh,n
+solh,np
+# MI MAJEUR
+lad3,c
+si,b
+si,n
+0,b+c
+# ne andro sola e lontana come l'eco della pia campana
+si,c
+si,np
+si,c
+si,c
+si,c
+si,n
+si,n
+mi,cp
+mi,dc
+mih,np
+mih,c
+rehd3,dc
+dohd,dc
+si,dc
+rehd3,dc
+mih,b
+si,n+dc
+0,dc
+# la fra la neve bianca
+la1,n
+sold,dc
+fad,dc
+sold,c
+fad,c
+fad,c
+mi,c
+mi,n
+# n'andro sola e lontana et fra le nubi d'or
+0,c
+# MI MINEUR
+mih,c
+fahd,n
+fahd,np
+fahd,c
+# SI MINEUR
+solh1,np
+solh1,c
+solh1,c
+mih,c
+sih,b
+sih,n
+sih,np
+si,c
+0,n
+# MI MINEUR
+0,dc
+mih,dc
+fahd,dc
+solh1,dc
+fahd,npp
+mih,dc
+mih,np

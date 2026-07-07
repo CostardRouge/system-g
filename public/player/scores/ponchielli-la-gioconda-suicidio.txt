@@ -1,0 +1,244 @@
+@occidental
+N = 750
+$ string_2
+# FA# MINEUR
+# suicidio in questi fieri momenti
+dohd,dcp
+fahd,bp
+fad,np
+0,np+c+cp
+fad,dc
+fad,np
+fad,np
+fad,c
+la1,cp
+sold,dc
+sold,np
+fad,b
+0,n+c+cp
+# tu sol mi resti e il cor mi tenti
+dohd,dc
+mih,np+n+dc
+mi,dc
+mi,np
+re1,b
+0,n+c+cp
+mih,dc
+# SI MINEUR
+solh1,b+dc
+sol1,dc
+sol1,np
+fad,b
+0,n
+# ultima voce del mio destino
+si,np
+si,np
+si,np
+reh1,n+dcp
+doh1,tc
+# FA# MINEUR
+si,bp
+si,np
+si,np
+si,np
+reh1,n+dcp
+dohd,tc
+si,bp
+# ultima croce del mio cammin
+dohd,np
+fahd,np
+fahd,np
+fahd,bp
+fad,n
+sold,c
+la1,np
+N = 1100
+la1,np+n+dc
+sold,dc
+N = 750
+fad,np
+0,bp
+# e un leggiadre volavan l'ore
+dohd,np
+dohd,np
+reh1,c
+mih1,c
+reh1,c
+dohd,bp
+si,np
+la1,np
+lah1,np
+mihd3,dc
+fahd,dc
+solhd,dc
+fahd,dc
+reh1,dc
+si,dc
+la1,bp
+sold,np
+0,bp
+# perde la madre (3)
+N = 690
+la1,c
+sold,c
+la1,c
+reh1,n+dcp
+dohd,tc
+si,np
+si,c
+lad3,c
+si,c
+mih,n+dcp
+reh1,tc
+dohd,np
+reh1,c
+dohd,c
+reh1,c
+# SI MINEUR
+solh1,n+dcp
+fahd,tc
+mih,np
+# vinsi l'infausta gelosa febre
+# FA# MINEUR
+fahd,c
+mihd3,c
+fahd,c
+# DO# MINEUR
+solhd,n+dc
+sold,dc
+sold,np
+# FA# MINEUR
+fahd,c
+mihd3,c
+fahd,c
+# DO# MINEUR
+solhd,n
+sold,c
+N = 800
+# or piombo esausta (2)
+fad,c
+fad,c
+fad,c
+# FA# MINEUR
+N = 750
+fad,np
+mid3,np
+# DO# MINEUR
+mi1,c
+mi1,c
+mi1,c
+# SOL# MINEUR
+mi1,np
+red3,np
+#fra le tenebre (2)
+# FA# MINEUR
+re1,c
+re1,c
+re1,c
+re1,np
+dod,np
+N = 1300
+fad,c
+N = 900
+mi,cp
+re1,dc
+re1,bp
+dod,c
+0,n
+N = 750
+0,bp
+# tocco alla meta domando al ciel
+fad,np
+fad,n
+fad,c
+fahd,np
+fad,np
+0,bp
+fad,np
+fad,n
+fad,c
+N = 1000
+# FA# MAJEUR
+dohd,np
+# domando al cielo di dormir queta
+fahd,c
+mihd3,c
+rehd,c
+dohd,c
+si1,c
+lad,c
+sold,c
+fad,c
+sold,c
+lad,n
+dohd,c
+# di dormir queta dentro l'avel
+fahd,c
+mihd3,c
+rehd,c
+dohd,c
+si1,c
+lad,c
+sold,c
+fad,c
+sold,c
+# RE# MINEUR VARIANTE
+lad,np
+# domando al cielo al cielo di dormir
+mid3,c
+fad,c
+sold,c
+lad,c
+si1,c
+# DO# MAJEUR
+sid3,c
+dohd,c
+# FA# MAJEUR
+N = 1600
+sih1,c
+N = 1000
+lahd,c
+solhd,c
+fahd,c
+# FA# MINEUR
+reh1,c
+si,c
+sold,c
+fad,c
+# queta dentro l'avel
+# FA# MAJEUR
+lad,n
+dod,c
+N = 1200
+red,c
+mi1,c
+N = 2200
+mid3,c
+N = 1300
+fad,c
+N = 1000
+fad,n
+0,b+c
+# tocco alla meta domando al cielo di dormir
+N = 1100
+lad,c
+lad,c
+lad,c
+lad,n
+lad,c
+lad,c
+lad,c
+lad,c
+lad,n
+lad,c
+fad,c
+fad,c
+fad,c
+# queta dentro l'avel
+fad,n
+fad,c
+N = 1300
+dod,c
+dod,c
+dod,c
+dod,bp+c

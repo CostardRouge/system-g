@@ -1,0 +1,156 @@
+@ occidental
+# soprano
+N = 700
+$ string_2
+# MI MINEUR
+# seigneur prenez ma liberte tout entiere
+si,c
+si,n
+0,c
+si,c
+reh1,c
+reh1,c
+mih,c
+mih,c
+si,n
+la,c
+la,c
+si,n
+si,c
+# seigneur prenez ma liberte tout entiere
+reh1,c
+# SI MINEUR
+reh1,n
+0,c
+reh1,c
+mih1,c
+mih1,c
+fahd,c
+fahd,c
+dohd,n
+si,c
+si,c
+dohd,n
+dohd,n
+# MI MINEUR
+# suscipe
+0,b
+si,n
+la,n
+sol1,bp
+fad,n
+sol1,n
+la,c
+0,c+r+np
+# seigneur prenez ma liberte toute entiere
+si,c
+si,n
+0,c
+si,c
+reh1,c
+reh1,c
+mih,c
+mih,c
+si,n
+la,c
+la,c
+si,n
+si,n
+0,b+c
+# jr livre tout desormais a votre volonte
+solh1,c
+solh1,c
+solh1,c
+solh1,n
+fahd,c
+solh1,c
+mih,np
+mih,c
+reh,c
+reh,c
+doh1,c
+doh1,c
+reh,n
+mih,n
+fahd,b
+solh1,b
+0,b
+#donnez-moi seulement votre amour
+fahd,n
+fahd,n
+fahd,n
+mih,c
+mih,c
+reh,n
+si,c
+si,c
+reh,n
+doh1,n
+0,b+bp
+# avec votre grace (2)
+si,n
+si,b
+doh1,n
+reh,n
+mih,b
+mih,c
+0,c
+mih,n
+la1,b
+la1,n
+la1,n
+si,b
+si,n
+0,b
+# seigneur prenez ma liberte toute entiere
+si,n
+si,n
+0,c
+si,c
+reh1,c
+reh1,c
+mih,c
+mih,c
+si,n
+la,c
+la,c
+si,n
+si,c
+# seigneur prenez ma liberte tout entiere
+reh1,c
+# SI MINEUR
+reh1,n
+0,c
+reh1,c
+mih1,c
+mih1,c
+fahd,c
+fahd,c
+dohd,n
+si,c
+si,c
+dohd,n
+dohd,n
+# MI MINEUR
+0,bp
+# donnez-moi seulement votre amour (2)
+si,c
+si,c
+reh1,n
+doh1,c
+doh1,c
+si,b
+doh1,n
+reh,n
+mih,c
+0,c
+mih,c
+mih,c
+fahd,n
+reh1,c
+reh1,c
+doh1,b
+doh,n
+reh,n
+mih,b
+mih,bp

@@ -1,0 +1,187 @@
+# SOPRANO
+N = 909
+$ string_2
+# timor et tremor (2)
+# LA MINEUR
+la,n
+la,np
+la,c
+si,c
+la,c
+si,b
+doh1,n
+doh1,np
+doh1,c
+reh,c
+doh1,c
+reh,b
+# venerunt super me (2) super me
+mih,n
+fah1,n
+mih,n
+la,n
+si,n
+doh1,np
+0,c
+mih,n
+solh,c
+fah1,c
+mih,n
+la,n
+si,n
+doh1,np
+0,c
+reh,n
+mih,n
+mih,np
+0,c
+# et caligo cecidit cecidit super me
+la,b
+la,c
+la,c
+la,n
+la,c
+la,c
+la,np
+0,c
+la,c
+la,c
+#  MI MINEUR
+la,n
+si,n
+si,n
+# SI MAJEUR
+si,np
+0,c
+# miserere mei domine miserere mei
+# MI MINEUR
+solh1,b
+solh1,n
+fahd,n
+mih,n
+la,n
+si,b
+doh1,n
+reh1,n
+mih,b-dc
+0,dc
+# LA MINEUR
+mih,b
+reh,n
+doh1,n
+si,n
+fad,n
+# MI MAJEUR
+sold,b-dc
+0,dc
+# quoniam in te confidit (2) anima mea
+# FA# MINEUR (VARAINTE)
+dohd,np
+mi,c
+fad,n
+la,n
+si,n
+dohd,c
+mi,c
+fad,b-dc
+0,dc
+dohd,np
+mi,c
+fad,n
+la,n
+si,n
+dohd,c
+mi,c
+fad,b-dc
+0,dc
+dohd,n
+mi,n
+fad,n
+rehd3,n
+# SOL# MAJEUR
+rehd,np
+0,c
+# exaudi deus deprecationem meam
+# DO# MINEUR
+mih1,b
+mih1,n
+rehd,n
+dohd,n
+mih1,b
+mih1,n
+rehd,n
+dohd,n
+si1,n
+la1,c
+dohd,c
+sold,n
+fad,n
+sold,np
+0,c
+0,9*n
+# quia refugium meum es tu
+# DO# MINEUR
+sid3,n
+sid3,n
+dohd,n
+rehd,c
+sold,c
+mih1,n
+# FA# MINEUR
+mihd3,n
+fahd,n
+solhd,n
+dohd,np
+0,c
+# et adjutor fortis domine invocavi te
+# MI MINEUR
+rehd3,b
+si,n
+la,n
+si,n
+doh1,n
+rehd3,np
+0,c
+# LA MINEUR
+fah1,b
+mih,n
+reh,b
+doh1,n
+# MI MINEUR
+doh1,n
+doh1,n
+si,n
+# MI MAJEUR
+si,np
+0,c
+# non confundar (3) confundar
+# MI MINEUR
+fahd,n
+la1,n
+dohd,n
+doh1,n
+fahd,n
+la1,n
+dohd,n
+doh1,n
+la1,np
+solh1,c
+fahd,c
+fah1,c
+# LA MINEUR
+mih,c
+rehd3,c
+reh,c
+doh1,c
+# RE MINEUR
+sib1,c
+la,c
+sol1,b-dc
+0,dc
+# LA MINEUR
+fad,b
+si,n
+# LA MAJEUR
+N = 1200
+mi,b+c
+0,c

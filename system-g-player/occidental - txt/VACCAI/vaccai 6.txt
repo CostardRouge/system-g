@@ -1,0 +1,33 @@
+@occidental
+N = 600
+$ string_2
+do,c
+do,np
+do,c
+si3,n
+si3,n
+doh,b
+re,n
+0,n
+mi,n
+mi,cp
+mi,dc
+rehd3,n
+rehd3,n
+mih,b
+fad3,n
+0,n
+sol,n
+sol,cp
+sol,dc
+fah1,n
+sol,n
+mih,b
+fa1,np
+0,c
+la,n
+la,c
+la,c
+sig,n
+sig,n
+do,b

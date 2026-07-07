@@ -1,0 +1,401 @@
+@occidental
+N = 750
+$ piano_3
+# RE MINEUR
+lah,c
+solh,n
+fahd3,c
+fah1,c
+mih,c
+mihb1,c
+reh,c
+reh,n
+dohd3,dc
+0,dc
+reh,c
+reh,n
+dohd3,dc
+0,dc
+reh,c
+reh,n
+dohd3,np
+0,c
+$ string_2
+# ce breuvage pourrait me donner un tel rve
+dod3,cp
+dod3,dc
+dod3,n
+dod3,cp
+dod3,dc
+dod3,n+trn
+dod3,trn
+dod3,trn
+dod3,trn
+dod3,trn
+re,trn
+mi,b
+mi,n
+0,c
+# je pourrais la revoir comptempler sa beaut
+mi,dc
+fa1,dc
+sol,c
+fa1,dc
+mi,dc
+sol,b
+0,c
+sol,trn
+la,trn
+sib1,trn
+la,trn
+sol,trn
+sib1,b
+0,np
+# divine volupt  mes regards promise
+sib1,c
+la,c
+sol,c
+fa1,c
+mi,c
+sol,np
+sol,c
+fa1,c
+mi,c
+re,cp
+dod3,dc
+mi,b
+re,c
+0,c
+# esprance trop brve qui viens bercer mon coeur
+re,c
+re,c
+re,n
+mi,c
+fa1,c
+sol,n
+la,c
+sib1,c
+la,c
+sol,c
+fa1,c
+sol,c
+la,n
+# et troubler ma raison
+si,c
+dohd3,c
+reh,n
+re,c
+mi,c
+fa1,n
+0,n
+# RE MAJEUR
+# ah ne t'enfuis pas douce illusion
+fad,np
+fad,c
+mi,c
+re,c
+# RE MINEUR
+fa1,n
+la,np
+mi,c
+mi,c
+fa1,c
+N = 650
+re,n
+0,c
+
+$ piano_3
+# SIb MAJEUR
+fa,n+dc
+dod3,dc
+re,np
+sol,n+dc
+re,dc
+mib1,np
+fa,c
+fad3,c
+sol,c
+sol,n+dcp
+re,tc
+fa,c
+sol,c
+la3,c
+sib,c
+doh,c
+fa,c
+fah,n
+mih3,c
+mihb1,c
+reh,c
+doh,c
+sib,c
+fa,c
+re,c+dc
+do,dc
+sig3,dc
+do,dc
+re,dc
+do,dc
+mib1,n+dcp
+re,tc
+fa,n
+fa,dc
+mib1,dc
+
+$ string_2
+# vision fugitive et toujours poursuivie
+sol,n+dc
+re,dc
+fa,bp
+sol,n+dc
+re,dc
+fa,c
+sol,c
+la3,c
+sib,c
+doh,c
+fa,c
+sib,bp
+fa,n
+0,c
+# SOL MINEUR
+# ange mystrieux qui prends toute ma vie
+re,n
+re,c
+mib1,c
+fa,c
+sol,c
+la,n
+do,c
+re,np
+mib1,c
+fa,c
+sol,c
+la,n
+la,c
+0,tc
+# ah c'est toi que je veux voir  mon amour
+sib1,n+dc
+sol,dc
+la,bp
+sib1,c
+sib1,c
+sol,c
+# RE MAJEUR
+la,c
+si,c
+dohd3,c
+reh,c
+la,c
+# SOL MINEUR
+fa,c
+mib1,n
+0,c
+#  mon espoir
+re,c
+mib1,c
+fa,c
+do,np
+# vision fugitive c'est toi qui prends toute ma vie
+# SI b MAJEUR
+sol,n+dc
+re,dc
+fa,bp
+sol,n+dc
+re,dc
+fa,np
+fa,c
+0,c
+fa,c
+reh,bp
+reh,np
+reh,b
+doh,c
+sib,c
+fa,c
+re,dcp
+re,tc
+fa,tc
+mib1,c
+do,np
+do,bp
+sigb,b+c
+
+$ piano_3
+sib,c
+reh,c
+fah,c
+# RE MINEUR
+sihb1,cp
+lah,dc
+lah,n
+solh,c
+solh,c
+fah1,c
+mih,c
+reh,c
+mih,dc
+fah1,dc
+solh,dc
+lah,dc
+
+$ string_2
+# te presser dans mes bras
+la,n
+la,c
+sol,c
+fa1,c
+mi,c
+re,np
+0,c
+# sentir battre ton coeur d'une amoureuse ardeur
+doh,c
+sib1,c
+la,c
+mi,c
+fa1,c
+sol,np
+la,c
+doh,c
+sib1,c
+la,c
+mi,c
+fa1,c
+re,b+c
+
+$ piano_3
+solh,c
+solh,c
+fah1,c
+mih,c
+
+$ string_2
+# puis mourir enlacs
+la,n
+sol,c
+sol,c
+fa1,c
+mi,c
+re,b+c
+0,c
+# LA MAJEUR
+# dans une mme ivresse (2)
+dohd,cp
+si,c
+la,c
+mi,n
+dod,c
+sold3,n
+sold3,c
+0,dc
+# FA MAJEUR
+la,c
+sol,c
+fa,c
+do,n
+lag,c
+# RE MINEUR
+mi,c
+red3,c
+mi,c
+
+$ piano_3
+0,dc
+mih,dc
+rehd3,dc
+mih,dc
+fahd3,dc
+solh,dc
+
+$ string_2
+# pour ces transports pour cette flamme
+sol,c
+sol,c
+sol,c
+sib1,b+c
+0,c
+dohd3,c
+dohd3*21/22,c
+dohd3,c
+dohd3,c
+dohd3*21/22,c
+dohd3,c
+0,c
+# SI b MAJEUR
+# ah sans remords et sans plainte je donnerais mon me
+reh,np
+doh,c
+sib,c
+fa,c
+re,c
+mib1,c
+mi3,np
+fa,dc
+0,dc
+sol,c
+la3,c
+sib,c
+doh,cp
+reh,dc
+mihb1,bp
+mihb1,b
+doh,c
+0,dc
+# pour toi mon amour mon espoir
+la3,c
+fa,c
+mib1,c
+fa,c
+solb1,np
+0,c
+mib1,c
+fa,c
+sol,bp
+# vision fugitive c'est toi qui prends toute ma vie
+sol,n+dc
+re,dc
+fa,bp
+sol,n+dc
+re,dc
+fa,np
+fa,c
+0,c
+fa,c
+reh,bp
+reh,np
+reh,b
+doh,c
+sib,c
+fa,c
+re,dcp
+re,tc
+fa,tc
+mib1,c
+do,np
+do,bp
+sigb,n
+0,c
+# oui c'est toi mon amour
+sib,n+dc
+doh,dc
+sib,np
+sib,bp
+0,bp
+sib,n+dc
+doh,dc
+sib,n
+0,c
+# toi mon seul amour mon espoir
+reh,np
+mihb1,b+c
+reh,c
+sib,c
+fa,c
+re,c
+sol,n
+0,c
+fa,n+dc
+re,dc
+sib,bp
+sib,np
+sib,b+c

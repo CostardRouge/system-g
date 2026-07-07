@@ -1,0 +1,251 @@
+@occidental
+N = 800
+$ string_1
+# ruht wohl
+# DO MINEUR
+doh,n
+reh,b
+reh,n
+doh,b-tc
+0,tc
+fah,n
+mihb1,c
+mihb1,c
+doh,n
+la,n
+reh,n
+si3,n
+sol,n
+sol,c
+si3,c
+doh,np
+mihb1,c
+fah,n
+doh,n
+lab1,n
+fa1,n
+fa1,n
+fa1,n
+sib1,b
+
+# FA MINEUR
+sol,n
+mib1,b
+lab1,n
+sol,b-tc
+0,tc
+
+# und bringt auch mich
+mih3,n
+
+# DO MINEUR
+fah,b
+doh,n
+sib,n
+sib,c
+reh,c
+mihb1,np
+mib1,c
+fa1,n
+sib1,n
+sib1,b-tc
+0,tc
+
+# ruht wohl
+sib1,n
+reh,n
+sol,b
+doh,b
+
+# SOL MINEUR
+sol,n
+la,b-tc
+0,tc
+
+# und bringt auch mich
+sib1,n
+doh,n
+sib1,c
+la,c
+sol,n
+doh,n
+fad3,b
+
+# SOL MAJEUR
+si,b-tc
+0,tc
+
+# ruht wohl
+# DO MINEUR
+sol,n
+sol,b
+sol,n
+doh,b-tc
+0,tc
+
+# FA MINEUR
+doh,n
+doh,c
+rehb1,c
+sol,n
+doh,n
+doh,n
+lab1,n
+
+# DO MINEUR
+doh,n
+si3,n
+reh,n
+doh,np
+doh,c
+fah,n
+doh,n
+reh,n
+si3,n-tc
+0,tc
+
+# ruht wohl
+si3,n
+re,bp
+re,b-tc
+0,tc
+do,n
+sol,bp
+sol,bp+c-tc
+0,tc
+
+# und bingt
+si3,c
+doh,c
+reh,c
+doh,c
+sol,c
+
+# FA MINEUR
+lab1,n
+
+# DO MINEUR
+fah,n
+mihb1,n
+reh,c
+mihb1,c
+si3,n
+sol,n
+doh,n
+sol,n
+fa,n
+mib1,b
+0,bp
+
+# das Grab
+mihb1,n
+
+# SIb MAJEUR
+doh,np
+sib,c
+la3,c
+sol,c
+la3,c
+sib,c
+doh,c
+reh,c
+mihb1,np
+reh,c
+doh,c
+sib,c
+doh,n
+sib,b-tc
+0,tc
+
+# DO MINEUR
+sib,n
+reh,np
+doh,c
+si3,c
+la,c
+si3,c
+doh,c
+reh,c
+mihb1,c
+fah,np
+mihb1,c
+reh,c
+doh,c
+reh,n
+sol,b-tc
+0,tc
+
+# macht mir den Himmel auf
+solh,n
+
+# FA MINEUR
+solh,np
+solh,c
+solh,c
+solh,c
+solh,n
+0,c
+
+# SIb MINEUR
+lab1,c
+lab1,np
+
+# LAb MAJEUR
+sib,c
+sib,n
+sib,n
+doh,b
+0,bp
+
+# das Grab
+# FA MINEUR
+doh,n
+sib,b
+sib,c
+doh,dc
+rehb1,dc
+sol,b
+sol,c
+lab1,dc
+sib,dc
+mi3,n
+do,n
+doh,n
+fa,n
+fah,n
+
+# SOL MINEUR
+mihb1,n
+reh,b
+doh,c
+reh,dc
+mihb1,dc
+la,b
+la,c
+sib1,dc
+doh,dc
+fad3,n
+re,n
+reh,n
+sol,n
+sib1,n
+reh,n
+
+# DO MINEUR
+fah,b-tc
+0,tc
+mihb1,n
+reh,c
+
+# MIb MAJEUR
+sib,c
+doh,c
+reh3,c
+mihb,c
+fah,c
+solh,c
+mihb,c
+sib,n
+sib,n
+mib,b-tc
+0,tc

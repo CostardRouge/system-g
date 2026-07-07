@@ -1,0 +1,369 @@
+@occidental
+N = 800
+$ string_2
+# DO MAJEUR
+# ich komme vom Gebirge her
+do,dc
+do,cp
+re,dc
+mi,cp
+fa1,dc
+sol,cp
+# DO MINEUR
+lab1,dc
+sol,n
+fa,n
+$ piano_3
+lagb1,n
+do,n
+fag,np
+
+$ string_2
+# es dampft das Thal es braust das Meer
+fa,c
+fa,np
+fa,c
+# FA MINEUR
+sib,bp
+$ piano_3
+reb1,n
+fag,np
+$ string_2
+sib,c
+sib,np
+mi3,c
+fa,b
+$ piano_3
+lagb1,n
+$ string_2
+fa,n
+# DO MINEUR
+sol,bp
+sol,n
+do,b
+
+# SIB MAJEUR
+$ piano_3
+lag3,b
+sigb,b
+# MIB MAJEUR
+migb,n
+
+# ich wandle still bin wenig froh
+$ string_2
+sib,n
+doh,c
+sib,c
+sol,c
+mib,c
+lab1,np
+la3,c
+sib,np
+fa,c
+sol,b
+$ piano_3
+sigb,n
+do,c
+sigb,c
+solg,c
+migb,c
+sigb,n
+
+# und immer fragt der Seufzer wo immer wo
+$ string_2
+fa,n
+sib,np
+lab1,c
+sol,np
+sol,c
+mihb,n+trn
+reh3,trn
+doh,trn
+reh3,b
+reh3,n+trn
+mihb,trn
+reh3,trn
+reh3,bp
+0,c
+
+N = 800
+# die Sonne dünk mich hier so kalt die Blüthe welk das Leben alt
+sol,c
+sol,np
+sol,c
+sol,cp
+sib,tc
+lab1,tc
+sol,n
+mib,n
+sol,trn/2
+fa,trn/2
+mib,trn
+fa,trn
+sol,np
+sol,c
+sol,n
+lab1,trn/2
+sol,trn/2
+fa,trn
+sol,trn
+sib,n
+lab1,c
+fa,c
+mib,c
+sol,n
+sol,c
+do,np
+
+# und was sie reden leerer Schall ich bin ein Fremdling überall
+sol,c
+sol,np
+sol,c
+sol,cp
+sib,tc
+lab1,tc
+sol,n
+mib,n
+sol,trn/2
+fa,trn/2
+mib,trn
+fa,trn
+sol,np
+sol,c
+sol,np
+sol,c
+doh,n
+lab1,c
+fa,c
+sib,np
+re3,c
+mib,n
+
+$ piano_3
+N = 650
+mihb,n
+sib,b
+sol,n
+N = 600
+0,c
+
+$ string_2
+# wo bist du wo bist du mein geliebtes Land
+sib,c
+sib,b
+sol,n
+0,c
+mihb,c
+mihb,b
+doh,n
+0,n
+sib,np
+reh3,dc
+doh,dc
+sib,np
+fa,c
+sol,b
+$ piano_3
+sib,n
+sol,c
+
+$ string_2
+# gesucht geahnt und niegekannt
+sib,c
+sib,b
+sol,n
+0,c
+mihb,c
+mihb,b
+doh,n
+0,n
+# MIB MINEUR
+$ piano_3
+lagb,n
+dohb1,cp
+mihb,dc
+$ string_2
+mihb,b
+sib,r
+sib,bp
+re3,n
+N = 550
+mib,n
+$ piano_3
+mib,c
+mib,c
+mib,c
+
+$ string_2
+# das Land das Land so hoffnungsgrün so hoffnunsgrün
+sol,c
+sol,n
+lab1,c
+sib,n
+doh,c
+doh,c
+sib,c
+lab1,c
+sol,n
+$ piano_3
+mihb,c
+mihb,c
+reh3,c
+doh,c
+sib,n
+$ string_2
+mihb,c
+mihb,c
+reh3,c
+doh,c
+sib,n
+
+# das Land wo meine Rosen blühn
+sib,c
+doh,n
+fa,c
+fa,n
+fa,c
+sib,n
+sol,c
+mib,n
+
+# wo meine Freunde wandelnd gehn wo meine Todten auferstehn
+sib,c
+sib,n
+sib,c
+doh,dc
+sib,dc
+la3,c
+sib,c
+doh,n
+sib,c
+sol,n
+doh,c
+# FA MINEUR
+doh,n
+doh,c
+rehb1,dc
+doh,dc
+si3,c
+doh,c
+rehb1,n
+doh,c
+lab1,n
+
+# LAB MINEUR
+# das Land das meine Sprache spricht
+mihb,c
+mihb,n
+mihb,c
+mihb,n
+rehb,c
+rehb,c
+dohb1,c
+sib,c
+lab,n
+
+# o Land wo bist du
+N = 800
+lab,c
+N = 900
+lab,b
+sol3,c
+N =1150
+lab,c
+N = 1250
+dohb1,dc
+sib,dc
+N = 1550
+sib,c
+
+$ piano_3
+# FA mineur
+N = 800
+mihb,b
+rehb1,n
+doh,bp
+lab1,n
+sol,b
+fa,b
+# MIB MAJEUR
+mib,trn
+sol,trn
+sol,trn
+
+$ string_2
+sib,n
+doh,c
+sib,c
+sol,c
+mib,c
+lab1,np
+la3,c
+sib,np
+fa,c
+sol,b
+$ piano_3
+sigb,n
+do,c
+sigb,c
+solg,c
+migb,c
+sigb,n
+
+# und immer fragt der Seufzer wo immer wo
+$ string_2
+fa,n
+sib,np
+lab1,c
+sol,np
+sol,c
+mihb,n+trn
+reh3,trn
+doh,trn
+reh3,b
+reh3,n
+reh3,trn
+mihb,trn
+reh3,trn
+reh3,bp
+0,c
+
+# Im Geister hauch tönt's mir zurück
+re3,c
+mib,np
+re3,c
+do,n
+sigb,n
+lagb1,n
+solg,n
+do,b
+
+# Dort wo du nicht bist dort ist das Glück
+fa,b
+re3,n
+sigb,n
+fa,n
+mib,n
+0,n
+# SIB MINEUR
+solb1,cp
+lag3,dc
+sigb,bp
+# MIB MINEUR
+sigb,n
+migb,b
+
+$ piano_3
+mib,c
+do,c
+solg,c
+# SIB MAJEUR
+lag3,c
+# MIB MAJEUR
+sigb,b
+sigb,b
+migb,n
+siggb = sigb/2
+miggb = migb/2
+siggb,n
+miggb,n

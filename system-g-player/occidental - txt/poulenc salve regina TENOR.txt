@@ -1,0 +1,297 @@
+@occidental
+# TENOR
+N = 900
+$ string_1
+# salve regina mater misericordiae
+# SOL MINEUR
+sib1,n
+reh,c
+doh,c
+reh,n
+mihb1,n
+reh,n
+doh,np
+sib1,c
+doh,c
+mihb1,c
+reh,c
+mihb1,c
+sib1,n
+# vita dulcedo (2) et spes nostra salve
+reh,n
+doh,c
+sib1,c
+la,n
+la,n
+0,c
+reh,c
+doh,c
+sib1,c
+la,n
+la,n
+sib1,n
+doh1,n
+reh,n
+doh,n
+sib1,n
+la,c
+doh,c
+reh,np
+0,c
+# ad te clamamus (2) filii evae evae
+sib1,n
+doh,c
+mihb1,c
+reh,n
+doh,c
+0,n
+sib1,c
+doh,c
+mihb1,c
+reh,n
+doh,c
+0,c
+reh,n
+mihb1,n
+fah,n
+reh,n
+fah,c
+mih3,c
+fah,np
+0,c
+doh,n
+reh,n
+solh,n
+la,n
+si,b+c
+0,c
+# at te suspiramus gementes et flentes
+sol,n
+sib1,n
+# FA MINEUR
+rehb1,np
+fah,c
+mih3,n
+fah,c
+0,c
+lahb1,n
+doh,b
+doh,n-tc
+0,tc
+# SOL MINEUR
+doh,n
+doh,b
+reh,n-tc
+0,tc
+# in hac lacrymarum valle
+sib1,n
+doh,n
+mihb1,n
+la,n
+sol,n
+la,n
+dohd3,n
+reh,np
+0,c
+# eja ergo advocata nostra
+# SOL MAJEUR
+si,n
+doh1,n
+reh,n
+si,n
+mih,n
+reh,n
+doh1,n
+reh,c
+doh1,c
+si,c
+0,c
+sol,n
+mih,n
+si,n
+la,n
+doh1,n
+la,np
+0,c
+# illos tuos misericordes
+# SIb MAJEUR
+mihb1,np
+doh,c
+fah,n
+fah,n
+# FA MINEUR
+0,c
+rehb1,c
+rehb1,c
+rehb1,c
+rehb1,n
+doh,c
+0,c
+# oculos ad nos converte
+# DO MINEUR
+doh,n
+mihb1,n
+reh,n
+doh,n
+doh,n
+mihb1,n
+reh,n
+fah,n
+mih,b-tc
+0,tc
+# et jesum benedictum fructum ventris tui
+# FA MINEUR
+rehb1,b
+fa,n
+mi3,n
+doh,np
+0,c
+# MIb MINEUR
+0,rp
+sib,np
+sib,c
+sib,n
+sib,n
+# SIb MINEUR
+doh,n
+rehb1,n
+sib,n
+sib,n
+rehb1,n
+la,b
+0,n
+# nobis post hoc exsilium (2)
+fah,n
+solhb1,n
+doh,n
+rehb1,n
+reh3,n
+mihb,np
+doh,c
+rehb1,n-tc
+0,tc
+fah,n
+solh,n
+doh,n
+rehb1,n
+reh3,n
+mihb,np
+doh,c
+rehb1,n-tc
+0,tc
+# nobis post hoc ostende
+rehb1,n
+fah,n
+sib,n
+doh,n
+sib,n
+rehb1,n
+mihb,n
+la,b+c
+0,c
+# o clemens o pia o dulcis maria
+# FA MINEUR
+rehb1,n
+mih3,b
+doh,c
+0,c
+# MIb MINEUR
+reh3,n
+reh3,b
+sib,c
+0,c
+# SOL MINEUR
+doh,n
+doh,n
+sol,n
+la,n
+sib1,n
+reh,np
+0,n
+# o dulcis virgo maria
+sol,c
+sib1,c
+doh,c
+reh,n
+mihb1,n
+reh,n
+doh,c
+solh,c
+reh,n
+mihb1,c
+doh,c
+reh,c
+sib1,c
+doh,c
+0,c
+# dulcis virgo maria (2)
+reh,n
+la,n
+sib1,n
+la,n
+reh,c
+mihb1,c
+reh,b
+la,c
+0,c
+reh,c
+mihb1,c
+fah,n
+reh,c
+mihb1,c
+fah,c
+0,c
+reh,c
+solh,c
+fah,c
+mihb1,c
+reh,c
+doh,c
+reh,c
+0,c
+# dulcis virgo maria
+si,n
+mihb1,n
+la,n
+sib1,n
+sib1,c
+sol,c
+la,b
+reh,c
+0,c
+# dulcis virgo (2) maria (2)
+reh,n
+doh,c
+mihb1,c
+reh,n
+doh,n
+reh,n
+doh,c
+mihb1,c
+reh,n
+doh,n
+sol,n
+doh,n
+rehb1,n
+sib1,c
+0,c
+sol,n
+doh,n
+rehb1,n
+sib1,c
+0,c
+# o dulcis virgo maria
+# DO MINEUR
+lab1,n
+si3,n
+doh,n
+reh,n
+mihb1,n
+solh,n
+reh,b-tc
+0,tc
+mihb1,n
+reh,b
+fahd3,n
+# SOL MINEUR
+solh,r

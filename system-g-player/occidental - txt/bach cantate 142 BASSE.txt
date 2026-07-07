@@ -1,0 +1,174 @@
+@ occidental
+# BASSE
+N = 800
+$ string_1
+# LA MINEUR
+# Uns ist ein Kind geboren
+mi,c
+mi,c
+mi,c
+la,n
+doh1,n
+si,b
+la,c-tc
+0,tc
+la,c
+la,c
+# MI MINEUR
+sol1,dc
+fad,dc
+sol1,c-tc
+0,tc
+sol1,c
+sol1,c
+fad,dc
+mi,dc
+la,c
+sol1,dc
+fad,dc
+si,c
+sig,c
+mi,n
+0,np
+lag,c
+lag,c
+lag,c
+mi,n
+sol1,n
+fad,b
+mi,c-tc
+0,tc
+mi,c
+# LA MINEUR
+re,c
+do1,dc
+sig,dc
+do1,c-tc
+0,tc
+# MI MINEUR
+do1,c
+do1,c
+sig,dc
+lag,dc
+solg1,c-tc
+0,tc
+sol1,c
+sol1,c
+la,c
+si,n
+sig,n
+mi,n
+0,bp+c
+sol1,c
+sol1,c
+fad,dc
+mi,dc
+la,dc
+doh1,dc
+si,dc
+la,dc
+si,n
+mi,n
+0,n
+0,rp+c
+# RE MINEUR
+lag,c
+lag,c
+lag,c
+re,n
+fa1,n
+mi,b
+re,c-tc
+0,tc
+re,c
+re,c
+# DO MAJEUR
+sol,c
+do,c-tc
+0,tc
+doh,c
+doh,c
+# LA MINEUR
+si,dc
+la,dc
+sold3,n
+0,c
+mi,c
+la,cp
+la,dc
+la,c
+re,c
+mi,b
+lag,n
+0,n
+0,6*r
+0,np
+# DO MAJEUR
+doh,c
+la,c
+la,c
+si3,c
+sol,c
+doh,n
+do,n
+sol,n
+0,n
+0,r+c
+# MI MINEUR
+sig,c
+sig,c
+sig,c
+mi,n
+sol1,n
+fad,b
+mi,n
+0,np
+# LA  MINEUR
+mi,c
+re,c
+do1,dc
+sig,dc
+do1,cp
+re,dc
+mi,n
+lag,c-tc
+0,tc
+la,c
+la,c
+sol,dc
+fa1,dc
+sol,c-tc
+0,tc
+sol,c
+sol,c-tc
+0,tc
+fa1,dc
+mi,dc
+fa1,c
+fa1,c
+fa,c-tc
+0,tc
+mi,dc
+re,dc
+mi,np
+mi,c
+la,c
+re,c
+mi,n
+la,c-tc
+0,tc
+# RE MINEUR
+sol,c
+sol,c
+fa1,dc
+mi,dc
+fa1,cp
+# LA MINEUR
+fa1,dc
+N = 750
+fa,c
+re,c
+N = 900
+mi,n
+mig,n
+lag,n

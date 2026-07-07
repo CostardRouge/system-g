@@ -1,0 +1,143 @@
+---
+/**
+ * Données structurées schema.org (JSON-LD).
+ *
+ * Le graphe est composé dynamiquement depuis les dictionnaires i18n et le
+ * contenu : WebSite + Person (l'auteur) sur toutes les pages, puis un nœud
+ * spécifique selon la nature de la page (WebPage, ProfilePage, Article,
+ * WebApplication) et un fil d'Ariane. Aucun texte codé en dur.
+ */
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { absoluteUrl, localizedPathname, neutralPath } from '../lib/seo';
+import type { PageType } from './Seo.astro';
+import { bioParagraphs } from '../content/bio';
+
+interface Props {
+  pageTitle: string;
+  pageDescription: string;
+  type?: PageType;
+}
+
+const { pageTitle, pageDescription, type = 'website' } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const base = import.meta.env.BASE_URL;
+const site = Astro.site;
+
+const pageUrl = absoluteUrl(Astro.url.pathname, site);
+const homeUrl = absoluteUrl(localizedPathname('/', lang, base), site);
+const bioUrl = absoluteUrl(localizedPathname('/biographie', lang, base), site);
+const siteId = absoluteUrl(localizedPathname('/', 'fr', base), site);
+
+// L'auteur, décrit une seule fois et référencé partout.
+const personId = `${siteId}#nabih-gedeon`;
+const person = {
+  '@type': 'Person',
+  '@id': personId,
+  name: t('bio.title'),
+  description: t('bio.subtitle'),
+  url: bioUrl,
+};
+
+// Le site lui-même.
+const websiteId = `${siteId}#website`;
+const website = {
+  '@type': 'WebSite',
+  '@id': websiteId,
+  name: t('site.title'),
+  alternateName: t('site.tagline'),
+  description: t('site.description'),
+  url: homeUrl,
+  inLanguage: lang,
+  author: { '@id': personId },
+  publisher: { '@id': personId },
+};
+
+// Nœud propre à la page courante.
+const pageBase = {
+  '@id': `${pageUrl}#page`,
+  url: pageUrl,
+  name: pageTitle,
+  description: pageDescription,
+  inLanguage: lang,
+  isPartOf: { '@id': websiteId },
+};
+
+let pageNode: Record<string, unknown>;
+switch (type) {
+  case 'profile':
+    pageNode = {
+      '@type': 'ProfilePage',
+      ...pageBase,
+      mainEntity: {
+        ...person,
+        description: bioParagraphs[lang]?.[0] ?? t('bio.subtitle'),
+      },
+    };
+    break;
+  case 'article':
+    pageNode = {
+      '@type': 'Article',
+      ...pageBase,
+      headline: pageTitle,
+      author: { '@id': personId },
+    };
+    break;
+  case 'app':
+    pageNode = {
+      '@type': 'WebApplication',
+      ...pageBase,
+      applicationCategory: 'MultimediaApplication',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+      author: { '@id': personId },
+    };
+    break;
+  default:
+    pageNode = { '@type': 'WebPage', ...pageBase };
+}
+
+// Fil d'Ariane : accueil → rubriques intermédiaires → page courante.
+// Les libellés des rubriques proviennent du dictionnaire de navigation.
+const sectionKeys: Record<string, Parameters<typeof t>[0]> = {
+  theorie: 'nav.theory',
+  litterature: 'nav.literature',
+  player: 'nav.player',
+  biographie: 'nav.bio',
+};
+
+const neutral = neutralPath(Astro.url.pathname, base);
+const segments = neutral.split('/').filter(Boolean);
+const isHome = segments.length === 0;
+
+let breadcrumb = null;
+if (!isHome) {
+  const items = [{ '@type': 'ListItem', position: 1, name: t('nav.home'), item: homeUrl }];
+  let acc = '';
+  segments.forEach((segment, i) => {
+    acc += `/${segment}`;
+    const isLast = i === segments.length - 1;
+    const key = sectionKeys[segment];
+    const name = isLast ? pageTitle : key ? t(key) : segment;
+    items.push({
+      '@type': 'ListItem',
+      position: items.length + 1,
+      name,
+      item: isLast ? pageUrl : absoluteUrl(localizedPathname(acc, lang, base), site),
+    });
+  });
+  breadcrumb = {
+    '@type': 'BreadcrumbList',
+    '@id': `${pageUrl}#breadcrumb`,
+    itemListElement: items,
+  };
+}
+
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [website, type === 'profile' ? null : person, pageNode, breadcrumb].filter(Boolean),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(graph)} />

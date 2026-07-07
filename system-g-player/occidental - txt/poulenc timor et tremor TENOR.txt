@@ -1,0 +1,190 @@
+# TENOR
+N = 909
+$ string_1
+# timor et tremor (2)
+# LA MINEUR
+la,n
+la,np
+la,c
+si,c
+la,c
+si,b
+doh1,n
+doh1,np
+doh1,c
+reh,c
+doh1,c
+reh,b
+# venerunt super me (2) super me
+doh1,n
+reh,n
+doh1,n
+doh1,n
+si,c
+reh,c
+doh1,np
+0,c
+doh1,n
+reh,n
+doh1,n
+doh1,c
+mih,c
+si,n
+doh1,np
+0,c
+si,n
+doh1,c
+reh1,c
+mih,np
+0,c
+# et caligo cecidit cecidit super me
+mi,b
+mi,c
+mi,c
+mi,n
+mi,c
+mi,c
+mi,np
+0,c
+mi,c
+mi,c
+# MI MINEUR
+mi,n
+fad,n
+sol1,c
+la,c
+# SI MAJEUR
+si,np
+0,c+b
+# miserere mei domine miserere mei
+# MI MINEUR
+mih,n
+reh,n
+doh1,b
+mih,b
+doh1,n
+si,c
+doh1,c
+mih,b-dc
+0,dc
+# LA MINEUR
+doh1,b
+mih,n
+reh,n
+fah1,n
+la,n
+# MI MAJEUR
+si,b-dc
+0,dc
+# quoniam in te confidit (2) anima mea
+# FA# MINEUR VARIANTE
+dohd,np
+dohd,c
+si,n
+dohd,n
+mih,n
+dohd,c
+dohd,c
+si,b-dc
+0,dc
+dohd,np
+dohd,c
+si,n
+dohd,n
+mih,n
+dohd,c
+dohd,c
+si,b-dc
+0,dc
+dohd,n
+si,n
+dohd,n
+dohd,n
+# SOL# MAJEUR
+sid,np
+0,c
+# exaudi deus
+# DO# MINEUR
+dohd,b
+dohd,n
+mih1,n
+sold,n
+dohd,b-dc
+0,c
+0,9*n
+# quia refugium meum es tu (2)
+# FA# MINEUR
+si,n
+si,n
+dohd,n
+si,c
+dohd,c
+dohd,n
+# SI MINEUR
+mih,n
+fahd,n
+mih,n
+reh1,n-dc
+0,dc
+# DO# MINEUR
+rehd,b
+dohd,n
+sid3,n
+mih1,n
+# FA# MINEUR
+solhd,n
+fahd,n
+dohd,n
+fahd,np
+0,c
+# et adjutor fortis domine invocavi te
+# MI MINEUR
+doh1,b
+si,n
+la,n
+si,n
+doh1,n
+doh1,np
+0,c
+# LA MINEUR
+si,b
+si,n
+doh1,b
+doh1,n
+# MI MINEUR
+doh1,n
+doh1,n
+mih,n
+# MI MAJEUR
+mih,np
+0,c
+# non confundar (2)
+# MI MINEUR
+si,n
+la1,n
+la1,n
+sol1,n
+si,c
+dohd,c
+reh1,c
+fahd,c
+dohd,n
+doh1,n
+reh1,n
+dohd,n
+reh1,n
+# LA MINEUR
+fah1,n
+mih,n
+# RE MINEUR
+reh,c
+doh1,c
+sib1,b-dc
+0,dc
+# LA MINEUR
+la,b
+sold3,n
+# LA MAJEUR
+N = 1200
+la,b+c
+0,c

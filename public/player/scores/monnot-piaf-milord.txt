@@ -1,0 +1,306 @@
+@occidental
+N = 300
+$ piano_3
+# RE MAJEUR
+# allez venez milord vous asseoir à ma table
+fad,n+tcp
+mid3,n
+fad,n
+mid3,cp
+0,n+dc
+fad,n
+re,cp
+0,dc
+0,n
+fad,n
+mid3,n
+fad,n
+mi,dcp
+fad,dcp
+mi,c
+0,c
+re,n
+sig,cp
+0,dc
+0,n
+# il fait si froid dehors ici c'est confortable
+re,n
+mi,n
+mid3,n
+fad,b
+lag,b
+re,npp
+0,dc
+fad,b
+fad,n
+mi,n
+mi,n
+red3,n
+mi,cp
+0,dc
+# laissez-vous fair' milord et prenez bien vos aises
+fad,n
+sol1,n
+sold3,n
+la,n
+0,n-qc
+re,n-qc
+re,cp
+0,dc
+0,n
+fad,n
+sol1,n
+sold3,n
+la,n
+0,n-qc
+re,n-qc
+re,cp
+0,dc
+0,n
+# vos peines sur mon coeur et vos pieds sur un' chaise
+fad,n
+sol1,n
+sold3,n
+la,n
+0,n-qc
+re,n-qc
+re,cp
+0,dc
+0,b
+fad,b
+fad,n
+mi,n
+mi,n
+red3,n
+mi,np
+0,n+dc
+$ brass_2
+# je vous connais milord vous n'm'avez jamais vue
+fad,n+tcp
+mid3,n
+fad,n
+mid3,cp
+0,n+dc
+fad,n
+re,cp
+0,dc
+0,n
+fad,n
+mid3,n
+fad,n
+mi,n
+0,n
+re,n
+sig,cp
+0,dc
+0,n
+# je n'suis qu'un' fill' du port une ombre de la rue
+re,n
+mi,n
+mid3,n
+fad,b
+lag,b
+re,npp
+0,dc
+fad,b
+re,n
+dod3,n
+sig,n
+dod3,n
+re,r
+0,bp
+# RE MINEUR
+$ string_2
+# pourtant j'vous ai frôlé quand vous passiez hier
+re,n
+re,n
+lag,n
+lag,n
+dod3,n
+dod3,bp
+re,n
+re,n
+lag,n
+lag,n
+dod3,n
+dod3,b+c
+0,c
+# vous n'étiez pas peu fier dam' le ciel vous comblait
+re,n
+mi,n
+re,n
+mi,n
+re,n
+mi,b+c
+0,c
+do,n
+re,n
+do,n
+re,n
+do,n
+re,b+c
+0,c
+$ flute
+# votre foulard de soie flottait sur vos épaules
+re,n
+do,n
+sigb1,n
+do,n
+re,n
+do,bp
+do,n
+sigb1,n
+lag,n
+sigb1,n
+do,n
+sigb1,b+c
+0,c
+# vous aviez le beau rôle on aurait dit le roi
+re,n
+do,n
+sigb1,n
+do,n
+re,n
+do,b+c
+0,c
+mi,n
+re,n
+do,n
+re,n
+mi,n
+re,b+c
+0,c
+$ piano_3
+# vous marchiez en vainqueur au bras d'un' demoiselle
+re,n
+re,n
+lag,n
+lag,n
+do,n
+do,bp
+re,n
+re,n
+lag,n
+lag,n
+do,n
+do,b+c
+0,c
+# mon dieu qu'elle était belle j'en ai froid dans le coeur
+sigb1,n
+sigb1,n
+fagb1,n
+fagb1,n
+lag,n
+lag,bp
+sigb1,n
+sigb1,n
+sigb1,n
+sigb1,n
+do,n
+sigb1,r
+0,b+n
+# RE MAJEUR
+$ brass_2
+# allez venez milord vous asseoir à ma table
+fad,n+dcp
+mid3,n+tcp
+fad,n+dc
+mid3,cp
+0,n+dc
+fad,n
+re,n
+0,n
+fad,n
+mid3,n
+fad,n
+mi,dcp
+fad,dcp
+mi,c
+0,c
+re,n
+sig,n
+0,n
+# il fait si froid dehors ici c'est confortable
+re,n
+mi,n
+mid3,n
+fad,b
+lag,b
+re,npp
+0,dc
+fad,b
+fad,n
+mi,n
+mi,n
+red3,n
+mi,cp
+0,dc
+$ string_2
+# laissez-vous fair' milord et prenez bien vos aises
+fad,n
+sol1,n
+sold3,n
+la,n
+0,n-qc
+re,n-qc
+re,n
+0,n
+fad,n
+sol1,n
+sold3,n
+la,n
+0,n-qc
+re,n-qc
+re,n
+0,n
+# vos peines sur mon coeur et vos pieds sur un' chaise
+fad,n
+sol1,n
+sold3,n
+la,n
+0,n-qc
+re,n-qc
+re,n
+0,b
+fad,b
+fad,n
+mi,n
+mi,n
+red3,n
+mi,np
+0,n+dc
+$ piano_3
+# je vous connais milord vous n'm'avez jamais vue
+fad,n+tcp
+mid3,n
+fad,n
+mid3,cp
+0,n+dc
+fad,n
+re,n
+0,n
+fad,n
+mid3,n
+fad,n
+mi,dcp
+fad,dcp
+mi,c
+0,c
+re,n
+sig,n
+0,n
+# je n'suis qu'un' fill' du port une ombre de la rue
+re,n
+mi,n
+mid3,n
+fad,b
+lag,b
+re,n
+0,n
+$ brass_2
+fad,b
+re,n
+dod3,n
+sig,n
+dod3,n
+re,n

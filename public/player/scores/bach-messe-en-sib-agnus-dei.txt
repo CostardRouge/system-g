@@ -1,0 +1,382 @@
+@occidental
+N = 1400
+# agnus dei
+$ organ
+# SOL MINEUR
+reh,c
+doh,c
+la,c
+sib1,c
+sib1,b
+sib1,c
+la,c
+fad3,dc
+0,dc
+sol,c
+sol,b
+sol,c
+fa,c
+re,dc
+0,dc
+mib1,c
+mib1,b
+mib1,c
+re,c
+re,b
+do,n
+re,n
+0,c
+
+# qui tollis
+re,c
+sib1,dc
+sol,dc
+do,n
+sib1,c
+la,dc
+fad3,dc
+doh,c
+0,c
+re,c
+sib1,dc
+sol,dc
+# DO MINEUR
+lab1,n
+sol,c
+# SOL MINEUR°
+fad3,c
+mi,c
+re,dc
+0,dc
+
+# miserere
+la,c
+sib1,c
+fad3,c
+sol,b
+sol,c
+la,dc
+sib1,dc
+# RE MINEUR
+la,dc
+fa1,dc
+mi,dc
+re,dc
+fa1,c
+mi,c
+re,dc
+0,dc
+lag,c
+re,c
+fa1,c
+# DO MAJEUR
+sig3,c
+re,c
+# RE MINEUR
+sol,np
+mi,c
+re,c
+dod3,c
+re,c
+sib1,c
+# SOL MINEUR
+fad3,c
+sol,c
+sol,np
+fad3,dc
+mi,dc
+fad3,dc
+la,dc
+doh,n
+sib1,dc
+la,dc
+reh,c
+doh,c
+sib1,dc
+0,dc
+
+# qui tollis
+la,c
+sib1,np
+# RE MINEUR
+la,dc
+sol,dc
+fa1,c
+mi,c
+re,dc
+0,dc
+# LA MAJEUR
+la,c
+sold3,dc
+si,dc
+# RE MINEUR
+re,n
+dod3,dc
+sig,dc
+dod3,dc
+mi,dc
+sol,c
+0,c
+fa1,dc
+mi,dc
+fa1,c
+la,c
+fa1,c
+mi,dc
+re,dc
+re,n
+0,c
+
+# musique
+$ piano_3
+lag,c
+fa1,dc
+re,dc
+solg,n
+re,dc
+fa1,dc
+mi,dc
+dod3,dc
+sol,n
+fa1,dc
+mi,dc
+fa1,dc
+re,dc
+# SOL MINEUR
+mib1,n
+re,c
+# RE MINEUR
+dod3,c
+sig,c
+lag,c
+mi,c
+fa1,c
+dod3,c
+re,c
+# SOL MINEUR
+doh,c
+sib1,c
+fad3,c
+sol,c
+# RE MINEUR
+dohd3,c
+reh,c
+la,c
+fa1,c
+mi,dc
+re,dc
+
+# agnus dei
+$ organ
+la,c
+sol,c
+mi,c
+fa1,c
+fa1,b
+fa1,c
+# DO MINEUR
+lab1,c
+sol,c
+# RE MINEUR
+fa1,c
+mi,c
+# SOL MINEUR
+fad3,c
+sol,c
+la,c
+sib1,c
+la,c
+fad3,dc
+0,dc
+sol,c
+sol,b
+sol,c
+sib1,c
+la,c
+sol,c
+fad3,c
+mi,c
+re,cp
+0,dc
+
+# agnus dei
+reh,c
+doh,c
+la,c
+sib1,c
+sib1,b
+sib1,c
+la,c
+fad3,dc
+0,dc
+sol,c
+sol,b
+sol,c
+fa,c
+re,c
+mib1,c
+mib1,b
+mib1,c
+re,c
+0,c
+
+# qui tollis
+re,c
+sib1,dc
+sol,dc
+do,n
+sib1,c
+la,dc
+fad3,dc
+doh,c
+0,c
+re,c
+sib1,dc
+sol,dc
+# DO MINEUR
+lab1,n
+sol,c
+# SOL MINEUR
+fad3,c
+mi,c
+re,dc
+0,dc
+# DO MINEUR
+do,c
+sig3,dc
+re,dc
+fa,n
+mib1,dc
+re,dc
+mib1,dc
+re,dc
+do,c
+0,np
+
+# miserere
+lab1,n
+sol,dc
+fa,dc
+mib1,c
+re,c
+do,c
+# RE MINEUR
+sigb1,c
+lag,dc
+mi,dc
+sol,n
+fa1,dc
+mi,dc
+fa1,dc
+mi,dc
+re,c
+0,c
+
+# miserere
+sib1,n
+re,c
+dod3,dc
+mi,dc
+# SOL MINEUR
+la,dc
+sol,dc
+fad3,c
+mi,c
+re,dc
+0,dc
+mi,c
+fad3,c
+la,c
+reh,np
+mihb1,c
+fad3,c
+sol,c
+sol,c
+mib1,c
+# DO MINEUR
+sig3,c
+do,c
+do,c
+# SOL MINEUR
+doh,n
+sib1,dc
+la,dc
+reh,dc
+sib1,dc
+la,dc
+sol,dc
+sib1,c
+la,c
+sol,dc
+0,dc
+
+# miserere
+# DO MINEUR
+lab1,n
+sol,dc
+fa,dc
+mib1,c
+sig3,c
+do,c
+# SOL MINEUR
+sol,c
+fad3,dc
+sol,dc
+la,c
+0,c
+mib1,dc
+re,dc
+doh,dc
+sib1,dc
+la,dc
+sol,dc
+sol,dc
+fad3,tc
+sol,tc
+fad3,qc
+sol,qc
+fad3,tc
+sol,dc
+sol,n
+0,c
+
+# musique
+$ piano_3
+# DO MINEUR
+do,c
+sig3,dc
+re,dc
+fa,n
+mib1,dc
+re,dc
+mib1,dc
+do,dc
+lag,n
+# SOL MINEUR
+sol,c
+fad3,dc
+la,dc
+doh,n
+sib1,dc
+la,dc
+sib1,dc
+sol,dc
+# RE MINEUR
+dohd3,n
+reh,c
+mih,dc
+solh,dc
+sihb1,n
+# SOL MINEUR
+lah,dc
+solh,dc
+fahd3,dc
+la,dc
+mib1,n
+re,dc
+do,dc
+sigb1,c
+reh,c
+re,c
+fad3,c
+solg,n

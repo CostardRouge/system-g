@@ -1,0 +1,241 @@
+@occidental
+# TENOR
+N = 550
+0,6*n
+$ string_1
+# nos qui sumus in hoc mundo
+# FA# MINEUR
+fahd,bp
+mih,n
+reh1,b
+dohd,cp
+0,dc
+reh1,c
+dohd,c
+reh1,c
+dohd,c
+dohd,b
+si,n
+dohd,b
+dohd,b
+0,bp
+# nos qui sumus in hoc mundo
+lah1,b
+solhd,n
+fahd,r
+mih1,b
+0,n
+reh1,c
+dohd,c
+reh1,c
+dohd,c
+dohd,b
+si,n
+dohd,bp
+fahd,n
+0,b
+# nos qui sumus in hoc mundo
+fahd,bp
+mih,n
+reh1,b
+dohd,b
+0,n
+dohd,c
+si,c
+dohd,c
+si,c
+si,b
+lad3,n
+# SI MINEUR
+si,b
+N = 540
+fad,b-dc
+0,dc
+# FA# MINEUR
+N = 530
+# vitiorum
+fahd,bp
+dohd,n
+reh1,n
+dohd,c
+si,c
+la1,c
+si,c
+dohd,c
+reh1,c
+mih,np
+reh1,dc
+dohd,dc
+si,b
+# SI MINEUR
+si,b
+0,n
+# vitiorum in profundo
+reh1,b
+# FA# MINEUR
+la1,n
+si,n
+la1,c
+sold,c
+fad,b
+N = 600
+si,b
+la1,b
+# RE MAJEUR
+fad,b
+N = 650
+mi,b
+# SOL MAJEUR
+N = 850
+sol,b-dc
+0,dc
+# RE MAJEUR
+# jam passi jam passi naufragia
+N = 550
+la,b
+si,np
+la,c
+# SI MINEUR
+si,c
+dohd,c
+# FA# MINEUR
+reh1,c
+la1,c
+dohd,c
+reh1,c
+mih,n
+# SI MINEUR
+la,np
+si,c
+dohd,n
+reh1,n
+dohd,np
+dohd,c
+mih,bp
+# FA# MINEUR
+mih,n
+fahd,bp
+mih1,b
+reh1,n
+# SI MINEUR
+N = 700
+reh1,c
+dohd,c
+si,c
+la1,c
+si,np
+si,c
+# FA# MAJEUR
+N = 850
+dohd,r-dc
+0,dc
+# gloriose nicolae (2)
+# RE MAJEUR
+N = 300
+reh,b
+dohd3,n
+fahd,b
+# LA MAJEUR
+mih,n
+# RE MAJEUR
+reh,b
+dohd3,n
+fahd,b
+# LA MAJEUR
+mih,n
+# SI MINEUR
+solh1,b
+mih,n
+# LA MAJEUR
+mih,b
+mih,n
+# SI MINEUR
+solh1,b
+mih,n
+# LA MAJEUR
+mih,b
+mih,n
+# ad salutis portum trahe (2)
+# SI MINEUR
+reh1,b
+dohd,n
+si,b
+dohd,n
+reh1,b
+dohd,n
+si,b
+dohd,n
+# MI MINEUR
+mih,b
+si,n
+si,b
+si,n
+si,b
+si,n
+N = 500
+si,b
+# SI MAJEUR
+si,cp
+0,dc
+# ubi pax (2) et gloria
+# SI MINEUR
+N = 650
+dohd,b
+mih,b
+fahd,b
+solh1,np
+reh1,c
+fahd,n
+mih,np
+# MI MINEUR
+rehd3,dc
+dohd,dc
+rehd3,n
+# SI MINEUR
+mih,cp
+0,dc
+si,n
+si,c
+dohd,c
+reh1,c
+mih,c
+fahd,np
+mih,dc
+reh1,dc
+dohd,n
+dohd,n
+# SI MAJEUR
+fahd,r-dc
+0,dc
+# ubi pax (2) et gloria
+# SI MINEUR
+dohd,b
+mih,b
+N = 750
+fahd,b
+solh1,np
+reh1,c
+fahd,n
+mih,np
+# MI MINEUR
+rehd3,dc
+dohd,dc
+rehd3,n
+# SI MINEUR
+mih,cp
+0,dc
+si,n
+si,c
+dohd,c
+reh1,c
+mih,c
+fahd,n
+N = 850
+fahd,c
+mih,dc
+reh1,dc
+dohd,n
+N = 900
+dohd,n
+# SI MAJEUR
+si,r

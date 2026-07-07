@@ -1,0 +1,51 @@
+@occidental
+# ALTO II
+N = 966
+$ string_2
+# DO# MAJEUR
+# vinea mea electa (2)
+mid,np
+mid,c
+red,c
+mid,c
+mid,n
+sold,c
+mid,c
+mid,cp
+0,dc
+mid,np
+mid,c
+red,c
+mid,c
+mid,n
+sold,c
+mid,c
+mid,cp
+0,dc
+# ego te plantavi (2)
+mid,n
+mid,np
+fad,c
+red,c
+mid,c
+red,cp
+0,dc
+mid,n
+mid,np
+fad,c
+red,c
+mid,c
+sold,cp
+0,dc
+0,r
+# ut me cru
+# DO# MINEUR
+red,b
+red,n
+dod,n
+0,r
+red,b
+red,n
+dod,n
+0,r
+mid,r+n

@@ -1,0 +1,72 @@
+@occidental
+# TENOR
+# SOL MINEUR
+N = 550
+$ string_1
+# belle qui tiens ma vie captive dans tes yeux
+sib1,b
+sib1,n
+la,n
+# RE MINEUR
+sib1,n
+doh1,n
+reh,b
+reh,n
+sib1,n
+sol,n
+# SOL MINEUR
+reh,n
+doh,n
+doh1,n
+reh,b-dc
+0,dc
+# qui m'as l'âme ravie d'un souris grâcieux
+sib1,b
+sib1,n
+la,n
+# RE MINEUR
+sib1,n
+doh1,n
+reh,b
+reh,n
+sib1,n
+sol,n
+# SOL MINEUR
+reh,n
+doh,n
+doh1,n
+reh,b-dc
+0,dc
+# viens tôt me secouri ou me faudra mourir
+reh,b
+doh1,n
+reh,n
+sib1,n
+doh,n
+la,b
+# RE MINEUR
+sib1,b
+sol1,n
+sib1,n
+# SOL MAJEUR
+la,n
+la,n
+sol,b-dc
+0,dc
+# viens tôt me secouri ou me faudra mourir
+# SOL MINEUR
+reh,b
+doh1,n
+reh,n
+sib1,n
+doh,n
+la,b
+# RE MINEUR
+sib1,b
+sol1,n
+sib1,n
+# SOL MINEUR
+la,n
+la,n
+sol,b-dc
+0,dc

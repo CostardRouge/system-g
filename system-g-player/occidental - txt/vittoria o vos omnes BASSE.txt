@@ -1,0 +1,121 @@
+
+N = 750
+$ string_1
+# SI MINEUR
+# o vos omnes
+sig,r
+fad,b
+sol1,bp
+fad,n
+mi,r
+re1,r
+# qui transitis per viam
+fad,bp
+fad,n
+fad,b
+mi,bp
+re1,n
+dod,r
+sig,r
+0,b
+# attendite et videte
+fad,b
+si,bp
+si,n
+si,r
+mi,b
+fad,b
+sol1,r
+fad,b
+0,b
+# si est dolor dolor similis
+si,r
+la,b
+sol1,b
+fad,r
+mi,r
+fad,r
+sol1,bp
+sol1,n
+fad,r
+0,11*n
+# sicut dolor meus (3)
+fad,b
+fad,n
+fad,n
+fad,n
+si,b
+sol1,b
+la1,r
+re1,n
+sig,b
+sig,n
+fad,n
+fad,n
+mi,r
+fad,r
+0,rp
+# attendite universi populi
+fad,b
+dohd,bp
+dohd,n
+dohd,b
+fad,np
+fad,c
+fad,n
+la1,n
+si,np
+la,c
+sol1,n
+sol1,n
+fad,b
+0,b
+# et videte
+sig,r
+fad,b
+sol1,bp
+fad,n
+mi,b
+re1,b
+# dolorem meum (3)
+fad,b
+si,bp
+la,n
+sol1,b
+fad,r
+0,r+n
+sig,n
+fad,b
+re1,b
+sol1,b
+mi,b
+fad,r
+sig,b
+0,b
+# si est dolor dolor similis
+si,r
+la,b
+sol1,b
+fad,r
+mi,r
+fad,r
+sol1,bp
+sol1,n
+fad,r
+0,11*n
+# sicut dolor meus (3)
+fad,b
+fad,n
+fad,n
+fad,n
+si,b
+sol1,b
+la1,r
+re1,n
+sig,b
+sig,n
+fad,n
+fad,n
+mi,r
+fad,r
+sig,b

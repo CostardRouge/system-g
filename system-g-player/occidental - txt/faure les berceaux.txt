@@ -1,0 +1,140 @@
+@occidental
+N = 550
+LA = 441
+# LA MINEUR
+$ string_2
+# le long du quai les grands vaisseaux
+# que la houle incline en silence
+mi,np
+la,n
+la,c
+sol,np+n
+sol,c
+fa1,np+n
+fa1,c
+mi,np+n
+0,c
+mi,n
+do1,c
+re,n
+mi,c
+sol1,np
+mi,n
+do1,c
+sig,bp
+lag,b
+0,c
+# ne prennent pas garde aux berceaux
+# que la main des femmes balancent
+mi,c
+mi,np
+la,n
+la,c
+sol,bp
+fa1,np+n
+fa1,c
+mi,np+n
+0,c
+mi,n
+do1,c
+re,n
+mi,c
+sig,np
+solg,n
+lag,c
+sig,bp
+sig,bp+np
+0,np
+# mais viendra le jour des adieux
+# car il faut que les femmes pleurent
+mi,np
+si,np
+la,np
+mi,np
+re,np
+mi,n
+fa1,c
+mi,b
+0,n
+mi,n
+mi,c
+la,n
+la,n
+la,c
+sol,n
+fa1,c
+mi,bp
+fa1,b
+0,n
+# et que les hommes curieux
+# tentent les horizons qui leurrent
+fa1,np
+sol,n
+la,c
+si,bp
+la,np
+si,n
+doh1,c
+reh,np+n
+0,c
+mihb1,np
+reh,n
+doh1,c
+si,n
+la,c
+sold3,n
+la,c
+mih,rp
+mi,bp+np
+0,np
+# et ce jour-là les grands vaisseaux
+# fuyant le port qui diminue
+mi,np
+la,n
+la,c
+sol,np+n
+sol,c
+fa1,np+n
+fa1,c
+mi,b
+0,n
+mi,np
+do1,n
+re,c
+mi,n
+mi,c
+re,n
+do1,c
+sig,bp
+sig,b
+0,n
+# sentent leur masse retenue
+# par l'âme des loitains berceaux
+mi,np
+sold3,n
+si,c
+reh,bp
+doh1,np
+si,n
+la,c
+si,np
+mi,np
+0,np
+la,bp
+sol1,bp
+sol1,np
+la,n
+sol1,c
+sol1,bp+np
+fa1,np
+mi,rp
+0,bp
+# par l'âme des lointains berceaux
+mi,bp
+la,bp
+la,np
+sol,n
+fa1,c
+mi,bp+np
+mi,np
+lag,rp+bp

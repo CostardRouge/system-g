@@ -1,0 +1,440 @@
+@occidental
+N = 500
+$ piano_2
+# des yeux qui font baisser les miens
+mi,c
+mi,c
+re,c
+do,c
+sig3,c
+N = 520
+do,c
+re,c
+mi,n
+0,tc
+# un rir' qui se perd sur sa bouch'
+N = 500
+fa1,c
+fa1,c
+mi,c
+re,c
+dod3,c
+N = 520
+re,c
+mi,c
+fa1,n+dc
+0,tc
+# voilà le portrait sans retouch'
+N = 500
+sol,c
+sol,c
+fa1,c
+mi,c
+re,c
+mi,c
+fa1,c
+N = 550
+sol,n
+# de l'homme auquel j'appartiens
+sol,c
+sol,n
+sol,c
+N = 700
+sol,c
+N = 750
+red3,c
+mi,c
+sol,b
+0,n
+$ string_2
+# quand il me prend dans ses bras
+N = 650
+doh,np
+si3,c
+la,c
+sol,c
+N = 700
+mi,c
+N = 650
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# il me parle tout bas
+N = 650
+la,c
+sol,c
+mi,c
+do,c
+si3,c
+N = 900
+la,n+dcp
+0,tc
+# je vois la vie en rose
+N = 650
+sol,c
+N = 700
+mi,c
+N = 650
+sig3,c
+do,c
+si3,c
+la,b
+N = 900
+sol,np
+0,c
+# il me dit des mots d'amour
+N = 650
+reh,np
+doh,c
+si3,c
+la,c
+N = 700
+fa1,c
+N = 650
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# des mots de tous les jours
+N = 650
+la,c
+N = 700
+sol,c
+N = 650
+fa1,c
+N = 700
+re,c
+N = 650
+si3,c
+N = 900
+la,n+dcp
+0,tc
+# et ça m' fait quelque chose
+N = 650
+sol,c
+N = 700
+fa1,c
+N = 650
+dod3,c
+re,c
+si3,c
+la,b
+N = 900
+sol,np
+0,c
+$ brass_2
+# il est entré dans mon coeur
+N = 650
+doh,np
+si3,c
+la,c
+sol,c
+N = 700
+mi,c
+N = 650
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# une part de bonheur
+N = 650
+la,c
+sol,c
+mi,c
+do,c
+si3,c
+N = 900
+la,n+dcp
+0,tc
+# dont je connais la cause
+N = 650
+sol,c
+N = 700
+mi,c
+N = 650
+sig3,c
+do,c
+N = 620
+doh,c
+N = 650
+doh,b
+doh,np
+0,c
+# c'est lui pour moi moi pour lui dans la vie
+N = 600
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+N = 700
+sol,np
+0,c
+# il me l'a dit l'a juré pour la vie
+N = 600
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+N = 700
+mih,b
+reh,bp
+0,n
+$ string_2
+# et dès que je l'aperçois
+N = 650
+doh,np
+si3,c
+la,c
+sol,c
+mi,c
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# alors je sens en moi
+N = 650
+la,c
+sol,c
+mi,c
+do,c
+si3,c
+la,n+dcp
+0,tc
+# mon coeur qui bat
+sol,c
+N = 900
+la,n
+si3,n
+doh,bp
+0,np
+
+N = 500
+$ guitar_1
+# des yeux qui font baisser les miens
+mi,c
+mi,c
+re,c
+do,c
+sig3,c
+N = 520
+do,c
+re,c
+mi,n
+0,tc
+# un rir' qui se perd sur sa bouch'
+N = 500
+fa1,c
+fa1,c
+mi,c
+re,c
+dod3,c
+N = 520
+re,c
+mi,c
+fa1,n+dc
+0,tc
+# voilà le portrait sans retouch'
+N = 500
+sol,c
+sol,c
+fa1,c
+mi,c
+re,c
+mi,c
+fa1,c
+N = 550
+sol,n
+# de l'homme auquel j'appartiens
+sol,c
+sol,n
+sol,c
+N = 700
+sol,c
+N = 750
+red3,c
+mi,c
+sol,b
+0,n
+$ piano_3
+# quand il me prend dans ses bras
+N = 650
+doh,np
+si3,c
+la,c
+sol,c
+N = 700
+mi,c
+N = 650
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# il me parle tout bas
+N = 650
+la,c
+sol,c
+mi,c
+do,c
+si3,c
+N = 900
+la,n+dcp
+0,tc
+# je vois la vie en rose
+N = 650
+sol,c
+N = 700
+mi,c
+N = 650
+sig3,c
+do,c
+si3,c
+la,b
+N = 900
+sol,np
+0,c
+# il me dit des mots d'amour
+N = 650
+reh,np
+doh,c
+si3,c
+la,c
+N = 700
+fa1,c
+N = 650
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# des mots de tous les jours
+N = 650
+la,c
+N = 700
+sol,c
+N = 650
+fa1,c
+N = 700
+re,c
+N = 650
+si3,c
+N = 900
+la,n+dcp
+0,tc
+# et ça m' fait quelque chose
+N = 650
+sol,c
+N = 700
+fa1,c
+N = 650
+dod3,c
+re,c
+si3,c
+la,b
+N = 900
+sol,np
+0,c
+$ string_2
+# il est entré dans mon coeur
+N = 650
+doh,np
+si3,c
+la,c
+sol,c
+N = 700
+mi,c
+N = 650
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# une part de bonheur
+N = 650
+la,c
+sol,c
+mi,c
+do,c
+si3,c
+N = 900
+la,n+dcp
+0,tc
+# dont je connais la cause
+N = 650
+sol,c
+N = 700
+mi,c
+N = 650
+sig3,c
+do,c
+N = 620
+doh,c
+N = 650
+doh,b
+doh,np
+0,c
+$ organ
+# c'est lui pour moi moi pour lui dans la vie
+N = 600
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+N = 700
+sol,np
+0,c
+# il me l'a dit l'a juré pour la vie
+N = 600
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+reh,c
+reh,n
+doh,c
+N = 700
+mih,b
+reh,bp
+0,n
+$ brass_2
+# et dès que je l'aperçois
+N = 650
+doh,np
+si3,c
+la,c
+sol,c
+mi,c
+doh,c
+N = 900
+si3,n+dcp
+0,tc
+# alors je sens en moi
+N = 650
+la,c
+sol,c
+mi,c
+do,c
+si3,c
+la,n+dcp
+0,tc
+# mon coeur qui bat
+sol,c
+N = 900
+la,n
+si3,n
+doh,bp

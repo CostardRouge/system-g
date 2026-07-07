@@ -1,0 +1,73 @@
+@ occidental
+N = 900
+$ string_1
+# DO MINEUR
+# adoramus te christe
+do,b
+# FA MINEUR
+do,b
+do,b
+do,n
+do,n
+do,rp
+fa,n
+# DO MINEUR
+fa,c
+mib1,c
+re,c
+mib1,c
+re,c
+do,c
+sig3,n
+do,c
+do,c
+lab1,r
+# SOL MAJEUR
+sol,bp
+# DO MINEUR
+0,8*n
+sol,b
+lab1,c
+sib1,c
+lab1,c
+sol,c
+fa,bp
+mib1,n
+re,n
+sol,n
+do,b
+# SOL MINEUR
+0,rp
+sol,b
+la,c
+sib1,c
+la,c
+sol,c
+fad3,c
+re,c
+sol,b
+fad3,n
+sol,b
+0,bp
+# SIb MINEUR
+fa,np
+fa,c
+# MIb MAJEUR
+sib,c
+lab1,c
+sol,c
+fa,c
+# DO MINEUR
+mib1,c
+re,c
+do,b
+sigb1,bp
+sig3,n
+do,r
+solg,b
+sol,b
+sol,b
+sol,b
+sol,b
+sol,rp
+do,r+n

@@ -1,0 +1,383 @@
+@occidental
+N = 550
+$ brass_2
+# FA MAJEUR
+# je m'lève et je te bouscule
+do,c
+la,b
+0,trn
+sig3,trn
+do,trn
+la,c
+sol,c
+la,b
+# tu n' te réveill's pas comm' d'habitude
+0,trn
+sig3,trn
+do,trn
+la,c
+sol,c
+la,b
+0,c
+sol,c
+la,c
+sol,c
+sol,n
+fad3,b
+# sur toi je remont' le drap
+0,c
+re,c
+sib1,b
+0,trn
+dod3,trn
+re,trn
+sib1,c
+la,c
+sib1,b
+# j'ai peur qu'tu aies froid comm' d'habitude
+0,trn
+dod3,trn
+re,trn
+sib1,c
+la,c
+sib1,b
+0,c
+doh,c
+sol,c
+sol,c
+sib1,n
+la,b
+# ma main caress' tes cheveux
+0,c
+si3,c
+doh,b
+0,trn
+si3,trn
+doh,trn
+reh,c
+doh,c
+doh,b
+# presque malgré moi comm' d'habitude
+0,c
+reh,n
+la,c
+doh,c
+sib1,c
+sib1,cp
+0,dc
+sib1,trb
+sib1,trb
+la,trb
+doh,np
+sib1,c
+la,cp
+0,dc
+# mais toi tu me tourn's le dos comm' d'habitude
+sol,n
+la,b
+0,trn
+do,trn
+do,trn
+sib1,c
+la,c
+sol,np
+0,c
+mi3,trb
+fa,trb
+sol,trb
+sol,r
+fa,bp
+
+$ piano_3
+# et puis je m'habill' très vite
+0,c
+do,c
+la,b
+0,trn
+sig3,trn
+do,trn
+la,c
+sol,c
+la,b
+# je sors de la chambr' comm' d'habitude
+0,trn
+sig3,trn
+do,trn
+la,c
+sol,c
+la,b
+0,c
+sol,c
+la,c
+sol,c
+sol,n
+fad3,b
+# tout seul je bois mon café
+0,c
+re,c
+sib1,b
+0,trn
+dod3,trn
+re,trn
+sib1,c
+la,c
+sib1,b
+# je suis en retard comm' d'habitude
+0,trn
+dod3,trn
+re,trn
+sib1,c
+la,c
+sib1,b
+0,c
+doh,c
+sol,c
+sol,c
+sib1,n
+la,b
+# sans bruit je quitt' la maison
+0,c
+si3,c
+doh,b
+0,trn
+si3,trn
+doh,trn
+reh,c
+doh,c
+doh,b
+# tout est gris dehors comm' d'habitude
+0,c
+reh,n
+la,c
+doh,c
+sib1,c
+sib1,cp
+0,dc
+sib1,trb
+sib1,trb
+la,trb
+doh,np
+sib1,c
+la,cp
+0,dc
+# j'ai froid je relèv' mon col comm' d'habitude
+sol,n
+la,b
+0,trn
+do,trn
+do,trn
+sib1,c
+la,c
+sol,np
+0,c
+mi3,trb
+fa,trb
+sol,trb
+sol,r
+fa,np
+0,c
+
+$ guitar_1
+# comm' d'habitude' tout' la journée je vais jouer
+la,trb
+sib1,trb
+doh,trb
+doh,b
+0,c
+reh,c
+doh,c
+si3,c
+doh,b
+0,c
+si3,c
+doh,c
+reh,c
+reh,b
+# à fair' semblant comm' d'habitud'
+doh,c
+reh,n
+doh,c
+reh,b
+reh,c
+mih3,n
+fah,c
+fah,b
+# je fais sourir' comm' d'habitud'
+0,c
+reh,c
+fah,c
+reh,c
+mih3,b
+mih3,c
+fah,n
+solh,c
+solh,b
+# je vais même rir' comm' d'habitud'
+0,c
+lah,c
+mih3,c
+solh,c
+fah,b
+reh,c
+mih3,n
+fah,c
+fah,np
+0,c
+# enfin je vais vivr' comm' d'habitude
+reh,c
+reh,c
+fah,c
+reh,c
+mih3,b
+mih3,c
+fah,n
+solh,c
+solh,r
+fah,bp
+
+$ brass_2
+# et puis le jour s'en ira
+0,c
+do,c
+la,b
+0,trn
+sig3,trn
+do,trn
+la,c
+sol,c
+la,b
+# moi je reviendrai comm' d'habitude
+0,trn
+sig3,trn
+do,trn
+la,c
+sol,c
+la,b
+0,c
+sol,c
+la,c
+sol,c
+sol,n
+fad3,b
+# toi tu seras sortie
+0,n
+sib1,b
+0,trn
+dod3,trn
+re,trn
+sib1,c
+la,c
+sib1,b
+# pas encor' rentrée comm' d'habitude
+0,trn
+dod3,trn
+re,trn
+sib1,c
+la,c
+sib1,b
+0,c
+doh,c
+sol,c
+sol,c
+sib1,n
+la,b
+# tout seul j'irai me coucher
+0,c
+si3,c
+doh,b
+0,trn
+si3,trn
+doh,trn
+reh,c
+doh,c
+doh,b
+# dans ce grand lit froid comm' d'habitude
+0,c
+reh,n
+la,c
+doh,c
+sib1,c
+sib1,cp
+0,dc
+sib1,trb
+sib1,trb
+la,trb
+doh,np
+sib1,c
+la,cp
+0,dc
+# mes larm's je les cacherai comm' d'habitude
+sol,n
+la,b
+0,trn
+do,trn
+do,trn
+sib1,c
+la,c
+sol,np
+0,c
+mi3,trb
+fa,trb
+sol,trb
+sol,r
+fa,n+dc
+0,dc
+
+$ string_2
+# mais comm' d'habitude' même la nuit je vais jouer
+fa,c
+la,trb
+sib1,trb
+doh,trb
+doh,b
+0,c
+reh,c
+doh,c
+si3,c
+doh,b
+0,c
+si3,c
+doh,c
+reh,c
+reh,b
+# à fair' semblant comm' d'habitud'
+doh,c
+reh,n
+doh,c
+reh,b
+reh,c
+mih3,n
+fah,c
+fah,b
+# tu rentreras comm' d'habitud'
+0,c
+reh,c
+fah,c
+reh,c
+mih3,b
+mih3,c
+fah,n
+solh,c
+solh,b
+# je t'attendrai comm' d'habitud'
+0,c
+lah,c
+mih3,c
+solh,c
+fah,b
+reh,c
+mih3,n
+fah,c
+fah,np
+0,dc
+# tu me souriras comm' d'habitude
+reh,c
+reh,c
+fah,c
+reh,c
+mih3,b
+mih3,c
+fah,n
+solh,c
+solh,r
+fah,r

@@ -1,0 +1,228 @@
+@occidental
+# ALTO
+N = 550
+0,12*n
+$ string_2
+# nos qui sumus in hoc mundo
+# FA# MINEUR
+la1,bp
+sold,n
+fad,b
+mi1,bp-dc
+0,dc
+fad,c
+mi1,c
+fad,c
+mi1,c
+mi1,b
+re1,n
+mi1,np
+sig,c
+re1,np
+dod,c
+0,bp
+# nos qui sumus in hoc mundo in hoc mundo
+mi1,n
+mi1,n
+fad,np
+mi1,c
+mi1,c
+re1,dc
+dod,dc
+re1,b
+mi1,b
+0,n
+re1,c
+dod,c
+re1,c
+dod,c
+dod,b
+sig,n
+dod,b
+la1,n
+fad,np
+mi,c
+fad,c
+sold,c
+la1,c
+si,c
+sold,b
+# SI MINEUR
+fad,n
+mi,b
+# SI MAJEUR
+N = 545
+red,r
+N = 530
+0,11*n
+# vitiorum in profundo
+# SI MINEUR
+si,b
+fad,n
+sol1,n
+fad,c
+mi1,c
+re1,c
+sig,c
+# FA# MINEUR
+dod,n
+re1,r-dc
+0,dc
+N = 600
+re1,b
+dod,b
+# RE MAJEUR
+N = 625
+lag,r
+# SOL MAJEUR
+N = 850
+sig,b-dc
+0,dc
+# RE MAJEUR
+# jam passi jam passi naufragia
+N = 550
+fad,b
+re,b
+# SI MINEUR
+mi,cp
+0,dc
+# FA# MINEUR
+la1,n
+la1,np
+sold,dc
+fad,dc
+# SI MINEUR
+mi,n
+mi,n
+fad,b
+fad,n
+fad,n
+sold,cp
+0,dc
+sold,n
+# FA# MINEUR
+la1,rp
+sold,n
+fad,n
+# SI MINEUR
+N = 700
+sol1,c
+fad,c
+mi,c
+re1,c
+mi,n
+mi,n
+# FA# MAJEUR
+N = 850
+fad,r-dc
+0,dc
+# gloriose nicolae (2)
+# RE MAJEUR
+N = 300
+la,b
+la,n
+la,b
+# LA MAJEUR
+la,n
+# RE MAJEUR
+la,b
+la,n
+la,b
+# LA MAJEUR
+la,n
+# SI MINEUR
+si,b
+la,n
+# LA MAJEUR
+sold3,b
+la,n
+# SI MINEUR
+si,b
+la,n
+# LA MAJEUR
+sold3,b
+la,n
+# ad salutis portum trahe (2)
+# SI MINEUR
+fad,b
+fad,n
+mi,b
+fad,n
+fad,b
+fad,n
+mi,b
+fad,n
+# MI MINEUR
+sol1,b
+fad,n
+sol1,b
+fad,n
+sol1,b
+fad,n
+N = 500
+mi,b
+# SI MAJEUR
+red,cp
+0,dc
+# ubi pax (2) et gloria
+# SI MINEUR
+N = 650
+fad,b
+sold,b
+la1,b
+si,b
+la1,np
+sol1,c
+fad,c
+# MI MINEUR
+mi,c
+fad,n
+# SI MINEUR
+sol1,cp
+0,dc
+fad,c
+mi,c
+re1,c
+dod,c
+sig,c
+dod,c
+re1,c
+mi,c
+fad,n
+fad,np
+fad,c
+# SI MAJEUR
+red,r-dc
+0,dc
+# ubi pax (2) et gloria
+# SI MINEUR
+fad,b
+sold,b
+N = 750
+la1,b
+si,b
+la1,np
+sol1,c
+fad,c
+# MI MINEUR
+mi,c
+fad,n
+# SI MINEUR
+sol1,cp
+0,dc
+fad,c
+mi,c
+re1,c
+dod,c
+sig,c
+dod,c
+re1,c
+mi,c
+N = 850
+fad,n
+fad,n
+N = 900
+fad,c
+fad,c
+# SI MAJEUR
+red,r

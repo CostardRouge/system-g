@@ -1,0 +1,108 @@
+@occidental
+N = 1100
+$ string_2
+si,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+si,qc
+la1,c
+sold,c
+0,c
+sold,c-qc
+la1,qc
+sold,c
+fad,c-qc
+la1,qc
+sold,c
+fad,c-qc
+sold,qc
+fad,c
+mi,c
+0,c
+si,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+si,qc
+la1,c
+sold,c
+0,c
+dohd,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+dohd,qc
+si,c
+lad3,c
+sold,n
+0,c
+si,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+rehd3,qc
+dohd,c
+si,c
+dohd,c
+sid3,c
+0,c
+sold,c-qc
+si,qc
+la1,c
+sold,c-qc
+si,qc
+la1,c
+sold,c
+sold,c
+dohd,c
+0,c
+dohd,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+rehd3,qc
+dohd,c
+si,c-qc
+rehd3,qc
+ dohd,c
+ si,c
+ 0,c
+ la1,c-qc
+ si,qc
+ la1,c
+ sold,c-qc
+ la1,qc
+ sold,c
+ fad,c
+ mi,n
+ 0,c
+ mi,c-qc
+ sold,qc
+ fad,c
+ mi,c-qc
+ sold,qc
+ fad,c
+ mi,c
+ mi,c
+ mih,n
+ dohd,c-qc
+ rehd3,qc
+ dohd,dc
+ si,dc-qc
+ rehd3,qc
+ dohd,dc-qc
+ si,dc-qc
+ rehd3,qc
+ dohd,dc
+ si,dc-qc
+ rehd3,qc
+ dohd,dc
+ si,dc
+ mi,n

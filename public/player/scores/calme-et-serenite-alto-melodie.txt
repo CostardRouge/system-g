@@ -1,0 +1,343 @@
+@occidental
+sol = 441*8/9
+N = 720
+$ string_2
+# DO MINEUR
+# dans ce monde bruyant
+0,c
+do,dc
+do,dc
+mib1,n
+fa,cp
+fa,dc
+sol,n
+# et sans cesse agité
+0,cp
+lab1,dc
+sol,c
+fa,c
+0,c
+mib1,dc
+fa,dc
+sol,n
+0,n
+# rien n'ebranle ton calme
+sol,cp
+0,dc
+sigb,c
+lab1,cp
+sol,dc
+fa,c
+mib1,n
+# et ta serenite
+sol,c
+fa,c
+mib1,trn
+re,trn
+do,trn
+do,np
+0,c
+# qu'importe les tracas
+0,cp
+do,dc
+sol,cp
+sol,dc
+lab1,cp
+sib,dc
+lab1,n
+# les coups l'adverlate
+0,cp
+sib,dc
+dohb1,c
+0,dc
+sib,c
+la3,c
+sib,dc
+dohb1,n
+# l'entourage grognon
+0,c
+sigb,dc
+sigb,dc
+lab1,2*trn
+sol,trn
+fa,c
+fa,c
+# la pire insanite
+0,c
+fad3,c
+sol,cp
+fa,cp
+mib1,dc
+re,dc
+mib1,n
+N = 750
+# les cris les pleurs
+0,c
+do,c
+si3,n+dc
+0,dc
+reh,c
+lab1,n+dc
+# les mots blessants l'hostilite
+N = 800
+0,dc
+fa,c
+fa,qc
+sol,qc
+fa,cp-tc
+mi3,dc
+sol,n+dc
+0,dc
+N = 750
+mib1,c
+re,dc
+do,dc
+sig3,c+cp
+do,dc
+re,n
+0,n
+N = 720
+# rien n'ebranle ton calme
+sol,cp
+0,dc
+sigb,c
+lab1,cp
+sol,dc
+fa,c
+mib1,n+2*trn
+# et ta serenite
+sol,trn+c
+fa,c
+mib1,trn
+re,trn
+do,trn
+do,np
+0,c
+# le sort peut s'acharner
+0,cp
+sol,dc
+la,cp
+la,dc
+la,dc
+la,dc
+sib1,cp
+# avec ferocite
+0,c
+mi,dc
+mi,cp
+mi,dc
+fa1,dc
+sol,dc
+la,np
+# DO MINEUR
+# les malfaisants sevir
+0,cp
+do,dc
+lab1,cp
+sol,dc
+lab1,cp
+si3,dc
+si3,n
+0,cp
+# en toute impunite
+mib1,c
+fa,c
+sol,c
+mib1,dc
+re,dc
+do,np
+N = 750
+# tu peux perdre tes biens
+0,cp
+do,dc
+doh,cp
+doh,dc
+sib,dc
+lab1,dc
+lab1,np
+N = 720
+# ton nom ta dignite ta dignite
+0,c
+sol,c
+fad3,n
+0,c
+doh,c
+reh,trn
+mihb1,trn
+reh,trn+cp
+0,cp
+doh,c
+doh,trn
+si3,trn
+si3,trn+c
+0,c
+# rien n'ebranle ton calme
+sol,cp
+0,dc
+sigb,c
+lab1,cp
+sol,dc
+fa,c
+mib1,n+2*trn
+# et ta serenite
+sol,trn+c
+fa,c
+mib1,trn
+re,trn
+do,trn
+do,np
+0,c
+# que tombent les malheurs
+0,cp
+do,dc
+doh,cp
+doh,dc
+doh,dc
+reh,dc
+mihb1,c
+# sur toi sur la cite
+0,np
+sol,c
+lab1,cpp
+0,dc
+sib,trn
+sib,trn
+doh,trn
+reh,np
+0,c
+# qu'un fleau ravageur
+reh,dc
+mihb1,dc
+fah,c
+mihb1,dc
+reh,dc
+reh,np
+# frappe l'humanite
+# FA MINEUR
+0,c
+rehb1,c
+doh,dc
+sib,dc
+lab1,dc
+sol,dc
+fa,cp
+mib1,dc
+reb1,b
+0,c
+# qu'advienne le grand jour
+# MIb MAJEUR
+sol,c
+sib,cp
+sib,dc
+sib,c
+sib,c
+sib,n+dc
+0,dc
+# l'ultime eternite
+sigb,c
+mib,cp
+fa,dc
+sol,dc
+lab1,dc
+N = 750
+sib,c+b
+0,n
+N = 720
+# rien n'ebranle ton calme
+# DO MINEUR
+sol,cp
+0,dc
+sigb,c
+lab1,cp
+sol,dc
+fa,c
+mib1,n+2*trn
+# et ta serenite
+sol,trn+c
+fa,c
+mib1,trn
+re,trn
+do,trn
+do,np
+0,c
+N = 760
+# bien sur bien sur il faut lutter
+# DO MAJEUR
+0,c
+do,c
+mi,n
+0,c
+do,c
+fa1,n
+fa1,trn
+sol,trn
+lab1,trn
+lab1,n
+# contre l'iniquite
+0,dc
+sol,c
+fa1,c
+mi,dc
+fa1,dc
+sol,dc
+do,n
+# bien sur bien sur il faut punir
+0,c
+doh,c
+la,n
+0,c
+fa1,c
+sib1,n
+0,c
+fa1,c
+fa1,cp
+do,dc
+sig3,np
+# la criminalite
+fa1,c
+fa1,dc
+mi,dc
+fa1,dc
+sol,dc
+sib1,n
+N = 745
+# et au besoin combattre
+# DO MINEUR
+0,c
+sol,c
+la,c
+si3,c
+doh,c
+reh,c
+lab1,np+tc
+0,tc
+# avec temerite
+reh,dc
+reh,c+tc
+0,tc
+doh,dc
+si3,dc
+doh,dc
+reh,cp
+0,cp
+N = 720
+# garde toujours (2) ton calme
+sol,n
+sol,cp
+lab1,dc
+sol,n
+0,c
+sol,c
+sol,2*trn
+lab1,trn
+sol,c
+fa,c
+mib1,n+2*trn
+# et ta serenite
+sol,trn+c
+fa,c
+mib1,trn
+re,trn
+do,trn
+do,np
+0,c

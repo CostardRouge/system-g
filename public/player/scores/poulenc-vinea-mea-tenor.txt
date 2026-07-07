@@ -1,0 +1,239 @@
+@occidental
+# TENOR
+N = 966
+$ string_1
+# DO# MAJEUR
+# vinea mea electa (2)
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+# ego te plantavi (2)
+dohd,n
+sid,np
+dohd,c
+sid,c
+sold,c
+sid,cp
+0,dc
+dohd,n
+sid,np
+dohd,c
+sid,c
+sold,c
+sid,cp
+0,dc
+# quomodo conversa es in amaritudinem
+# DO# MINEUR
+0,b+c
+dohd,c
+rehd,c
+mih1,c
+fahd,n
+solhd,n
+dohd,cp
+0,dc
+rehd,n
+mih1,c
+rehd,c
+dohd,n
+rehd,n
+dohd,n
+dohd,n
+rehd,c
+dohd,c
+rehd,b-dc
+0,dc
+# me crucifigeres et barrabam dimitteres
+mih1,b
+dohd,n
+si,n
+si1,b
+si1,n
+si1,cp
+0,dc
+mih1,b
+rehd,n
+la1,n
+sid3,cp
+0,dc
+sold,n
+la1,n
+sid3,n
+# DO# MAJEUR
+dohd,bp-dc
+0,dc
+# sepivite et lapides elegi elegi ex te
+0,r
+dohd,n
+# DO# MINEUR
+dohd,np
+dohd,c
+dohd,c
+0,c
+# SOL# MINEUR
+si1,n
+lad,n
+sold,n
+rehd,cp
+0,dc
+si1,n
+dohdd3,n
+rehd,b-dc
+0,dc
+si1,n
+lad,n
+sold,n
+mi1,n
+# RE# MAJEUR
+red,b-dc
+0,dc
+# DO# MINEUR
+# et oedificavi turrim
+rehd,b
+dohd,n
+sid3,n
+dohd,n
+reh1,n
+dohd,n
+red,n
+# SOL# MAJEUR
+sid,b
+0,n+dc
+# DO# MINEUR
+# quomodo conversaes in amaritudinem
+0,n
+dohd,c
+si,c
+la1,n
+sold,n
+la1,n
+si,c
+la1,c
+sold,cp
+0,dc
+rehd,n
+mih1,c
+rehd1,c
+dohd,n
+rehd,n
+dohd,n
+dohd,n
+rehd,c
+dohd,c
+# SOL# MAJEUR
+sid,b-dc
+0,dc
+# me crucifigeres et barrabam dimitteres
+# DO# MINEUR
+mih1,b
+dohd,n
+si,n
+si1,b
+si1,n
+si1,n
+mih1,b
+rehd,n
+la1,n
+sid3,cp
+0,dc
+sold,n
+la1,n
+dohd,n
+# SOL# MAJEUR
+sid,b
+0,n+dc
+# vinea mea electa (2)
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+dohd,np
+dohd,c
+dohd,c
+rehd,c
+rehd,n
+mihd,c
+dohd,c
+rehd,cp
+0,dc
+# ego te plantavi (2)
+dohd,n
+sid,np
+dohd,c
+sid,c
+sold,c
+sid,cp
+0,dc
+dohd,n
+sid,np
+dohd,c
+sid,c
+sold,c
+sid,cp
+0,dc
+# quomodo conversa es in amaritudinem
+# DO# MINEUR
+0,b+c
+dohd,c
+rehd,c
+mih1,c
+fahd,n
+solhd,n
+dohd,cp
+0,dc
+rehd,n
+mih1,c
+rehd,c
+dohd,n
+rehd,n
+dohd,n
+dohd,n
+rehd,c
+dohd,c
+rehd,b-dc
+0,dc
+# ut me crucifigeres et barrabam
+rehd,b
+dohd,n
+sid3,n
+rehd,n
+rehd,c
+dohdd3,c
+sid3,b-dc
+0,dc
+mih1,b
+rehd,n
+la1,n
+dohd,b-dc
+0,dc
+# et barrabam dimitteres
+rehd,b
+mih1,n
+la1,n
+dohd,cp
+0,dc
+sid3,n
+si,n
+rehd,n
+# DO# MAJEUR
+mihd,r+n

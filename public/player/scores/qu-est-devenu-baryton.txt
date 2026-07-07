@@ -1,0 +1,74 @@
+@occidental
+# BARYTON
+N = 450
+$ string_2
+RE,B
+SOL,N
+SOL,N
+FAD,B
+SOL,N
+SOL,N
+REH,B
+SI,N
+SIB1,N
+LA,B
+RE,N
+REH,N
+DOHD3,B
+REH,N
+LA,N
+MIH,B
+LA,NP
+P,C
+# Dans qui lamour
+MI,B
+LA,N
+DOH,N
+SOL,B
+FAD,N
+SIB1,N
+LA,B
+REH,B
+LA,N
+LA,N
+SIB1,B
+SIB1,N
+LA,N
+RE,NP
+P,C
+# Quest la bouche or devenue
+LA,B
+SIB1,N
+SI,N
+REH,B
+LA,N
+MI,N
+SOL,B
+DOH,N
+LA,N
+RE,N
+DOD3,N
+RE,N
+RE,N
+LA,B
+MI,N
+FA1,N
+DOH,B
+FA1,NP
+P,C
+# Dont ma maîtresse
+REH,B
+LA,N
+FAD3,N
+SI,N
+SIB1,N
+SOL,N
+REH,N
+DOHD3,B
+REH,B
+SOL,N
+FAD3,N
+SOL,B
+RE,N
+LA,N
+REH,R

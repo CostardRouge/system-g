@@ -1,0 +1,290 @@
+@occidental
+N = 1305
+$ string_2
+# FA MINEUR
+# sola perduta abbandonata
+lab1,n
+lab1,c
+0,dc
+lab1,dc
+sib,c
+lab1,c
+sol,c
+lab1,c
+fa,b
+fa,np
+0,c
+# in landa desolata
+0,c
+rehb1,c
+mihb1,cp
+rehb1,dc
+doh,dc
+sib,dc
+lab1,dc
+sol,dc
+fa,n
+fa,np
+0,c
+0,cp
+# orror intorno a me
+fa,dc
+fa,np
+0,n
+rehb1,c
+doh,c
+sib,c
+doh,n
+0,np
+# s'oscura il ciel ahime son sola
+fah,c
+fah,c
+fah,c
+lahb1,b
+fa,c
+fa,c
+mib,cp
+reb1,dc
+do,n
+do,n
+# e nel profondo deserto io cado
+0,c
+lab1,c
+lab1,c
+sib,c
+doh,n
+doh,cp
+doh,dc
+rehb1,n
+rehb1,cp
+rehb1,dc
+doh,n
+doh,n
+# strazio crudel ah sola abbandonata
+fah,n
+mihb,c
+rehb1,c
+doh,n
+fah,c
+lahb1,c
+solh,c
+fah,c
+mihb,c
+rehb1,c
+doh,n
+lab1,n
+# io la derserta donna
+fa,c
+fa,dc
+fa,dc
+fa,c
+fa,c
+fa,n
+fa,n
+# ah non voglio morir no non voglio morir
+0,c
+mih3,c
+fah,c
+solh,c
+sihb,cp
+lahb1,dc
+solh,dc
+fah,dc
+mihb1,dc
+rehb1,dc
+doh,c
+sib,c
+doh,c
+rehb1,c
+mihb1,cp
+rehb1,dc
+doh,dc
+sib,dc
+lab1,dc
+sol,dc
+fa,np
+0,c
+# tutto dunque e finito
+0,n
+lab1,cp
+sol,dc
+sol,dc
+sib,c
+lab1,dc
+sol,cp
+fa,dc
+fa,c
+0,c
+# terra di pace mi sembrava questa
+# SI MINEUR
+0,dc
+mib,dc
+fa,dc
+solb1,dc
+lab,dc
+sib,dc
+doh,dc
+rehb1,dc
+mihb,dc
+fah,dc
+rehb1,dc
+doh,dc
+sib,cp
+fa,dc
+lab,n
+lab,n
+# terra di pace me sembrava questa
+0,n+dc
+rehb1,dc
+mihb,dc
+fah,dc
+rehb1,n
+N = 1450
+rehb1,n
+sib,dc
+sib,dc
+doh,dc
+mihb,qc
+rehb1,dc-qc
+N = 1600
+sib,c
+N = 2000
+sib,c
+# LAb MINEUR
+# ah mia belta funesta
+N = 660
+lab,n
+lab,cp
+lab,dc
+lab,np
+lab,c
+lahb,b
+lab,n
+0,n
+# ire novelle accende
+lab,n
+lab,cp
+sib,dc
+dohb1,np
+lab,c
+# MIb MINEUR
+mihb,b
+reh3,n
+# strappar da lui mi si volea
+0,cp
+reh3,dc
+reh3,npp
+reh3,dc
+reh3,cp
+reh3,dc
+reh3,cp
+reh3,dc
+# FA MINEUR
+fah,n
+doh,c
+# or tutto il mio passa to orribile risorge
+0,dc
+doh,dc
+rehb1,cp
+rehb1,dc
+rehb1,cp
+lab1,dc
+doh,n
+doh,cp
+doh,dc
+rehb1,cp
+rehb1,dc
+# MIb MINEUR
+reh3,cp
+reh3,dc
+mihb,n
+mihb,n
+#  e vivo innanzi alguardo mio si posa
+# LAb MINEUR
+0,cp
+fahb1,dc
+fahb1,cp
+dohb1,dc
+mihb,cp
+mihb,dc
+mihb,cp
+mihb,dc
+fahb1,n
+# SOLb MAJEUR
+fah3,n
+# SI MINEUR (CASSURE ENHARMONIQUE)
+fahd,n
+fad,c
+0,c
+# ah di sangue s'e macchiato
+solh1,n
+0,cp
+reh1,dc
+fahd,n
+fad,c
+0,np
+solh1,cp
+reh1,dc
+fahd,b
+fahd,b
+# ah tutto e finito asil di pace
+# RE MINEUR
+N = 1305
+lah,r+n
+la,trn
+la,trn
+la,trn
+la,c
+la,c
+0,n
+mih,trn
+reh,trn
+doh,trn
+reh,n
+# FA MAJEUR
+doh,np
+0,c
+# ora la tomba invoco
+la,trn
+sib1,trn
+doh,trn
+la,npp
+sol,dc
+N = 2000
+la,c
+N = 2400
+la,c
+# no non voglio morir (2)
+N = 2000
+doh,trn
+doh,trc
+doh,trc
+doh,trc
+doh,trc
+doh,trn
+N = 1000
+doh,trc
+doh,trc
+doh,trc
+doh,trc
+N = 1100
+fah,b
+# FA MINEUR
+# no no non voglio morir amore aita
+0,c
+mih3,c
+fah,c
+solh,c
+sihb,cp
+lahb1,dc
+solh,dc
+fah,dc
+mihb,dc
+rehb1,dc
+doh,c
+sib,c
+doh,c
+rehb1,c
+N = 1600
+mihb1,b
+fa,np

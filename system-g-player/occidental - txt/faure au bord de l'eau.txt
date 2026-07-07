@@ -1,0 +1,269 @@
+@occidental
+N = 800
+LA = 440
+# DO MINEUR
+$ string_2
+# S'asseoir tous deux au bord du flot qui passe
+sol,c
+mihb1,c
+reh,c
+doh,c
+sib1,c
+lab1,c
+sol,c
+fad3,c
+sol,c
+fad3,c
+sol,c
+sib,c
+fa,n
+0,b
+# le voir passer
+mib1,c
+mib1,c
+sol,c
+re,c
+do,n
+# tous deux s'il glisse un nuage en l'espace
+sol,c
+mihb1,c
+reh,c
+doh,c
+sib1,c
+lab1,c
+sol,c
+fad3,c
+sol,c
+fad3,c
+sol,c
+sib,c
+fa,n
+0,b
+# le voir glisser
+mib1,c
+mib1,c
+sol,c
+re,c
+do,n
+0,c
+# a l'horizon s'il fume un toit de chaume
+sol,c
+si3,c
+reh,c
+fah,c
+mihb1,c
+reh,c
+doh,c
+si3,c
+doh,c
+reh,c
+si3,c
+sol,n
+0,b
+# le voir fumer
+reh,c
+doh,c
+si3,c
+doh,c
+reh,np
+# aux alentours si quelque fleur embaume
+mihb1,c
+reh,c
+doh,c
+sib1,c
+lab1,c
+sol,c
+fad3,c
+sol,c
+fad3,c
+sol,c
+sib,c
+fa,n
+0,b
+# s'en embaumer
+mib1,c
+mib1,c
+sol,c
+re,c
+do,n
+# entendre au pied du saule où l'eau murmure
+mib1,c
+mib1,n
+mib1,c
+fa,c
+mib1,c
+fa,c
+sol,c
+mib1,c
+sol,c
+fa,np
+doh,b
+0,c
+# l'eau murmurer
+doh,c
+fa,n
+lab1,c
+sol,n
+# ne pas sentir tant que ce rêve dure
+# SOL MINEUR
+sol,c
+sol,n
+sol,c
+la,c
+sol,c
+la,c
+sib1,c
+sol,c
+sib1,c
+la,np
+mihb1,b
+0,c
+# le temps durer
+mihb1,c
+la,n
+# DO MINEUR
+doh,c
+si3,np
+# mais n'apportant de passion profonde
+sol,c
+si3,c
+reh,c
+fah,c
+mihb1,c
+reh,c
+doh,c
+si3,c
+doh,c
+reh,c
+si3,c
+sol,n
+0,b
+# qu'a s'adorer
+reh,c
+doh,c
+si3,c
+doh,c
+reh,np
+# sans nul souci des querelles du monde
+mihb1,c
+reh,c
+doh,c
+sib1,c
+lab1,c
+sol,c
+fad3,c
+sol,c
+fad3,c
+sol,c
+sib,c
+fa,n
+0,b
+# les ignorer
+mib1,c
+mib1,c
+sol,c
+re,c
+do,c
+0,c
+# et seuls tous deux devant tout ce qui lasse
+# FA MINEUR
+do,c
+mi3,n
+sol,c
+sib,c
+lab1,c
+sol,c
+fa,c
+mi3,c
+fa,c
+sol,c
+mi3,c
+do,n
+0,b+c
+# sans se lasser
+fa,c
+mi3,c
+fa,c
+sol,np
+# sentir l'amour devant tout ce qui passe
+lab1,c
+# SIb MINEUR
+sib,c
+doh,c
+rehb1,c
+mihb,c
+fah,c
+solb1,c
+lab,c
+sib,c
+doh,c
+rehb1,c
+mihb,c
+0,b+c
+# ne point passer
+# DO MINEUR
+sol,c
+sol,n
+sol,c
+sol,b
+0,n
+0,bp
+0,n
+# sentir l'amour devant tout ce qui passe
+# FA MINEUR
+do,c
+mi3,n
+sol,c
+sib,c
+lab1,c
+sol,c
+fa,c
+mi3,c
+fa,c
+sol,c
+mi3,c
+do,n
+0,b
+# ne point lasser
+sol,c
+fa,c
+mi3,c
+fa,c
+# DO MAJEUR
+doh,bp
+doh,bp
+doh,b
+0,r
+# piano_2
+fa,c
+mi3,c
+fa,c
+lab1,c
+0,b
+si3,c
+reh,c
+fah,c
+mihb1,c
+0,b
+mi3,c
+sol,c
+sib,c
+lab1,c
+sol,c
+0,b
+fa,c
+sol,c
+lab1,c
+sol,n
+0,b
+mi3,c
+sol,c
+sib,c
+lab1,c
+sol,c
+fa,c
+mi3,c
+fa,c
+sol,c
+mi3,c
+0,b

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GPlayer from '../components/GPlayer.astro';
+import { useTranslations, defaultLang } from '../i18n/utils';
+const t = useTranslations(defaultLang);
+---
+
+<BaseLayout title={t('nav.player')}>
+  <GPlayer />
+</BaseLayout>

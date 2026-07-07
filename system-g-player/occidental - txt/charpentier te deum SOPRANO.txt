@@ -1,0 +1,264 @@
+@occidental
+N = 550
+# SOPRANO
+$ brass_2
+# SIb MAJEUR
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te dominum confitemur
+reh,dc
+mihb1,n
+fah,cp
+mihb1,dc
+reh,cp
+mihb1,dc
+fah,n
+doh,cp
+sib,dc
+doh,cp
+reh,dc
+doh,n
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te deum confitemur
+reh,dc
+mihb1,cp
+fah,dc
+reh,cp
+mihb1,dc
+doh,npp
+sib,dc
+sib,bp
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te dominum confitemur
+reh,dc
+mihb1,n
+fah,cp
+mihb1,dc
+reh,cp
+mihb1,dc
+fah,n
+doh,cp
+sib,dc
+doh,cp
+reh,dc
+doh,n
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te deum confitemur
+reh,dc
+mihb1,cp
+fah,dc
+reh,cp
+mihb1,dc
+doh,npp
+sib,dc
+sib,bp
+$ string_2
+# et pleni sunt coeli
+fah,cp
+mihb1,dc
+reh,n
+sib,n
+mihb1,n
+mihb1,cp
+reh,dc
+doh,npp
+sib,dc
+la3,n
+# SOL MINEUR
+# et terra majestatis
+reh,n
+doh,n
+sib1,cp
+doh,dc
+la,n
+reh,n
+sib1,npp
+la,dc
+sol,n
+# SIb MAJEUR
+# et terra majestatis
+solh,n
+solh,n
+fah,n
+fah,npp
+mihb1,dc
+reh,npp
+doh,dc
+# gloriae tuae
+sib,cp
+doh,dc
+reh,cp
+mih3,dc
+fah,npp
+solh,dc
+# FA MAJEUR
+mih3,npp
+fah,dc
+fah,b
+0,n
+# SIb MAJEUR
+$ brass_2
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te dominum confitemur
+reh,dc
+mihb1,n
+fah,cp
+mihb1,dc
+reh,cp
+mihb1,dc
+fah,n
+doh,cp
+sib,dc
+doh,cp
+reh,dc
+doh,n
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te deum confitemur
+reh,dc
+mihb1,cp
+fah,dc
+reh,cp
+mihb1,dc
+doh,npp
+sib,dc
+sib,b
+0,n
+$ string_2
+# in te domine speravi
+reh,n
+reh,n
+mihb1,cp
+reh,dc
+doh,npp
+reh,dc
+mihb1,b
+# SOL MINEUR
+mihb1,n
+# non confundar in aeternum
+mihb1,cp
+fah,dc
+reh,npp
+mihb1,dc
+doh,npp
+reh,dc
+reh,b
+reh,n
+# non confundar (3) in aeternum
+reh,cp
+doh,dc
+# DO MAJEUR
+si3,n
+sol,n
+solh,npp
+fah1,dc
+mih,npp
+reh,dc
+doh,n
+# SIb MAJEUR
+reh,cp
+mih3,dc
+fah,n
+la3,n
+sib,npp
+doh,dc
+la3,npp
+sol,dc
+fa,n
+$ brass_2
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te dominum confitemur
+reh,dc
+mihb1,n
+fah,cp
+mihb1,dc
+reh,cp
+mihb1,dc
+fah,n
+doh,cp
+sib,dc
+doh,cp
+reh,dc
+doh,n
+# te deum laudamus
+fa,n
+sib,n
+sib,cp
+doh,dc
+reh,n
+sib,n
+fah,npp
+mihb1,dc
+reh,npp
+# te deum confitemur
+reh,dc
+N = 750
+mihb1,cp
+fah,dc
+reh,cp
+mihb1,dc
+N = 850
+doh,npp
+sib,dc
+sib,bp

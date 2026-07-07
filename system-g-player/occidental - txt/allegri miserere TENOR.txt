@@ -1,0 +1,43 @@
+LA = 441
+N = 300
+$ string_1
+# SOL MINEUR
+# miserere mei deus
+sib1,bp
+sib1,n
+sib1,b
+sib1,b
+fa1,b
+la,b
+reh,rp
+doh,n
+sib1,n
+la,b
+sib1,b
+doh1,r+r
+reh,r
+0,r
+# secundum magnam
+doh1,b
+la,n
+la,n
+la,r
+la,b
+0,b
+# misericordiam (2) tuam
+sol,r
+sol,bp
+fa,n
+mib1,b
+mihb1,b
+reh,b
+reh,rp
+doh1,b
+sib1,b
+sol,b
+la,b
+la,rp
+sol,n
+fad3,n
+sol,r
+la,r+r

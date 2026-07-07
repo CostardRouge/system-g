@@ -1,0 +1,438 @@
+N = 820
+$ piano_3
+# LA MINEUR
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+do1,dc
+sig,dc
+lag,dc
+solgd3,dc
+lag,dc
+sig,dc
+do1,dc
+lag,dc
+re,dc
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+$ harp
+re,dc
+fa1,dc
+mi,dc
+re,c
+0,c
+$ piano_3
+# DO MAJEUR
+sol,dc
+la,dc
+sol,dc
+fa1,dc
+mi,dc
+re,dc
+do,dc
+sig3,dc
+do,dc
+re,dc
+mi,dc
+do,dc
+fa1,dc
+mi,dc
+re,cp
+do,dc
+do,c
+$ harp
+fa1,c
+mi,c
+$ piano_3
+# LA MINEUR
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+si,dc
+la,dc
+si,dc
+doh1,dc
+reh,dc
+si,dc
+sol,c
+0,dc
+sol,dc
+la,dc
+sol,dc
+sol,c
+$ harp
+mi,dc
+sol,dc
+doh1,dc
+si,dc
+$ piano_3
+sold3,dc
+sold3,dc
+sold3,dc
+la,dc
+si,dc
+sold3,dc
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+# DO MAJEUR
+reh,dc
+doh,dc
+si3,cp
+doh,dc
+doh,dc
+$ harp
+sol,dc
+mi,dc
+do,dc
+mi,dc
+do,dc
+si3,cpp
+doh,tc
+si3,tc
+la,np
+sol,np
+0,dc
+fa1,cp
+mi,dc
+re,np
+do,n
+0,c
+
+$ string_2
+# LA MINEUR
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+do1,dc
+sig,dc
+lag,dc
+solgd3,dc
+lag,dc
+sig,dc
+do1,dc
+lag,dc
+re,dc
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+$ piano_2
+re,dc
+fa1,dc
+mi,dc
+re,c
+0,c
+$ string_2
+# DO MAJEUR
+sol,dc
+la,dc
+sol,dc
+fa1,dc
+mi,dc
+re,dc
+do,dc
+sig3,dc
+do,dc
+re,dc
+mi,dc
+do,dc
+fa1,dc
+mi,dc
+re,cp
+do,dc
+do,c
+$ piano_2
+fa1,c
+mi,c
+$ string_2
+# LA MINEUR
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+si,dc
+la,dc
+si,dc
+doh1,dc
+reh,dc
+si,dc
+sol,c
+0,dc
+sol,dc
+la,dc
+sol,dc
+sol,c
+$ piano_2
+mi,dc
+sol,dc
+doh1,dc
+si,dc
+$ string_2
+sold3,dc
+sold3,dc
+sold3,dc
+la,dc
+si,dc
+sold3,dc
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+# DO MAJEUR
+reh,dc
+doh,dc
+si3,cp
+doh,dc
+doh,dc
+$ piano_2
+sol,dc
+mi,dc
+do,dc
+mi,dc
+do,dc
+$ harp
+si3,cpp
+doh,tc
+si3,tc
+la,np
+sol,np
+0,dc
+fa1,cp
+mi,dc
+re,np
+do,n
+0,c
+
+$ string_1
+# LA MINEUR
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+do1,dc
+sig,dc
+lag,dc
+solgd3,dc
+lag,dc
+sig,dc
+do1,dc
+lag,dc
+re,dc
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+$ piano_2
+re,dc
+fa1,dc
+mi,dc
+re,c
+0,c
+$ string_1
+# DO MAJEUR
+sol,dc
+la,dc
+sol,dc
+fa1,dc
+mi,dc
+re,dc
+do,dc
+sig3,dc
+do,dc
+re,dc
+mi,dc
+do,dc
+fa1,dc
+mi,dc
+re,cp
+do,dc
+do,c
+$ piano_2
+fa1,c
+mi,c
+$ string_1
+# LA MINEUR
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+si,dc
+la,dc
+si,dc
+doh1,dc
+reh,dc
+si,dc
+sol,c
+0,dc
+sol,dc
+la,dc
+sol,dc
+sol,c
+$ piano_2
+mi,dc
+sol,dc
+doh1,dc
+si,dc
+$ string_1
+sold3,dc
+sold3,dc
+sold3,dc
+la,dc
+si,dc
+sold3,dc
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+# DO MAJEUR
+reh,dc
+doh,dc
+si3,cp
+doh,dc
+doh,dc
+$ piano_2
+sol,dc
+mi,dc
+do,dc
+mi,dc
+do,dc
+$ harp
+si3,cpp
+doh,tc
+si3,tc
+la,np
+sol,np
+0,dc
+fa1,cp
+mi,dc
+re,np
+do,n
+0,c
+
+$ piano_3
+# LA MINEUR
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+do1,dc
+sig,dc
+lag,dc
+solgd3,dc
+lag,dc
+sig,dc
+do1,dc
+lag,dc
+re,dc
+mi,dc
+fa1,dc
+mi,dc
+re,dc
+$ harp
+re,dc
+fa1,dc
+mi,dc
+re,c
+0,c
+$ piano_3
+# DO MAJEUR
+sol,dc
+la,dc
+sol,dc
+fa1,dc
+mi,dc
+re,dc
+do,dc
+sig3,dc
+do,dc
+re,dc
+mi,dc
+do,dc
+fa1,dc
+mi,dc
+re,cp
+do,dc
+do,c
+$ harp
+fa1,c
+mi,c
+$ piano_3
+# LA MINEUR
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+si,dc
+la,dc
+si,dc
+doh1,dc
+reh,dc
+si,dc
+sol,c
+0,dc
+sol,dc
+la,dc
+sol,dc
+sol,c
+$ harp
+mi,dc
+sol,dc
+doh1,dc
+si,dc
+$ piano_3
+sold3,dc
+sold3,dc
+sold3,dc
+la,dc
+si,dc
+sold3,dc
+la,dc
+sold3,dc
+la,dc
+si,dc
+doh1,dc
+la,dc
+# DO MAJEUR
+reh,dc
+doh,dc
+si3,cp
+doh,dc
+doh,dc
+$ harp
+sol,dc
+mi,dc
+do,dc
+mi,dc
+do,dc
+si3,cpp
+doh,tc
+si3,tc
+la,np
+sol,np
+0,dc
+fa1,cp
+mi,dc
+re,np
+do,n
+0,c

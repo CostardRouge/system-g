@@ -1,0 +1,343 @@
+@occidental
+# SOPRANO
+N = 500
+$ string_2
+# SOL MINEUR
+# mignonne allons voir si la rose
+sol,c
+reh,np
+reh,c
+sib1,n
+reh,n
+doh,n
+sib1,n
+la,n
+la,dc
+0,dc
+# mignonne allons voir si la rose
+la,c
+reh,np
+reh,c
+doh,c
+doh,c
+sib1,c
+sol,c
+sib1,n
+la,n
+# mignonne allons voir si la rose
+0,c
+sol,c
+reh,c
+reh,c
+sib1,n
+reh,n
+doh,np
+sol,c
+sib1,n
+la,n
+0,n
+# qui ce matin avait déclose
+reh,n
+reh,n
+reh,n
+# RE MINEUR
+fah1,np
+mih,dc
+reh,dc
+doh1,np
+reh,c
+mih,n
+reh,b
+dohd3,n
+reh,r
+0,n
+# sa robe de pourpre au soleil
+la,n
+la,n
+doh1,n
+# SOL MINEUR
+sib1,n
+la,c
+sol,c
+la,n
+la,n
+sol,c
+0,c
+# a point perdu cette vêprée
+sol,n
+reh,np
+reh,c
+sib1,n
+reh,n
+doh,n
+sib1,n
+la,n
+la,dc
+0,dc
+# a point perdu cette vêprée
+la,c
+reh,np
+reh,c
+doh,c
+doh,c
+sib1,c
+sol,c
+sib1,n
+la,n
+# a point perdu cette vêprée
+0,c
+sol,c
+reh,c
+reh,c
+sib1,n
+reh,n
+doh,np
+sol,c
+sib1,n
+la,n
+0,n
+# les plis de sa robe pourprée
+reh,n
+reh,n
+reh,n
+# RE MINEUR
+fah1,np
+mih,dc
+reh,dc
+doh1,np
+reh,c
+mih,n
+reh,b
+dohd3,n
+reh,r
+0,n
+# et son teint au vôtre pareil
+la,n
+la,n
+doh1,n
+# SOL MINEUR
+sib1,n
+la,c
+sol,c
+la,n
+la,n
+sol,n
+N = 600
+0,n
+# las las voyez comme en peu d'espace
+N = 550
+sib1,n
+0,n
+N = 500
+la,n
+la,c
+la,c
+sib1,n
+la,n
+sol,n
+sol,n
+fad3,n
+fad3,n
+0,n
+# mignonne elle a dessus la place
+la,n
+la,np
+la,c
+sib1,n
+la,n
+sol,n
+sol,n
+fad3,n
+fad3,n
+N = 600
+0,n
+# las las las ses beautés laissé choir
+N = 550
+sib1,n
+0,n
+sib1,n
+sib1,n
+N = 500
+sib1,n
+la,n
+sol,n
+la,n
+la,n
+sib1,n
+N = 600
+0,n
+# ô ô vraiment marâtre nature
+N = 550
+sib1,n
+0,n
+N = 500
+la,n
+la,c
+la,c
+sib1,n
+la,n
+sol,n
+sol,n
+fad3,n
+fad3,n
+0,n
+# puisqu'une telle fleur ne dure
+la,n
+la,np
+la,c
+sib1,n
+la,n
+sol,n
+sol,n
+fad3,n
+fad3,dc
+N = 550
+0,dc
+# que du matin jusques au soir
+N = 500
+reh,c
+doh1,n
+sib1,n
+la,n
+sol,n
+sol,n
+fad3,n
+sol,c
+0,c
+# donques si me croyez mignonne
+sol,n
+reh,np
+reh,c
+sib1,n
+reh,n
+doh,n
+sib1,n
+la,n
+la,dc
+0,dc
+# donques si me croyez mignonne
+la,c
+reh,np
+reh,c
+doh,c
+doh,c
+sib1,c
+sol,c
+sib1,n
+la,n
+# donques si me croyez mignonne
+0,c
+sol,c
+reh,c
+reh,c
+sib1,n
+reh,n
+doh,np
+sol,c
+sib1,n
+la,n
+0,n
+# tandis que votre âge fleuronne
+reh,n
+reh,n
+reh,n
+# RE MINEUR
+fah1,np
+mih,dc
+reh,dc
+doh1,np
+reh,c
+mih,n
+reh,b
+dohd3,n
+reh,r
+0,n
+# en sa plus verte nouveauté
+la,n
+la,n
+doh1,n
+# SOL MINEUR
+sib1,n
+la,c
+sol,c
+la,n
+la,n
+sol,n
+N = 550
+0,n
+# cueillez cueillez votre jeunesse
+N = 400
+sib1,n
+la,c
+sib1,c
+doh,n
+sib1,n
+la,n
+sol,n
+fad3,n
+sol,c
+N = 450
+0,c
+# comme à cette fleur la vieillesse
+N = 400
+sib1,n
+la,c
+sib1,c
+doh,n
+sib1,n
+la,n
+sol,n
+N = 450
+fad3,n
+fad3,dc
+0,dc
+# fera ternir votre beauté
+N = 400
+reh,c
+doh1,n
+sib1,n
+la,n
+sol,n
+N = 450
+sol,n
+fad3,n
+sol,np
+0,c
+# cueillez cueillez votre jeunesse
+N = 400
+sib1,n
+la,c
+sib1,c
+doh,n
+sib1,n
+la,n
+sol,n
+fad3,n
+sol,c
+N = 450
+0,c
+# comme à cette fleur la vieillesse
+N = 400
+sib1,n
+la,c
+sib1,c
+doh,n
+sib1,n
+N = 450
+la,n
+sol,n
+N = 500
+fad3,n
+fad3,dc
+0,dc
+# fera ternir votre beauté
+reh,c
+doh1,n
+sib1,n
+la,n
+N = 550
+sol,n
+sol,n
+N = 570
+fad3,n
+sol,r

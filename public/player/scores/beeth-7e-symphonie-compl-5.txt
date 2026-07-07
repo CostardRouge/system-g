@@ -1,0 +1,15 @@
+# compl 1
+N = 820
+$  string_2
+0,dc
+dohd3,dc
+sol1,dc
+dohd3,dc
+mih,dc
+dohd3,dc
+sol1,dc
+mih,dc
+fah1,c
+0,np
+
+0,dc

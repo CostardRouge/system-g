@@ -1,0 +1,154 @@
+@ occidental
+# basse
+N = 700
+$ string_1
+# MI MINEUR
+# suscipe (2)
+mi,rp
+sig,n
+do1,n
+re1,n
+do1,n
+re1,n
+do1,n
+# SI MINEUR
+sig,n
+sig,n
+dod,b
+re1,n
+mi,n
+re1,n
+mi1,n
+# MI MINEUR
+fad,np
+0,c
+# recevez ma memoire prenez ma volonte
+sol1,n
+fad,n
+mi,n
+mi,c
+mi,c
+la,n
+la,n
+0,n
+re,n
+mi,n
+mi,n
+re,n
+mi,c
+fad,c
+sol1,b
+# suscipe (4)
+mi,b
+sig,n
+do1,n
+re1,n
+do1,n
+re1,b
+do1,b
+re,b
+mi,b
+re1,n
+do1,n
+sig,n
+mi,c
+re1,c
+do1,n
+do1,n
+do1,b
+sig,np
+lag1,c
+solg1,n
+lag,c
+sig,c
+do1,n
+do1,c
+0,np
+# prenez ma liberte tout entiere
+mi,n
+re,n
+mi,n
+fad,n
+sol1,n
+fad,n
+mi,n
+re,n
+mi,c
+fad,c
+sol1,n
+fad,n
+mi,b
+sol1,n
+0,rp
+# a votre volonte donnez-moi votre amour
+re,n
+mi,n
+mi,n
+do1,n
+mi,n
+re,n
+re,n
+mi,n
+lag,n
+sig,n
+re,n
+do1,n
+re,n
+mi,n
+0,bp
+# avec votre grace (2)
+fad,n
+mi,n
+re,n
+do1,n
+sig,n
+do1,b
+do1,c
+0,c
+do1,n
+re1,b
+re,n
+re,n
+sol1,b
+sol1,n
+0,n+r
+# tout entiere seigneur prenez ma liberte tout entiere
+sol1,n
+do1,n
+re1,n
+do1,n
+re1,n
+do1,c
+do1,c
+# SI MINEUR
+sig,n
+sig,n
+dod,c
+dod,c
+dod,c
+dod,c
+re1,n
+mi,c
+mi,c
+re1,n
+re1,c
+0,c
+# MI MINEUR
+sol1,b
+re,b
+do1,n
+lag,n
+do1,b
+do1,n
+sig,n
+do1,c
+0,c
+do1,c
+do1,c
+sig,n
+mi,c
+mi1,c
+fad,b
+sol1,n
+fad,n
+mi,r+n

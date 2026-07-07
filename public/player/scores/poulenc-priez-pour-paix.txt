@@ -1,0 +1,167 @@
+@occidental
+# SOLO SOPRANO
+N=890
+$ piano_2
+# FA MINEUR
+lab1,n
+sol,n
+lab1,n
+doh,n
+lab1,c
+lab1,c
+sol,n
+lab1,c
+lab1,c
+doh,c
+doh,dc
+0,dc
+lab1,n
+sib,c
+sib,c
+doh,np
+sib,c
+lab1,c
+lab1,c
+sol,c
+sol,c
+fa,n
+mib,c
+0,c
+#Mesure 9
+lab1,n
+sib,c
+sib,c
+doh,np
+sol,c
+lab1,c
+lab1,c
+fa,c
+fa,c
+sol,n
+sol,c
+0,c
+#Mesure 11
+lab1,np
+sib,c
+
+# SIb MINEUR
+solb1,n
+solb1,c
+solb1,c
+fa,c
+fa,c
+sib,c
+doh,c
+mihb,n
+mihb,n
+
+# FA MINEUR
+rehb1,n
+doh,c
+doh,c
+sib,np
+sib,c
+
+# FA MAJEUR
+doh,c
+doh,c
+reh,c
+reh,c
+sol,n
+sol,c
+0,c
+#Mesure 15
+
+# FA MAJEUR
+la,c
+la,c
+
+# DO MAJEUR
+si3,n
+la,c
+la,c
+si3,c
+si3,c
+doh,c
+doh,c
+reh,n
+
+# SOL MINEUR
+reh,n
+
+# RE MAJEUR V (V = variante : avec une premire tierce maxime)
+dohd3,c
+fad3,c
+
+# FA MINEUR
+doh,n
+
+# DO MAJEUR V
+0,c
+si3,c
+
+# SOL MINEUR
+reh,c
+reh,c
+
+# RE MAJEUR V
+dohd3,c
+fad3,c
+
+# FA MINEUR
+doh,n
+
+# DO MAJEUR V
+0,c
+
+# SOLb MAJEUR
+dohb1,c
+sib,c
+sib,c
+lab,n
+mihb,n
+lab,n
+sib,n
+lab,c
+lab,c
+mihb,b
+#Mesure21
+
+# FA MINEUR (Le passage de SOLb MAJEUR  FA MINEUR pose le problme suivant : lab est suivi de lab1 et fa3 est suivi de fa : on n'y peut rien, c'est la faute  Francis !)
+rehb1,c
+rehb1,c
+rehb1,n
+doh,dc
+0,dc
+doh,c
+doh,c
+doh,c
+sol,c
+sol,c
+sol,b
+lab1,n
+sol,n
+lab1,n
+doh,n
+lab1,n
+sol,n
+lab1,n
+doh,n
+fa,b
+fa,n
+
+# MIb MAJEUR
+fa,n
+lab1,b
+fa,b
+
+# FA MINEUR
+
+fa,r+n+c
+
+# Avant-dernire mesure : 1er accord en MIb MAJEUR ; 2me accord : FA MINEUR)
+
+
+
+
+

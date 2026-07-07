@@ -1,0 +1,76 @@
+@occidental
+# ALTO
+N = 450
+$ string_2
+FAD,B
+SOL,N
+RE,N
+LA,B
+RE,N
+SOL,N
+FAD,B
+FAD,N
+SOL,N
+MI,B
+FA1,N
+FAD,N
+LA,B
+FAD,N
+LA,N
+SOLD3,B
+LA,NP
+P,C
+# Dans qui lamour
+SOL,B
+MI,N
+MIB1,N
+RE,B 
+RE,N
+RE,N
+LA,B
+LA,B
+DOH1,N
+DOH1,N
+FA1,N
+RE,N
+SOL,N
+MI,N
+FA1,NP
+P,C
+# Quest la bouche or devenue
+DOH,N
+LA,N
+RE,N
+SOL,N
+FAD,B
+MI,N
+SOL,N
+RE,B
+MIB1,N
+MI,N
+FA1,N
+MI,N
+LAG,N
+RE,N
+DOD3,B
+DO,N
+FA1,N
+MI,B
+FA1,NP
+P,C
+# Dont ma maîtresse
+FA1,B
+MI,N
+LA,N
+FAD,N
+SOL,N
+SIB1,N
+LA,N
+LA,B
+LA,B
+SIB1,N
+RE,N
+RE,B
+FA1,N
+MI,N
+FA1,R

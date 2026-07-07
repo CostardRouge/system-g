@@ -1,0 +1,24 @@
+# SOPRANO II
+N = 909
+$ string_2
+# et adjutor fortis domine invocavi te
+# MI MINEUR
+fad,b
+red3,n
+red3,n
+fad,n
+fad,n
+fad,np
+0,c
+# LA MINEUR
+si,b
+si,n
+la,b
+la,n
+# MI MINEUR
+fad,n
+sol1,n
+fad,n
+# MI MAJEUR
+sold,np
+0,c

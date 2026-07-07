@@ -1,0 +1,240 @@
+@occidental
+N = 550
+# ALTO
+$ brass_2
+# SIb MAJEUR
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te dominum confitemur
+sib,dc
+sib,n
+sib,n
+sib,n
+fa,cp
+sol,dc
+la3,cp
+sol,dc
+la3,cp
+sib,dc
+la3,n
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te deum confitemur
+sib,dc
+sol,n
+fa,cp
+fa,dc
+fa,npp
+fa,dc
+fa,bp
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te dominum confitemur
+sib,dc
+sib,n
+sib,n
+sib,n
+fa,cp
+sol,dc
+la3,cp
+sol,dc
+la3,cp
+sib,dc
+la3,n
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te deum confitemur
+sib,dc
+sol,n
+fa,cp
+fa,dc
+fa,npp
+fa,dc
+fa,bp
+$ string_2
+# et pleni sunt coeli
+fa,n
+fa,b
+sol,n
+sol,n
+la3,npp
+sol,dc
+fa,n
+# SOL MINEUR
+# et terra majestatis
+fa,n
+mib1,n
+mib1,n
+re,n
+re,n
+re,b
+re,n
+# SIb MAJEUR
+# et terra majestatis
+mib1,n
+mib1,n
+re,n
+do,n
+fa,n
+fa,n
+fa,n
+# gloriae tuae
+fa,npp
+sol,dc
+la3,n
+sol,n
+# FA MAJEUR
+sol,n
+la,cp
+sib1,dc
+la,b
+0,n
+# SIb MAJEUR
+$ brass_2
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te dominum confitemur
+sib,dc
+sib,n
+sib,n
+sib,n
+fa,cp
+sol,dc
+la3,cp
+sol,dc
+la3,cp
+sib,dc
+la3,n
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te deum confitemur
+sib,dc
+sol,n
+fa,cp
+fa,dc
+fa,npp
+fa,dc
+fa,b
+0,n
+$ string_2
+# in te domine speravi
+sib,n
+sib,n
+doh,cp
+sib,dc
+la3,npp
+sib,dc
+doh,b
+# SOL MINEUR
+sol,n
+# non confundar in aeternum
+sol,cp
+la,dc
+sib1,n
+la,n
+sol,npp
+la,dc
+fad3,npp
+sol,dc
+la,n
+# non confundar (3) in aeternum
+fad3,cp
+mi,dc
+# DO MAJEUR
+re,n
+reh,n
+si3,npp
+si,dc
+doh,b
+sol,n
+# SIb MAJEUR
+sol,cp
+sol,dc
+sol,n
+fa,n
+fa,n
+mi3,n
+fa,npp
+mib1,dc
+re,n
+$ brass_2
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te dominum confitemur
+sib,dc
+sib,n
+sib,n
+sib,n
+fa,cp
+sol,dc
+la3,cp
+sol,dc
+la3,cp
+sib,dc
+la3,n
+# te deum laudamus
+fa,n
+fa,n
+fa,cp
+fa,dc
+sib,b
+doh,n
+la3,n
+sib,npp
+# te deum confitemur
+sib,dc
+sol,n
+fa,cp
+fa,dc
+fa,npp
+fa,dc
+fa,bp

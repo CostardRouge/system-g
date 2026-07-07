@@ -1,0 +1,253 @@
+@occidental
+# SOPRANO
+N = 800
+$ string_2
+# LA MINEUR
+# Ein Sohn ist uns gegeben (2)
+0,c
+mih,c
+mih,c
+reh,dc
+doh1,dc
+reh,c
+si,dc
+doh1,dc
+reh,n
+doh1,c-tc
+0,tc
+doh1,c
+doh1,c
+# MI MINEUR
+si,dc
+la,dc
+si,n
+si,n
+doh1,n
+si,n
+# uns ist ein Kind geboren
+# LA MINEUR
+0,c
+mi,c
+mi,c
+mi,c
+la,n
+doh1,n
+# MI MINEUR
+si,b
+la,c-tc
+0,tc
+# ein Sohn ist uns gegeben (2)
+la,c
+la,c
+sol1,dc
+fad,dc
+sol1,c
+mi,dc
+fad,dc
+# LA MINEUR
+sold3,n
+la,c-tc
+0,tc
+# MI MINEUR
+mih,c
+mih,c
+reh,dc
+doh1,dc
+si,n
+mih,n
+mih,n
+rehd3,n
+mih,n
+0,np
+# uns ist ein Kind geboren
+la,c
+la,c
+la,c
+mih,n
+solh1,n
+fahd,b
+mih,c-tc
+0,tc
+# LA MINEUR
+# ein Sohn ist uns (3) gegeben
+mih,c
+mih,c
+reh,dc
+doh1,dc
+reh,c-tc
+0,tc
+reh,c
+reh,c
+doh1,dc
+si,dc
+doh1,c-tc
+0,tc
+mih,c
+mih,c
+reh,dc
+doh1,dc
+reh,c
+si,dc
+doh1,dc
+reh,n
+doh1,c-tc
+0,tc
+# ein Sohn ist uns gegeben
+# RE MINEUR
+dohd3,dc
+reh,dc
+mih,dc
+fah1,dc
+solh,dc
+mih,dc
+fah1,n
+reh,n
+mih,b
+la,n
+0,np
+# DO MAJEUR
+# ein Sohn ist uns (2) gegeben
+mih,c
+mih,c
+# LA MINEUR
+reh,dc
+doh1,dc
+reh,c-tc
+0,tc
+reh,c
+reh,c
+doh1,dc
+si,dc
+doh1,np
+fah1,c
+si,b
+la,n
+
+$ piano_3
+lah,c
+solh,dc
+fah1,dc
+solh,c
+solh,c
+solh,c
+fah1,dc
+mih,dc
+fah1,c
+fah1,c
+fah1,c
+mih,dc
+reh,dc
+# DO MAJEUR
+mih,c
+lah,c
+lah,c
+solh,dc
+fah1,dc
+solh,c
+fah1,c
+fah1,np
+mih,dc
+reh,dc
+reh,np
+doh,c
+doh,n
+
+$ string_2
+# LA MINEUR
+# ein Sohn ist uns gegeben
+0,np
+mih,c
+mih,c
+reh,dc
+doh1,dc
+reh,c
+si,dc
+doh1,dc
+reh,n
+doh1,n
+
+$ piano_3
+# SOL MAJEUR
+lah,c
+solh,dc
+fahd3,dc
+solh,c
+sih,c
+sih,c
+lah,dc
+solh,dc
+lah,c
+lah,c
+lah,c
+solh,dc
+fahd3,dc
+solh,cp
+lah,dc
+fahd3,n
+solh,n
+0,rp+c
+# MI MINEUR
+
+0,bp+c
+0,b+c
+
+$ string_2
+# LA MINEUR
+# ein Sohn ist uns (2) gegeben
+mih,c
+reh,c
+doh1,dc
+si,dc
+doh1,c-tc
+0,tc
+doh1,c
+si,cp
+si,dc
+si,c
+la,dc
+si,dc
+si,cp
+la,dc
+la,n
+0,c
+# ein Sohn ist uns (3)ist uns gegeben
+fah1,c
+fah1,c
+mih,dc
+reh,dc
+mih,c-tc
+0,tc
+mih,c
+mih,c
+reh,dc
+doh1,dc
+reh,c-tc
+0,tc
+reh,c
+reh,c
+doh1,dc
+si,dc
+doh1,c-tc
+0,tc
+si,c
+doh1,cp
+reh,dc
+si,n
+la,c-tc
+0,tc
+# ein Sohn ist uns ist uns gegeben
+# RE MINEUR
+dohd3,c
+dohd3,cp
+dohd3,dc
+reh,cp
+# LA MINEUR
+reh,dc
+N = 750
+reh,c
+doh1,dc
+si,dc
+N = 900
+si,np
+la,c
+la,n

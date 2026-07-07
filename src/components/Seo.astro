@@ -1,0 +1,66 @@
+---
+/**
+ * Balises SEO / réseaux sociaux du <head>.
+ *
+ * Canonical, hreflang, Open Graph et Twitter Cards, tous calculés à partir
+ * de `Astro.site`, du `base` et des dictionnaires i18n — rien n'est codé en dur.
+ */
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { languageAlternates, absoluteUrl, ogLocales } from '../lib/seo';
+import { defaultLang } from '../i18n/ui';
+
+export type PageType = 'website' | 'profile' | 'article' | 'app';
+
+interface Props {
+  /** Titre complet de l'onglet (déjà composé par le layout). */
+  pageTitle: string;
+  /** Description de la page. */
+  pageDescription: string;
+  /** Nature de la page — pilote og:type. */
+  type?: PageType;
+}
+
+const { pageTitle, pageDescription, type = 'website' } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const base = import.meta.env.BASE_URL;
+const site = Astro.site;
+
+const canonical = absoluteUrl(Astro.url.pathname, site);
+const alternates = languageAlternates(Astro.url.pathname, base, site);
+const xDefault = alternates.find((a) => a.lang === defaultLang);
+
+const ogType = type === 'profile' ? 'profile' : type === 'article' ? 'article' : 'website';
+const otherLocales = Object.entries(ogLocales)
+  .filter(([l]) => l !== lang)
+  .map(([, locale]) => locale);
+
+// Image de partage : une composition par langue (public/og/{lang}.png, 1200×630).
+const ogImage = absoluteUrl(`${base.replace(/\/$/, '')}/og/${lang}.png`, site);
+---
+
+<link rel="canonical" href={canonical} />
+{alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+{xDefault && <link rel="alternate" hreflang="x-default" href={xDefault.href} />}
+<link rel="sitemap" href={`${base.replace(/\/$/, '')}/sitemap-index.xml`} />
+
+<!-- Open Graph -->
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={t('site.title')} />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={pageDescription} />
+<meta property="og:locale" content={ogLocales[lang]} />
+{otherLocales.map((locale) => <meta property="og:locale:alternate" content={locale} />)}
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={t('site.title')} />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={pageDescription} />
+<meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image:alt" content={t('site.title')} />

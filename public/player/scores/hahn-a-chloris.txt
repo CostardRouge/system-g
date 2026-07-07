@@ -1,0 +1,188 @@
+@ occidental
+N = 800
+$ string_2
+# MI MAJEUR
+# s'il est vrai chloris que tu m'aimes
+sold,c
+la1,c
+si,n
+0,c
+si,c
+si,np
+0,np
+sold,c
+fad,c
+mi,np
+0,np
+# mais j'entends que tu m'aimes bien
+fad,n
+0,c
+sold,c
+la1,n
+0,n
+la1,c
+si,c
+la1,c
+sold,n
+fad,c
+fad,b
+# je ne crois pas que les rois mêmes
+0,c
+fad,c
+sold,c
+la1,c
+sold,b
+dohd,c
+rehd3,c
+mih,n
+# SI MAJEUR variante
+lad3,tc
+si,tc
+lad3,dc
+sold,c
+fad,np
+# aient un boheur pareil au mien
+si,c
+dohd,c
+rehd3,c
+rehd3,c
+dohd,n
+si,c
+si,c
+lad3,n
+si,c
+si,r
+$ piano_3
+mih,trc
+rehd3,trc
+dohd,trc
+rehd3,n
+mih,c
+fahd,np
+mih,dc
+rehd3,dc
+dohd,c
+si,n
+lad3,c
+sold,dc
+lad3,cp+c
+si,dc
+lad3,dc
+lad3,c
+si,c+b
+# que la mort serait importune
+$ string_2
+# MI MAJEUR
+fad,c
+sold,c
+la1,np
+sold,c
+fad,n
+sold,c
+la1,c
+red3,b
+red3,c
+0,c
+# a venir changer ma fortune
+# SOL# MINEUR
+sold,c
+sold,c
+dohd,n
+si1,n
+lad,n
+lad,c
+si1,c
+fadd3,n
+fadd3,c
+0,n
+# pour la félicité des cieux
+lad,c
+si1,c
+dohd,c
+si1,c
+lad,c
+lad,b
+sold,c
+sold,b
+$ piano_3
+dohd,trc
+si1,trc
+lad,trc
+si1,np
+dohd,trc
+si1,trc
+lad,trc
+si1,np
+$ string_2
+# MI MAJEUR
+# tout ce qu'on dit de l'ambroisie
+dohd,n
+dohd,c
+dohd,c
+si,b+c
+si,c
+si,c
+mih,c
+mih,n
+la1,c
+0,n
+# ne touche point ma fantaisie
+la1,c
+la1,c
+la1,c
+sold,b
+sold,n
+sold,c
+dohd,c
+dohd,n
+dohd,c
+# au prix des grâces de tes yeux
+fad,c
+si,np
+mi,c
+la1,b
+la1,n
+sold,c
+la1,c
+sold,tc
+la1,tc
+sold,bp-dc
+$ piano_3
+la1,trc
+sold,trc
+fad,trc
+sold,n
+la1,c
+$ string_2
+# tout ce qu'on dit de l'ambroisie
+dohd,b
+dohd,c
+dohd,c
+dohd,b+c
+dohd,c
+rehd3,c
+mih,c
+dohd,n
+si,n
+# ne touche point ma fantaisie
+0,c
+si,c
+dohd,c
+rehd3,c
+mih,np
+mih,c
+mih,c
+fahd,c
+rehd3,n
+rehd3,c
+# au prix des grâces de tes yeux
+si,c
+mih,np
+la1,c
+la1,b
+sold,n
+fad,tc
+sold,tc
+fad,n+dc
+mi,c
+mi,r+n

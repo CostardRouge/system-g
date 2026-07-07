@@ -1,0 +1,65 @@
+@occidental
+# PIANO 4
+N = 700
+$ piano_2
+# LA MINEUR
+la,c
+mi,c
+sol,c
+la,c
+lag,c
+re,c
+fa1,c
+sol,c
+solg1,c
+do1,c
+fa1,c
+fa1,c
+mi,dc
+re,dc
+mi,c
+la,c
+la,c
+sol1,dc
+fa1,dc
+sol1,c
+do1,c
+sol1,c
+solg1,c
+do1,n
+0,r
+# SOL MAJEUR
+0,c
+sol,c
+fad3,c
+re,c
+sol,n
+0,c
+sol,c
+sol,c
+fad3,dc
+mi,dc
+fad3,c
+mi,dc
+re,dc
+mi,c
+doh1,c
+reh,c
+re,c
+sol,n
+0,r
+# LA MINEUR
+0,c
+sold3,n
+# MI MINEUR
+la,c
+la,c
+la,c
+sol1,dc
+fad,dc
+sol1,c
+sol1,c
+sol1,c
+fad,dc
+mi,dc
+si,c

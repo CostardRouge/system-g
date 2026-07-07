@@ -1,0 +1,129 @@
+@occidental
+# TENOR
+N = 800
+$ string_1
+
+# Drauf schlieﬂ
+
+# SOL MINEUR
+sib1,n
+sib1,n
+la,n
+sib1,n
+doh,c
+reh,c
+mihb1,n
+reh,np
+doh,c
+reh,c
+mihb1,c
+reh,n
+doh,n
+sib1,cp
+0,dc
+
+# Und sage Welt
+sib1,n
+# SIb MAJEUR
+doh,c
+reh,c
+mihb1,n
+mihb1,n
+reh,cpp
+0,tc
+doh,n
+reh,n
+doh,n
+fah,n
+fah,b+c
+0,c
+
+# Eilt gleich
+sib,n
+doh,n
+
+# FA MAJEUR
+mih3,c
+reh,c
+doh,n
+reh,c
+doh,c
+sib1,c
+la,c
+sol,n
+la,cpp
+0,tc
+reh,n
+doh,n
+sib1,n
+la,cp
+0,dc
+
+# Ist doch der
+# RE MINEUR
+lah,n
+solh,n
+fah1,n
+mih,c
+reh,c
+mih,n
+reh,np
+solh,c
+mih,n
+mih,n
+fahd,b+c
+0,c
+
+# Er soll bei seinem
+
+# SOL MINEUR
+reh,n
+
+# DO MINEUR
+la,c
+si3,c
+doh,n
+reh,c
+mihb1,c
+fah,n
+mihb1,n
+reh,c
+mihb1,dc
+fah,dc
+mihb1,n
+doh,n
+doh,n
+si3,n
+sol,cp
+0,dc
+
+# Weil Jesus
+doh,c
+si3,c
+
+# SOL MINEUR
+doh,c
+reh,c
+mihb1,n
+reh,b
+sib1,n
+mihb1,bp+c
+0,c
+fad3,c
+la,c
+reh,bp
+mihb1,c
+fah,c
+solh,c
+fah1,c
+mihb1,c
+reh,c
+lah,n
+reh,n
+reh,c
+sib1,c
+doh,n
+
+# SOL MAJEUR
+si,bp
+

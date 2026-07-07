@@ -1,0 +1,39 @@
+N = 600
+$ string_2
+fa1,cp
+sol,dc
+fa1,cp
+mi,dc
+fa1,n
+re,n
+mi,n
+mi,cp
+fa1,dc
+sol,b
+# et les sabres pour des herses
+fa1,cp
+sol,dc
+fa1,cp
+mi,dc
+fa1,n
+re,n
+mi,b
+mi,npp
+0,dc
+# la paix sera notre combat
+sol,n
+mi,cp
+fa1,dc
+sol,n
+sib1,n
+reh,n
+la,n
+fa1,b
+# faites que ce temps vienne
+sol,n
+sol,cp
+la,dc
+sib1,n
+doh,n
+dohd3,b
+reh,b

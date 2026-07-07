@@ -1,0 +1,64 @@
+@occidental
+# PIANO 12
+N = 700
+$ piano_3
+lah,c
+lah,c
+solh1,dc
+fah1,dc
+solh,c
+solh,c
+solh,c
+fah1,dc
+mih,dc
+fah1,c
+fah1,c
+fah1,c
+mih,dc
+reh,dc
+mih,c
+lah,c
+lah,c
+solh1,dc
+fah1,dc
+solh1,c
+fah1,c
+fah1,np
+mih,dc
+reh1,dc
+reh1,np
+doh1,c
+doh1,n
+0,r
+# SOL MAJEUR
+0,c
+lah,c
+lah,c
+solh,dc
+fahd3,dc
+solh,c
+sih,c
+sih,c
+lah,dc
+solh,dc
+lah,c
+lah,c
+lah,c
+solh,dc
+fahd3,dc
+solh,cp
+lah,dc
+fahd3,n
+solh,n
+0,r
+# MI MINEUR
+sih,c
+sih,c
+lah,dc
+solh1,dc
+lah,c
+lah,c
+lah,c
+solh1,dc
+fahd,dc
+solh1,np

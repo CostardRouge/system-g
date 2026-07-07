@@ -1,0 +1,73 @@
+@occidental
+# SOPRANO
+# SOL MINEUR
+N = 550
+$ cello
+# belle qui tiens ma vie captive dans tes yeux
+sol,b
+sol,n
+fad3,n
+# RE  MINEUR
+sol,n
+la,n
+sib1,b
+sib1,n
+reh,n
+doh,n
+# SOL  MINEUR
+sib1,n
+sib1,n
+la,n
+sib1,b-dc
+0,dc
+# qui m'as l'âme ravie d'un souris grâcieux
+sol,b
+sol,n
+fad3,n
+# RE  MINEUR
+sol,n
+la,n
+sib1,b
+sib1,n
+reh,n
+doh,n
+# SOL  MINEUR
+sib1,n
+sib1,n
+la,n
+sib1,b-dc
+0,dc
+# viens tôt me secouri ou me faudra mourir
+sib1,b
+la,n
+la,n
+sol,n
+sol,n
+fad3,b
+re,b
+mi,c
+fa1,c
+sol,n
+# SOL MAJEUR
+sol,n
+fad3,n
+sol,b-dc
+0,dc
+# viens tôt me secouri ou me faudra mourir
+# SOL  MINEUR
+sib1,b
+la,n
+la,n
+sol,n
+sol,n
+fad3,b
+# RE MINEUR
+re,b
+mi,c
+fa1,c
+sol,n
+# SOL MINEUR
+sol,n
+fad3,n
+sol,b-dc
+0,dc
