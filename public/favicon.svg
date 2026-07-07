@@ -3,6 +3,7 @@
   <rect x="2.5" y="2.5" width="59" height="59" rx="8" fill="none" stroke="#cdbfa4" stroke-width="1.5"/>
   <text x="32" y="44" text-anchor="middle" font-family="Palatino, Georgia, serif"
         font-size="40" font-weight="600" fill="#7a2e2e">G</text>
-  <text x="49" y="26" text-anchor="middle" font-family="Palatino, Georgia, serif"
+  <text x="49" y="26" text-anchor="middle"
+        font-family="Palatino, Georgia, 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', 'DejaVu Sans', serif"
         font-size="26" fill="#9a7b3f">♮</text>
 </svg>

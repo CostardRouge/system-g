@@ -10,14 +10,18 @@
     "build": "astro build",
     "preview": "astro preview --host",
     "check": "astro check",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "astro": "^4.15.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",
+    "@astrojs/sitemap": "^3.2.1",
     "@types/node": "^20.14.0",
-    "typescript": "^5.5.0"
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.10"
   }
 }
