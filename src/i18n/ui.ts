@@ -94,6 +94,9 @@ export const ui = {
     'theory.sub.marking.title': 'Marquage des partitions',
     'theory.sub.marking.desc':
       "Occidentales, arabes et byzantines : trouver la juste intonation du premier coup.",
+    'theory.sub.compare.title': 'Face à Partch, Johnston et au maqam',
+    'theory.sub.compare.desc':
+      "Mise en perspective : où situer le Système G parmi les autres intonations justes et les traditions modales.",
     'badge.available': 'Disponible',
     'badge.soon': 'À venir',
 
@@ -221,6 +224,9 @@ export const ui = {
     'theory.sub.marking.title': 'Marking the scores',
     'theory.sub.marking.desc':
       'Western, Arabic and Byzantine: finding just intonation at first sight.',
+    'theory.sub.compare.title': 'Alongside Partch, Johnston and maqam',
+    'theory.sub.compare.desc':
+      'In perspective: where the G System sits among other just intonations and modal traditions.',
     'badge.available': 'Available',
     'badge.soon': 'Coming soon',
 
@@ -346,6 +352,9 @@ export const ui = {
     'theory.sub.marking.title': 'Marcatura delle partiture',
     'theory.sub.marking.desc':
       "Occidentali, arabe e bizantine: trovare l'intonazione giusta al primo colpo.",
+    'theory.sub.compare.title': 'Di fronte a Partch, Johnston e al maqam',
+    'theory.sub.compare.desc':
+      'In prospettiva: dove collocare il Sistema G tra le altre intonazioni giuste e le tradizioni modali.',
     'badge.available': 'Disponibile',
     'badge.soon': 'In arrivo',
 

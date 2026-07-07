@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ComparisonContent from '../../../components/ComparisonContent.astro';
+import { comparaison } from '../../../content/comparaison';
+
+const doc = comparaison.en;
+---
+
+<BaseLayout title={doc.title} description={doc.subtitle} type="article">
+  <ComparisonContent />
+</BaseLayout>

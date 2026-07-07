@@ -1,0 +1,239 @@
+---
+/**
+ * Rendu de « Le Système G face à Partch, Johnston et au maqam ».
+ * Parcourt les blocs typés du module `comparaison` et résout les cibles
+ * internes ('theory' → /theorie, 'intro' → /theorie/introduction,
+ * 'player' → /player). Le bloc « table » rend un tableau comparatif.
+ */
+import { getLangFromUrl, useTranslations, localizedPath } from '../i18n/utils';
+import { comparaison, type CompareLinkTarget } from '../content/comparaison';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const doc = comparaison[lang] ?? comparaison.fr;
+
+const targets: Record<CompareLinkTarget, string> = {
+  theory: localizedPath('/theorie', lang),
+  intro: localizedPath('/theorie/introduction', lang),
+  player: localizedPath('/player', lang),
+};
+---
+
+<div class="container">
+  <header class="bio-header">
+    <p class="overline overline--accent">{doc.overline}</p>
+    <h1>{doc.title}</h1>
+    <p class="hero__subtitle">{doc.subtitle}</p>
+  </header>
+
+  <aside class="preliminary" role="note">
+    <span class="preliminary__label">{t('intro.preliminary')}</span>
+    <p>{doc.aside}</p>
+  </aside>
+
+  <article class="essay">
+    {
+      doc.blocks.map((block) => {
+        switch (block.t) {
+          case 'h2':
+            return <h2>{block.text}</h2>;
+          case 'p':
+            return <p>{block.text}</p>;
+          case 'epigraph':
+            return <p class="epigraph">{block.text}</p>;
+          case 'list':
+            return (
+              <ul class="lozenge-list">
+                {block.items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            );
+          case 'table':
+            return (
+              <figure class="compare">
+                <div class="compare__scroll">
+                  <table class="compare__table">
+                    <thead>
+                      <tr>
+                        {block.headers.map((h, i) =>
+                          i === 0 ? (
+                            <th scope="col" class="compare__corner">{h}</th>
+                          ) : (
+                            <th scope="col">{h}</th>
+                          )
+                        )}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {block.rows.map((row) => (
+                        <tr>
+                          {row.map((cell, i) =>
+                            i === 0 ? (
+                              <th scope="row">{cell}</th>
+                            ) : (
+                              <td>{cell}</td>
+                            )
+                          )}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <figcaption>{block.caption}</figcaption>
+              </figure>
+            );
+          case 'callout':
+            return (
+              <div class="callout">
+                <p>{block.text}</p>
+                <p class="callout__links">
+                  {block.links.map((link, i) => (
+                    <>
+                      {i > 0 && <span class="callout__sep" aria-hidden="true">·</span>}
+                      <a href={targets[link.to]}>{link.label} →</a>
+                    </>
+                  ))}
+                </p>
+              </div>
+            );
+          case 'sources':
+            return (
+              <section class="sources" aria-label={block.label}>
+                <h2>{block.label}</h2>
+                <ul class="sources__list">
+                  {block.items.map((item) => (
+                    <li>
+                      <a href={item.href} target="_blank" rel="noopener noreferrer">
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            );
+          default:
+            return null;
+        }
+      })
+    }
+  </article>
+</div>
+
+<style>
+  .compare {
+    margin: 2.5rem 0;
+    max-width: var(--measure-wide);
+  }
+
+  .compare__scroll {
+    overflow-x: auto;
+    border: 1px solid var(--paper-edge);
+    border-radius: var(--radius);
+    background: var(--paper);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .compare__table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 46rem;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .compare__table th,
+  .compare__table td {
+    padding: 0.7rem 0.85rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--paper-edge);
+  }
+
+  .compare__table thead th {
+    background: var(--accent);
+    color: var(--paper);
+    font-family: var(--serif-display);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    position: sticky;
+    top: 0;
+  }
+
+  .compare__table thead th.compare__corner {
+    background: var(--accent-deep);
+  }
+
+  /* Colonne de gauche : dimension comparée */
+  .compare__table tbody th[scope='row'] {
+    background: var(--paper-2);
+    color: var(--ink);
+    font-family: var(--serif-display);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* Première colonne de données = le Système G, mis en valeur */
+  .compare__table tbody td:first-of-type {
+    background: color-mix(in srgb, var(--gold) 12%, var(--paper));
+    color: var(--ink);
+  }
+
+  .compare__table tbody tr:last-child th,
+  .compare__table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .compare figcaption {
+    margin-top: 0.75rem;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    max-width: var(--measure);
+  }
+
+  .sources {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    max-width: var(--measure);
+  }
+
+  .sources h2 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sources__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+  }
+
+  .sources__list li {
+    padding: 0.35rem 0;
+    border-bottom: 1px dotted var(--paper-edge);
+  }
+
+  .sources__list li:last-child {
+    border-bottom: 0;
+  }
+
+  .sources__list a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .sources__list a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 34rem) {
+    .compare__table tbody th[scope='row'] {
+      white-space: normal;
+    }
+  }
+</style>
