@@ -1,0 +1,41 @@
+---
+/**
+ * Sélecteur de langue. Bascule entre le français (racine) et l'anglais (/en/)
+ * en conservant, autant que possible, la page courante.
+ */
+import { getLangFromUrl, listLanguages, defaultLang, type Lang } from '../i18n/utils';
+
+const currentLang = getLangFromUrl(Astro.url);
+const langs = listLanguages();
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Chemin sans le préfixe de langue ni le base, pour reconstruire l'équivalent.
+let path = Astro.url.pathname;
+if (base && path.startsWith(base)) path = path.slice(base.length);
+if (path.startsWith(`/${currentLang}`)) path = path.slice(currentLang.length + 1);
+if (!path.startsWith('/')) path = `/${path}`;
+
+function hrefFor(lang: Lang): string {
+  if (lang === defaultLang) return `${base}${path}` || '/';
+  return `${base}/${lang}${path === '/' ? '' : path}`;
+}
+---
+
+<nav class="lang-picker" aria-label="Language selection">
+  {
+    langs.map(([code, label], i) => (
+      <>
+        {i > 0 && <span class="lang-picker__sep" aria-hidden="true">·</span>}
+        <a
+          href={hrefFor(code)}
+          lang={code}
+          aria-current={code === currentLang ? 'true' : undefined}
+          title={label}
+        >
+          {code.toUpperCase()}
+        </a>
+      </>
+    ))
+  }
+</nav>

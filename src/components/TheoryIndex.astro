@@ -1,0 +1,73 @@
+---
+/**
+ * Index de la rubrique Théorie : liste les sous-pages. L'introduction est
+ * disponible ; les autres sont annoncées comme « à venir ».
+ */
+import { getLangFromUrl, useTranslations, localizedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const items = [
+  {
+    titleKey: 'theory.sub.intro.title',
+    descKey: 'theory.sub.intro.desc',
+    href: localizedPath('/theorie/introduction', lang),
+    available: true,
+  },
+  {
+    titleKey: 'theory.sub.rules.title',
+    descKey: 'theory.sub.rules.desc',
+    href: null,
+    available: false,
+  },
+  {
+    titleKey: 'theory.sub.coding.title',
+    descKey: 'theory.sub.coding.desc',
+    href: null,
+    available: false,
+  },
+  {
+    titleKey: 'theory.sub.marking.title',
+    descKey: 'theory.sub.marking.desc',
+    href: null,
+    available: false,
+  },
+] as const;
+---
+
+<div class="container">
+  <header class="bio-header">
+    <p class="overline overline--accent">{t('site.title')}</p>
+    <h1>{t('nav.theory')}</h1>
+    <p class="lede">{t('theory.index.lede')}</p>
+  </header>
+
+  <nav class="section-index" aria-label={t('nav.theory')}>
+    {
+      items.map((item) => {
+        const title = t(item.titleKey);
+        const desc = t(item.descKey);
+        const badge = item.available ? t('badge.available') : t('badge.soon');
+        const inner = (
+          <>
+            <p class="section-index__title">
+              {title}
+              <span class="badge">{badge}</span>
+            </p>
+            <p class="section-index__desc">{desc}</p>
+          </>
+        );
+        return item.available && item.href ? (
+          <a class="section-index__item" href={item.href}>
+            {inner}
+          </a>
+        ) : (
+          <div class="section-index__item" aria-disabled="true">
+            {inner}
+          </div>
+        );
+      })
+    }
+  </nav>
+</div>

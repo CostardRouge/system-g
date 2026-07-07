@@ -1,0 +1,51 @@
+---
+/**
+ * Layout de base : squelette HTML, métadonnées, en-tête et pied de page.
+ * Toutes les pages s'appuient dessus.
+ */
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { title, description } = Astro.props;
+const pageTitle = title ? `${title} — ${t('site.title')}` : `${t('site.title')} — ${t('site.tagline')}`;
+const pageDescription = description ?? t('site.description');
+
+const ogLocale = { fr: 'fr_FR', en: 'en_US', it: 'it_IT' }[lang] ?? 'fr_FR';
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="author" content="Nabih Gédéon" />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.svg`} type="image/svg+xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:locale" content={ogLocale} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t('nav.skipToContent')}</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

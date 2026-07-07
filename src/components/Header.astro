@@ -1,0 +1,46 @@
+---
+/**
+ * En-tête du site : marque + navigation vers les deux rubriques
+ * (Littérature, Théorie), le player, la bio et le sélecteur de langue.
+ */
+import { getLangFromUrl, useTranslations, localizedPath } from '../i18n/utils';
+import LanguagePicker from './LanguagePicker.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const current = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+const links = [
+  { href: localizedPath('/', lang), label: t('nav.home') },
+  { href: localizedPath('/litterature', lang), label: t('nav.literature') },
+  { href: localizedPath('/theorie', lang), label: t('nav.theory') },
+  { href: localizedPath('/player', lang), label: t('nav.player') },
+  { href: localizedPath('/biographie', lang), label: t('nav.bio') },
+];
+
+function isCurrent(href: string): boolean {
+  const clean = href.replace(/\/$/, '') || '/';
+  return clean === current;
+}
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href={localizedPath('/', lang)}>
+      <span class="brand__mark">G<span class="natural-mark">♮</span></span>
+      <span class="brand__name">{t('site.title')}</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      {
+        links.map((link) => (
+          <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
+            {link.label}
+          </a>
+        ))
+      }
+      <LanguagePicker />
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,90 @@
+---
+/**
+ * Rendu de l'« Introduction au Système G ». Parcourt les blocs typés du
+ * module de contenu et résout les cibles internes ('theory', 'player').
+ */
+import { getLangFromUrl, useTranslations, localizedPath } from '../i18n/utils';
+import { introduction, type LinkTarget } from '../content/introduction';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const doc = introduction[lang] ?? introduction.fr;
+
+const targets: Record<LinkTarget, string> = {
+  theory: localizedPath('/theorie', lang),
+  player: localizedPath('/player', lang),
+};
+---
+
+<div class="container">
+  <header class="bio-header">
+    <p class="overline overline--accent">{doc.overline}</p>
+    <h1>{doc.title}</h1>
+    <p class="hero__subtitle">{doc.subtitle}</p>
+  </header>
+
+  <aside class="preliminary" role="note">
+    <span class="preliminary__label">{t('intro.preliminary')}</span>
+    <p>{doc.aside}</p>
+  </aside>
+
+  <article class="essay">
+    {
+      doc.blocks.map((block) => {
+        switch (block.t) {
+          case 'h2':
+            return <h2>{block.text}</h2>;
+          case 'p':
+            return <p>{block.text}</p>;
+          case 'epigraph':
+            return <p class="epigraph">{block.text}</p>;
+          case 'list':
+            return (
+              <ul class="lozenge-list">
+                {block.items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            );
+          case 'callout':
+            return (
+              <div class="callout">
+                <p>{block.text}</p>
+                <p class="callout__links">
+                  {block.links.map((link, i) => (
+                    <>
+                      {i > 0 && <span class="callout__sep" aria-hidden="true">·</span>}
+                      <a href={targets[link.to]}>{link.label} →</a>
+                    </>
+                  ))}
+                </p>
+              </div>
+            );
+          case 'note':
+            return (
+              <blockquote class="appeal">
+                {block.lines.map((line) => (
+                  <p>{line}</p>
+                ))}
+              </blockquote>
+            );
+          case 'resources':
+            return (
+              <dl class="resources">
+                {block.items.map((item) => (
+                  <div class="resources__item">
+                    <dt>
+                      <a href={targets[item.to]}>{item.label}</a>
+                    </dt>
+                    <dd>{item.desc}</dd>
+                  </div>
+                ))}
+              </dl>
+            );
+          default:
+            return null;
+        }
+      })
+    }
+  </article>
+</div>

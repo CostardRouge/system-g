@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WipContent from '../../components/WipContent.astro';
+import { useTranslations } from '../../i18n/utils';
+const t = useTranslations('en');
+---
+
+<BaseLayout title={t('nav.player')}>
+  <WipContent titleKey="nav.player" />
+</BaseLayout>

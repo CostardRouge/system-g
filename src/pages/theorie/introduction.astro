@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IntroContent from '../../components/IntroContent.astro';
+import { introduction } from '../../content/introduction';
+
+const doc = introduction.fr;
+---
+
+<BaseLayout title={doc.title} description={doc.subtitle}>
+  <IntroContent />
+</BaseLayout>

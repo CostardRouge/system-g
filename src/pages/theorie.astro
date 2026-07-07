@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TheoryIndex from '../components/TheoryIndex.astro';
+import { useTranslations, defaultLang } from '../i18n/utils';
+const t = useTranslations(defaultLang);
+---
+
+<BaseLayout title={t('nav.theory')}>
+  <TheoryIndex />
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+/**
+ * Contenu de la page biographie. Partagé entre /fr et /en.
+ */
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { bioParagraphs } from '../content/bio';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const paragraphs = bioParagraphs[lang] ?? bioParagraphs.fr;
+---
+
+<div class="container">
+  <header class="bio-header">
+    <p class="overline overline--accent">{t('bio.overline')}</p>
+    <h1>{t('bio.title')}</h1>
+    <p class="hero__subtitle">{t('bio.subtitle')}</p>
+  </header>
+
+  <hr />
+
+  <div class="bio-body">
+    {paragraphs.map((para) => <p>{para}</p>)}
+  </div>
+</div>

@@ -1,0 +1,64 @@
+name: Déploiement GitHub Pages
+
+# Déploiement automatique du site statique Astro sur GitHub Pages,
+# à chaque push sur la branche principale (et déclenchable à la main).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permissions requises par le déploiement Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Une seule exécution de déploiement à la fois
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurer GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Installer Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Construire le site
+        run: npm run build
+        env:
+          # `configure-pages` fournit l'URL + le base path corrects
+          # (domaine perso via CNAME, ou /<repo> pour un dépôt projet).
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
+      - name: Téléverser l'artefact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

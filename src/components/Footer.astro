@@ -1,0 +1,19 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <strong>{t('site.title')} <span class="natural-mark">♮</span></strong>
+      <div>{t('footer.tagline')}</div>
+    </div>
+    <div>
+      © {year} Nabih Gédéon — {t('footer.rights')}
+    </div>
+  </div>
+</footer>

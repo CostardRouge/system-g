@@ -1,0 +1,88 @@
+---
+/**
+ * Contenu de la page d'accueil. Partagé entre /fr et /en : tout le texte
+ * provient du dictionnaire de traduction.
+ */
+import { getLangFromUrl, useTranslations, localizedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const cards = [
+  {
+    num: 'I',
+    title: t('home.card.literature.title'),
+    desc: t('home.card.literature.desc'),
+    cta: t('home.card.literature.cta'),
+    href: localizedPath('/litterature', lang),
+  },
+  {
+    num: 'II',
+    title: t('home.card.theory.title'),
+    desc: t('home.card.theory.desc'),
+    cta: t('home.card.theory.cta'),
+    href: localizedPath('/theorie', lang),
+  },
+  {
+    num: 'III',
+    title: t('home.card.player.title'),
+    desc: t('home.card.player.desc'),
+    cta: t('home.card.player.cta'),
+    href: localizedPath('/player', lang),
+  },
+];
+---
+
+<div class="container">
+  <section class="hero">
+    <p class="overline overline--accent">{t('home.hero.overline')}</p>
+    <h1 class="hero__title">{t('home.hero.title')}</h1>
+    <p class="hero__subtitle">{t('home.hero.subtitle')}</p>
+    <p class="hero__author">{t('home.hero.author')}</p>
+    <p class="hero__lede">{t('home.hero.lede')}</p>
+  </section>
+
+  <section aria-labelledby="explore-title">
+    <div class="prose" style="text-align:center;">
+      <h2 id="explore-title">{t('home.explore.title')}</h2>
+      <p>{t('home.explore.lede')}</p>
+    </div>
+
+    <div class="card-grid">
+      {
+        cards.map((card) => (
+          <a class="card" href={card.href}>
+            <span class="card__num">{card.num}</span>
+            <span class="card__title">{card.title}</span>
+            <span class="card__desc">{card.desc}</span>
+            <span class="card__cta">{card.cta}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="findings" aria-labelledby="findings-title">
+    <div class="prose" style="text-align:center;">
+      <h2 id="findings-title">{t('home.findings.title')}</h2>
+    </div>
+    <div class="findings__grid">
+      <div class="finding">
+        <span class="finding__glyph" aria-hidden="true">♮</span>
+        <h3 class="finding__title">{t('home.findings.one.title')}</h3>
+        <p class="finding__ratio">22 / 21</p>
+        <p>{t('home.findings.one.desc')}</p>
+      </div>
+      <div class="finding">
+        <span class="finding__glyph" aria-hidden="true">≡</span>
+        <h3 class="finding__title">{t('home.findings.two.title')}</h3>
+        <p class="finding__ratio">— • ▸ ▴</p>
+        <p>{t('home.findings.two.desc')}</p>
+      </div>
+    </div>
+  </section>
+
+  <blockquote class="pull-quote">
+    {t('home.quote')}
+  </blockquote>
+</div>
