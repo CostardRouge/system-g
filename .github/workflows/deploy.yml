@@ -29,6 +29,10 @@ jobs:
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # Create the Pages site automatically if it doesn't exist yet,
+          # so the deploy doesn't depend on the Settings → Pages toggle.
+          enablement: true
 
       - name: Install Node
         uses: actions/setup-node@v4
