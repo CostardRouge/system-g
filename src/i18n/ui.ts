@@ -97,6 +97,17 @@ export const ui = {
     'theory.sub.compare.title': 'Face à Partch, Johnston et au maqam',
     'theory.sub.compare.desc':
       "Mise en perspective : où situer le Système G parmi les autres intonations justes et les traditions modales.",
+    'theory.sub.positions.title': 'Les positions — explorateur sonore',
+    'theory.sub.positions.desc':
+      "Une octave du Système G sous la loupe : chaque position visible, audible, et comparée au tempérament égal.",
+    'positions.lede':
+      "Du LA au LA supérieur, chaque trait est une position de la gamme, placée exactement à sa fréquence. Les repères gris sont les douze demi-tons du tempérament égal : ce qui se joue entre eux, c'est le Système G.",
+    'positions.hint':
+      "Cliquez sur un trait ou une ligne du tableau pour entendre la position (or = plus haut que le demi-ton tempéré, rouge = plus bas).",
+    'positions.col.symbols': 'Symboles',
+    'positions.col.nearest': 'Demi-ton tempéré le plus proche',
+    'positions.note':
+      "Les fréquences sont calculées à partir des rapports exacts de la gamme du Système G ; l'écart est exprimé en cents (1 demi-ton tempéré = 100 cents).",
     'badge.available': 'Disponible',
     'badge.soon': 'À venir',
 
@@ -148,11 +159,34 @@ export const ui = {
     'player.search.placeholder': 'Titre ou compositeur…',
     'player.category': 'Catégorie',
     'player.category.all': 'Toutes',
+    'player.composer': 'Compositeur',
+    'player.piece': 'Pièce',
+    'player.search.noresults': 'Aucun résultat',
     'player.pieces': 'pièces',
     'player.playSelection': 'Lire la sélection',
     'player.warnings': 'Avertissements',
     'player.selection.hint':
       'Clic : choisir une ligne · Maj+clic : étendre la sélection · Double-clic : voir la définition du symbole dans la gamme.',
+    'player.tuning': 'Intonation',
+    'player.tuning.just': 'Juste (Système G)',
+    'player.tuning.equal': 'Tempérament égal',
+    'player.col.cents': '± cents',
+    'player.viz': 'Courbe de hauteur',
+    'player.viz.hint':
+      'Chaque trait est une note. La couleur montre l’écart avec le tempérament égal : or = plus haut, rouge = plus bas. Cliquez pour sélectionner la ligne.',
+    'player.editor': 'Éditeur de partition',
+    'player.editor.hint':
+      'Modifiez le texte : la validation est immédiate. « Appliquer » charge le résultat dans le player.',
+    'player.editor.apply': 'Appliquer au player',
+    'player.editor.ok': 'Partition valide',
+    'player.export': 'Exporter en WAV',
+    'player.export.busy': 'Rendu en cours…',
+    'player.tempo': 'Tempo ×',
+    'player.ab': 'Écoute A/B',
+    'player.ab.title': 'Joue le passage une fois en intonation juste (A), puis en tempérament égal (B)',
+    'player.status.a': 'A — intonation juste',
+    'player.status.b': 'B — tempérament égal',
+    'player.scale.hint': 'Cliquez sur une note de la gamme pour l’entendre.',
 
     // Aide du player
     'aide.backToPlayer': 'Revenir au player',
@@ -230,6 +264,17 @@ export const ui = {
     'theory.sub.compare.title': 'Alongside Partch, Johnston and maqam',
     'theory.sub.compare.desc':
       'In perspective: where the G System sits among other just intonations and modal traditions.',
+    'theory.sub.positions.title': 'The positions — a sound explorer',
+    'theory.sub.positions.desc':
+      'One octave of the G System under the lens: every position visible, audible, and compared with equal temperament.',
+    'positions.lede':
+      'From LA to the LA above, every dash is a position of the scale, placed exactly at its frequency. The grey marks are the twelve semitones of equal temperament: what happens between them is the G System.',
+    'positions.hint':
+      'Click a dash or a table row to hear the position (gold = higher than the tempered semitone, red = lower).',
+    'positions.col.symbols': 'Symbols',
+    'positions.col.nearest': 'Nearest tempered semitone',
+    'positions.note':
+      'Frequencies are computed from the exact ratios of the G System scale; the deviation is given in cents (1 tempered semitone = 100 cents).',
     'badge.available': 'Available',
     'badge.soon': 'Coming soon',
 
@@ -279,11 +324,34 @@ export const ui = {
     'player.search.placeholder': 'Title or composer…',
     'player.category': 'Category',
     'player.category.all': 'All',
+    'player.composer': 'Composer',
+    'player.piece': 'Piece',
+    'player.search.noresults': 'No results',
     'player.pieces': 'pieces',
     'player.playSelection': 'Play selection',
     'player.warnings': 'Warnings',
     'player.selection.hint':
       'Click: pick a line · Shift+click: extend selection · Double-click: jump to the symbol’s definition in the scale.',
+    'player.tuning': 'Intonation',
+    'player.tuning.just': 'Just (G System)',
+    'player.tuning.equal': 'Equal temperament',
+    'player.col.cents': '± cents',
+    'player.viz': 'Pitch curve',
+    'player.viz.hint':
+      'Each dash is a note. Colour shows the deviation from equal temperament: gold = higher, red = lower. Click to select the line.',
+    'player.editor': 'Score editor',
+    'player.editor.hint':
+      'Edit the text: validation is instant. “Apply” loads the result into the player.',
+    'player.editor.apply': 'Apply to player',
+    'player.editor.ok': 'Valid score',
+    'player.export': 'Export as WAV',
+    'player.export.busy': 'Rendering…',
+    'player.tempo': 'Tempo ×',
+    'player.ab': 'A/B listening',
+    'player.ab.title': 'Plays the passage once in just intonation (A), then in equal temperament (B)',
+    'player.status.a': 'A — just intonation',
+    'player.status.b': 'B — equal temperament',
+    'player.scale.hint': 'Click a note in the scale to hear it.',
 
     // Player help
     'aide.backToPlayer': 'Back to the player',
@@ -361,6 +429,17 @@ export const ui = {
     'theory.sub.compare.title': 'Di fronte a Partch, Johnston e al maqam',
     'theory.sub.compare.desc':
       'In prospettiva: dove collocare il Sistema G tra le altre intonazioni giuste e le tradizioni modali.',
+    'theory.sub.positions.title': 'Le posizioni — un esploratore sonoro',
+    'theory.sub.positions.desc':
+      "Un'ottava del Sistema G sotto la lente: ogni posizione visibile, udibile e confrontata con il temperamento equabile.",
+    'positions.lede':
+      "Dal LA al LA superiore, ogni tratto è una posizione della scala, collocata esattamente alla sua frequenza. I riferimenti grigi sono i dodici semitoni del temperamento equabile: ciò che accade tra di essi è il Sistema G.",
+    'positions.hint':
+      'Clicca un tratto o una riga della tabella per ascoltare la posizione (oro = più alta del semitono temperato, rosso = più bassa).',
+    'positions.col.symbols': 'Simboli',
+    'positions.col.nearest': 'Semitono temperato più vicino',
+    'positions.note':
+      "Le frequenze sono calcolate dai rapporti esatti della scala del Sistema G; lo scarto è espresso in cent (1 semitono temperato = 100 cent).",
     'badge.available': 'Disponibile',
     'badge.soon': 'In arrivo',
 
@@ -410,11 +489,34 @@ export const ui = {
     'player.search.placeholder': 'Titolo o compositore…',
     'player.category': 'Categoria',
     'player.category.all': 'Tutte',
+    'player.composer': 'Compositore',
+    'player.piece': 'Brano',
+    'player.search.noresults': 'Nessun risultato',
     'player.pieces': 'brani',
     'player.playSelection': 'Riproduci la selezione',
     'player.warnings': 'Avvertenze',
     'player.selection.hint':
       'Clic: scegli una riga · Maiusc+clic: estendi la selezione · Doppio clic: vai alla definizione del simbolo nella scala.',
+    'player.tuning': 'Intonazione',
+    'player.tuning.just': 'Giusta (Sistema G)',
+    'player.tuning.equal': 'Temperamento equabile',
+    'player.col.cents': '± cent',
+    'player.viz': 'Curva delle altezze',
+    'player.viz.hint':
+      'Ogni tratto è una nota. Il colore mostra lo scarto dal temperamento equabile: oro = più alto, rosso = più basso. Clicca per selezionare la riga.',
+    'player.editor': 'Editor di partitura',
+    'player.editor.hint':
+      'Modifica il testo: la validazione è immediata. « Applica » carica il risultato nel player.',
+    'player.editor.apply': 'Applica al player',
+    'player.editor.ok': 'Partitura valida',
+    'player.export': 'Esporta in WAV',
+    'player.export.busy': 'Rendering…',
+    'player.tempo': 'Tempo ×',
+    'player.ab': 'Ascolto A/B',
+    'player.ab.title': 'Riproduce il passaggio una volta in intonazione giusta (A), poi in temperamento equabile (B)',
+    'player.status.a': 'A — intonazione giusta',
+    'player.status.b': 'B — temperamento equabile',
+    'player.scale.hint': 'Clicca una nota della scala per ascoltarla.',
 
     // Aiuto del player
     'aide.backToPlayer': 'Torna al player',

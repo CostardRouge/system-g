@@ -49,19 +49,31 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       playFrom: t('player.playFrom'),
       playSelection: t('player.playSelection'),
       pieces: t('player.pieces'),
+      noresults: t('player.search.noresults'),
+      exportBusy: t('player.export.busy'),
+      editorOk: t('player.editor.ok'),
+      notes: t('player.notes'),
+      statusA: t('player.status.a'),
+      statusB: t('player.status.b'),
     })}
   >
-    <!-- Bibliothèque : recherche + filtre + liste -->
+    <!-- Bibliothèque : recherche (résultats en surimpression) + listes en cascade -->
     <div class="gp-library">
       <div class="gp-controls gp-controls--library">
-        <div class="gp-field gp-field--grow">
+        <div class="gp-field gp-field--grow gp-search-wrap">
           <label for="gp-search">{t('player.search')}</label>
           <input
             type="search"
             id="gp-search"
             placeholder={t('player.search.placeholder')}
             autocomplete="off"
+            role="combobox"
+            aria-expanded="false"
+            aria-controls="gp-search-results"
           />
+          <div class="gp-search-pop" id="gp-search-pop" hidden>
+            <ul id="gp-search-results" role="listbox"></ul>
+          </div>
         </div>
         <div class="gp-field">
           <label for="gp-category">{t('player.category')}</label>
@@ -70,9 +82,16 @@ const categories = Object.entries(CATEGORY_LABELS) as [
             {categories.map(([id, labels]) => <option value={id}>{labels[lang]}</option>)}
           </select>
         </div>
+        <div class="gp-field">
+          <label for="gp-composer">{t('player.composer')}</label>
+          <select id="gp-composer"></select>
+        </div>
+        <div class="gp-field gp-field--piece">
+          <label for="gp-piece">{t('player.piece')}</label>
+          <select id="gp-piece" disabled></select>
+        </div>
         <span class="gp-lib-count" id="gp-lib-count"></span>
       </div>
-      <ul class="gp-lib-list" id="gp-lib-list"></ul>
     </div>
 
     <!-- Réglages de sortie -->
@@ -96,6 +115,19 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       </div>
 
       <div class="gp-field">
+        <label for="gp-tuning">{t('player.tuning')}</label>
+        <select id="gp-tuning">
+          <option value="just" selected>{t('player.tuning.just')}</option>
+          <option value="equal">{t('player.tuning.equal')}</option>
+        </select>
+      </div>
+
+      <div class="gp-field">
+        <label for="gp-tempo">{t('player.tempo')}</label>
+        <input id="gp-tempo" type="number" value="1" step="0.1" min="0.25" max="3" />
+      </div>
+
+      <div class="gp-field">
         <label for="gp-transpose">{t('player.transpose')}</label>
         <input id="gp-transpose" type="number" value="0" step="0.5" min="-20" max="20" />
       </div>
@@ -111,15 +143,31 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       <button id="gp-play" class="gp-btn gp-btn--primary" disabled>▶ {t('player.play')}</button>
       <button id="gp-stop" class="gp-btn" disabled>■ {t('player.stop')}</button>
       <button id="gp-playfrom" class="gp-btn" disabled>↳ {t('player.playFrom')}</button>
-      <span class="gp-status" id="gp-status"></span>
+      <button id="gp-ab" class="gp-btn" disabled title={t('player.ab.title')}>
+        ⇄ {t('player.ab')}
+      </button>
+      <button id="gp-export" class="gp-btn" disabled>⤓ {t('player.export')}</button>
+      <span class="gp-status" id="gp-status" aria-live="polite"></span>
     </div>
 
     <!-- Affichage note en cours + durée totale -->
     <div class="gp-meters">
       <span><b id="gp-hz">—</b> Hz</span>
       <span><b id="gp-ms">—</b> ms</span>
+      <span><b id="gp-cents">—</b> {t('player.col.cents')}</span>
       <span>{t('player.duration')} : <b id="gp-total">—</b></span>
       <span><b id="gp-count">0</b> {t('player.notes')}</span>
+    </div>
+
+    <!-- Courbe de hauteur : temps → hauteur, couleur = écart au 12-TET -->
+    <div class="gp-viz" id="gp-viz" hidden>
+      <p class="gp-hint">{t('player.viz')} — {t('player.viz.hint')}</p>
+      <svg
+        id="gp-viz-svg"
+        viewBox="0 0 1000 140"
+        preserveAspectRatio="none"
+        aria-label={t('player.viz')}
+      ></svg>
     </div>
 
     <div id="gp-errors" class="gp-errors" hidden></div>
@@ -135,6 +183,7 @@ const categories = Object.entries(CATEGORY_LABELS) as [
             <option value="oriental">Orientale</option>
           </select>
         </h2>
+        <p class="gp-hint">{t('player.scale.hint')}</p>
         <div class="gp-table-wrap" id="gp-scale-wrap">
           <table class="gp-table" id="gp-scale-table">
             <thead>
@@ -156,15 +205,27 @@ const categories = Object.entries(CATEGORY_LABELS) as [
                 <th>Hz</th>
                 <th>{t('player.col.dur')}</th>
                 <th>ms</th>
+                <th>{t('player.col.cents')}</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td colspan="4" class="gp-empty">{t('player.empty')}</td></tr>
+              <tr><td colspan="5" class="gp-empty">{t('player.empty')}</td></tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
+
+    <!-- Éditeur de partition -->
+    <details class="gp-editor" id="gp-editor">
+      <summary>{t('player.editor')}</summary>
+      <p class="gp-hint">{t('player.editor.hint')}</p>
+      <textarea id="gp-editor-text" rows="14" spellcheck="false"></textarea>
+      <div class="gp-editor-bar">
+        <button id="gp-editor-apply" class="gp-btn" disabled>{t('player.editor.apply')}</button>
+        <span class="gp-editor-msg" id="gp-editor-msg"></span>
+      </div>
+    </details>
 
     <p class="gp-credit">{t('player.legacy.credit')}</p>
   </section>
@@ -174,7 +235,8 @@ const categories = Object.entries(CATEGORY_LABELS) as [
   import { parseScale, type Scale, type ScaleId } from '../lib/systemg/scale-parser';
   import { parseScore, formatDuration, type ParsedScore } from '../lib/systemg/score-parser';
   import { INSTRUMENT_IDS } from '../lib/systemg/instruments';
-  import { SystemGEngine, type PlayOptions } from '../lib/systemg/engine';
+  import { SystemGEngine, buildScheduleItems, type PlayOptions } from '../lib/systemg/engine';
+  import { centsFromEqual } from '../lib/systemg/temperament';
   import { SCORE_LIBRARY, type LibraryEntry } from '../lib/systemg/library';
   import occidentalText from '../lib/systemg/data/occidental_scale.txt?raw';
   import orientalText from '../lib/systemg/data/oriental_scale.txt?raw';
@@ -188,19 +250,32 @@ const categories = Object.entries(CATEGORY_LABELS) as [
 
   const el = {
     search: $<HTMLInputElement>('gp-search'),
+    searchPop: $('gp-search-pop'),
+    searchResults: $<HTMLUListElement>('gp-search-results'),
     category: $<HTMLSelectElement>('gp-category'),
+    composer: $<HTMLSelectElement>('gp-composer'),
+    piece: $<HTMLSelectElement>('gp-piece'),
     libCount: $('gp-lib-count'),
-    libList: $<HTMLUListElement>('gp-lib-list'),
     mode: $<HTMLSelectElement>('gp-mode'),
     instrument: $<HTMLSelectElement>('gp-instrument'),
+    tuning: $<HTMLSelectElement>('gp-tuning'),
+    tempo: $<HTMLInputElement>('gp-tempo'),
     transpose: $<HTMLInputElement>('gp-transpose'),
     follow: $<HTMLInputElement>('gp-follow'),
     play: $<HTMLButtonElement>('gp-play'),
     stop: $<HTMLButtonElement>('gp-stop'),
     playFrom: $<HTMLButtonElement>('gp-playfrom'),
+    ab: $<HTMLButtonElement>('gp-ab'),
+    exportBtn: $<HTMLButtonElement>('gp-export'),
+    viz: $('gp-viz'),
+    vizSvg: document.getElementById('gp-viz-svg') as unknown as SVGSVGElement,
+    editorText: $<HTMLTextAreaElement>('gp-editor-text'),
+    editorApply: $<HTMLButtonElement>('gp-editor-apply'),
+    editorMsg: $('gp-editor-msg'),
     status: $('gp-status'),
     hz: $('gp-hz'),
     ms: $('gp-ms'),
+    cents: $('gp-cents'),
     total: $('gp-total'),
     count: $('gp-count'),
     errors: $('gp-errors'),
@@ -221,12 +296,21 @@ const categories = Object.entries(CATEGORY_LABELS) as [
   const engine = new SystemGEngine();
   let score: ParsedScore | null = null;
   let scoreText = '';
+  let scoreLabel = '';
   /** Sélection de lignes (index d'événements « note ») : ancre + extrémité. */
   let selAnchor = -1;
   let selEnd = -1;
-  let activeLibItem: HTMLElement | null = null;
+  /** Diapason de la gamme chargée (fréquence du LA) — référence du 12-TET. */
+  let tetRef = 441;
 
-  /* ---------- Bibliothèque : recherche + filtre ---------- */
+  function laOf(id: ScaleId): number {
+    const la = scales[id].entries.find(
+      (e) => e.kind === 'definition' && e.name.toUpperCase() === 'LA',
+    );
+    return la?.value ?? 441;
+  }
+
+  /* ---------- Bibliothèque : listes en cascade + recherche en overlay ---------- */
   function normalize(s: string): string {
     return s
       .toLowerCase()
@@ -234,39 +318,127 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       .replace(/[̀-ͯ]/g, '');
   }
 
-  function renderLibrary(): void {
-    const q = normalize(el.search.value.trim());
-    const cat = el.category.value;
-    const frag = document.createDocumentFragment();
-    let count = 0;
+  const PLACEHOLDER = '—';
 
-    for (const entry of SCORE_LIBRARY) {
-      if (cat && entry.category !== cat) continue;
-      if (q && !normalize(`${entry.composer} ${entry.title}`).includes(q)) continue;
-      count++;
+  function entriesFor(cat: string, composer?: string): LibraryEntry[] {
+    return SCORE_LIBRARY.filter(
+      (e) => (!cat || e.category === cat) && (!composer || e.composer === composer),
+    );
+  }
+
+  /** Remplit la liste des compositeurs pour la catégorie courante. */
+  function populateComposers(selected?: string): void {
+    const counts = new Map<string, number>();
+    for (const e of entriesFor(el.category.value)) {
+      counts.set(e.composer, (counts.get(e.composer) ?? 0) + 1);
+    }
+    el.composer.replaceChildren(new Option(PLACEHOLDER, ''));
+    for (const [composer, n] of counts) {
+      el.composer.appendChild(new Option(n > 1 ? `${composer} (${n})` : composer, composer));
+    }
+    el.composer.value = selected ?? '';
+    populatePieces();
+    el.libCount.textContent = `${entriesFor(el.category.value).length} ${T.pieces}`;
+  }
+
+  /** Remplit la liste des pièces pour le compositeur courant. */
+  function populatePieces(selectedFile?: string): void {
+    const composer = el.composer.value;
+    el.piece.replaceChildren(new Option(PLACEHOLDER, ''));
+    if (!composer) {
+      el.piece.disabled = true;
+      return;
+    }
+    for (const e of entriesFor(el.category.value, composer)) {
+      el.piece.appendChild(new Option(e.title, e.file));
+    }
+    el.piece.disabled = false;
+    el.piece.value = selectedFile ?? '';
+  }
+
+  /** Aligne les trois listes sur une pièce donnée (après recherche). */
+  function syncSelectors(entry: LibraryEntry): void {
+    el.category.value = entry.category;
+    populateComposers(entry.composer);
+    populatePieces(entry.file);
+  }
+
+  async function loadFromLibrary(entry: LibraryEntry): Promise<void> {
+    const res = await fetch(`${base}/player/scores/${entry.file}`);
+    loadScore(await res.text(), `${entry.composer} — ${entry.title}`);
+    syncSelectors(entry);
+    // URL partageable : ?piece=<fichier>
+    const url = new URL(location.href);
+    url.searchParams.set('piece', entry.file);
+    history.replaceState(null, '', url);
+  }
+
+  /* — Recherche : résultats en surimpression, sans décalage de la page — */
+  const MAX_RESULTS = 30;
+  let searchMatches: LibraryEntry[] = [];
+  let searchActive = -1;
+
+  function renderSearch(): void {
+    const q = normalize(el.search.value.trim());
+    if (!q) {
+      closeSearch();
+      return;
+    }
+    // La recherche couvre toute la bibliothèque, indépendamment des filtres.
+    searchMatches = SCORE_LIBRARY.filter((e) =>
+      normalize(`${e.composer} ${e.title}`).includes(q),
+    ).slice(0, MAX_RESULTS);
+    searchActive = searchMatches.length > 0 ? 0 : -1;
+
+    const frag = document.createDocumentFragment();
+    if (searchMatches.length === 0) {
       const li = document.createElement('li');
+      li.className = 'gp-search-none';
+      li.textContent = T.noresults;
+      frag.appendChild(li);
+    }
+    searchMatches.forEach((entry, i) => {
+      const li = document.createElement('li');
+      li.setAttribute('role', 'option');
       const btn = document.createElement('button');
       btn.type = 'button';
+      if (i === searchActive) btn.classList.add('is-active');
       const composer = document.createElement('b');
       composer.textContent = entry.composer;
       btn.append(composer, document.createTextNode(` — ${entry.title}`));
-      btn.addEventListener('click', () => loadFromLibrary(entry, btn));
+      btn.addEventListener('click', () => pickSearchResult(entry));
       li.appendChild(btn);
       frag.appendChild(li);
-    }
-    el.libList.replaceChildren(frag);
-    el.libCount.textContent = `${count} ${T.pieces}`;
+    });
+    el.searchResults.replaceChildren(frag);
+    el.searchPop.hidden = false;
+    el.search.setAttribute('aria-expanded', 'true');
   }
 
-  async function loadFromLibrary(entry: LibraryEntry, btn: HTMLElement): Promise<void> {
-    const res = await fetch(`${base}/player/scores/${entry.file}`);
-    loadScore(await res.text(), `${entry.composer} — ${entry.title}`);
-    activeLibItem?.classList.remove('is-active');
-    btn.classList.add('is-active');
-    activeLibItem = btn;
+  function paintSearchActive(): void {
+    el.searchResults.querySelectorAll('button').forEach((b, i) => {
+      b.classList.toggle('is-active', i === searchActive);
+      if (i === searchActive) b.scrollIntoView({ block: 'nearest' });
+    });
   }
 
-  /* ---------- Rendu du tableau de gamme ---------- */
+  function pickSearchResult(entry: LibraryEntry): void {
+    closeSearch();
+    el.search.value = '';
+    void loadFromLibrary(entry);
+  }
+
+  function closeSearch(): void {
+    el.searchPop.hidden = true;
+    el.search.setAttribute('aria-expanded', 'false');
+    searchMatches = [];
+    searchActive = -1;
+  }
+
+  /* ---------- Rendu du tableau de gamme (notes jouables au clic) ---------- */
+  /** Un symbole de gamme est une note si son nom commence par un nom de degré. */
+  const NOTE_PREFIX = /^(DO|RE|MI|FA|SOL|LA|SI)/i;
+
   function renderScale(id: ScaleId): void {
     const frag = document.createDocumentFragment();
     for (const e of scales[id].entries) {
@@ -284,10 +456,33 @@ const categories = Object.entries(CATEGORY_LABELS) as [
         const td2 = document.createElement('td');
         td2.textContent = e.value === undefined ? '—' : String(Math.round(e.value * 1000) / 1000);
         tr.append(td1, td2);
+        const v = e.value ?? 0;
+        if (NOTE_PREFIX.test(e.name) && v > 20 && v < 8000) {
+          tr.classList.add('row-playable');
+          tr.addEventListener('click', () => void previewScaleNote(v));
+        }
       }
       frag.appendChild(tr);
     }
     el.scaleBody.replaceChildren(frag);
+  }
+
+  /** Fait entendre une note de la gamme avec les réglages de sortie courants. */
+  async function previewScaleNote(freqHz: number): Promise<void> {
+    if (engine.state !== 'idle') return;
+    const mode = el.mode.value === 'instrument' ? 'instrument' : 'oscillator';
+    if (mode === 'instrument' && !engine.hasInstrument(el.instrument.value)) {
+      await engine.loadInstrument(el.instrument.value, `${base}/player/instruments/`);
+    }
+    engine.previewNote(freqHz, 700, {
+      mode,
+      instrumentId: el.instrument.value,
+      wave: el.mode.value === 'square' ? 'square' : 'sine',
+      pitchOffset: Number(el.transpose.value) || 0,
+    });
+    el.hz.textContent = String(Math.round(freqHz));
+    const c = centsFromEqual(freqHz, tetRef);
+    el.cents.textContent = (c > 0 ? '+' : '') + c.toFixed(1);
   }
 
   /* ---------- Erreurs / avertissements ---------- */
@@ -313,9 +508,10 @@ const categories = Object.entries(CATEGORY_LABELS) as [
   }
 
   /* ---------- Chargement + rendu d'une partition ---------- */
-  function loadScore(text: string, name: string): void {
+  function loadScore(text: string, name: string, fromEditor = false): void {
     engine.stop(true);
     scoreText = text;
+    scoreLabel = name;
     selAnchor = -1;
     selEnd = -1;
 
@@ -326,10 +522,15 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       parsed = parseScore(text, scales.oriental.symbols, INSTRUMENT_IDS);
     }
     el.scaleSelect.value = scaleId;
+    tetRef = laOf(scaleId);
     renderScale(scaleId);
 
     score = parsed;
     el.scoreName.textContent = name;
+    if (!fromEditor) {
+      el.editorText.value = text;
+      validateEditor();
+    }
     el.total.textContent = formatDuration(parsed.totalMs);
     el.count.textContent = String(parsed.noteCount);
 
@@ -343,35 +544,40 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       if (e.type === 'comment') {
         tr.className = 'row-comment';
         const td = document.createElement('td');
-        td.colSpan = 4;
+        td.colSpan = 5;
         td.textContent = e.text;
         tr.appendChild(td);
       } else if (e.type === 'definition') {
         tr.className = 'row-definition';
         tr.dataset.def = e.name.toUpperCase();
         const td = document.createElement('td');
-        td.colSpan = 4;
+        td.colSpan = 5;
         td.textContent = `${e.name} = ${e.expression}`;
         tr.appendChild(td);
       } else if (e.type === 'instrument') {
         tr.className = 'row-instrument';
         const td = document.createElement('td');
-        td.colSpan = 4;
+        td.colSpan = 5;
         td.textContent = `$ ${e.name}`;
         tr.appendChild(td);
       } else {
         tr.className = 'row-note';
+        const cents = e.freqHz > 0 ? centsFromEqual(e.freqHz, tetRef) : null;
         const cells = [
           e.noteExpr,
           String(Math.round(e.freqHz)),
           e.durExpr,
           String(Math.round(e.durMs)),
+          cents === null ? '' : (cents > 0 ? '+' : '') + cents.toFixed(1),
         ];
-        for (const c of cells) {
+        cells.forEach((c, ci) => {
           const td = document.createElement('td');
           td.textContent = c;
+          if (ci === 4 && cents !== null && Math.abs(cents) > 1) {
+            td.className = cents > 0 ? 'cents-up' : 'cents-down';
+          }
           tr.appendChild(td);
-        }
+        });
         tr.addEventListener('click', (ev) => selectRow(i, ev.shiftKey));
         tr.addEventListener('dblclick', () => goToDefinition(e.noteExpr, e.durExpr));
       }
@@ -384,9 +590,13 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     el.stop.disabled = true;
     el.playFrom.disabled = true;
     el.playFrom.textContent = `↳ ${T.playFrom}`;
+    el.ab.disabled = !playable;
+    el.exportBtn.disabled = !playable;
     el.status.textContent = playable ? T.loaded : '';
     el.hz.textContent = '—';
     el.ms.textContent = '—';
+    el.cents.textContent = '—';
+    renderViz();
   }
 
   /* ---------- Sélection de lignes ---------- */
@@ -456,6 +666,102 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     tr.classList.add('is-flash');
   }
 
+  /* ---------- Courbe de hauteur (SVG) ---------- */
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const VIZ_W = 1000;
+  const VIZ_H = 140;
+  /** eventIndex → position x du début de la note (pour le curseur). */
+  let vizX = new Map<number, number>();
+  let vizCursor: SVGLineElement | null = null;
+
+  function renderViz(): void {
+    vizX = new Map();
+    vizCursor = null;
+    el.vizSvg.replaceChildren();
+    if (!score || score.noteCount === 0 || score.errors.length > 0) {
+      el.viz.hidden = true;
+      return;
+    }
+    // Plan de lecture complet (fréquences justes, sans tempérament).
+    const items = buildScheduleItems(score.events, { mode: 'oscillator' });
+    const totalS = items.length ? items[items.length - 1].start + items[items.length - 1].duration : 0;
+    const pitches = items.filter((it) => it.freqHz > 0).map((it) => Math.log2(it.freqHz));
+    if (totalS <= 0 || pitches.length === 0) {
+      el.viz.hidden = true;
+      return;
+    }
+    const lo = Math.min(...pitches) - 0.06;
+    const hi = Math.max(...pitches) + 0.06;
+    const x = (t: number) => (t / totalS) * VIZ_W;
+    const y = (logf: number) => VIZ_H - ((logf - lo) / (hi - lo)) * (VIZ_H - 12) - 6;
+
+    const frag = document.createDocumentFragment();
+
+    // Grille 12-TET : une ligne par demi-ton tempéré dans l'ambitus.
+    const kLo = Math.ceil((lo - Math.log2(tetRef)) * 12);
+    const kHi = Math.floor((hi - Math.log2(tetRef)) * 12);
+    for (let k = kLo; k <= kHi; k++) {
+      const line = document.createElementNS(SVG_NS, 'line');
+      const gy = y(Math.log2(tetRef) + k / 12);
+      line.setAttribute('x1', '0');
+      line.setAttribute('x2', String(VIZ_W));
+      line.setAttribute('y1', gy.toFixed(1));
+      line.setAttribute('y2', gy.toFixed(1));
+      line.setAttribute('class', k % 12 === 0 ? 'viz-grid viz-grid--la' : 'viz-grid');
+      frag.appendChild(line);
+    }
+
+    // Une barre par note, colorée selon l'écart au tempérament égal.
+    for (const it of items) {
+      vizX.set(it.eventIndex, x(it.start));
+      if (it.freqHz <= 0) continue;
+      const rect = document.createElementNS(SVG_NS, 'rect');
+      const ny = y(Math.log2(it.freqHz));
+      rect.setAttribute('x', x(it.start).toFixed(2));
+      rect.setAttribute('width', Math.max(1, x(it.start + it.duration) - x(it.start) - 0.6).toFixed(2));
+      rect.setAttribute('y', (ny - 1.6).toFixed(2));
+      rect.setAttribute('height', '3.2');
+      const cents = centsFromEqual(it.freqHz, tetRef);
+      rect.setAttribute(
+        'class',
+        Math.abs(cents) <= 1 ? 'viz-note' : cents > 0 ? 'viz-note viz-note--up' : 'viz-note viz-note--down',
+      );
+      const title = document.createElementNS(SVG_NS, 'title');
+      const e = score.events[it.eventIndex];
+      if (e.type === 'note') {
+        title.textContent = `${e.noteExpr} · ${Math.round(it.freqHz)} Hz · ${(cents > 0 ? '+' : '') + cents.toFixed(1)} cents`;
+      }
+      rect.appendChild(title);
+      rect.addEventListener('click', () => {
+        selectRow(it.eventIndex, false);
+        const tr = el.scoreBody.querySelector<HTMLTableRowElement>(
+          `tr[data-index="${it.eventIndex}"]`,
+        );
+        if (tr) el.scoreWrap.scrollTo({ top: tr.offsetTop - el.scoreWrap.clientHeight / 2, behavior: 'smooth' });
+      });
+      frag.appendChild(rect);
+    }
+
+    // Curseur de lecture.
+    vizCursor = document.createElementNS(SVG_NS, 'line');
+    vizCursor.setAttribute('y1', '0');
+    vizCursor.setAttribute('y2', String(VIZ_H));
+    vizCursor.setAttribute('class', 'viz-cursor');
+    vizCursor.setAttribute('x1', '-10');
+    vizCursor.setAttribute('x2', '-10');
+    frag.appendChild(vizCursor);
+
+    el.vizSvg.replaceChildren(frag);
+    el.viz.hidden = false;
+  }
+
+  function moveVizCursor(eventIndex: number): void {
+    const px = vizX.get(eventIndex);
+    if (px === undefined || !vizCursor) return;
+    vizCursor.setAttribute('x1', px.toFixed(2));
+    vizCursor.setAttribute('x2', px.toFixed(2));
+  }
+
   /* ---------- Surlignage de lecture ---------- */
   let lastHighlight: HTMLTableRowElement | null = null;
   function highlightPlaying(index: number): void {
@@ -477,12 +783,18 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       instrumentId: el.instrument.value,
       forceInstrument: !el.follow.checked,
       pitchOffset: Number(el.transpose.value) || 0,
+      tuning: el.tuning.value === 'equal' ? 'equal' : 'just',
+      tetRefHz: tetRef,
+      tempoScale: Number(el.tempo.value) > 0 ? Number(el.tempo.value) : 1,
       startIndex,
       onlyIndices,
       onNote: (i, hz, ms) => {
         highlightPlaying(i);
+        moveVizCursor(i);
         el.hz.textContent = String(Math.round(hz));
         el.ms.textContent = String(Math.round(ms));
+        const c = hz > 0 ? centsFromEqual(hz, tetRef) : null;
+        el.cents.textContent = c === null ? '—' : (c > 0 ? '+' : '') + c.toFixed(1);
       },
       onInstrument: (id) => {
         el.instrument.value = id;
@@ -493,7 +805,11 @@ const categories = Object.entries(CATEGORY_LABELS) as [
         el.play.disabled = false;
         el.stop.disabled = true;
         el.playFrom.disabled = selAnchor < 0;
+        el.ab.disabled = false;
+        el.exportBtn.disabled = false;
         lastHighlight?.classList.remove('is-playing');
+        vizCursor?.setAttribute('x1', '-10');
+        vizCursor?.setAttribute('x2', '-10');
       },
     };
   }
@@ -513,7 +829,46 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     el.play.disabled = false;
     el.stop.disabled = false;
     el.playFrom.disabled = true;
+    el.ab.disabled = true;
+    el.exportBtn.disabled = true;
     await engine.play(score.events, opts);
+  }
+
+  /**
+   * Écoute A/B : joue le passage sélectionné (ou tout le morceau) une fois
+   * en intonation juste, puis une fois en tempérament égal.
+   */
+  async function playAB(): Promise<void> {
+    if (!score || engine.state !== 'idle') return;
+    const [lo, hi] = selRange();
+    const startIdx = lo >= 0 ? lo : 0;
+    const only = lo >= 0 && lo !== hi ? noteIndicesIn(lo, hi) : undefined;
+
+    const phase = async (tuning: 'just' | 'equal', next?: () => void): Promise<void> => {
+      const opts = currentOptions(startIdx, only);
+      opts.tuning = tuning;
+      const baseEnd = opts.onEnd!;
+      opts.onEnd = (stopped) => {
+        baseEnd(stopped);
+        if (!stopped && next) next();
+      };
+      if (opts.mode === 'instrument') {
+        const needed = SystemGEngine.requiredInstruments(score!.events, opts);
+        await Promise.all(
+          needed.map((id) => engine.loadInstrument(id, `${base}/player/instruments/`)),
+        );
+      }
+      el.play.textContent = `⏸ ${T.pause}`;
+      el.play.disabled = false;
+      el.stop.disabled = false;
+      el.playFrom.disabled = true;
+      el.ab.disabled = true;
+      el.exportBtn.disabled = true;
+      el.status.textContent = tuning === 'just' ? T.statusA : T.statusB;
+      await engine.play(score!.events, opts);
+    };
+
+    await phase('just', () => void phase('equal'));
   }
 
   el.play.addEventListener('click', async () => {
@@ -542,6 +897,120 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     }
   });
 
+  el.ab.addEventListener('click', () => void playAB());
+
+  /* ---------- Réglages persistés (localStorage) ---------- */
+  const SETTINGS_KEY = 'systemg.player.settings';
+
+  function saveSettings(): void {
+    try {
+      localStorage.setItem(
+        SETTINGS_KEY,
+        JSON.stringify({
+          mode: el.mode.value,
+          instrument: el.instrument.value,
+          tuning: el.tuning.value,
+          tempo: el.tempo.value,
+          transpose: el.transpose.value,
+          follow: el.follow.checked,
+        }),
+      );
+    } catch {
+      /* stockage indisponible : tant pis */
+    }
+  }
+
+  function restoreSettings(): void {
+    try {
+      const raw = localStorage.getItem(SETTINGS_KEY);
+      if (!raw) return;
+      const s = JSON.parse(raw) as Record<string, string | boolean>;
+      if (typeof s.mode === 'string') el.mode.value = s.mode;
+      if (typeof s.instrument === 'string') el.instrument.value = s.instrument;
+      if (typeof s.tuning === 'string') el.tuning.value = s.tuning;
+      if (typeof s.tempo === 'string') el.tempo.value = s.tempo;
+      if (typeof s.transpose === 'string') el.transpose.value = s.transpose;
+      if (typeof s.follow === 'boolean') el.follow.checked = s.follow;
+      // Valeurs invalides (ex. instrument disparu) : retomber sur les défauts.
+      if (el.instrument.selectedIndex < 0) el.instrument.value = 'piano_2';
+      if (el.mode.selectedIndex < 0) el.mode.value = 'instrument';
+      if (el.tuning.selectedIndex < 0) el.tuning.value = 'just';
+    } catch {
+      /* réglages corrompus : ignorés */
+    }
+  }
+
+  for (const control of [el.mode, el.instrument, el.tuning, el.tempo, el.transpose, el.follow]) {
+    control.addEventListener('change', saveSettings);
+  }
+
+  /* ---------- Export WAV (rendu hors ligne) ---------- */
+  el.exportBtn.addEventListener('click', async () => {
+    if (!score || engine.state !== 'idle') return;
+    el.exportBtn.disabled = true;
+    el.status.textContent = T.exportBusy;
+    try {
+      const opts = currentOptions(0);
+      if (opts.mode === 'instrument') {
+        const needed = SystemGEngine.requiredInstruments(score.events, opts);
+        await Promise.all(
+          needed.map((id) => engine.loadInstrument(id, `${base}/player/instruments/`)),
+        );
+      }
+      const blob = await engine.renderWav(score.events, opts);
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      const slug = scoreLabel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      a.download = `systeme-g-${slug || 'partition'}${opts.tuning === 'equal' ? '-tempere' : ''}.wav`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      el.status.textContent = T.loaded;
+    } catch {
+      el.status.textContent = '';
+    } finally {
+      el.exportBtn.disabled = false;
+    }
+  });
+
+  /* ---------- Éditeur : validation en direct + application ---------- */
+  let editorTimer: ReturnType<typeof setTimeout> | undefined;
+
+  function validateEditor(): void {
+    const text = el.editorText.value;
+    if (text.trim() === '') {
+      el.editorMsg.textContent = '';
+      el.editorApply.disabled = true;
+      return;
+    }
+    let parsed = parseScore(text, scales.occidental.symbols, INSTRUMENT_IDS);
+    if (parsed.scale === 'oriental') {
+      parsed = parseScore(text, scales.oriental.symbols, INSTRUMENT_IDS);
+    }
+    if (parsed.errors.length > 0) {
+      const first = parsed.errors[0];
+      el.editorMsg.textContent = `✗ ${parsed.errors.length} — L${first.line} : ${first.message}`;
+      el.editorMsg.className = 'gp-editor-msg is-error';
+      el.editorApply.disabled = true;
+    } else {
+      el.editorMsg.textContent = `✓ ${T.editorOk} (${parsed.noteCount} ${T.notes}, ${formatDuration(parsed.totalMs)})`;
+      el.editorMsg.className = 'gp-editor-msg is-ok';
+      el.editorApply.disabled = parsed.noteCount === 0;
+    }
+  }
+
+  el.editorText.addEventListener('input', () => {
+    clearTimeout(editorTimer);
+    editorTimer = setTimeout(validateEditor, 250);
+  });
+
+  el.editorApply.addEventListener('click', () => {
+    loadScore(el.editorText.value, `✎ ${scoreLabel || 'Éditeur'}`.replace(/^✎ ✎/, '✎'), true);
+    populateComposers();
+    const url = new URL(location.href);
+    url.searchParams.delete('piece');
+    history.replaceState(null, '', url);
+  });
+
   // Raccourcis clavier : Espace = lecture/pause, Échap = arrêt.
   document.addEventListener('keydown', (ev) => {
     if (ev.target instanceof HTMLInputElement || ev.target instanceof HTMLSelectElement) return;
@@ -553,8 +1022,39 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     }
   });
 
-  el.search.addEventListener('input', renderLibrary);
-  el.category.addEventListener('change', renderLibrary);
+  el.search.addEventListener('input', renderSearch);
+  el.search.addEventListener('keydown', (ev) => {
+    if (el.searchPop.hidden) return;
+    if (ev.key === 'ArrowDown') {
+      ev.preventDefault();
+      searchActive = Math.min(searchActive + 1, searchMatches.length - 1);
+      paintSearchActive();
+    } else if (ev.key === 'ArrowUp') {
+      ev.preventDefault();
+      searchActive = Math.max(searchActive - 1, 0);
+      paintSearchActive();
+    } else if (ev.key === 'Enter') {
+      ev.preventDefault();
+      if (searchActive >= 0) pickSearchResult(searchMatches[searchActive]);
+    } else if (ev.key === 'Escape') {
+      closeSearch();
+    }
+  });
+  // Fermer la surimpression quand on clique ailleurs.
+  document.addEventListener('pointerdown', (ev) => {
+    if (!el.searchPop.hidden && !(ev.target as HTMLElement).closest('.gp-search-wrap')) {
+      closeSearch();
+    }
+  });
+
+  el.category.addEventListener('change', () => populateComposers());
+  el.composer.addEventListener('change', () => populatePieces());
+  el.piece.addEventListener('change', () => {
+    const file = el.piece.value;
+    if (!file) return;
+    const entry = SCORE_LIBRARY.find((e) => e.file === file);
+    if (entry) void loadFromLibrary(entry);
+  });
 
   el.scaleSelect.addEventListener('change', () => {
     renderScale(el.scaleSelect.value as ScaleId);
@@ -580,15 +1080,23 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     if (engine.state !== 'idle') return;
     const file = ev.dataTransfer?.files?.[0];
     if (file && file.name.endsWith('.txt')) {
-      activeLibItem?.classList.remove('is-active');
-      activeLibItem = null;
       loadScore(await file.text(), file.name);
+      // Fichier externe : les listes en cascade ne pointent plus sur une pièce.
+      populateComposers();
     }
   });
 
   /* ---------- Init ---------- */
+  restoreSettings();
   renderScale('occidental');
-  renderLibrary();
+  populateComposers();
+
+  // URL partageable : ?piece=<fichier> charge la pièce à l'ouverture.
+  const requested = new URL(location.href).searchParams.get('piece');
+  if (requested) {
+    const entry = SCORE_LIBRARY.find((e) => e.file === requested);
+    if (entry) void loadFromLibrary(entry);
+  }
 </script>
 
 <style>
@@ -616,48 +1124,73 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     margin-left: auto;
   }
 
-  .gp-lib-list {
-    list-style: none;
-    margin: 0.7rem 0 0;
-    padding: 0;
-    max-height: 13rem;
-    overflow-y: auto;
-    border: 1px solid var(--paper-edge);
-    border-radius: var(--radius);
-    background: var(--paper);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  /* — Recherche : résultats en surimpression (aucun décalage de la page) — */
+  .gp-search-wrap {
+    position: relative;
   }
 
-  .gp-lib-list button {
+  .gp-search-pop {
+    position: absolute;
+    top: calc(100% + 0.3rem);
+    left: 0;
+    right: 0;
+    min-width: min(24rem, 88vw);
+    z-index: 20;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 26px rgba(36, 32, 26, 0.16);
+    max-height: 17rem;
+    overflow-y: auto;
+  }
+
+  .gp-search-pop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem 0;
+  }
+
+  .gp-search-pop button {
     display: block;
     width: 100%;
     text-align: left;
     font-family: var(--serif);
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     color: var(--ink-soft);
     background: none;
     border: none;
-    border-bottom: 1px solid var(--paper-edge);
-    padding: 0.32rem 0.7rem;
+    padding: 0.34rem 0.8rem;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .gp-lib-list button:hover {
-    background: rgba(154, 123, 63, 0.08);
-  }
-
-  .gp-lib-list button.is-active {
-    background: rgba(122, 46, 46, 0.1);
-    color: var(--accent-deep);
-  }
-
-  .gp-lib-list b {
-    font-weight: 600;
+  .gp-search-pop button:hover,
+  .gp-search-pop button.is-active {
+    background: rgba(154, 123, 63, 0.12);
     color: var(--ink);
+  }
+
+  .gp-search-pop b {
+    font-weight: 600;
+    color: var(--accent);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .gp-search-none {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--ink-faint);
+  }
+
+  .gp-field--piece select {
+    max-width: 16rem;
+    text-overflow: ellipsis;
   }
 
   /* — Barres de contrôle — */
@@ -893,6 +1426,14 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     background: rgba(154, 123, 63, 0.08);
   }
 
+  .gp-table :global(.row-playable) {
+    cursor: pointer;
+  }
+
+  .gp-table :global(.row-playable:hover td) {
+    background: rgba(154, 123, 63, 0.08);
+  }
+
   .gp-table tr.is-selected td {
     background: rgba(154, 123, 63, 0.16);
   }
@@ -928,5 +1469,111 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     font-size: 0.8rem;
     color: var(--ink-faint);
     font-style: italic;
+  }
+
+  /* — Courbe de hauteur — */
+  .gp-viz {
+    margin: 0.4rem 0 0.9rem;
+  }
+
+  .gp-viz svg {
+    display: block;
+    width: 100%;
+    height: 8.5rem;
+    background: var(--paper);
+    border: 1px solid var(--paper-edge);
+    border-radius: var(--radius);
+  }
+
+  .gp-viz :global(.viz-grid) {
+    stroke: var(--paper-edge);
+    stroke-width: 0.6;
+  }
+
+  .gp-viz :global(.viz-grid--la) {
+    stroke: var(--line);
+    stroke-width: 1;
+  }
+
+  .gp-viz :global(.viz-note) {
+    fill: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .gp-viz :global(.viz-note--up) {
+    fill: var(--gold);
+  }
+
+  .gp-viz :global(.viz-note--down) {
+    fill: var(--accent);
+  }
+
+  .gp-viz :global(.viz-note:hover) {
+    fill: var(--ink);
+  }
+
+  .gp-viz :global(.viz-cursor) {
+    stroke: var(--accent-deep);
+    stroke-width: 1.2;
+  }
+
+  /* — Colonne ± cents — */
+  .gp-table :global(td.cents-up) {
+    color: var(--gold);
+  }
+
+  .gp-table :global(td.cents-down) {
+    color: var(--accent);
+  }
+
+  /* — Éditeur — */
+  .gp-editor {
+    margin-top: 1.4rem;
+    border: 1px solid var(--paper-edge);
+    border-radius: var(--radius);
+    background: var(--paper-2);
+    padding: 0.7rem 1rem;
+  }
+
+  .gp-editor summary {
+    font-family: var(--serif-display);
+    font-size: 1.05rem;
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .gp-editor textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 0.6rem 0.8rem;
+    resize: vertical;
+  }
+
+  .gp-editor-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .gp-editor-msg {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+  }
+
+  .gp-editor-msg.is-ok {
+    color: var(--gold);
+  }
+
+  .gp-editor-msg.is-error {
+    color: var(--accent-deep);
   }
 </style>

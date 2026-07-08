@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PositionsExplorer from '../../../components/PositionsExplorer.astro';
+import { useTranslations } from '../../../i18n/utils';
+const t = useTranslations('en');
+---
+
+<BaseLayout title={t('theory.sub.positions.title')} description={t('theory.sub.positions.desc')} type="app">
+  <PositionsExplorer />
+</BaseLayout>

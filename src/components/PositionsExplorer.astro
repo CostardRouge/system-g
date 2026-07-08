@@ -1,0 +1,413 @@
+---
+/**
+ * Explorateur des positions du Système G.
+ *
+ * Une octave de la gamme (du LA au LA supérieur) posée sur une règle
+ * log-fréquence : chaque position est un trait cliquable et audible,
+ * comparée aux douze demi-tons du tempérament égal (repères gris).
+ *
+ * Island vanilla TypeScript — réutilise les parseurs et le moteur du player.
+ */
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="container container--wide">
+  <header class="bio-header">
+    <p class="overline overline--accent">{t('nav.theory')}</p>
+    <h1>{t('theory.sub.positions.title')}</h1>
+    <p class="lede">{t('positions.lede')}</p>
+  </header>
+
+  <section class="gpos" id="gpos">
+    <div class="gpos-bar">
+      <label for="gpos-scale">{t('player.scale')}</label>
+      <select id="gpos-scale">
+        <option value="occidental" selected>Occidentale (LA = 441 Hz)</option>
+        <option value="oriental">Orientale (LA = 440 Hz)</option>
+      </select>
+      <span class="gpos-count" id="gpos-count"></span>
+    </div>
+
+    <p class="gpos-hint">{t('positions.hint')}</p>
+
+    <svg id="gpos-ruler" viewBox="0 0 1000 190" aria-label={t('theory.sub.positions.title')}
+    ></svg>
+
+    <div class="gpos-detail" id="gpos-detail" hidden>
+      <p class="gpos-detail__names" id="gpos-detail-names"></p>
+      <p class="gpos-detail__meta" id="gpos-detail-meta"></p>
+    </div>
+
+    <div class="gpos-table-wrap">
+      <table class="gpos-table">
+        <thead>
+          <tr>
+            <th>{t('positions.col.symbols')}</th>
+            <th>Hz</th>
+            <th>{t('player.col.cents')}</th>
+            <th>{t('positions.col.nearest')}</th>
+          </tr>
+        </thead>
+        <tbody id="gpos-body"></tbody>
+      </table>
+    </div>
+
+    <p class="gp-credit">{t('positions.note')}</p>
+  </section>
+</div>
+
+<script>
+  import { parseScale, type Scale, type ScaleId } from '../lib/systemg/scale-parser';
+  import { centsFromEqual, nearestSemitones } from '../lib/systemg/temperament';
+  import { SystemGEngine } from '../lib/systemg/engine';
+  import occidentalText from '../lib/systemg/data/occidental_scale.txt?raw';
+  import orientalText from '../lib/systemg/data/oriental_scale.txt?raw';
+
+  const scales: Record<ScaleId, Scale> = {
+    occidental: parseScale(occidentalText),
+    oriental: parseScale(orientalText),
+  };
+  const engine = new SystemGEngine();
+
+  const $ = (id: string) => document.getElementById(id)!;
+  const ruler = $('gpos-ruler') as unknown as SVGSVGElement;
+  const body = $('gpos-body') as HTMLTableSectionElement;
+  const detail = $('gpos-detail');
+  const detailNames = $('gpos-detail-names');
+  const detailMeta = $('gpos-detail-meta');
+  const scaleSelect = $('gpos-scale') as HTMLSelectElement;
+  const countLabel = $('gpos-count');
+
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const W = 1000;
+  const H = 190;
+  const NOTE_PREFIX = /^(DO|RE|MI|FA|SOL|LA|SI)/i;
+  /** Noms 12-TET depuis LA (repères de la grille). */
+  const TET_NAMES = [
+    'LA', 'LA♯', 'SI', 'DO', 'DO♯', 'RE', 'RE♯', 'MI', 'FA', 'FA♯', 'SOL', 'SOL♯', 'LA',
+  ];
+
+  interface Position {
+    freqHz: number;
+    names: string[];
+    cents: number;
+    semitone: number; // 0..11 depuis LA
+  }
+
+  let positions: Position[] = [];
+  let laRef = 441;
+  let selected: Position | null = null;
+
+  /** Toutes les positions d'une octave [LA, 2·LA), dédupliquées par fréquence. */
+  function collect(id: ScaleId): void {
+    const scale = scales[id];
+    const la = scale.entries.find(
+      (e) => e.kind === 'definition' && e.name.toUpperCase() === 'LA',
+    );
+    laRef = la?.value ?? 441;
+
+    const byFreq = new Map<number, string[]>();
+    for (const e of scale.entries) {
+      if (e.kind !== 'definition' || e.value === undefined) continue;
+      if (!NOTE_PREFIX.test(e.name)) continue;
+      const v = e.value;
+      if (v < laRef - 1e-9 || v >= 2 * laRef - 1e-9) continue;
+      const key = Math.round(v * 1e6) / 1e6;
+      const names = byFreq.get(key) ?? [];
+      names.push(e.name);
+      byFreq.set(key, names);
+    }
+
+    positions = [...byFreq.entries()]
+      .map(([freqHz, names]) => ({
+        freqHz,
+        names,
+        cents: centsFromEqual(freqHz, laRef),
+        semitone: ((nearestSemitones(freqHz, laRef) % 12) + 12) % 12,
+      }))
+      .sort((a, b) => a.freqHz - b.freqHz);
+  }
+
+  const x = (f: number) => (Math.log2(f / laRef) % 1) * W;
+
+  function centsClass(c: number): string {
+    return Math.abs(c) <= 1 ? '' : c > 0 ? 'is-up' : 'is-down';
+  }
+
+  function fmtCents(c: number): string {
+    return (c > 0 ? '+' : '') + c.toFixed(1);
+  }
+
+  function render(): void {
+    const frag = document.createDocumentFragment();
+
+    // Grille : les 12 demi-tons tempérés + le retour à l'octave.
+    for (let k = 0; k <= 12; k++) {
+      const gx = (k / 12) * W;
+      const line = document.createElementNS(SVG_NS, 'line');
+      line.setAttribute('x1', String(gx));
+      line.setAttribute('x2', String(gx));
+      line.setAttribute('y1', '26');
+      line.setAttribute('y2', '150');
+      line.setAttribute('class', k % 12 === 0 ? 'pos-grid pos-grid--la' : 'pos-grid');
+      frag.appendChild(line);
+
+      const label = document.createElementNS(SVG_NS, 'text');
+      label.setAttribute('x', String(gx));
+      label.setAttribute('y', '168');
+      label.setAttribute('class', 'pos-grid-label');
+      label.setAttribute('text-anchor', k === 0 ? 'start' : k === 12 ? 'end' : 'middle');
+      label.textContent = TET_NAMES[k];
+      frag.appendChild(label);
+    }
+
+    // Les positions : traits verticaux, hauteur alternée pour la lisibilité.
+    positions.forEach((p, i) => {
+      const px = x(p.freqHz);
+      const line = document.createElementNS(SVG_NS, 'line');
+      const tall = i % 2 === 0;
+      line.setAttribute('x1', px.toFixed(2));
+      line.setAttribute('x2', px.toFixed(2));
+      line.setAttribute('y1', tall ? '34' : '58');
+      line.setAttribute('y2', tall ? '118' : '142');
+      line.setAttribute(
+        'class',
+        `pos-tick ${centsClass(p.cents) === 'is-up' ? 'pos-tick--up' : centsClass(p.cents) === 'is-down' ? 'pos-tick--down' : ''}`,
+      );
+      if (selected === p) line.classList.add('is-selected');
+      const title = document.createElementNS(SVG_NS, 'title');
+      title.textContent = `${p.names.join(', ')} · ${p.freqHz.toFixed(2)} Hz · ${fmtCents(p.cents)} cents`;
+      line.appendChild(title);
+      line.addEventListener('click', () => select(p));
+      frag.appendChild(line);
+    });
+
+    ruler.replaceChildren(frag);
+
+    // Tableau.
+    const rows = document.createDocumentFragment();
+    for (const p of positions) {
+      const tr = document.createElement('tr');
+      if (selected === p) tr.classList.add('is-selected');
+      const tds = [
+        p.names.join(', '),
+        p.freqHz.toFixed(2),
+        fmtCents(p.cents),
+        `${TET_NAMES[p.semitone]} ${fmtCents(p.cents)}`,
+      ];
+      tds.forEach((txt, ci) => {
+        const td = document.createElement('td');
+        td.textContent = txt;
+        if (ci === 2) td.className = centsClass(p.cents) === 'is-up' ? 'cents-up' : centsClass(p.cents) === 'is-down' ? 'cents-down' : '';
+        tr.appendChild(td);
+      });
+      tr.addEventListener('click', () => select(p));
+      rows.appendChild(tr);
+    }
+    body.replaceChildren(rows);
+    countLabel.textContent = `${positions.length}`;
+  }
+
+  function select(p: Position): void {
+    selected = p;
+    engine.previewNote(p.freqHz, 900, { mode: 'oscillator', wave: 'sine' });
+    detail.hidden = false;
+    detailNames.textContent = p.names.join('  ·  ');
+    detailMeta.textContent = `${p.freqHz.toFixed(2)} Hz — ${TET_NAMES[p.semitone]} ${fmtCents(p.cents)} cents`;
+    render();
+  }
+
+  scaleSelect.addEventListener('change', () => {
+    selected = null;
+    detail.hidden = true;
+    collect(scaleSelect.value as ScaleId);
+    render();
+  });
+
+  collect('occidental');
+  render();
+</script>
+
+<style>
+  .container--wide {
+    max-width: var(--measure-wide);
+  }
+
+  .gpos {
+    margin-top: 2rem;
+  }
+
+  .gpos-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .gpos-bar label {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+  }
+
+  .gpos-bar select {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 0.35rem 0.5rem;
+  }
+
+  .gpos-count {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-left: auto;
+  }
+
+  .gpos-hint {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin: 0.6rem 0;
+  }
+
+  #gpos-ruler {
+    display: block;
+    width: 100%;
+    height: 12rem;
+    background: var(--paper);
+    border: 1px solid var(--paper-edge);
+    border-radius: var(--radius);
+  }
+
+  #gpos-ruler :global(.pos-grid) {
+    stroke: var(--paper-edge);
+    stroke-width: 1;
+  }
+
+  #gpos-ruler :global(.pos-grid--la) {
+    stroke: var(--line);
+    stroke-width: 1.5;
+  }
+
+  #gpos-ruler :global(.pos-grid-label) {
+    font-family: var(--sans);
+    font-size: 11px;
+    fill: var(--ink-faint);
+  }
+
+  #gpos-ruler :global(.pos-tick) {
+    stroke: var(--ink-soft);
+    stroke-width: 2.4;
+    cursor: pointer;
+  }
+
+  #gpos-ruler :global(.pos-tick--up) {
+    stroke: var(--gold);
+  }
+
+  #gpos-ruler :global(.pos-tick--down) {
+    stroke: var(--accent);
+  }
+
+  #gpos-ruler :global(.pos-tick:hover),
+  #gpos-ruler :global(.pos-tick.is-selected) {
+    stroke: var(--accent-deep);
+    stroke-width: 4;
+  }
+
+  .gpos-detail {
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+    background: var(--paper-2);
+    border: 1px solid var(--paper-edge);
+    border-radius: var(--radius);
+  }
+
+  .gpos-detail__names {
+    margin: 0;
+    font-family: var(--serif-display);
+    font-size: 1.1rem;
+    color: var(--ink);
+  }
+
+  .gpos-detail__meta {
+    margin: 0.2rem 0 0;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gpos-table-wrap {
+    max-height: 24rem;
+    overflow-y: auto;
+    border: 1px solid var(--paper-edge);
+    border-radius: var(--radius);
+    background: var(--paper);
+    margin-top: 0.8rem;
+  }
+
+  .gpos-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gpos-table th {
+    position: sticky;
+    top: 0;
+    background: var(--paper-2);
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    text-align: left;
+    padding: 0.45rem 0.7rem;
+    border-bottom: 1px solid var(--line);
+    z-index: 1;
+  }
+
+  .gpos-table :global(td) {
+    padding: 0.3rem 0.7rem;
+    border-bottom: 1px solid var(--paper-edge);
+    color: var(--ink-soft);
+  }
+
+  .gpos-table :global(tr) {
+    cursor: pointer;
+  }
+
+  .gpos-table :global(tr:hover td) {
+    background: rgba(154, 123, 63, 0.08);
+  }
+
+  .gpos-table :global(tr.is-selected td) {
+    background: rgba(122, 46, 46, 0.1);
+    color: var(--ink);
+  }
+
+  .gpos-table :global(td.cents-up) {
+    color: var(--gold);
+  }
+
+  .gpos-table :global(td.cents-down) {
+    color: var(--accent);
+  }
+
+  .gp-credit {
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    font-style: italic;
+  }
+</style>
