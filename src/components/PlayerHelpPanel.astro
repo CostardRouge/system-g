@@ -1,0 +1,124 @@
+---
+/**
+ * Panneau d'aide contextuel, affiché replié au-dessus du player. Donne un
+ * aperçu rapide de « comment ça marche » et renvoie vers la page d'aide
+ * complète. Purement statique (élément <details> natif, aucun JS).
+ */
+import { getLangFromUrl, localizedPath } from '../i18n/utils';
+import { aide } from '../content/aide';
+
+const lang = getLangFromUrl(Astro.url);
+const doc = aide[lang] ?? aide.fr;
+const aideHref = localizedPath('/player/aide', lang);
+---
+
+<details class="gp-help">
+  <summary>
+    <span class="gp-help__icon" aria-hidden="true">?</span>
+    <span class="gp-help__title">{doc.panelTitle}</span>
+    <span class="gp-help__chev" aria-hidden="true">▾</span>
+  </summary>
+
+  <div class="gp-help__body">
+    <p class="gp-help__lede">{doc.panelLede}</p>
+
+    <ol class="gp-help__steps">
+      {
+        doc.panelItems.map((item) => (
+          <li>
+            <b>{item.title}.</b> {item.text}
+          </li>
+        ))
+      }
+    </ol>
+
+    <a class="gp-help__cta" href={aideHref}>{doc.panelCta} →</a>
+  </div>
+</details>
+
+<style>
+  .gp-help {
+    border: 1px solid var(--paper-edge);
+    border-radius: var(--radius);
+    background: var(--paper-2);
+    margin-bottom: 1.5rem;
+  }
+
+  .gp-help > summary {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--sans);
+    font-weight: 600;
+    color: var(--ink);
+    user-select: none;
+  }
+
+  .gp-help > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .gp-help__icon {
+    display: grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex: none;
+    border-radius: 50%;
+    background: var(--accent-deep);
+    color: var(--paper);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .gp-help__title {
+    flex: 1;
+  }
+
+  .gp-help__chev {
+    color: var(--ink-faint);
+    transition: transform 0.15s ease;
+  }
+
+  .gp-help[open] .gp-help__chev {
+    transform: rotate(180deg);
+  }
+
+  .gp-help__body {
+    padding: 0 1rem 1rem;
+  }
+
+  .gp-help__lede {
+    margin: 0 0 0.8rem;
+    color: var(--ink-soft);
+  }
+
+  .gp-help__steps {
+    margin: 0 0 1rem;
+    padding-left: 1.3rem;
+    display: grid;
+    gap: 0.4rem;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+  }
+
+  .gp-help__steps b {
+    color: var(--ink);
+  }
+
+  .gp-help__cta {
+    display: inline-block;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--accent-deep);
+    text-decoration: none;
+  }
+
+  .gp-help__cta:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AideContent from '../../../components/AideContent.astro';
+import { aide } from '../../../content/aide';
+
+const doc = aide.en;
+---
+
+<BaseLayout title={doc.title} description={doc.subtitle} type="article">
+  <AideContent />
+</BaseLayout>

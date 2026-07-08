@@ -12,6 +12,7 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { INSTRUMENTS } from '../lib/systemg/instruments';
 import { SCORE_LIBRARY, CATEGORY_LABELS, type ScoreCategory } from '../lib/systemg/library';
+import PlayerHelpPanel from './PlayerHelpPanel.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -28,6 +29,8 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     <h1>{t('nav.player')}</h1>
     <p class="lede">{t('player.lede')}</p>
   </header>
+
+  <PlayerHelpPanel />
 
   <section
     class="gplayer"

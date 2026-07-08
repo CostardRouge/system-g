@@ -153,6 +153,9 @@ export const ui = {
     'player.warnings': 'Avertissements',
     'player.selection.hint':
       'Clic : choisir une ligne · Maj+clic : étendre la sélection · Double-clic : voir la définition du symbole dans la gamme.',
+
+    // Aide du player
+    'aide.backToPlayer': 'Revenir au player',
   },
 
   en: {
@@ -281,6 +284,9 @@ export const ui = {
     'player.warnings': 'Warnings',
     'player.selection.hint':
       'Click: pick a line · Shift+click: extend selection · Double-click: jump to the symbol’s definition in the scale.',
+
+    // Player help
+    'aide.backToPlayer': 'Back to the player',
   },
 
   it: {
@@ -409,6 +415,9 @@ export const ui = {
     'player.warnings': 'Avvertenze',
     'player.selection.hint':
       'Clic: scegli una riga · Maiusc+clic: estendi la selezione · Doppio clic: vai alla definizione del simbolo nella scala.',
+
+    // Aiuto del player
+    'aide.backToPlayer': 'Torna al player',
   },
 } as const;
 
