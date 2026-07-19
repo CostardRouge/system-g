@@ -403,9 +403,24 @@ const categories = Object.entries(CATEGORY_LABELS) as [
       const btn = document.createElement('button');
       btn.type = 'button';
       if (i === searchActive) btn.classList.add('is-active');
-      const composer = document.createElement('b');
-      composer.textContent = entry.composer;
-      btn.append(composer, document.createTextNode(` — ${entry.title}`));
+      // Certaines pièces (ex. « 4 gammes majeures ») n'ont pas de véritable
+      // compositeur/interprète : le champ vaut alors un simple « — ».
+      // On n'affiche ni le tiret de séparation ni ce placeholder dans ce cas.
+      const hasComposer = Boolean(entry.composer) && entry.composer !== '—';
+      if (hasComposer) {
+        const composer = document.createElement('span');
+        composer.className = 'gp-sr-composer';
+        composer.textContent = entry.composer;
+        const title = document.createElement('span');
+        title.className = 'gp-sr-title';
+        title.textContent = entry.title;
+        btn.append(composer, document.createTextNode(' — '), title);
+      } else {
+        const title = document.createElement('span');
+        title.className = 'gp-sr-title gp-sr-title--solo';
+        title.textContent = entry.title;
+        btn.append(title);
+      }
       btn.addEventListener('click', () => pickSearchResult(entry));
       li.appendChild(btn);
       frag.appendChild(li);
@@ -1131,23 +1146,27 @@ const categories = Object.entries(CATEGORY_LABELS) as [
 
   .gp-search-pop {
     position: absolute;
-    top: calc(100% + 0.3rem);
+    top: calc(100% + 0.4rem);
     left: 0;
     right: 0;
-    min-width: min(24rem, 88vw);
+    min-width: min(26rem, 92vw);
     z-index: 20;
     background: var(--paper);
     border: 1px solid var(--line);
-    border-radius: var(--radius);
-    box-shadow: 0 10px 26px rgba(36, 32, 26, 0.16);
-    max-height: 17rem;
+    border-radius: calc(var(--radius) + 3px);
+    box-shadow: 0 12px 30px rgba(36, 32, 26, 0.18);
+    max-height: 18rem;
     overflow-y: auto;
+    padding: 0.35rem;
   }
 
   .gp-search-pop ul {
     list-style: none;
     margin: 0;
-    padding: 0.25rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
   }
 
   .gp-search-pop button {
@@ -1155,37 +1174,61 @@ const categories = Object.entries(CATEGORY_LABELS) as [
     width: 100%;
     text-align: left;
     font-family: var(--serif);
-    font-size: 0.9rem;
+    font-size: 0.92rem;
+    line-height: 1.35;
     color: var(--ink-soft);
     background: none;
     border: none;
-    padding: 0.34rem 0.8rem;
+    border-radius: var(--radius);
+    padding: 0.55rem 0.7rem;
     cursor: pointer;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    transition: background-color 0.12s ease, color 0.12s ease;
   }
 
   .gp-search-pop button:hover,
   .gp-search-pop button.is-active {
-    background: rgba(154, 123, 63, 0.12);
+    background: color-mix(in srgb, var(--gold) 18%, transparent);
     color: var(--ink);
   }
 
-  .gp-search-pop b {
+  .gp-sr-composer {
     font-weight: 600;
     color: var(--accent);
     font-family: var(--sans);
-    font-size: 0.78rem;
-    letter-spacing: 0.04em;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 
+  .gp-sr-title {
+    font-family: var(--serif);
+  }
+
+  .gp-sr-title--solo {
+    color: var(--ink);
+  }
+
   .gp-search-none {
-    padding: 0.5rem 0.8rem;
+    padding: 0.7rem 0.8rem;
     font-size: 0.85rem;
     font-style: italic;
     color: var(--ink-faint);
+  }
+
+  @media (max-width: 30rem) {
+    .gp-search-pop {
+      left: -0.1rem;
+      right: -0.1rem;
+      min-width: unset;
+      max-height: 60vh;
+    }
+
+    .gp-search-pop button {
+      padding: 0.65rem 0.7rem;
+      font-size: 0.95rem;
+    }
   }
 
   .gp-field--piece select {
