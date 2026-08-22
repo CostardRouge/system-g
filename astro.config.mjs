@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
 
 /**
  * Configuration Astro — site statique, sans vendor lock.
@@ -33,20 +32,9 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
-  integrations: [
-    // Sitemap avec annotations hreflang : les locales déclarées ici doivent
-    // rester alignées sur la section `i18n` ci-dessous.
-    sitemap({
-      i18n: {
-        defaultLocale: 'fr',
-        locales: {
-          fr: 'fr',
-          en: 'en',
-          it: 'it',
-        },
-      },
-    }),
-  ],
+  // Le sitemap est généré à la main (src/pages/sitemap.xml.ts) plutôt que
+  // par un plugin d'analyse statique, pour pouvoir y inclure `lastmod`
+  // (dernier commit git par page) et l'image de partage de chaque page.
   vite: {
     // Emplacement du cache Vite, surchargeable (utile dans les
     // environnements où node_modules est en lecture partagée).

@@ -2,6 +2,11 @@
 dist/
 .output/
 
+# images OG régénérées à chaque build par scripts/build-og-images.mjs
+# (voir le script "prebuild") — jamais commitées, pour ne pas risquer
+# qu'elles dérivent du contenu réel (voir src/lib/routes.ts).
+public/og/
+
 # dependencies
 node_modules/
 

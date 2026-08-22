@@ -25,6 +25,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Historique complet requis par src/pages/sitemap.xml.ts, qui lit
+          # la date du dernier commit de chaque page pour le <lastmod>.
+          fetch-depth: 0
 
       - name: Configure GitHub Pages
         id: pages

@@ -16,20 +16,30 @@ et un déploiement reproductible.
 ├── docker-compose.yml             Profils dev & prod
 ├── nginx.conf                     Service statique en production
 ├── astro.config.mjs               Config Astro + i18n (fr par défaut, en)
+├── scripts/build-og-images.mjs    Génère les images OG (satori + resvg), avant chaque build
 ├── public/                        Fichiers servis tels quels (favicon…)
 └── src/
     ├── i18n/                      Dictionnaires (ui.ts) + utilitaires
     ├── content/                   Textes longs (biographie…)
     ├── styles/global.css          Thème « papier / sérif / musicologie »
+    ├── lib/
+    │   ├── seo.ts                 Utilitaires SEO (canonical, hreflang, robots, images OG…)
+    │   ├── routes.ts               Manifeste des pages réelles (source unique : sitemap, OG, jumeaux .md)
+    │   ├── markdown.ts             Rendu Markdown du contenu (jumeaux .md)
+    │   └── git.ts                  Date de dernier commit d'un fichier (lastmod du sitemap)
     ├── layouts/BaseLayout.astro   Squelette HTML commun
-    ├── components/                Header, Footer, contenus de page…
+    ├── components/                Header, Footer, Seo, SchemaOrg, contenus de page…
     └── pages/                     Routes
         ├── index.astro            Accueil (fr)
         ├── biographie.astro       L'auteur (fr)
-        ├── litterature.astro      Rubrique Littérature (en préparation)
+        ├── litterature.astro      Rubrique Littérature (en préparation, noindex)
         ├── theorie.astro          Rubrique Théorie (en préparation)
         ├── player.astro           Player interactif (en préparation)
-        └── en/                    Mêmes pages en anglais (/en/…)
+        ├── en/                    Mêmes pages en anglais (/en/…)
+        ├── [...slug].md.ts        Jumeau Markdown de chaque page (/theorie/introduction.md…)
+        ├── sitemap.xml.ts         Sitemap généré à la main (lastmod git, images)
+        ├── robots.txt.ts          robots.txt (règles explicites par robot IA)
+        └── llms.txt.ts            Index du site pour les moteurs génératifs (GEO)
 ```
 
 ## Deux rubriques + un player

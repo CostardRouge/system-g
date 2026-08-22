@@ -6,7 +6,8 @@
  * de `Astro.site`, du `base` et des dictionnaires i18n — rien n'est codé en dur.
  */
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import { languageAlternates, absoluteUrl, ogLocales } from '../lib/seo';
+import { languageAlternates, absoluteUrl, neutralPath, ogImagePathname, ogLocales } from '../lib/seo';
+import { routeSlug } from '../lib/routes';
 import { defaultLang } from '../i18n/ui';
 
 export type PageType = 'website' | 'profile' | 'article' | 'app';
@@ -36,14 +37,16 @@ const otherLocales = Object.entries(ogLocales)
   .filter(([l]) => l !== lang)
   .map(([, locale]) => locale);
 
-// Image de partage : une composition par langue (public/og/{lang}.png, 1200×630).
-const ogImage = absoluteUrl(`${base.replace(/\/$/, '')}/og/${lang}.png`, site);
+// Image de partage : une composition par page et par langue (générée au
+// build par scripts/build-og-images.mjs, voir public/og/{lang}/{slug}.png).
+const slug = routeSlug(neutralPath(Astro.url.pathname, base));
+const ogImage = absoluteUrl(ogImagePathname(slug, lang, base), site);
 ---
 
 <link rel="canonical" href={canonical} />
 {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
 {xDefault && <link rel="alternate" hreflang="x-default" href={xDefault.href} />}
-<link rel="sitemap" href={`${base.replace(/\/$/, '')}/sitemap-index.xml`} />
+<link rel="sitemap" href={`${base.replace(/\/$/, '')}/sitemap.xml`} />
 
 <!-- Open Graph -->
 <meta property="og:type" content={ogType} />
@@ -56,11 +59,11 @@ const ogImage = absoluteUrl(`${base.replace(/\/$/, '')}/og/${lang}.png`, site);
 <meta property="og:image" content={ogImage} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content={t('site.title')} />
+<meta property="og:image:alt" content={pageTitle} />
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={pageTitle} />
 <meta name="twitter:description" content={pageDescription} />
 <meta name="twitter:image" content={ogImage} />
-<meta name="twitter:image:alt" content={t('site.title')} />
+<meta name="twitter:image:alt" content={pageTitle} />
