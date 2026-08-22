@@ -9,20 +9,25 @@ import Footer from '../components/Footer.astro';
 import Seo, { type PageType } from '../components/Seo.astro';
 import SchemaOrg from '../components/SchemaOrg.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { absoluteUrl, markdownTwinPathname, robotsDirective } from '../lib/seo';
 
 interface Props {
   title?: string;
   description?: string;
   /** Nature de la page — pilote og:type et le nœud schema.org. */
   type?: PageType;
+  /** Contenu non-substantiel (page « en préparation ») : exclu de l'index. */
+  noindex?: boolean;
 }
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const { title, description, type = 'website' } = Astro.props;
+const { title, description, type = 'website', noindex = false } = Astro.props;
 const pageTitle = title ? `${title} — ${t('site.title')}` : `${t('site.title')} — ${t('site.tagline')}`;
 const pageDescription = description ?? t('site.description');
+const base = import.meta.env.BASE_URL;
+const markdownTwinUrl = absoluteUrl(markdownTwinPathname(Astro.url.pathname, base, lang), Astro.site);
 ---
 
 <!doctype html>
@@ -32,10 +37,12 @@ const pageDescription = description ?? t('site.description');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
+    <meta name="robots" content={robotsDirective(noindex)} />
     <meta name="author" content={t('bio.title')} />
     <meta name="generator" content={Astro.generator} />
     <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#7a2e2e" />
+    {!noindex && <link rel="alternate" type="text/markdown" href={markdownTwinUrl} />}
     <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.svg`} type="image/svg+xml" />
     <link rel="icon" href={`${import.meta.env.BASE_URL}favicon-32.png`} sizes="32x32" type="image/png" />
     <link rel="icon" href={`${import.meta.env.BASE_URL}favicon-16.png`} sizes="16x16" type="image/png" />

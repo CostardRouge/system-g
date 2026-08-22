@@ -8,7 +8,7 @@
  * WebApplication) et un fil d'Ariane. Aucun texte codé en dur.
  */
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import { absoluteUrl, localizedPathname, neutralPath } from '../lib/seo';
+import { absoluteUrl, authorSameAs, localizedPathname, neutralPath } from '../lib/seo';
 import type { PageType } from './Seo.astro';
 import { bioParagraphs } from '../content/bio';
 
@@ -38,6 +38,7 @@ const person = {
   name: t('bio.title'),
   description: t('bio.subtitle'),
   url: bioUrl,
+  sameAs: authorSameAs(),
 };
 
 // Le site lui-même.

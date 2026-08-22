@@ -54,6 +54,42 @@ export function absoluteUrl(pathname: string, site: URL | undefined): string {
   return new URL(pathname, site).href;
 }
 
+/**
+ * Profils publics de l'auteur, centralisés ici une bonne fois pour toutes.
+ * Référencé par le `sameAs` du noeud Person (JSON-LD) — jamais recopié
+ * ailleurs, pour ne pas risquer de faire dériver deux sources.
+ */
+const authorProfiles = ['https://www.linkedin.com/in/nabih-gedeon-978536271/'];
+
+/** Liste dédupliquée des profils de l'auteur, pour le `sameAs` schema.org. */
+export function authorSameAs(): string[] {
+  return [...new Set(authorProfiles)];
+}
+
+/** Contenu de la balise `<meta name="robots">`, selon le flag `noindex` de la page. */
+export function robotsDirective(noindex: boolean | undefined): string {
+  return noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+}
+
+/**
+ * Chemin du jumeau Markdown d'une page (calqué sur le schéma de routes de
+ * `src/pages/[...slug].md.ts`, pas sur une manipulation du pathname : la
+ * racine `/` et `/en` n'ont pas la même forme, seul le chemin neutre le
+ * sait). Ex. `/theorie/introduction` (fr) → `/theorie/introduction.md`,
+ * `/` (en) → `/en/index.md`.
+ */
+export function markdownTwinPathname(pathname: string, base: string, lang: Lang): string {
+  const neutral = neutralPath(pathname, base);
+  const slug = neutral === '/' ? 'index' : neutral.slice(1);
+  const prefixed = lang === defaultLang ? slug : `${lang}/${slug}`;
+  return `${base.replace(/\/$/, '')}/${prefixed}.md`;
+}
+
+/** Chemin (relatif au `base`) de l'image de partage générée pour une route et une langue données. */
+export function ogImagePathname(slug: string, lang: Lang, base: string): string {
+  return `${base.replace(/\/$/, '')}/og/${lang}/${slug}.png`;
+}
+
 export interface Alternate {
   lang: Lang;
   hreflang: string;
