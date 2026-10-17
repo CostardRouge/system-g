@@ -288,6 +288,11 @@ main {
   font-size: 0.82rem;
   color: var(--ink-faint);
 }
+.site-footer__version {
+  margin-left: 0.6em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
 .site-footer strong {
   font-family: var(--serif-display);
   color: var(--ink);
