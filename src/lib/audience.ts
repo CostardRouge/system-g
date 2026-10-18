@@ -9,9 +9,9 @@
  * `umami.disabled`).
  *
  * Rien ici n'est secret : tout finit dans le HTML. Les variables
- * d'environnement permettent de changer d'instance ou de domaine sans toucher
- * au code, et surtout de couper la mesure : un `UMAMI_WEBSITE_ID` vide ou
- * absent n'écrit rien du tout.
+ * d'environnement permettent de changer d'instance, d'identifiant ou de
+ * domaine sans toucher au code, et surtout de couper la mesure : un
+ * `UMAMI_WEBSITE_ID` vide n'écrit rien du tout.
  */
 
 export interface AudienceSettings {
@@ -26,6 +26,8 @@ export interface AudienceSettings {
 /** Les réglages par défaut : l'instance de l'éditeur, nommée /insight (les listes de filtres bloquent /script.js). */
 export const AUDIENCE_DEFAULTS = {
   src: 'https://insight.steevepommier.com/insight',
+  /** L'identifiant du site dans le tableau de bord ; `UMAMI_WEBSITE_ID` le remplace, vide le coupe. */
+  websiteId: 'fc7bac2a-ca34-4c17-b2da-ffb25fa92c6d',
   /** Le domaine personnalisé et la copie GitHub Pages ; tout autre hôte (localhost, un fork) ne compte pas. */
   domains: ['intervalles-systeme-g.com', 'costardrouge.github.io'],
 } as const;
@@ -44,11 +46,11 @@ const list = (value: string): string[] =>
 /**
  * Les réglages de ce build, ou `null` pour aucune mesure : en production
  * seulement (`npm run dev` et les tests ne comptent jamais), sauf si
- * `UMAMI_DEV=true` ; sans `UMAMI_WEBSITE_ID`, rien.
+ * `UMAMI_DEV=true` ; avec un `UMAMI_WEBSITE_ID` vide, rien.
  */
 export function audienceSettings(env: Env, opts: { production: boolean }): AudienceSettings | null {
   if (!opts.production && env.UMAMI_DEV !== 'true') return null;
-  const website = String(env.UMAMI_WEBSITE_ID ?? '').trim();
+  const website = String(env.UMAMI_WEBSITE_ID ?? AUDIENCE_DEFAULTS.websiteId).trim();
   if (!website) return null;
   let src: string = AUDIENCE_DEFAULTS.src;
   try {

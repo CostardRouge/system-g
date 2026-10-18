@@ -7,18 +7,19 @@ describe('audienceSettings', () => {
     expect(audienceSettings({ UMAMI_WEBSITE_ID: 'id', UMAMI_DEV: 'true' }, { production: false })).not.toBeNull();
   });
 
-  it("ne mesure rien sans identifiant de site, ou avec un identifiant vide", () => {
-    expect(audienceSettings({}, { production: true })).toBeNull();
+  it("est coupée par un identifiant de site vide", () => {
     expect(audienceSettings({ UMAMI_WEBSITE_ID: '' }, { production: true })).toBeNull();
     expect(audienceSettings({ UMAMI_WEBSITE_ID: '  ' }, { production: true })).toBeNull();
   });
 
-  it("prend l'instance de l'éditeur et les deux hôtes du site par défaut", () => {
-    expect(audienceSettings({ UMAMI_WEBSITE_ID: ' id ' }, { production: true })).toEqual({
+  it("prend l'instance de l'éditeur, l'identifiant du site et ses deux hôtes par défaut", () => {
+    expect(audienceSettings({}, { production: true })).toEqual({
       src: AUDIENCE_DEFAULTS.src,
-      website: 'id',
+      website: AUDIENCE_DEFAULTS.websiteId,
       domains: 'intervalles-systeme-g.com,costardrouge.github.io',
     });
+    expect(AUDIENCE_DEFAULTS.websiteId).toMatch(/^[0-9a-f-]{36}$/);
+    expect(audienceSettings({ UMAMI_WEBSITE_ID: ' id ' }, { production: true })?.website).toBe('id');
   });
 
   it("suit les variables d'environnement, et ignore une adresse inutilisable", () => {
