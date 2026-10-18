@@ -8,6 +8,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Seo, { type PageType } from '../components/Seo.astro';
 import SchemaOrg from '../components/SchemaOrg.astro';
+import Audience from '../components/Audience.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { absoluteUrl, markdownTwinPathname, robotsDirective } from '../lib/seo';
 
@@ -56,6 +57,7 @@ const assetBase = base.replace(/\/$/, '');
 
     <Seo pageTitle={pageTitle} pageDescription={pageDescription} type={type} />
     <SchemaOrg pageTitle={pageTitle} pageDescription={pageDescription} type={type} />
+    <Audience />
   </head>
   <body>
     <a class="skip-link" href="#main">{t('nav.skipToContent')}</a>

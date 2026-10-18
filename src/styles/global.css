@@ -293,6 +293,11 @@ main {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.site-footer__audience {
+  margin-top: 0.4rem;
+  font-size: 0.74rem;
+  max-width: 40rem;
+}
 .site-footer strong {
   font-family: var(--serif-display);
   color: var(--ink);

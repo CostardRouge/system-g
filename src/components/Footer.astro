@@ -1,10 +1,13 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { SITE_VERSION } from '../lib/version';
+import { audienceSettings } from '../lib/audience';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const year = new Date().getFullYear();
+// La ligne sur la mesure d'audience n'apparaît que dans un build qui mesure.
+const measured = audienceSettings(process.env, { production: import.meta.env.PROD }) !== null;
 ---
 
 <footer class="site-footer">
@@ -17,6 +20,7 @@ const year = new Date().getFullYear();
       © {year} Nabih Gédéon — {t('footer.rights')}
       {/* La version du build, pour savoir quel état du site on regarde. */}
       <span class="site-footer__version">v{SITE_VERSION}</span>
+      {measured && <div class="site-footer__audience">{t('footer.audience')}</div>}
     </div>
   </div>
 </footer>
