@@ -9,6 +9,11 @@ the code, although the site speaks French first. Codenames are gemstones, in alp
 
 ## [Unreleased]
 
+### Added
+
+- Visits are counted with the publisher's own Umami, without cookies; a browser that says no (Do Not Track, Global
+  Privacy Control) is never counted, and the footer says so.
+
 ## [0.4.0] - 2026-10-17 — Diamond
 
 The first numbered release: the site as it is deployed today.

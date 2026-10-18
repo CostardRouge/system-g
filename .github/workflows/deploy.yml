@@ -54,6 +54,10 @@ jobs:
           # (custom domain via CNAME, or /<repo> for a project repo).
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # Mesure d'audience (src/lib/audience.ts) : l'identifiant du site
+          # dans l'Umami de l'éditeur, variable du dépôt. Absent, rien n'est
+          # mesuré et rien n'est écrit dans les pages.
+          UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
 
       - name: Upload the artifact
         uses: actions/upload-pages-artifact@v3

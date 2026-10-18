@@ -1,0 +1,17 @@
+---
+/**
+ * Mesure d'audience (voir src/lib/audience.ts) : les réglages du build dans un
+ * bloc JSON, et le script qui charge le traceur pour les visiteurs qui n'ont
+ * pas dit non. Sans `UMAMI_WEBSITE_ID` au build, le bloc n'est pas écrit et le
+ * script ne fait rien. Pas de `preconnect` vers le traceur : cela seul
+ * joindrait le serveur pour ceux qui refusent.
+ */
+import { audienceSettings, audienceJson, AUDIENCE_SETTINGS_ID } from '../lib/audience';
+
+const settings = audienceSettings(process.env, { production: import.meta.env.PROD });
+---
+
+{settings && <script is:inline type="application/json" id={AUDIENCE_SETTINGS_ID} set:html={audienceJson(settings)} />}
+<script>
+  import '../lib/audience-client';
+</script>

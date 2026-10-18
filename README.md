@@ -105,6 +105,24 @@ En local, l'URL et le sous-chemin sont pilotés par variables d'environnement :
 SITE_URL="https://intervalles-systeme-g.com" BASE_PATH="/" npm run build
 ```
 
+## Mesure d'audience
+
+Les visites sont comptées avec [Umami](https://umami.is), auto-hébergé par
+l'éditeur du site (`insight.steevepommier.com`, la même instance que ses
+autres sites) : pas de cookie, pas d'identifiant inter-sites, donc pas de
+bandeau de consentement. Le build n'écrit que des réglages dans le `<head>`
+(`src/components/Audience.astro`, `src/lib/audience.ts`) ; le script de la
+page (`src/lib/audience-client.ts`) charge le traceur, sauf si le navigateur
+dit non (Do Not Track, Global Privacy Control, ou la clé `umami.disabled`
+dans `localStorage`). Le pied de page le dit quand le build mesure.
+
+- `UMAMI_WEBSITE_ID` : l'identifiant du site dans le tableau de bord Umami,
+  variable du dépôt lue par `deploy.yml`. **Absent ou vide, rien n'est
+  mesuré** et rien n'est écrit dans les pages.
+- `UMAMI_SRC` (adresse du traceur) et `UMAMI_DOMAINS` (hôtes autorisés,
+  séparés par des virgules) remplacent les valeurs par défaut de
+  `src/lib/audience.ts` ; `UMAMI_DEV=true` mesure aussi hors production.
+
 ## Licence
 
 Code sous licence MIT. Les textes, la théorie du Système G et la biographie
