@@ -210,5 +210,5 @@ entries.sort((a, b) =>
   `${a.composer} ${a.title}`.localeCompare(`${b.composer} ${b.title}`, 'fr'),
 );
 
-writeFileSync(OUT_JSON, JSON.stringify(entries, null, 2) + '\n', 'utf8');
+writeFileSync(OUT_JSON, `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
 console.log(`${entries.length} partitions → public/player/scores/ + library.json`);

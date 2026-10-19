@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "files": {
+    // The legacy Windows player and the scores are archives, not code.
+    "includes": ["**", "!dist", "!package-lock.json", "!system-g-player", "!public/player"]
+  },
+  // Lint only, for now: a repo-wide reformat is its own pull request (COMMON-PROJECT-SPEC, N3).
+  "formatter": { "enabled": false },
+  "linter": {
+    "enabled": true,
+    "rules": { "preset": "recommended" }
+  },
+  "assist": { "enabled": false },
+  "overrides": [
+    {
+      // Biome reads an .astro file's frontmatter only: a variable or an import
+      // used in the template below it reads as unused. `astro check` sees both.
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "correctness": { "noUnusedVariables": "off", "noUnusedImports": "off" }
+        }
+      }
+    },
+    {
+      // The prefers-reduced-motion block (and one margin override) use !important
+      // on purpose, as the standard snippet does; the site has one stylesheet.
+      "includes": ["src/styles/**/*.css"],
+      "linter": {
+        "rules": { "complexity": { "noImportantStyles": "off" } }
+      }
+    }
+  ]
+}

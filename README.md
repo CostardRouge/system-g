@@ -56,15 +56,23 @@ trois rubriques existent comme pages « en préparation », prêtes à recevoir 
 
 ## Développement
 
-Prérequis : Node 20+.
+Prérequis : Node 22 ou plus (`.nvmrc` dit la majeure utilisée en CI et dans
+l'image Docker, 24).
 
 ```bash
 npm install      # installer les dépendances
 npm run dev      # http://localhost:4321 (rechargement à chaud)
 npm run build    # génère le site statique dans ./dist
 npm run preview  # sert le build localement
+npm run lint     # Biome (biome.json : lint seul, pas de formatage)
 npm run check    # vérification TypeScript / Astro
+npm test         # tests unitaires (Vitest)
 ```
+
+`.github/workflows/ci.yml` enchaîne `npm run lint`, `npm run check`,
+`npm test` et `npm run build` sur chaque pull request et sur `main`, et
+construit l'image Docker ; Dependabot (`.github/dependabot.yml`) propose les
+mises à jour des dépendances, des actions et des images de base.
 
 ### Avec Docker
 

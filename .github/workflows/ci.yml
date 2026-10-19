@@ -1,0 +1,70 @@
+name: CI
+
+# The pull request gate (COMMON-PROJECT-SPEC, C15): the commands CLAUDE.md
+# calls the gate, exactly, on every pull request and on main. The deploy
+# (deploy.yml) builds again on main; this is what runs before a merge.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Lint, check, test, build
+    # Named rather than ubuntu-latest, which moves to Ubuntu 26 from 2026-10-19.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # The sitemap reads each page's last commit date (src/lib/git.ts):
+          # a shallow clone would date every page at the build, silently.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Astro check (types)
+        run: npm run check
+
+      - name: Unit tests
+        run: npm test
+
+      # Draws the share images, then builds the site, as the deploy does.
+      - name: Build
+        run: npm run build
+
+  docker:
+    name: Local image
+    # The image is for local use (docker-compose.yml), nothing deploys it;
+    # building it here is what keeps its exact base tags real.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build the prod target
+        run: docker build --target prod -t systeme-g:prod .
+
+      - name: Start and fetch the home page
+        run: |
+          docker run -d --name systeme-g -p 8080:80 systeme-g:prod
+          for i in $(seq 1 20); do curl -fs http://localhost:8080/ >/dev/null && exit 0; sleep 1; done
+          docker logs systeme-g
+          exit 1

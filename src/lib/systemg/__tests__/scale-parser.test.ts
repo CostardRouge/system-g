@@ -43,7 +43,7 @@ describe('gamme occidentale (LA = 441)', () => {
     for (const e of occidental.entries) {
       if (e.kind !== 'definition') continue;
       expect(e.value, `${e.name} (ligne ${e.line})`).toBeDefined();
-      expect(Number.isFinite(e.value!), `${e.name} (ligne ${e.line})`).toBe(true);
+      expect(Number.isFinite(e.value ?? Number.NaN), `${e.name} (ligne ${e.line})`).toBe(true);
     }
   });
 });

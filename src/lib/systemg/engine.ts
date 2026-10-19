@@ -90,7 +90,8 @@ export function buildScheduleItems(
   let instrument = opts.instrumentId ?? '';
   const startIndex = opts.startIndex ?? 0;
   const only = opts.onlyIndices ? new Set(opts.onlyIndices) : null;
-  const equal = opts.tuning === 'equal' && (opts.tetRefHz ?? 0) > 0;
+  const tetRefHz = opts.tetRefHz ?? 0;
+  const equal = opts.tuning === 'equal' && tetRefHz > 0;
   const tempo = opts.tempoScale && opts.tempoScale > 0 ? opts.tempoScale : 1;
 
   for (let i = 0; i < events.length; i++) {
@@ -108,7 +109,7 @@ export function buildScheduleItems(
       eventIndex: i,
       start: t,
       duration,
-      freqHz: equal ? snapToEqual(e.freqHz, opts.tetRefHz!) : e.freqHz,
+      freqHz: equal ? snapToEqual(e.freqHz, tetRefHz) : e.freqHz,
       instrumentId: instrument,
     });
     t += duration;
@@ -196,13 +197,21 @@ export class SystemGEngine {
   /** L'index (dans events) de la note en cours, pour reprendre après pause. */
   currentEventIndex = -1;
 
-  private ensureContext(): AudioContext {
-    if (!this.ctx) {
-      this.ctx = new AudioContext();
-      this.master = this.ctx.createGain();
-      this.master.connect(this.ctx.destination);
+  /** Le contexte et son bus de sortie, créés ensemble au premier appel. */
+  private ensureAudio(): { ctx: AudioContext; master: GainNode } {
+    let { ctx, master } = this;
+    if (!ctx || !master) {
+      ctx = new AudioContext();
+      master = ctx.createGain();
+      master.connect(ctx.destination);
+      this.ctx = ctx;
+      this.master = master;
     }
-    return this.ctx;
+    return { ctx, master };
+  }
+
+  private ensureContext(): AudioContext {
+    return this.ensureAudio().ctx;
   }
 
   /** Charge (et met en cache) l'échantillon d'un instrument. */
@@ -234,10 +243,11 @@ export class SystemGEngine {
     if (ctx.state === 'suspended') await ctx.resume();
 
     // En reprise au milieu du morceau, repartir avec l'instrument actif là-bas.
-    if (opts.mode === 'instrument' && !opts.forceInstrument && (opts.startIndex ?? 0) > 0) {
+    const startIndex = opts.startIndex ?? 0;
+    if (opts.mode === 'instrument' && !opts.forceInstrument && startIndex > 0) {
       opts = {
         ...opts,
-        instrumentId: instrumentAt(events, opts.startIndex!, opts.instrumentId ?? ''),
+        instrumentId: instrumentAt(events, startIndex, opts.instrumentId ?? ''),
       };
     }
     this.opts = opts;
@@ -262,14 +272,14 @@ export class SystemGEngine {
   }
 
   private tick(): void {
-    if (!this.ctx || this.state !== 'playing' || !this.opts) return;
+    if (!this.ctx || !this.master || this.state !== 'playing' || !this.opts) return;
     const horizon = this.ctx.currentTime + LOOKAHEAD_S;
 
     while (this.nextToSchedule < this.schedule.length) {
       const item = this.schedule[this.nextToSchedule];
       const at = this.startTime + item.start;
       if (at > horizon) break;
-      const node = scheduleNote(this.ctx, this.master!, this.buffers, item, at, this.opts);
+      const node = scheduleNote(this.ctx, this.master, this.buffers, item, at, this.opts);
       if (node) {
         this.liveNodes.add(node);
         node.addEventListener('ended', () => this.liveNodes.delete(node));
@@ -353,11 +363,11 @@ export class SystemGEngine {
     opts: Pick<PlayOptions, 'mode' | 'instrumentId' | 'wave' | 'pitchOffset'>,
   ): void {
     if (this.state !== 'idle' || freqHz <= 0 || durMs <= 0) return;
-    const ctx = this.ensureContext();
+    const { ctx, master } = this.ensureAudio();
     if (ctx.state === 'suspended') void ctx.resume();
     scheduleNote(
       ctx,
-      this.master!,
+      master,
       this.buffers,
       {
         eventIndex: -1,

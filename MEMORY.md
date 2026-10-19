@@ -32,7 +32,7 @@ The memory was opened on 2026-10-19, three months into the project, and seeded f
 ## Decisions at a glance (details in the topic files)
 
 - The site is Astro 4, static, with its `site` and `base` taken from `SITE_URL` / `BASE_PATH` so the same build works on a custom domain, on `costardrouge.github.io/system-g` and in Docker — `deployment.md`.
-- The portfolio standard, `COMMON-PROJECT-SPEC.md` in second-brain, adopted 2026-10-19: the agent scaffold (this memory, `AGENTS.md`, `/memorize`), the registry rule and its workflow, the trailer whatever the harness asks for; the toolchain, CI and legal parts follow in the same pull request — `deployment.md`.
+- The portfolio standard, `COMMON-PROJECT-SPEC.md` in second-brain, adopted 2026-10-19: the agent scaffold (this memory, `AGENTS.md`, `/memorize`), the registry rule and its workflow, the trailer whatever the harness asks for, Node pinned (`.nvmrc` 24, `engines` ≥ 22, exact Docker tags), Biome in a PR gate (`ci.yml`) with Dependabot — `deployment.md`.
 - French is the source language and lives at `/`; `en` and `it` are prefixed and reuse the French slugs; a missing dictionary key falls back to French in silence, so a key is added in the three languages at once — `site-and-i18n.md`.
 - `src/lib/routes.ts` is the one manifest of real pages: the sitemap, the share images, the Markdown twins and `llms.txt` read it, nothing is hand-written in a shell; a section in preparation is `noindex` and out of the sitemap but keeps a share image — `site-and-i18n.md`.
 - Share images are generated at every build with satori + resvg-wasm (never sharp: it resolves fonts by name and draws nothing on a machine without the font) and gitignored so they cannot drift from the content — `site-and-i18n.md`.
@@ -53,6 +53,7 @@ The memory was opened on 2026-10-19, three months into the project, and seeded f
 - 2026-10-19 — Literature is still an empty section (`noindex`); the Theory index announces three sub-pages "coming soon" (rules, coding, marking). Content is Nabih Gédéon's to give.
 - 2026-10-19 — `README.md` says the custom domain is an example (`intervalles-systeme-g.com`) and the audience settings count that host and `costardrouge.github.io`; which address is live, and whether `public/CNAME` exists on the deployed site, has not been checked from a session.
 - 2026-10-19 — No parity test holds the three dictionaries together yet; parity was measured by hand on 2026-10-19 (122 keys each).
+- 2026-10-19 — Biome lints but does not format (`biome.jsonc`, `formatter.enabled: false`): the repo-wide reformat is its own pull request, when the owner wants one; `biome format .` would then say how far the files are from Biome's defaults.
 
 ## Topic files
 

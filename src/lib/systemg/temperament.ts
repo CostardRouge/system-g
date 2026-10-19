@@ -21,7 +21,7 @@ export function nearestSemitones(freqHz: number, refHz: number): number {
 /** Fréquence 12-TET la plus proche de `freqHz` (diapason `refHz`). */
 export function snapToEqual(freqHz: number, refHz: number): number {
   if (freqHz <= 0) return 0;
-  return refHz * Math.pow(2, nearestSemitones(freqHz, refHz) / 12);
+  return refHz * 2 ** (nearestSemitones(freqHz, refHz) / 12);
 }
 
 /**

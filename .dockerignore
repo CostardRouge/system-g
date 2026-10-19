@@ -10,3 +10,8 @@ npm-debug.log*
 Dockerfile
 docker-compose.yml
 README.md
+# The build runs `npm run build` only: the legacy player (14 MB, read by
+# scripts/build-library.mjs by hand), the memory and the agent files play no part.
+system-g-player
+docs
+.claude
