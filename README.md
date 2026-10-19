@@ -127,5 +127,10 @@ dans `localStorage`). Le pied de page le dit quand le build mesure.
 
 ## Licence
 
-Code sous licence MIT. Les textes, la théorie du Système G et la biographie
-sont la propriété de **Nabih Gédéon**.
+Le code du site est sous [licence MIT](LICENSE). La théorie du Système G, ses
+textes (biographie, introduction, articles, aide du player, fichiers de gammes
+et partitions) et le « G System Player » d'origine conservé dans
+`system-g-player/` (ses sources, qui portent leur propre mention
+« Copyright © 2009 Faraj Elias », ses échantillons d'instruments et ses
+données) sont © **Nabih Gédéon** et ne sont pas couverts par cette licence :
+tous droits réservés, aucune réutilisation sans son accord.
