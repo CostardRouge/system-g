@@ -13,6 +13,9 @@ the code, although the site speaks French first. Codenames are gemstones, in alp
 
 - Visits are counted with the publisher's own Umami, without cookies; a browser that says no (Do Not Track, Global
   Privacy Control) is never counted, and the footer says so.
+- A legal notice in each language (`/mentions-legales`, `/en/legal`, `/it/note-legali`), linked from the footer: who
+  publishes and hosts the site, what it keeps on your device, what is measured and what never is, the licence — with a
+  switch to stop or resume counting your visits in this browser.
 
 ## [0.4.0] - 2026-10-17 — Diamond
 

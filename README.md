@@ -35,7 +35,8 @@ et un déploiement reproductible.
         ├── litterature.astro      Rubrique Littérature (en préparation, noindex)
         ├── theorie.astro          Rubrique Théorie (en préparation)
         ├── player.astro           Player interactif (en préparation)
-        ├── en/                    Mêmes pages en anglais (/en/…)
+        ├── mentions-legales.astro Mentions légales et confidentialité (textes : src/content/legal.ts)
+        ├── en/, it/               Mêmes pages en anglais (/en/…) et en italien (/it/…)
         ├── [...slug].md.ts        Jumeau Markdown de chaque page (/theorie/introduction.md…)
         ├── sitemap.xml.ts         Sitemap généré à la main (lastmod git, images)
         ├── robots.txt.ts          robots.txt (règles explicites par robot IA)
@@ -89,7 +90,13 @@ docker compose up prod --build # → http://localhost:8080
 - Langue de référence : **français** (servi à la racine `/`).
 - **Anglais** préfixé : `/en/` — **Italien** préfixé : `/it/`.
 - Toutes les chaînes d'interface vivent dans `src/i18n/ui.ts`. Une clé absente
-  dans une langue retombe automatiquement sur le français.
+  dans une langue retombe automatiquement sur le français ; un test
+  (`src/i18n/__tests__/ui.test.ts`) vérifie que les trois dictionnaires ont les
+  mêmes clés.
+- Chaque page garde son adresse française dans toutes les langues
+  (`/en/biographie`). Les rares adresses traduites sont listées dans
+  `src/lib/slugs.ts` et nulle part ailleurs : les mentions légales,
+  `/mentions-legales`, `/en/legal`, `/it/note-legali`.
 - Les textes longs (bio, introduction) sont dans `src/content/*.ts`, avec une
   entrée par langue (`fr`, `en`, `it`).
 - Pour ajouter une langue : ajouter le code dans `astro.config.mjs`
@@ -123,6 +130,16 @@ bandeau de consentement. Le build n'écrit que des réglages dans le `<head>`
 page (`src/lib/audience-client.ts`) charge le traceur, sauf si le navigateur
 dit non (Do Not Track, Global Privacy Control, ou la clé `umami.disabled`
 dans `localStorage`). Le pied de page le dit quand le build mesure.
+
+Les **mentions légales** (`/mentions-legales`, `/en/legal`, `/it/note-legali`,
+liées depuis le pied de page) disent qui édite et héberge le site, ce qu'il
+garde sur l'appareil du visiteur (les réglages du player, le refus de la
+mesure), ce qui est compté et ce qui ne l'est jamais, et la licence. Leurs
+textes (`src/content/legal.ts`) citent les faits du code par des marqueurs
+que `src/lib/legal.ts` remplit (l'hôte du traceur, les clés `localStorage`,
+le dépôt), et un test (`src/lib/__tests__/legal.test.ts`) tient les deux
+ensemble. La page porte un interrupteur qui pose ou retire la clé
+`umami.disabled` dans ce navigateur.
 
 - L'identifiant du site dans le tableau de bord Umami est dans
   `src/lib/audience.ts` (`AUDIENCE_DEFAULTS.websiteId`). `UMAMI_WEBSITE_ID`

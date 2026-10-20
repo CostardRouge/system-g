@@ -7,6 +7,7 @@
  */
 import { ui, defaultLang } from '../i18n/ui';
 import type { Lang } from '../i18n/utils';
+import { localizedSlug, neutralSlug } from './slugs';
 
 /** Locales Open Graph correspondant aux langues du site. */
 export const ogLocales: Record<Lang, string> = {
@@ -23,29 +24,33 @@ export const hreflangCodes: Record<Lang, string> = {
 };
 
 /**
- * Chemin « neutre » : le pathname courant débarrassé du `base` Astro et du
- * préfixe de langue. Sert à reconstruire les URL équivalentes dans chaque langue.
+ * Chemin « neutre » : le pathname courant débarrassé du `base` Astro, du
+ * préfixe de langue et d'une éventuelle traduction du slug (src/lib/slugs.ts).
+ * Sert à reconstruire les URL équivalentes dans chaque langue.
  */
 export function neutralPath(pathname: string, base: string): string {
   const cleanBase = base.replace(/\/$/, '');
   let path = pathname;
   if (cleanBase && path.startsWith(cleanBase)) path = path.slice(cleanBase.length);
-  for (const lang of Object.keys(ui)) {
-    if (lang === defaultLang) continue;
-    if (path === `/${lang}` || path.startsWith(`/${lang}/`)) {
-      path = path.slice(lang.length + 1);
+  let lang: Lang = defaultLang;
+  for (const candidate of Object.keys(ui) as Lang[]) {
+    if (candidate === defaultLang) continue;
+    if (path === `/${candidate}` || path.startsWith(`/${candidate}/`)) {
+      path = path.slice(candidate.length + 1);
+      lang = candidate;
       break;
     }
   }
   if (!path.startsWith('/')) path = `/${path}`;
-  return path;
+  return neutralSlug(path, lang);
 }
 
 /** Chemin localisé (relatif, `base` inclus) pour un chemin neutre donné. */
 export function localizedPathname(neutral: string, lang: Lang, base: string): string {
   const cleanBase = base.replace(/\/$/, '');
-  if (lang === defaultLang) return `${cleanBase}${neutral}` || '/';
-  return `${cleanBase}/${lang}${neutral === '/' ? '/' : neutral}`;
+  const slug = localizedSlug(neutral, lang);
+  if (lang === defaultLang) return `${cleanBase}${slug}` || '/';
+  return `${cleanBase}/${lang}${slug === '/' ? '/' : slug}`;
 }
 
 /** URL absolue à partir d'un pathname (s'appuie sur `Astro.site`). */
@@ -79,8 +84,8 @@ export function robotsDirective(noindex: boolean | undefined): string {
  * `/` (en) → `/en/index.md`.
  */
 export function markdownTwinPathname(pathname: string, base: string, lang: Lang): string {
-  const neutral = neutralPath(pathname, base);
-  const slug = neutral === '/' ? 'index' : neutral.slice(1);
+  const localized = localizedSlug(neutralPath(pathname, base), lang).replace(/\/$/, '');
+  const slug = localized === '' ? 'index' : localized.slice(1);
   const prefixed = lang === defaultLang ? slug : `${lang}/${slug}`;
   return `${base.replace(/\/$/, '')}/${prefixed}.md`;
 }

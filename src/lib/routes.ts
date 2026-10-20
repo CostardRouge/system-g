@@ -14,6 +14,8 @@ import { bioParagraphs } from '../content/bio';
 import { introduction } from '../content/introduction';
 import { aide } from '../content/aide';
 import { comparaison } from '../content/comparaison';
+import { legal } from '../content/legal';
+import { localizedSlug } from './slugs';
 
 export interface RouteMeta {
   title: string;
@@ -99,6 +101,12 @@ export const routes: RouteDef[] = [
       return { title: t('nav.literature'), description: t('home.card.literature.desc') };
     },
   },
+  {
+    // Adresse traduite dans chaque langue (/en/legal, /it/note-legali) : voir src/lib/slugs.ts.
+    path: '/mentions-legales',
+    type: 'website',
+    meta: (lang) => ({ title: legal[lang].title, description: legal[lang].description }),
+  },
 ];
 
 /** Routes indexables : celles qui figurent dans le sitemap et ont un jumeau Markdown. */
@@ -109,7 +117,7 @@ export function indexableRoutes(): RouteDef[] {
 /** Fichier source (relatif à la racine du dépôt) d'une route, pour une langue. */
 export function sourceFileForRoute(path: string, lang: Lang): string {
   const base = lang === 'fr' ? 'src/pages' : `src/pages/${lang}`;
-  return path === '/' ? `${base}/index.astro` : `${base}${path}.astro`;
+  return path === '/' ? `${base}/index.astro` : `${base}${localizedSlug(path, lang)}.astro`;
 }
 
 /** Identifiant de fichier stable pour une route (utilisé pour les images OG et les jumeaux Markdown). */

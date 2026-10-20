@@ -35,6 +35,12 @@ export const AUDIENCE_DEFAULTS = {
 /** L'identifiant de l'élément qui porte les réglages dans le <head>. */
 export const AUDIENCE_SETTINGS_ID = 'audience-settings';
 
+/**
+ * La clé de refus d'Umami dans localStorage : le traceur lui-même la respecte,
+ * et l'interrupteur des mentions légales la pose ou la retire.
+ */
+export const AUDIENCE_OPT_OUT_KEY = 'umami.disabled';
+
 type Env = Record<string, string | boolean | undefined>;
 
 const list = (value: string): string[] =>

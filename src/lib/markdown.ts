@@ -12,6 +12,8 @@ import { bioParagraphs } from '../content/bio';
 import { introduction, type IntroBlock } from '../content/introduction';
 import { aide, type AideBlock } from '../content/aide';
 import { comparaison, type CompareBlock } from '../content/comparaison';
+import { legal } from '../content/legal';
+import { fillLegal, legalVars } from './legal';
 
 type AnyBlock = IntroBlock | AideBlock | CompareBlock;
 
@@ -147,8 +149,31 @@ function renderPlayer(lang: Lang, base: string): string {
   ].join('\n');
 }
 
+/**
+ * Les quelques balises que les textes des mentions légales portent en ligne
+ * (`<a>`, `<b>`, `<i>`, `<code>`), rendues en Markdown.
+ */
+export function inlineHtmlToMarkdown(html: string): string {
+  return html
+    .replace(/<a href="([^"]+)">(.*?)<\/a>/g, '[$2]($1)')
+    .replace(/<\/?(?:b|strong)>/g, '**')
+    .replace(/<\/?i>/g, '*')
+    .replace(/<\/?code>/g, '`');
+}
+
+function renderLegal(lang: Lang, site: URL | undefined): string {
+  const doc = legal[lang] ?? legal.fr;
+  const vars = legalVars(site);
+  const sections = doc.sections.flatMap((section) => [
+    `## ${section.heading}`,
+    '',
+    ...section.paragraphs.map((p) => `${inlineHtmlToMarkdown(fillLegal(p, vars))}\n`),
+  ]);
+  return [`# ${doc.title}`, '', `> ${doc.intro}`, '', `*${doc.updated}*`, '', ...sections].join('\n');
+}
+
 /** Rend le jumeau Markdown d'une route (chemin neutre) pour une langue donnée. */
-export function renderRouteMarkdown(path: string, lang: Lang, base: string): string {
+export function renderRouteMarkdown(path: string, lang: Lang, base: string, site?: URL): string {
   switch (path) {
     case '/':
       return renderHome(lang, base);
@@ -172,6 +197,8 @@ export function renderRouteMarkdown(path: string, lang: Lang, base: string): str
       const doc = aide[lang] ?? aide.fr;
       return renderBlocks(doc.overline, doc.title, doc.subtitle, doc.blocks, lang, base);
     }
+    case '/mentions-legales':
+      return renderLegal(lang, site);
     default:
       throw new Error(`Pas de rendu Markdown pour la route « ${path} ».`);
   }
