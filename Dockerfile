@@ -14,7 +14,7 @@
 # Tag exact (COMMON-PROJECT-SPEC, C14) : même majeure que .nvmrc, relevé
 # par Dependabot ; jamais une majeure flottante, qui embarquerait un
 # runtime que personne n'a testé.
-FROM node:24.22.0-alpine AS base
+FROM node:26.12.0-alpine AS base
 WORKDIR /app
 ENV NODE_ENV=development
 COPY package*.json ./
