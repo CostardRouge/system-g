@@ -34,7 +34,7 @@ COPY . .
 RUN npm run build
 
 # --- Production (Nginx statique) ---------------------------------------
-FROM nginx:1.27.5-alpine AS prod
+FROM nginx:1.31.7-alpine AS prod
 # Configuration Nginx adaptée à un site statique
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
