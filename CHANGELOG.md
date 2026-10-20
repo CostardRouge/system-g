@@ -17,6 +17,11 @@ the code, although the site speaks French first. Codenames are gemstones, in alp
   publishes and hosts the site, what it keeps on your device, what is measured and what never is, the licence — with a
   switch to stop or resume counting your visits in this browser.
 
+### Fixed
+
+- A link to an inner page (the biography, an article) shows its share image again: the pages pointed at an image
+  named with a stray dash (`biographie-.png`), which did not exist.
+
 ## [0.4.0] - 2026-10-17 — Diamond
 
 The first numbered release: the site as it is deployed today.

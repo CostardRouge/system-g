@@ -122,5 +122,8 @@ export function sourceFileForRoute(path: string, lang: Lang): string {
 
 /** Identifiant de fichier stable pour une route (utilisé pour les images OG et les jumeaux Markdown). */
 export function routeSlug(path: string): string {
-  return path === '/' ? 'index' : path.replace(/^\//, '').replace(/\//g, '-');
+  // Un pathname de page porte un `/` final (`/en/biographie/`) : le retirer,
+  // sinon l'image de partage s'appelle `biographie-.png` et n'existe pas.
+  const bare = path.replace(/\/+$/, '');
+  return bare === '' ? 'index' : bare.replace(/^\//, '').replace(/\//g, '-');
 }
