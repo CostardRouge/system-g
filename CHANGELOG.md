@@ -16,6 +16,9 @@ the code, although the site speaks French first. Codenames are gemstones, in alp
 - A legal notice in each language (`/mentions-legales`, `/en/legal`, `/it/note-legali`), linked from the footer: who
   publishes and hosts the site, what it keeps on your device, what is measured and what never is, the licence — with a
   switch to stop or resume counting your visits in this browser.
+- The site's icon is drawn in EB Garamond, like its share images, for every place that asks for one: the browser
+  tab, the iPhone home screen (an opaque icon, as iOS wants) and Android launchers (a maskable icon that survives
+  their masks).
 
 ### Fixed
 

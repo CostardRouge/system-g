@@ -47,8 +47,11 @@ const assetBase = base.replace(/\/$/, '');
     <meta name="generator" content={Astro.generator} />
     <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#7a2e2e" />
+    {/* Le nom sous l'icône de l'écran d'accueil iOS (le short_name du manifeste, qu'iOS ne lit pas). */}
+    <meta name="apple-mobile-web-app-title" content="Système G" />
     {!noindex && <link rel="alternate" type="text/markdown" href={markdownTwinUrl} />}
-    <link rel="icon" href={`${assetBase}/favicon.svg`} type="image/svg+xml" />
+    {/* Le jeu d'icônes est dessiné par scripts/build-icons.mjs (npm run icons) ; voir src/lib/__tests__/icons.test.ts. */}
+    <link rel="icon" href={`${assetBase}/icon.svg`} type="image/svg+xml" />
     <link rel="icon" href={`${assetBase}/favicon-32.png`} sizes="32x32" type="image/png" />
     <link rel="icon" href={`${assetBase}/favicon-16.png`} sizes="16x16" type="image/png" />
     <link rel="icon" href={`${assetBase}/favicon.ico`} sizes="48x48" />

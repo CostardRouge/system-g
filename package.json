@@ -13,6 +13,7 @@
     "prebuild": "tsx scripts/build-og-images.mjs",
     "build": "astro build",
     "build:og": "tsx scripts/build-og-images.mjs",
+    "icons": "node scripts/build-icons.mjs",
     "preview": "astro preview --host",
     "lint": "biome lint --error-on-warnings .",
     "check": "astro check",

@@ -17,7 +17,8 @@ et un déploiement reproductible.
 ├── nginx.conf                     Service statique en production
 ├── astro.config.mjs               Config Astro + i18n (fr par défaut, en)
 ├── scripts/build-og-images.mjs    Génère les images OG (satori + resvg), avant chaque build
-├── public/                        Fichiers servis tels quels (favicon…)
+├── scripts/build-icons.mjs        Dessine le jeu d'icônes dans public/ (npm run icons, à la main, commité)
+├── public/                        Fichiers servis tels quels (icônes, manifeste…)
 └── src/
     ├── i18n/                      Dictionnaires (ui.ts) + utilitaires
     ├── content/                   Textes longs (biographie…)
@@ -68,7 +69,16 @@ npm run preview  # sert le build localement
 npm run lint     # Biome (biome.json : lint seul, pas de formatage)
 npm run check    # vérification TypeScript / Astro
 npm test         # tests unitaires (Vitest)
+npm run icons    # redessine le jeu d'icônes dans public/ (sources SVG, PNG, favicon.ico) ; commiter le résultat
 ```
+
+Le jeu d'icônes (`public/icon*.svg`, les PNG, `favicon.ico`,
+`site.webmanifest`) est dessiné par `scripts/build-icons.mjs` : le « G » est
+le contour du glyphe d'EB Garamond, la police des images de partage, le
+bécarre est tracé à la main, et resvg rasterise le tout — aucune police
+installée n'entre en jeu, le rendu est le même partout. Un test
+(`src/lib/__tests__/icons.test.ts`) tient les fichiers à leurs tailles et le
+`<head>` et le manifeste au jeu complet.
 
 `.github/workflows/ci.yml` enchaîne `npm run lint`, `npm run check`,
 `npm test` et `npm run build` sur chaque pull request et sur `main`, et
