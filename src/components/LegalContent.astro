@@ -1,0 +1,119 @@
+---
+/**
+ * Mentions légales et confidentialité. Partagé entre /mentions-legales,
+ * /en/legal et /it/note-legali : les textes viennent de src/content/legal.ts,
+ * les faits qu'ils citent de src/lib/legal.ts (donc du code), et l'interrupteur
+ * de mesure d'audience vit dans src/lib/legal-client.ts.
+ */
+import { getLangFromUrl } from '../i18n/utils';
+import { legal } from '../content/legal';
+import { fillLegal, legalVars } from '../lib/legal';
+import { audienceSettings } from '../lib/audience';
+
+const lang = getLangFromUrl(Astro.url);
+const doc = legal[lang] ?? legal.fr;
+const vars = legalVars(Astro.site);
+// L'état par défaut, avant que le script ne lise le navigateur : ce build
+// mesure-t-il ? (Le script affine en signal / coupé.)
+const measured = audienceSettings(process.env, { production: import.meta.env.PROD }) !== null;
+---
+
+<div class="container">
+  <header class="bio-header">
+    <p class="overline overline--accent">{doc.overline}</p>
+    <h1>{doc.title}</h1>
+    <p class="hero__subtitle">{doc.intro}</p>
+  </header>
+
+  <article class="essay legal">
+    <p class="legal__updated">{doc.updated}</p>
+
+    <nav class="legal__toc" aria-label={doc.tocAria}>
+      {doc.sections.map((section) => <a href={`#${section.id}`}>{section.heading}</a>)}
+    </nav>
+
+    {
+      doc.sections.map((section) => (
+        <section id={section.id}>
+          <h2>{section.heading}</h2>
+          {section.paragraphs.map((paragraph) => (
+            <p set:html={fillLegal(paragraph, vars)} />
+          ))}
+          {section.id === 'measurement' && (
+            <p
+              id="audience-switch"
+              class="audience-switch"
+              data-on={doc.switch.on}
+              data-off={doc.switch.off}
+              data-signal={doc.switch.signal}
+              data-none={doc.switch.none}
+              data-stop={doc.switch.stop}
+              data-resume={doc.switch.resume}
+            >
+              <span data-role="state">{measured ? doc.switch.on : doc.switch.none}</span>
+              <button type="button" hidden={!measured}>
+                {doc.switch.stop}
+              </button>
+            </p>
+          )}
+        </section>
+      ))
+    }
+  </article>
+</div>
+
+<script>
+  import '../lib/legal-client';
+</script>
+
+<style>
+  .legal__updated {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    margin: 0 0 1.5rem;
+  }
+  .legal__toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    font-family: var(--sans);
+    font-size: 0.86rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .legal section {
+    scroll-margin-top: 2rem;
+  }
+  .legal h2 {
+    margin-top: 2.4rem;
+  }
+  .audience-switch {
+    margin-top: 1.2rem;
+    padding: 1rem 1.2rem;
+    background: var(--paper-2);
+    border-left: 3px solid var(--gold);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem 1.2rem;
+  }
+  .audience-switch button {
+    font: inherit;
+    font-family: var(--sans);
+    font-size: 0.86rem;
+    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 0.35em 0.9em;
+    cursor: pointer;
+  }
+  .audience-switch button:hover {
+    background: var(--accent);
+    color: var(--paper);
+  }
+  .audience-switch button[hidden] {
+    display: none;
+  }
+</style>

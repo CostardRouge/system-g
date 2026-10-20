@@ -17,7 +17,8 @@ et un déploiement reproductible.
 ├── nginx.conf                     Service statique en production
 ├── astro.config.mjs               Config Astro + i18n (fr par défaut, en)
 ├── scripts/build-og-images.mjs    Génère les images OG (satori + resvg), avant chaque build
-├── public/                        Fichiers servis tels quels (favicon…)
+├── scripts/build-icons.mjs        Dessine le jeu d'icônes dans public/ (npm run icons, à la main, commité)
+├── public/                        Fichiers servis tels quels (icônes, manifeste…)
 └── src/
     ├── i18n/                      Dictionnaires (ui.ts) + utilitaires
     ├── content/                   Textes longs (biographie…)
@@ -35,7 +36,8 @@ et un déploiement reproductible.
         ├── litterature.astro      Rubrique Littérature (en préparation, noindex)
         ├── theorie.astro          Rubrique Théorie (en préparation)
         ├── player.astro           Player interactif (en préparation)
-        ├── en/                    Mêmes pages en anglais (/en/…)
+        ├── mentions-legales.astro Mentions légales et confidentialité (textes : src/content/legal.ts)
+        ├── en/, it/               Mêmes pages en anglais (/en/…) et en italien (/it/…)
         ├── [...slug].md.ts        Jumeau Markdown de chaque page (/theorie/introduction.md…)
         ├── sitemap.xml.ts         Sitemap généré à la main (lastmod git, images)
         ├── robots.txt.ts          robots.txt (règles explicites par robot IA)
@@ -56,15 +58,32 @@ trois rubriques existent comme pages « en préparation », prêtes à recevoir 
 
 ## Développement
 
-Prérequis : Node 20+.
+Prérequis : Node 22 ou plus (`.nvmrc` dit la majeure utilisée en CI et dans
+l'image Docker, 24).
 
 ```bash
 npm install      # installer les dépendances
 npm run dev      # http://localhost:4321 (rechargement à chaud)
 npm run build    # génère le site statique dans ./dist
 npm run preview  # sert le build localement
+npm run lint     # Biome (biome.json : lint seul, pas de formatage)
 npm run check    # vérification TypeScript / Astro
+npm test         # tests unitaires (Vitest)
+npm run icons    # redessine le jeu d'icônes dans public/ (sources SVG, PNG, favicon.ico) ; commiter le résultat
 ```
+
+Le jeu d'icônes (`public/icon*.svg`, les PNG, `favicon.ico`,
+`site.webmanifest`) est dessiné par `scripts/build-icons.mjs` : le « G » est
+le contour du glyphe d'EB Garamond, la police des images de partage, le
+bécarre est tracé à la main, et resvg rasterise le tout — aucune police
+installée n'entre en jeu, le rendu est le même partout. Un test
+(`src/lib/__tests__/icons.test.ts`) tient les fichiers à leurs tailles et le
+`<head>` et le manifeste au jeu complet.
+
+`.github/workflows/ci.yml` enchaîne `npm run lint`, `npm run check`,
+`npm test` et `npm run build` sur chaque pull request et sur `main`, et
+construit l'image Docker ; Dependabot (`.github/dependabot.yml`) propose les
+mises à jour des dépendances, des actions et des images de base.
 
 ### Avec Docker
 
@@ -81,7 +100,13 @@ docker compose up prod --build # → http://localhost:8080
 - Langue de référence : **français** (servi à la racine `/`).
 - **Anglais** préfixé : `/en/` — **Italien** préfixé : `/it/`.
 - Toutes les chaînes d'interface vivent dans `src/i18n/ui.ts`. Une clé absente
-  dans une langue retombe automatiquement sur le français.
+  dans une langue retombe automatiquement sur le français ; un test
+  (`src/i18n/__tests__/ui.test.ts`) vérifie que les trois dictionnaires ont les
+  mêmes clés.
+- Chaque page garde son adresse française dans toutes les langues
+  (`/en/biographie`). Les rares adresses traduites sont listées dans
+  `src/lib/slugs.ts` et nulle part ailleurs : les mentions légales,
+  `/mentions-legales`, `/en/legal`, `/it/note-legali`.
 - Les textes longs (bio, introduction) sont dans `src/content/*.ts`, avec une
   entrée par langue (`fr`, `en`, `it`).
 - Pour ajouter une langue : ajouter le code dans `astro.config.mjs`
@@ -116,6 +141,16 @@ page (`src/lib/audience-client.ts`) charge le traceur, sauf si le navigateur
 dit non (Do Not Track, Global Privacy Control, ou la clé `umami.disabled`
 dans `localStorage`). Le pied de page le dit quand le build mesure.
 
+Les **mentions légales** (`/mentions-legales`, `/en/legal`, `/it/note-legali`,
+liées depuis le pied de page) disent qui édite et héberge le site, ce qu'il
+garde sur l'appareil du visiteur (les réglages du player, le refus de la
+mesure), ce qui est compté et ce qui ne l'est jamais, et la licence. Leurs
+textes (`src/content/legal.ts`) citent les faits du code par des marqueurs
+que `src/lib/legal.ts` remplit (l'hôte du traceur, les clés `localStorage`,
+le dépôt), et un test (`src/lib/__tests__/legal.test.ts`) tient les deux
+ensemble. La page porte un interrupteur qui pose ou retire la clé
+`umami.disabled` dans ce navigateur.
+
 - L'identifiant du site dans le tableau de bord Umami est dans
   `src/lib/audience.ts` (`AUDIENCE_DEFAULTS.websiteId`). `UMAMI_WEBSITE_ID`
   le remplace ; **vide, rien n'est mesuré** et rien n'est écrit dans les
@@ -127,5 +162,10 @@ dans `localStorage`). Le pied de page le dit quand le build mesure.
 
 ## Licence
 
-Code sous licence MIT. Les textes, la théorie du Système G et la biographie
-sont la propriété de **Nabih Gédéon**.
+Le code du site est sous [licence MIT](LICENSE). La théorie du Système G, ses
+textes (biographie, introduction, articles, aide du player, fichiers de gammes
+et partitions) et le « G System Player » d'origine conservé dans
+`system-g-player/` (ses sources, qui portent leur propre mention
+« Copyright © 2009 Faraj Elias », ses échantillons d'instruments et ses
+données) sont © **Nabih Gédéon** et ne sont pas couverts par cette licence :
+tous droits réservés, aucune réutilisation sans son accord.

@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, localizedPath } from '../i18n/utils';
 import { SITE_VERSION } from '../lib/version';
 import { audienceSettings } from '../lib/audience';
 
@@ -20,6 +20,9 @@ const measured = audienceSettings(process.env, { production: import.meta.env.PRO
       © {year} Nabih Gédéon — {t('footer.rights')}
       {/* La version du build, pour savoir quel état du site on regarde. */}
       <span class="site-footer__version">v{SITE_VERSION}</span>
+      <div class="site-footer__links">
+        <a href={localizedPath('/mentions-legales', lang)}>{t('footer.legal')}</a>
+      </div>
       {measured && <div class="site-footer__audience">{t('footer.audience')}</div>}
     </div>
   </div>

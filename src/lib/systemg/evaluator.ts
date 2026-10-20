@@ -31,10 +31,12 @@ export class ExpressionError extends Error {
   }
 }
 
+type Operator = '+' | '-' | '*' | '/' | '(' | ')';
+
 type Token =
   | { kind: 'number'; value: number }
   | { kind: 'ident'; name: string }
-  | { kind: 'op'; op: '+' | '-' | '*' | '/' | '(' | ')' };
+  | { kind: 'op'; op: Operator };
 
 function tokenize(expr: string): Token[] {
   const tokens: Token[] = [];
@@ -86,11 +88,16 @@ function evalWithStack(expr: string, resolve: SymbolResolver, stack: string[]): 
 
   const peek = () => tokens[pos];
   const next = () => tokens[pos++];
+  /** L'opérateur du prochain jeton s'il est l'un de `ops`, sinon null. */
+  const peekOp = (ops: readonly Operator[]): Operator | null => {
+    const tok = peek();
+    return tok?.kind === 'op' && ops.includes(tok.op) ? tok.op : null;
+  };
 
   function parseExpr(): number {
     let value = parseTerm();
-    while (peek()?.kind === 'op' && ((peek() as any).op === '+' || (peek() as any).op === '-')) {
-      const op = (next() as any).op;
+    for (let op = peekOp(['+', '-']); op; op = peekOp(['+', '-'])) {
+      next();
       const rhs = parseTerm();
       value = op === '+' ? value + rhs : value - rhs;
     }
@@ -99,8 +106,8 @@ function evalWithStack(expr: string, resolve: SymbolResolver, stack: string[]): 
 
   function parseTerm(): number {
     let value = parseFactor();
-    while (peek()?.kind === 'op' && ((peek() as any).op === '*' || (peek() as any).op === '/')) {
-      const op = (next() as any).op;
+    for (let op = peekOp(['*', '/']); op; op = peekOp(['*', '/'])) {
+      next();
       const rhs = parseFactor();
       value = op === '*' ? value * rhs : value / rhs;
     }
@@ -126,7 +133,7 @@ function evalWithStack(expr: string, resolve: SymbolResolver, stack: string[]): 
     if (tok.kind === 'op' && tok.op === '(') {
       const value = parseExpr();
       const close = next();
-      if (!close || close.kind !== 'op' || close.op !== ')') {
+      if (close?.kind !== 'op' || close.op !== ')') {
         throw new ExpressionError(`Missing ")" in "${expr}"`);
       }
       return value;

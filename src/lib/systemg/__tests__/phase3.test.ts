@@ -103,7 +103,7 @@ describe('buildScheduleItems (plan de lecture pur)', () => {
       tetRefHz: 441,
     });
     expect(items[0].freqHz).toBeCloseTo(441, 10);
-    expect(items[1].freqHz).toBeCloseTo(441 * Math.pow(2, 7 / 12), 6); // ≈ 660.75... calculé
+    expect(items[1].freqHz).toBeCloseTo(441 * 2 ** (7 / 12), 6); // ≈ 660.75... calculé
     expect(items[1].freqHz).not.toBeCloseTo(661.5, 1);
     expect(items[2].freqHz).toBe(0); // le silence reste un silence
   });

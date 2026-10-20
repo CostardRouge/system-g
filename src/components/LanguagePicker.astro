@@ -1,24 +1,21 @@
 ---
 /**
- * Sélecteur de langue. Bascule entre le français (racine) et l'anglais (/en/)
- * en conservant, autant que possible, la page courante.
+ * Sélecteur de langue. Bascule entre le français (racine), l'anglais (/en/)
+ * et l'italien (/it/) en conservant la page courante — y compris quand son
+ * adresse est traduite (src/lib/slugs.ts) : le chemin neutre est recalculé
+ * par les mêmes utilitaires que les balises hreflang.
  */
-import { getLangFromUrl, listLanguages, defaultLang, type Lang } from '../i18n/utils';
+import { getLangFromUrl, listLanguages, type Lang } from '../i18n/utils';
+import { localizedPathname, neutralPath } from '../lib/seo';
 
 const currentLang = getLangFromUrl(Astro.url);
 const langs = listLanguages();
 
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-
-// Chemin sans le préfixe de langue ni le base, pour reconstruire l'équivalent.
-let path = Astro.url.pathname;
-if (base && path.startsWith(base)) path = path.slice(base.length);
-if (path.startsWith(`/${currentLang}`)) path = path.slice(currentLang.length + 1);
-if (!path.startsWith('/')) path = `/${path}`;
+const base = import.meta.env.BASE_URL;
+const neutral = neutralPath(Astro.url.pathname, base);
 
 function hrefFor(lang: Lang): string {
-  if (lang === defaultLang) return `${base}${path}` || '/';
-  return `${base}/${lang}${path === '/' ? '' : path}`;
+  return localizedPathname(neutral, lang, base);
 }
 ---
 

@@ -13,6 +13,17 @@ the code, although the site speaks French first. Codenames are gemstones, in alp
 
 - Visits are counted with the publisher's own Umami, without cookies; a browser that says no (Do Not Track, Global
   Privacy Control) is never counted, and the footer says so.
+- A legal notice in each language (`/mentions-legales`, `/en/legal`, `/it/note-legali`), linked from the footer: who
+  publishes and hosts the site, what it keeps on your device, what is measured and what never is, the licence — with a
+  switch to stop or resume counting your visits in this browser.
+- The site's icon is drawn in EB Garamond, like its share images, for every place that asks for one: the browser
+  tab, the iPhone home screen (an opaque icon, as iOS wants) and Android launchers (a maskable icon that survives
+  their masks).
+
+### Fixed
+
+- A link to an inner page (the biography, an article) shows its share image again: the pages pointed at an image
+  named with a stray dash (`biographie-.png`), which did not exist.
 
 ## [0.4.0] - 2026-10-17 — Diamond
 

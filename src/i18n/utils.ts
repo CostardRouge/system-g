@@ -5,6 +5,7 @@
  * racine (`/`), l'anglais est préfixé (`/en/`). Ces fonctions restent
  * volontairement simples et sans dépendance externe.
  */
+import { localizedSlug } from '../lib/slugs';
 import { ui, defaultLang, languages, type UiKey } from './ui';
 
 export type Lang = keyof typeof ui;
@@ -28,10 +29,11 @@ export function useTranslations(lang: Lang) {
 
 /**
  * Construit un chemin localisé et compatible avec le `base` d'Astro.
- * Exemple : localizedPath('/biographie', 'en') → '/en/biographie'
+ * Exemple : localizedPath('/biographie', 'en') → '/en/biographie' ; une
+ * adresse traduite (src/lib/slugs.ts) suit : '/mentions-legales' → '/en/legal'.
  */
 export function localizedPath(path: string, lang: Lang): string {
-  const clean = path.startsWith('/') ? path : `/${path}`;
+  const clean = localizedSlug(path.startsWith('/') ? path : `/${path}`, lang);
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   if (lang === defaultLang) return `${base}${clean}` || '/';
   return `${base}/${lang}${clean}`;

@@ -238,6 +238,7 @@ const categories = Object.entries(CATEGORY_LABELS) as [
   import { SystemGEngine, buildScheduleItems, type PlayOptions } from '../lib/systemg/engine';
   import { centsFromEqual } from '../lib/systemg/temperament';
   import { SCORE_LIBRARY, type LibraryEntry } from '../lib/systemg/library';
+  import { PLAYER_SETTINGS_KEY } from '../lib/player-settings';
   import occidentalText from '../lib/systemg/data/occidental_scale.txt?raw';
   import orientalText from '../lib/systemg/data/oriental_scale.txt?raw';
 
@@ -915,7 +916,7 @@ const categories = Object.entries(CATEGORY_LABELS) as [
   el.ab.addEventListener('click', () => void playAB());
 
   /* ---------- Réglages persistés (localStorage) ---------- */
-  const SETTINGS_KEY = 'systemg.player.settings';
+  const SETTINGS_KEY = PLAYER_SETTINGS_KEY;
 
   function saveSettings(): void {
     try {

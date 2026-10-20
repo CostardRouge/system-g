@@ -115,6 +115,7 @@ export const ui = {
     'footer.rights': 'Tous droits réservés.',
     'footer.tagline': 'Théorie des intervalles musicaux',
     'footer.legacy': 'Site historique',
+    'footer.legal': 'Mentions légales',
     'footer.audience':
       "Visites comptées sans cookie, sur le serveur de l'éditeur (Umami) ; un navigateur qui refuse (Do Not Track) n'est pas compté.",
 
@@ -283,6 +284,7 @@ export const ui = {
     'footer.rights': 'All rights reserved.',
     'footer.tagline': 'A theory of musical intervals',
     'footer.legacy': 'Historic website',
+    'footer.legal': 'Legal notice',
     'footer.audience':
       'Visits are counted without cookies, on the publisher’s own server (Umami); a browser that says no (Do Not Track) is never counted.',
 
@@ -450,6 +452,7 @@ export const ui = {
     'footer.rights': 'Tutti i diritti riservati.',
     'footer.tagline': 'Teoria degli intervalli musicali',
     'footer.legacy': 'Sito storico',
+    'footer.legal': 'Note legali',
     'footer.audience':
       'Visite contate senza cookie, sul server dell’editore (Umami); un browser che rifiuta (Do Not Track) non viene contato.',
 

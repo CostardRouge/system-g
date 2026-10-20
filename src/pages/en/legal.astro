@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegalContent from '../../components/LegalContent.astro';
+import { legal } from '../../content/legal';
+
+const doc = legal.en;
+---
+
+<BaseLayout title={doc.title} description={doc.description}>
+  <LegalContent />
+</BaseLayout>

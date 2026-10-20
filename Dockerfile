@@ -11,7 +11,10 @@
 # =========================================================================
 
 # --- Base commune -------------------------------------------------------
-FROM node:20-alpine AS base
+# Tag exact (COMMON-PROJECT-SPEC, C14) : même majeure que .nvmrc, relevé
+# par Dependabot ; jamais une majeure flottante, qui embarquerait un
+# runtime que personne n'a testé.
+FROM node:24.22.0-alpine AS base
 WORKDIR /app
 ENV NODE_ENV=development
 COPY package*.json ./
@@ -31,7 +34,7 @@ COPY . .
 RUN npm run build
 
 # --- Production (Nginx statique) ---------------------------------------
-FROM nginx:1.27-alpine AS prod
+FROM nginx:1.27.5-alpine AS prod
 # Configuration Nginx adaptée à un site statique
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html

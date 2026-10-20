@@ -11,7 +11,8 @@ describe('instruments', () => {
   it('playbackRate = Hz × coeff / sampleRate (modèle DirectSound vérifié sur les WAV)', () => {
     // Mesuré : chaque WAV joué à sampleRate = Hz × coeff restitue la hauteur Hz
     // (base × coeff / sr ≈ 1, 1/2, 1/4 selon l'octave incluse dans le coeff).
-    const flute = getInstrument('flute')!;
+    const flute = getInstrument('flute');
+    if (!flute) throw new Error('flute is missing from INSTRUMENTS');
     expect(playbackRateFor(flute, 441)).toBeCloseTo((441 * 72) / 44053, 12);
 
     // La transposition legacy est additive sur le coefficient.
