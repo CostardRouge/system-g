@@ -33,7 +33,7 @@ jobs:
 
       - name: Configure GitHub Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           # Create the Pages site automatically if it doesn't exist yet,
           # so the deploy doesn't depend on the Settings → Pages toggle.
@@ -61,7 +61,7 @@ jobs:
           # et vide le coupe.
 
       - name: Upload the artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
@@ -74,4 +74,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
