@@ -9,6 +9,8 @@ the code, although the site speaks French first. Codenames are gemstones, in alp
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-10-22 — Emerald
+
 ### Added
 
 - Visits are counted with the publisher's own Umami, without cookies; a browser that says no (Do Not Track, Global
