@@ -3,7 +3,7 @@
 > **L'intonation juste enfin trouvée : positions et expressivité**
 > Site autour de la théorie des intervalles musicaux de **Nabih Gédéon**.
 
-Site statique construit avec [Astro](https://astro.build). Pensé pour durer :
+Site statique construit avec [Astro](https://astro.build) 7. Pensé pour durer :
 pas de CMS propriétaire, pas de vendor lock — juste des fichiers, du HTML/CSS
 et un déploiement reproductible.
 
@@ -15,7 +15,7 @@ et un déploiement reproductible.
 ├── Dockerfile                     Images dev / build / prod (multi-étapes)
 ├── docker-compose.yml             Profils dev & prod
 ├── nginx.conf                     Service statique en production
-├── astro.config.mjs               Config Astro + i18n (fr par défaut, en)
+├── astro.config.mjs               Config Astro + i18n (fr par défaut, en, it)
 ├── scripts/build-og-images.mjs    Génère les images OG (satori + resvg), avant chaque build
 ├── scripts/build-icons.mjs        Dessine le jeu d'icônes dans public/ (npm run icons, à la main, commité)
 ├── public/                        Fichiers servis tels quels (icônes, manifeste…)
@@ -58,17 +58,17 @@ trois rubriques existent comme pages « en préparation », prêtes à recevoir 
 
 ## Développement
 
-Prérequis : Node 22 ou plus (`.nvmrc` dit la majeure utilisée en CI et dans
-l'image Docker, 24).
+Prérequis : Node 22.12 ou plus, le minimum d'Astro 7 et de Vitest 5
+(`.nvmrc` dit la majeure utilisée en CI et dans l'image Docker, 24).
 
 ```bash
 npm install      # installer les dépendances
 npm run dev      # http://localhost:4321 (rechargement à chaud)
 npm run build    # génère le site statique dans ./dist
 npm run preview  # sert le build localement
-npm run lint     # Biome (biome.json : lint seul, pas de formatage)
+npm run lint     # Biome (biome.jsonc : lint seul, pas de formatage)
 npm run check    # vérification TypeScript / Astro
-npm test         # tests unitaires (Vitest)
+npm test         # tests unitaires (Vitest 5)
 npm run icons    # redessine le jeu d'icônes dans public/ (sources SVG, PNG, favicon.ico) ; commiter le résultat
 ```
 
