@@ -22,17 +22,17 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "astro": "^7.3.3"
+    "astro": "^7.4.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
-    "@biomejs/biome": "^2.5.15",
+    "@astrojs/check": "^0.9.12",
+    "@biomejs/biome": "^2.6.3",
     "@fontsource/eb-garamond": "^5.3.0",
     "@resvg/resvg-wasm": "^2.6.2",
     "@types/node": "^26.6.5",
-    "satori": "^0.57.2",
+    "satori": "^0.63.2",
     "tsx": "^4.23.15",
     "typescript": "^5.5.0",
-    "vitest": "^5.0.1"
+    "vitest": "^5.0.5"
   }
 }
